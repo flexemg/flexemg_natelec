@@ -1,0 +1,3 @@
+[submodule "offline_data"]
+	path = offline_data
+	url = git@github.com:flexemg/flexemg_v2.git
