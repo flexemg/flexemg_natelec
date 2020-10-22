@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item value="257" key="DIALOG_WIDTH"/>
+		<item value="219" key="DIALOG_Y_ORIGIN"/>
+		<item value="380" key="DIALOG_HEIGHT"/>
+		<item value="1543" key="DIALOG_X_ORIGIN"/>
+		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item value="true" key="wrap"/>
+		<item value="false" key="isRegEx"/>
+		<item value="false" key="casesensitive"/>
+		<item value="false" key="incremental"/>
+		<item value="false" key="wholeword"/>
+		<item value="" key="selection"/>
+		<list key="findhistory">
+			<item value="GUI_POLL_PERIOD"/>
+			<item value="SPI_read_check"/>
+			<item value="CoreGPIO_REG_BASE"/>
+			<item value="GPIO_config"/>
+			<item value="SPI_poll_write_read"/>
+			<item value="SPI_PDMA_write_read"/>
+			<item value="PDMA_find_command"/>
+			<item value="pdma_rx_done"/>
+		</list>
+		<list key="replacehistory">
+			<item value="SPI_PDMA_write_read"/>
+			<item value="SPI_PDMA_tx"/>
+			<item value="POLL_RX_BUF_SIZE"/>
+			<item value="POLL_TX_BUF_SIZE"/>
+			<item value="SPI_poll_write_read"/>
+			<item value="poll_rx_rdy"/>
+			<item value="ack_rdy"/>
+			<item value="fft_rdy"/>
+		</list>
+	</section>
+</section>

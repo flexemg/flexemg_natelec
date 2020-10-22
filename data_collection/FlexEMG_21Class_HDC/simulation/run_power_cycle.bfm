@@ -1,0 +1,26 @@
+##
+## Power cycle NM0 (NM1 is identical)
+## Power control not implemented in Mario-CM V0
+##
+
+# Set power on for NM0
+write w cmam_if_0 rst 0x00000101
+# Set link reset type to NM power (0) and assert start
+write w cmam_if_0 status 0x00000100
+
+waitns 2000
+
+# Set power off for NM0
+write w cmam_if_0 rst 0x000000100
+# Set link reset type to NM power (0) and assert start
+write w cmam_if_0 status 0x00000100
+
+waitns 2000
+
+# Set power on for NM0
+write w cmam_if_0 rst 0x00000101
+# Set link reset type to NM power (0) and assert start
+write w cmam_if_0 status 0x00000100
+
+waitns 2000
+

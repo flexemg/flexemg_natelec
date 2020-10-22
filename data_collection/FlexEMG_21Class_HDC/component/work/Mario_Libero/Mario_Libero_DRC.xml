@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<?xml-stylesheet type="text/xsl" href="drcss.xsl"?>
+<drcreport>
+  <header>Mario_Libero</header>
+  <drc>
+    <status>C:\Microsemi\Libero_SoC_v11.8\Designer/data/drcreport\warn.png</status>
+    <StatusMessage>Warning</StatusMessage>
+    <message>Floating Driver</message>
+    <detail>Floating output pin Mario_Libero_MSS_0:GPIO_0_M2F</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/Mario_Libero/pins/Mario_Libero_MSS_0:GPIO_0_M2F</crossprobe>
+  </drc>
+  <drc>
+    <status>C:\Microsemi\Libero_SoC_v11.8\Designer/data/drcreport\warn.png</status>
+    <StatusMessage>Warning</StatusMessage>
+    <message>Floating Driver</message>
+    <detail>Floating output pin Mario_Libero_MSS_0:GPIO_1_M2F</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/Mario_Libero/pins/Mario_Libero_MSS_0:GPIO_1_M2F</crossprobe>
+  </drc>
+  <drc>
+    <status>C:\Microsemi\Libero_SoC_v11.8\Designer/data/drcreport\warn.png</status>
+    <StatusMessage>Warning</StatusMessage>
+    <message>Floating Driver</message>
+    <detail>Floating output pin Mario_Libero_MSS_0:GPIO_2_M2F</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/Mario_Libero/pins/Mario_Libero_MSS_0:GPIO_2_M2F</crossprobe>
+  </drc>
+  <drc>
+    <status>C:\Microsemi\Libero_SoC_v11.8\Designer/data/drcreport\warn.png</status>
+    <StatusMessage>Warning</StatusMessage>
+    <message>Floating Driver</message>
+    <detail>Floating output pin Mario_Libero_MSS_0:GPIO_3_M2F</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/Mario_Libero/pins/Mario_Libero_MSS_0:GPIO_3_M2F</crossprobe>
+  </drc>
+</drcreport>

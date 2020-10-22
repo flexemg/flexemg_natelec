@@ -1,0 +1,14 @@
+##
+## NM command (NM1 is identical)
+##
+
+# Set up command data
+write w cmam_if_0 n0d2 0x00000489
+# Send command to NM0
+write w cmam_if_0 status 0x00001010
+
+set i 0
+loop i 0 5 1
+    waitns 5000
+endloop
+

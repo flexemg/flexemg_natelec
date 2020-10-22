@@ -1,0 +1,81 @@
+##
+## ACCELEROMETER
+##
+
+# The IRQ function is initiated by acc_sim.v near simulation start and
+# then at 1ms intervals thereafter.
+
+#
+# Write some random data to config register 
+#
+
+# Address range 0x1000 - 0x1ffff is reserved for the accelerometer.
+# Bits 11-4 are shifted right two bits in the CMAM HDL.
+# If bits 11-4 are greater than 0x1a it's interpreted as an accelerometer 
+# register address. Otherwise it's an HDL status or command address.
+memmap acc_1a 0x11a0;
+memmap acc_3b 0x13b0;
+memmap acc_01 0x1010;
+memmap acc_02 0x1020;
+memmap acc_03 0x1030;
+
+#
+# Let the IRQ run first (300us)
+#
+set i 0
+loop i 0 60 1
+#    waitns 5000
+endloop
+
+#
+# Write some random data to MPU6050 config register 
+#
+
+write w cmam_if_0 acc_1a 0x00000003
+# wait for the write to complete (100us)
+set i 0
+loop i 0 20 1
+    waitns 5000
+endloop
+
+#
+# Read some random register
+#
+
+# access #1 starts read transfer
+read w cmam_if_0 acc_3b
+# wait for the read to complete (150us)
+set i 0
+loop i 0 30 1
+    waitns 5000
+endloop
+
+# access #2 retrieves value
+read w cmam_if_0 acc_03
+
+#
+# Read status
+#
+
+read w cmam_if_0 acc
+
+#
+# Read most recent XY data
+#
+
+read w cmam_if_0 acc_01
+
+#
+# Read most recent Z data
+#
+
+read w cmam_if_0 acc_02
+
+# run 100us
+set i 0
+loop i 0 20 1
+    waitns 5000
+endloop
+
+
+

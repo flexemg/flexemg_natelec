@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;Mario_Libero_MSS_CM3_app/interrupt.c&apos;" deleteContents="false" description="Delete resource &apos;Mario_Libero_MSS_CM3_app/interrupt.c&apos;" element1="/Mario_Libero_MSS_CM3_app/interrupt.c" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1488843479144"/>
+</session>

@@ -1,0 +1,35 @@
+Microsemi Corporation - Microsemi Libero Software Release v11.7 SP3 (Version 11.7.3.7)
+
+Date      :  Thu Jun 29 16:40:05 2017
+Project   :  C:\Users\flb.EECS\Desktop\mario_laptop_sf2_newarch\Mario_SF2_noam
+Component :  ACKFIFO
+Family    :  SmartFusion2
+
+
+HDL source files for all Synthesis and Simulation tools:
+    C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_noam/component/work/ACKFIFO/ACKFIFO.v
+    C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_noam/component/work/ACKFIFO/ACKFIFO_0/rtl/vlog/core/ACKFIFO_ACKFIFO_0_USRAM_top.v
+    C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_noam/component/work/ACKFIFO/ACKFIFO_0/rtl/vlog/core/ACKFIFO_ACKFIFO_0_ram_wrapper.v
+    C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_noam/component/work/ACKFIFO/ACKFIFO_0/rtl/vlog/core/COREFIFO.v
+    C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_noam/component/work/ACKFIFO/ACKFIFO_0/rtl/vlog/core/corefifo_async.v
+    C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_noam/component/work/ACKFIFO/ACKFIFO_0/rtl/vlog/core/corefifo_doubleSync.v
+    C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_noam/component/work/ACKFIFO/ACKFIFO_0/rtl/vlog/core/corefifo_fwft.v
+    C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_noam/component/work/ACKFIFO/ACKFIFO_0/rtl/vlog/core/corefifo_grayToBinConv.v
+    C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_noam/component/work/ACKFIFO/ACKFIFO_0/rtl/vlog/core/corefifo_sync.v
+    C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_noam/component/work/ACKFIFO/ACKFIFO_0/rtl/vlog/core/corefifo_sync_scntr.v
+
+Stimulus files for all Simulation tools:
+    C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_noam/component/work/ACKFIFO/ACKFIFO_0/mti/scripts/runall.do
+
+    C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_noam/component/Actel/DirectCore/COREFIFO/2.4.100/rtl/vlog/test/user/MEM_WeqR.v
+    C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_noam/component/Actel/DirectCore/COREFIFO/2.4.100/rtl/vlog/test/user/MEM_WgtR.v
+    C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_noam/component/Actel/DirectCore/COREFIFO/2.4.100/rtl/vlog/test/user/MEM_WltR.v
+    C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_noam/component/Actel/DirectCore/COREFIFO/2.4.100/rtl/vlog/test/user/clock_driver.v
+    C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_noam/component/Actel/DirectCore/COREFIFO/2.4.100/rtl/vlog/test/user/fifo_driver.v
+    C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_noam/component/Actel/DirectCore/COREFIFO/2.4.100/rtl/vlog/test/user/fifo_monitor.v
+    C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_noam/component/Actel/DirectCore/COREFIFO/2.4.100/rtl/vlog/test/user/g4_dp_ext_mem.v
+    C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_noam/component/Actel/DirectCore/COREFIFO/2.4.100/rtl/vlog/test/user/wave.do
+    C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_noam/component/work/ACKFIFO/ACKFIFO_0/coreparameters.v
+    C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_noam/component/work/ACKFIFO/ACKFIFO_0/rtl/vlog/test/user/testbench.v
+    C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_noam/component/work/ACKFIFO/ACKFIFO_0/rtl/vlog/test/user/top_define.v
+

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<?xml-stylesheet type="text/xsl" href="drcss.xsl"?>
+<drcreport>
+  <header>adc_fft_if</header>
+  <drc>
+    <status>C:\Microsemi\Libero_SoC_v11.7\Designer/data/drcreport\error.png</status>
+    <StatusMessage>Error</StatusMessage>
+    <message>No RTL license</message>
+    <detail>
+    </detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/adc_fft_if/instances/COREFFT_0</crossprobe>
+  </drc>
+</drcreport>

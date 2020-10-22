@@ -1,0 +1,144 @@
+
+fsm_encoding {13960969} onehot
+
+fsm_state_encoding {13960969} STATE_IDLE {00001}
+
+fsm_state_encoding {13960969} STATE_WAIT_BIT {00010}
+
+fsm_state_encoding {13960969} STATE_SHIFT {00100}
+
+fsm_state_encoding {13960969} STATE_READY {01000}
+
+fsm_state_encoding {13960969} STATE_WAIT_CRC {10000}
+
+fsm_registers {13960969} {current_state[4]}  {current_state[3]}  {current_state[2]}  {current_state[1]}  {current_state[0]} 
+
+fsm_encoding {2610301038} onehot
+
+fsm_state_encoding {2610301038} STATE_IDLE {000001}
+
+fsm_state_encoding {2610301038} STATE_WAIT {000010}
+
+fsm_state_encoding {2610301038} STATE_INC_HEAD_TAIL {000100}
+
+fsm_state_encoding {2610301038} STATE_RUN {001000}
+
+fsm_state_encoding {2610301038} STATE_RD_MEM_PUSH_FIFO {010000}
+
+fsm_state_encoding {2610301038} STATE_WR_MEM {100000}
+
+fsm_registers {2610301038} {current_state[5]}  {current_state[4]}  {current_state[3]}  {current_state[2]}  {current_state[1]}  {current_state[0]} 
+
+fsm_encoding {3114911497} sequential
+
+fsm_state_encoding {3114911497} 00 {00}
+
+fsm_state_encoding {3114911497} 01 {01}
+
+fsm_state_encoding {3114911497} 10 {10}
+
+fsm_registers {3114911497} {prev_state[1]}  {prev_state[0]} 
+
+fsm_encoding {3721102116} sequential
+
+fsm_state_encoding {3721102116} 00 {00}
+
+fsm_state_encoding {3721102116} 01 {01}
+
+fsm_state_encoding {3721102116} 10 {10}
+
+fsm_state_encoding {3721102116} 11 {11}
+
+fsm_registers {3721102116} {prev_state[1]}  {prev_state[0]} 
+
+fsm_encoding {4124702475} sequential
+
+fsm_state_encoding {4124702475} IDLE {00}
+
+fsm_state_encoding {4124702475} FORWARD_TRAINING {01}
+
+fsm_state_encoding {4124702475} ACCEPT_INPUT {10}
+
+fsm_state_encoding {4124702475} FORWARD_QUERY {11}
+
+fsm_registers {4124702475} {prev_state[1]}  {prev_state[0]} 
+
+fsm_encoding {2725502554} sequential
+
+fsm_state_encoding {2725502554} IDLE {00}
+
+fsm_state_encoding {2725502554} FIND_MIN_DIST {01}
+
+fsm_state_encoding {2725502554} OUTPUT_STABLE {10}
+
+fsm_registers {2725502554} {prev_state[1]}  {prev_state[0]} 
+
+fsm_encoding {4612801283} onehot
+
+fsm_state_encoding {4612801283} IDLE {00000000000001}
+
+fsm_state_encoding {4612801283} NEWPKT {00000000000010}
+
+fsm_state_encoding {4612801283} WAIT1 {00000000000100}
+
+fsm_state_encoding {4612801283} TYPEBIT {00000000001000}
+
+fsm_state_encoding {4612801283} HEADERBIT2 {00000000010000}
+
+fsm_state_encoding {4612801283} HEADERBIT1 {00000000100000}
+
+fsm_state_encoding {4612801283} WAIT2 {00000001000000}
+
+fsm_state_encoding {4612801283} DONE {00000010000000}
+
+fsm_state_encoding {4612801283} CRCBIT {00000100000000}
+
+fsm_state_encoding {4612801283} WAITc {00001000000000}
+
+fsm_state_encoding {4612801283} FIRSTBIT {00010000000000}
+
+fsm_state_encoding {4612801283} WAIT3 {00100000000000}
+
+fsm_state_encoding {4612801283} WAITn {01000000000000}
+
+fsm_state_encoding {4612801283} NEXTBIT {10000000000000}
+
+fsm_registers {4612801283} {current_state[13]}  {current_state[12]}  {current_state[11]}  {current_state[10]}  {current_state[9]}  {current_state[8]}  {current_state[7]}  {current_state[6]}  {current_state[5]}  {current_state[4]}  {current_state[3]}  {current_state[2]}  {current_state[1]}  {current_state[0]} 
+
+fsm_encoding {4712001202} onehot
+
+fsm_state_encoding {4712001202} STATE_IDLE {000001}
+
+fsm_state_encoding {4712001202} STATE_TX {000010}
+
+fsm_state_encoding {4712001202} STATE_TX_CRC {000100}
+
+fsm_state_encoding {4712001202} STATE_RST {001000}
+
+fsm_state_encoding {4712001202} STATE_RST_WAIT {010000}
+
+fsm_state_encoding {4712001202} STATE_RST_2 {100000}
+
+fsm_registers {4712001202} {current_state[5]}  {current_state[4]}  {current_state[3]}  {current_state[2]}  {current_state[1]}  {current_state[0]} 
+
+fsm_encoding {6116101611} onehot
+
+fsm_state_encoding {6116101611} STATE_IDLE {000000001}
+
+fsm_state_encoding {6116101611} STATE_HEADER {000000010}
+
+fsm_state_encoding {6116101611} STATE_OVERFLOW {000000100}
+
+fsm_state_encoding {6116101611} STATE_NM0 {000001000}
+
+fsm_state_encoding {6116101611} STATE_NM1 {000010000}
+
+fsm_state_encoding {6116101611} STATE_TOSS_PAD {000100000}
+
+fsm_state_encoding {6116101611} STATE_ACC_Z {001000000}
+
+fsm_state_encoding {6116101611} STATE_ACC_Y {010000000}
+
+fsm_state_encoding {6116101611} STATE_ACC_X {100000000}
+
+fsm_registers {6116101611} {current_state[8]}  {current_state[7]}  {current_state[6]}  {current_state[5]}  {current_state[4]}  {current_state[3]}  {current_state[2]}  {current_state[1]}  {current_state[0]} 

@@ -1,0 +1,22 @@
+##
+## PDMA BLOCK
+##
+
+# Enable
+write w cmam_if_0 0x0100 0x00000001
+
+waitns 50
+
+# Release address and read enable for pdma_sim
+#force sim:/cmam_tb/apb_addr 0 -cancel 1ns
+#force sim:/cmam_tb/apb_re 0 -cancel 1ns
+
+waitns 900
+
+# pdma_sim will take control of addr and rden at about this time
+
+set i 0
+loop i 0 400 1
+    waitns 5000
+endloop
+

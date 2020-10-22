@@ -1,0 +1,29 @@
+##
+## NM register write (NM1 is identical)
+##
+
+# Set up data
+write w cmam_if_0 n0d1 0x00000001
+write w cmam_if_0 n0d2 0x01234567
+# Send register write to NM0
+write w cmam_if_0 status 0x00001000
+
+# Make sure to wait long enough here for the NM to respond.
+# If he NM is sending data the ACK will wait until the ADC channel is clear.
+# 120us should work
+set i 0
+loop i 0 24 1
+    waitns 5000
+endloop
+
+# Read register address from ACK FIFO
+read w cmam_if_0 n0ack
+# Read register data from ACK FIFO
+read w cmam_if_0 n0ack
+
+# run 1ms
+set i 0
+loop i 0 200 1
+    waitns 5000
+endloop
+

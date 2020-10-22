@@ -1,0 +1,42 @@
+
+. Module name, SLE, CFG, ARI1, BUFFER, MACC, RAM1K18, RAM64X18, GLOBAL, IO
+. Mario_Libero, 46974, 25654, 19213, 0, 0, 28, 10, 7, 15
+.	. CoreAPB3_Z7, 0, 36, 0, 0, 0, 0, 0, 0, 0
+.	.	. CAPB3II, 0, 36, 0, 0, 0, 0, 0, 0, 0
+.	. Mario_Libero_CoreGPIO_0_CoreGPIO_Z8, 54, 122, 14, 0, 0, 0, 0, 0, 0
+.	. Mario_Libero_FCCC_0_FCCC, 0, 0, 0, 0, 0, 0, 0, 2, 0
+.	. Mario_Libero_MSS, 0, 4, 0, 0, 0, 0, 0, 1, 2
+.	. Mario_Libero_OSC_0_OSC, 0, 0, 0, 0, 0, 0, 0, 0, 0
+.	. cm_top, 46920, 25492, 19199, 0, 0, 28, 10, 2, 0
+.	.	. cm_if_apb_4s_3s, 20, 7, 0, 0, 0, 0, 0, 0, 0
+.	.	. nm_if, 46900, 25485, 19199, 0, 0, 28, 10, 2, 0
+.	.	.	. nm_channel, 46715, 25348, 19149, 0, 0, 28, 8, 2, 0
+.	.	.	.	. ack_datapath_4s_0_1_3_5_4_4s, 43, 48, 6, 0, 0, 0, 0, 0, 0
+.	.	.	.	. adc_datapath, 46601, 25179, 19102, 0, 0, 28, 8, 2, 0
+.	.	.	.	.	. ADCFIFO, 41, 19, 19, 0, 0, 1, 0, 0, 0
+.	.	.	.	.	.	. ADCFIFO_ADCFIFO_0_COREFIFO_Z1, 41, 19, 19, 0, 0, 1, 0, 0, 0
+.	.	.	.	.	.	.	. ADCFIFO_ADCFIFO_0_corefifo_sync_scntr_Z2, 21, 11, 19, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	. ADCFIFO_ADCFIFO_0_ram_wrapper_16s_16s_6_6_1s_1s_2s, 0, 0, 0, 0, 0, 1, 0, 0, 0
+.	.	.	.	.	.	.	.	. ADCFIFO_ADCFIFO_0_LSRAM_top, 0, 0, 0, 0, 0, 1, 0, 0, 0
+.	.	.	.	.	. ADCMEM_DP, 0, 16, 0, 0, 0, 0, 8, 0, 0
+.	.	.	.	.	. adc_frame_buffer, 2033, 1025, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	. adc_vector_compressor, 22, 95, 758, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	. hdc_top, 44505, 24024, 18325, 0, 0, 27, 0, 2, 0
+.	.	.	.	.	.	. associative_memory, 22142, 4087, 15, 0, 0, 0, 0, 1, 0
+.	.	.	.	.	.	. feature_encoder, 7417, 7821, 8647, 0, 0, 27, 0, 0, 0
+.	.	.	.	.	.	.	. fifo_960s_32s_5s, 1002, 1099, 0, 0, 0, 27, 0, 0, 0
+.	.	.	.	.	.	. spatial_encoder_N_pong, 3902, 4066, 2646, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	. cellular_automaton, 1000, 1001, 0, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	.	. spatial_accumulator, 1625, 3029, 1750, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. temporal_encoder_counter, 11013, 8044, 7000, 0, 0, 0, 0, 1, 0
+.	.	.	.	.	.	.	. bundle_counter, 7000, 6003, 7000, 0, 0, 0, 0, 1, 0
+.	.	.	.	. nmic_rx_Z3, 47, 44, 12, 0, 0, 0, 0, 0, 0
+.	.	.	.	. nmic_tx_4s_0_1_3_2_4_6_5_4s, 19, 72, 29, 0, 0, 0, 0, 0, 0
+.	.	.	.	. twoMHz_strobe, 5, 5, 0, 0, 0, 0, 0, 0, 0
+.	.	.	. nm_if_apb, 127, 93, 0, 0, 0, 0, 0, 0, 0
+.	.	.	. pdma_if_Z6, 58, 44, 50, 0, 0, 0, 2, 0, 0
+.	.	.	.	. PDMAFIFO, 47, 37, 50, 0, 0, 0, 2, 0, 0
+.	.	.	.	.	. PDMAFIFO_PDMAFIFO_0_COREFIFO_Z4, 47, 37, 50, 0, 0, 0, 2, 0, 0
+.	.	.	.	.	.	. PDMAFIFO_PDMAFIFO_0_corefifo_sync_Z5, 35, 21, 50, 0, 0, 0, 0, 0, 0
+.	.	.	.	.	.	. PDMAFIFO_PDMAFIFO_0_ram_wrapper_8s_16s_8_7_1s_1s_3s, 0, 12, 0, 0, 0, 0, 2, 0, 0
+.	.	.	.	.	.	.	. PDMAFIFO_PDMAFIFO_0_USRAM_top, 0, 12, 0, 0, 0, 0, 2, 0, 0

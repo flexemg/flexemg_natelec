@@ -1,0 +1,11 @@
+Microsemi Corporation - Microsemi Libero Software Release v11.8 SP3 (Version 11.8.3.6)
+
+Date      :  Tue Feb 19 01:54:55 2019
+Project   :  C:\Users\bwrc\Desktop\HyperFlexEG
+Component :  cm_top
+Family    :  SmartFusion2
+
+
+HDL source files for all Synthesis and Simulation tools:
+    C:/Users/bwrc/Desktop/HyperFlexEG/component/work/cm_top/cm_top.v
+

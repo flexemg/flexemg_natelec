@@ -1,0 +1,6 @@
+DESIGN=Mario_Libero
+DESDIR=C:\Users\flb.EECS\Desktop\mario_laptop_sf2_newarch\Mario_SF2_devbrd\designer\Mario_Libero/Mario_Libero_prbi
+FAM=PA4M
+DIE=PA4M5000_N
+PACKAGE=fg484
+NETLIST_TYPE=EDIF

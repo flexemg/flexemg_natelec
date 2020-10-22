@@ -1,0 +1,76 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/mysim_toplevel
+vCAPB3II
+Z1 !s110 1486515336
+!i10b 1
+!s100 ?J^^4eC>>XINW<;bF9fGi3
+IiHRjOCn;RNZ:^^NMUNP]?1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1480719733
+8C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vlog/core_obfuscated/coreapb3_muxptob3.v
+FC:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vlog/core_obfuscated/coreapb3_muxptob3.v
+Z4 L0 13
+Z5 OW;L;10.4c;61
+r1
+!s85 0
+31
+Z6 !s108 1486515336.000000
+!s107 C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vlog/core_obfuscated/coreapb3_muxptob3.v|
+!s90 -reportprogress|300|-vlog01compat|-work|COREAPB3_LIB|C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vlog/core_obfuscated/coreapb3_muxptob3.v|
+!s101 -O0
+!i113 1
+Z7 o-vlog01compat -work COREAPB3_LIB -O0
+n@c@a@p@b3@i@i
+vCAPB3O
+R1
+!i10b 1
+!s100 ZFE2SbA1S9l>>;^Sfb@m`2
+IjFSTbO@SSVW_72=B6;=VP2
+R2
+R0
+R3
+8C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vlog/core_obfuscated/coreapb3_iaddr_reg.v
+FC:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vlog/core_obfuscated/coreapb3_iaddr_reg.v
+L0 10
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vlog/core_obfuscated/coreapb3_iaddr_reg.v|
+!s90 -reportprogress|300|-vlog01compat|-work|COREAPB3_LIB|C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vlog/core_obfuscated/coreapb3_iaddr_reg.v|
+!s101 -O0
+!i113 1
+R7
+n@c@a@p@b3@o
+vCoreAPB3
+R1
+!i10b 1
+!s100 Wn]LO[oa[aQ<:HiS5BGej1
+Ib6TcLoO^>;TOYOIKc0Bok3
+R2
+R0
+R3
+8C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vlog/core_obfuscated/coreapb3.v
+FC:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vlog/core_obfuscated/coreapb3.v
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vlog/core_obfuscated/coreapb3.v|
+!s90 -reportprogress|300|-vlog01compat|-work|COREAPB3_LIB|C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vlog/core_obfuscated/coreapb3.v|
+!s101 -O0
+!i113 1
+R7
+n@core@a@p@b3

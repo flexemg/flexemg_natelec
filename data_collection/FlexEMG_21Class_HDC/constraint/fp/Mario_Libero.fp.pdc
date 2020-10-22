@@ -1,0 +1,27 @@
+# Microsemi Physical design constraints file
+
+# Version: v11.7 SP3 11.7.3.7
+
+# Design Name: Mario_Libero 
+
+# Input Netlist Format: EDIF 
+
+# Family: SmartFusion2 , Die: M2S060T , Package: 325 FCSBGA , Speed grade: STD 
+
+# Date generated: Tue Jun 27 12:30:58 2017 
+
+
+#
+# Local clock constraints
+#
+
+
+#
+# Region constraints
+#
+
+
+#
+# Core cell constraints
+#
+

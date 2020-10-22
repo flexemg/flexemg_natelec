@@ -1,0 +1,8 @@
+KEY IDE_DES_TOOL "Ide"
+KEY IDE_DES_ADB_PATH "C:\Users\flb.EECS\Desktop\mario_laptop_sf2_newarch\Mario_SF2_devbrd\designer\impl1\Mario_Libero_MSS.adb"
+LIST SOURCE_FILES
+ENDLIST
+LIST OPTIONAL_FILES
+ENDLIST
+LIST VCD_FILES
+ENDLIST

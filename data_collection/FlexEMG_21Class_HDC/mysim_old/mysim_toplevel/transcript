@@ -1,0 +1,1119 @@
+# Reading C:/Microsemi/Libero_SoC_v11.7/Model/tcl/vsim/pref.tcl
+do init.do
+# --- Using Windows Actel DirectCore AMBA BFM compiler
+# --- Compiling Actel DirectCore AMBA BFM source files ...
+# ** Error: couldn't execute ".\bfmtovec.exe": no such file or directory
+# Error in macro ./init.do line 4
+# couldn't execute ".\bfmtovec.exe": no such file or directory
+#     while executing
+# "exec ./bfmtovec.exe -in ./coreapb3_usertb_master.bfm -out ./coreapb3_usertb_master.vec > ./bfmtovec_compile.log"
+#     ("eval" body line 1)
+#     invoked from within
+# "eval $cmd1"
+#     (file "C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/simulation/bfmtovec_compile.tcl" line 26)
+#     invoked from within
+# "source "${PROJECT_DIR}/simulation/bfmtovec_compile.tcl""
+do init.do
+# INFO: Simulation library presynth already exists
+# Model Technology ModelSim Microsemi vmap 10.4c Lib Mapping Utility 2015.07 Aug 12 2015
+# vmap presynth presynth 
+# Modifying modelsim.ini
+# Model Technology ModelSim Microsemi vmap 10.4c Lib Mapping Utility 2015.07 Aug 12 2015
+# vmap SmartFusion2 C:/Microsemi/Libero_SoC_v11.7///Designer//lib//modelsim//precompiled/vlog/SmartFusion2 
+# Modifying modelsim.ini
+# Model Technology ModelSim Microsemi vmap 10.4c Lib Mapping Utility 2015.07 Aug 12 2015
+# vmap COREAPB3_LIB COREAPB3_LIB 
+# Modifying modelsim.ini
+# Model Technology ModelSim Microsemi vmap 10.4c Lib Mapping Utility 2015.07 Aug 12 2015
+# vmap CORESPI_LIB CORESPI_LIB 
+# Modifying modelsim.ini
+# Model Technology ModelSim Microsemi vlog 10.4c Compiler 2015.07 Aug 12 2015
+# Start time: 16:55:32 on Feb 07,2017
+# vlog -reportprogress 300 -vlog01compat -work presynth C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/hdl/cmam.v 
+# -- Compiling module cmam
+# 
+# Top level modules:
+# 	cmam
+# End time: 16:55:32 on Feb 07,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.4c Compiler 2015.07 Aug 12 2015
+# Start time: 16:55:32 on Feb 07,2017
+# vlog -reportprogress 300 -vlog01compat -work presynth C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/hdl/nmic_if.v 
+# -- Compiling module nmic_if
+# 
+# Top level modules:
+# 	nmic_if
+# End time: 16:55:32 on Feb 07,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.4c Compiler 2015.07 Aug 12 2015
+# Start time: 16:55:32 on Feb 07,2017
+# vlog -reportprogress 300 -vlog01compat -work presynth C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/hdl/am.v 
+# -- Compiling module am
+# 
+# Top level modules:
+# 	am
+# End time: 16:55:32 on Feb 07,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.4c Compiler 2015.07 Aug 12 2015
+# Start time: 16:55:32 on Feb 07,2017
+# vlog -reportprogress 300 -vlog01compat -work presynth C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/hdl/cm_demux.v 
+# -- Compiling module cm_demux
+# 
+# Top level modules:
+# 	cm_demux
+# End time: 16:55:32 on Feb 07,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.4c Compiler 2015.07 Aug 12 2015
+# Start time: 16:55:32 on Feb 07,2017
+# vlog -reportprogress 300 -vlog01compat -work presynth C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/hdl/nm_channel.v 
+# -- Compiling module nm_channel
+# 
+# Top level modules:
+# 	nm_channel
+# End time: 16:55:32 on Feb 07,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.4c Compiler 2015.07 Aug 12 2015
+# Start time: 16:55:32 on Feb 07,2017
+# vlog -reportprogress 300 -vlog01compat -work presynth C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/hdl/nmic_rx.v 
+# -- Compiling module nmic_rx
+# 
+# Top level modules:
+# 	nmic_rx
+# End time: 16:55:32 on Feb 07,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.4c Compiler 2015.07 Aug 12 2015
+# Start time: 16:55:32 on Feb 07,2017
+# vlog -reportprogress 300 -vlog01compat -work presynth C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/hdl/nmic_tx.v 
+# -- Compiling module nmic_tx
+# 
+# Top level modules:
+# 	nmic_tx
+# End time: 16:55:32 on Feb 07,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.4c Compiler 2015.07 Aug 12 2015
+# Start time: 16:55:32 on Feb 07,2017
+# vlog -reportprogress 300 -vlog01compat -work presynth C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/hdl/ack_datapath.v 
+# -- Compiling module ack_datapath
+# 
+# Top level modules:
+# 	ack_datapath
+# End time: 16:55:33 on Feb 07,2017, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.4c Compiler 2015.07 Aug 12 2015
+# Start time: 16:55:33 on Feb 07,2017
+# vlog -reportprogress 300 -vlog01compat -work presynth C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/hdl/adc_datapath.v 
+# -- Compiling module adc_datapath
+# 
+# Top level modules:
+# 	adc_datapath
+# End time: 16:55:33 on Feb 07,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.4c Compiler 2015.07 Aug 12 2015
+# Start time: 16:55:33 on Feb 07,2017
+# vlog -reportprogress 300 -vlog01compat -work presynth C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/hdl/ack_deserializer.v 
+# -- Compiling module ack_deserializer
+# 
+# Top level modules:
+# 	ack_deserializer
+# End time: 16:55:33 on Feb 07,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.4c Compiler 2015.07 Aug 12 2015
+# Start time: 16:55:33 on Feb 07,2017
+# vlog -reportprogress 300 -vlog01compat -work presynth C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/ADCFIFO/ADCFIFO.v 
+# -- Compiling module ADCFIFO
+# 
+# Top level modules:
+# 	ADCFIFO
+# End time: 16:55:33 on Feb 07,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.4c Compiler 2015.07 Aug 12 2015
+# Start time: 16:55:33 on Feb 07,2017
+# vlog -reportprogress 300 -vlog01compat -work presynth C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/ADCFIFO/ADCFIFO_0/rtl/vlog/core/corefifo_doubleSync.v 
+# -- Compiling module ADCFIFO_ADCFIFO_0_corefifo_doubleSync
+# 
+# Top level modules:
+# 	ADCFIFO_ADCFIFO_0_corefifo_doubleSync
+# End time: 16:55:33 on Feb 07,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.4c Compiler 2015.07 Aug 12 2015
+# Start time: 16:55:33 on Feb 07,2017
+# vlog -reportprogress 300 -vlog01compat -work presynth C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/ADCFIFO/ADCFIFO_0/rtl/vlog/core/corefifo_grayToBinConv.v 
+# -- Compiling module ADCFIFO_ADCFIFO_0_corefifo_grayToBinConv
+# 
+# Top level modules:
+# 	ADCFIFO_ADCFIFO_0_corefifo_grayToBinConv
+# End time: 16:55:33 on Feb 07,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.4c Compiler 2015.07 Aug 12 2015
+# Start time: 16:55:33 on Feb 07,2017
+# vlog -reportprogress 300 -vlog01compat -work presynth C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/ADCFIFO/ADCFIFO_0/rtl/vlog/core/corefifo_async.v 
+# -- Compiling module ADCFIFO_ADCFIFO_0_corefifo_async
+# 
+# Top level modules:
+# 	ADCFIFO_ADCFIFO_0_corefifo_async
+# End time: 16:55:33 on Feb 07,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.4c Compiler 2015.07 Aug 12 2015
+# Start time: 16:55:33 on Feb 07,2017
+# vlog -reportprogress 300 -vlog01compat -work presynth C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/ADCFIFO/ADCFIFO_0/rtl/vlog/core/corefifo_fwft.v 
+# -- Compiling module ADCFIFO_ADCFIFO_0_corefifo_fwft
+# 
+# Top level modules:
+# 	ADCFIFO_ADCFIFO_0_corefifo_fwft
+# End time: 16:55:33 on Feb 07,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.4c Compiler 2015.07 Aug 12 2015
+# Start time: 16:55:33 on Feb 07,2017
+# vlog -reportprogress 300 -vlog01compat -work presynth C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/ADCFIFO/ADCFIFO_0/rtl/vlog/core/corefifo_sync.v 
+# -- Compiling module ADCFIFO_ADCFIFO_0_corefifo_sync
+# 
+# Top level modules:
+# 	ADCFIFO_ADCFIFO_0_corefifo_sync
+# End time: 16:55:33 on Feb 07,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.4c Compiler 2015.07 Aug 12 2015
+# Start time: 16:55:33 on Feb 07,2017
+# vlog -reportprogress 300 -vlog01compat -work presynth C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/ADCFIFO/ADCFIFO_0/rtl/vlog/core/corefifo_sync_scntr.v 
+# -- Compiling module ADCFIFO_ADCFIFO_0_corefifo_sync_scntr
+# 
+# Top level modules:
+# 	ADCFIFO_ADCFIFO_0_corefifo_sync_scntr
+# End time: 16:55:33 on Feb 07,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.4c Compiler 2015.07 Aug 12 2015
+# Start time: 16:55:33 on Feb 07,2017
+# vlog -reportprogress 300 -vlog01compat -work presynth C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/ADCFIFO/ADCFIFO_0/rtl/vlog/core/ADCFIFO_ADCFIFO_0_LSRAM_top.v 
+# -- Compiling module ADCFIFO_ADCFIFO_0_LSRAM_top
+# 
+# Top level modules:
+# 	ADCFIFO_ADCFIFO_0_LSRAM_top
+# End time: 16:55:33 on Feb 07,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.4c Compiler 2015.07 Aug 12 2015
+# Start time: 16:55:33 on Feb 07,2017
+# vlog -reportprogress 300 -vlog01compat -work presynth C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/ADCFIFO/ADCFIFO_0/rtl/vlog/core/ADCFIFO_ADCFIFO_0_ram_wrapper.v 
+# -- Compiling module ADCFIFO_ADCFIFO_0_ram_wrapper
+# 
+# Top level modules:
+# 	ADCFIFO_ADCFIFO_0_ram_wrapper
+# End time: 16:55:33 on Feb 07,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.4c Compiler 2015.07 Aug 12 2015
+# Start time: 16:55:33 on Feb 07,2017
+# vlog -reportprogress 300 -vlog01compat -work presynth C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/ADCFIFO/ADCFIFO_0/rtl/vlog/core/COREFIFO.v 
+# -- Compiling module ADCFIFO_ADCFIFO_0_COREFIFO
+# 
+# Top level modules:
+# 	ADCFIFO_ADCFIFO_0_COREFIFO
+# End time: 16:55:33 on Feb 07,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.4c Compiler 2015.07 Aug 12 2015
+# Start time: 16:55:33 on Feb 07,2017
+# vlog -reportprogress 300 -vlog01compat -work presynth C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/ACKFIFO/ACKFIFO.v 
+# -- Compiling module ACKFIFO
+# 
+# Top level modules:
+# 	ACKFIFO
+# End time: 16:55:33 on Feb 07,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.4c Compiler 2015.07 Aug 12 2015
+# Start time: 16:55:33 on Feb 07,2017
+# vlog -reportprogress 300 -vlog01compat -work presynth C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/ACKFIFO/ACKFIFO_0/rtl/vlog/core/corefifo_doubleSync.v 
+# -- Compiling module ACKFIFO_ACKFIFO_0_corefifo_doubleSync
+# 
+# Top level modules:
+# 	ACKFIFO_ACKFIFO_0_corefifo_doubleSync
+# End time: 16:55:33 on Feb 07,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.4c Compiler 2015.07 Aug 12 2015
+# Start time: 16:55:33 on Feb 07,2017
+# vlog -reportprogress 300 -vlog01compat -work presynth C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/ACKFIFO/ACKFIFO_0/rtl/vlog/core/corefifo_grayToBinConv.v 
+# -- Compiling module ACKFIFO_ACKFIFO_0_corefifo_grayToBinConv
+# 
+# Top level modules:
+# 	ACKFIFO_ACKFIFO_0_corefifo_grayToBinConv
+# End time: 16:55:34 on Feb 07,2017, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.4c Compiler 2015.07 Aug 12 2015
+# Start time: 16:55:34 on Feb 07,2017
+# vlog -reportprogress 300 -vlog01compat -work presynth C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/ACKFIFO/ACKFIFO_0/rtl/vlog/core/corefifo_async.v 
+# -- Compiling module ACKFIFO_ACKFIFO_0_corefifo_async
+# 
+# Top level modules:
+# 	ACKFIFO_ACKFIFO_0_corefifo_async
+# End time: 16:55:34 on Feb 07,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.4c Compiler 2015.07 Aug 12 2015
+# Start time: 16:55:34 on Feb 07,2017
+# vlog -reportprogress 300 -vlog01compat -work presynth C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/ACKFIFO/ACKFIFO_0/rtl/vlog/core/corefifo_fwft.v 
+# -- Compiling module ACKFIFO_ACKFIFO_0_corefifo_fwft
+# 
+# Top level modules:
+# 	ACKFIFO_ACKFIFO_0_corefifo_fwft
+# End time: 16:55:34 on Feb 07,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.4c Compiler 2015.07 Aug 12 2015
+# Start time: 16:55:34 on Feb 07,2017
+# vlog -reportprogress 300 -vlog01compat -work presynth C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/ACKFIFO/ACKFIFO_0/rtl/vlog/core/corefifo_sync.v 
+# -- Compiling module ACKFIFO_ACKFIFO_0_corefifo_sync
+# 
+# Top level modules:
+# 	ACKFIFO_ACKFIFO_0_corefifo_sync
+# End time: 16:55:34 on Feb 07,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.4c Compiler 2015.07 Aug 12 2015
+# Start time: 16:55:34 on Feb 07,2017
+# vlog -reportprogress 300 -vlog01compat -work presynth C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/ACKFIFO/ACKFIFO_0/rtl/vlog/core/corefifo_sync_scntr.v 
+# -- Compiling module ACKFIFO_ACKFIFO_0_corefifo_sync_scntr
+# 
+# Top level modules:
+# 	ACKFIFO_ACKFIFO_0_corefifo_sync_scntr
+# End time: 16:55:34 on Feb 07,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.4c Compiler 2015.07 Aug 12 2015
+# Start time: 16:55:34 on Feb 07,2017
+# vlog -reportprogress 300 -vlog01compat -work presynth C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/ACKFIFO/ACKFIFO_0/rtl/vlog/core/ACKFIFO_ACKFIFO_0_USRAM_top.v 
+# -- Compiling module ACKFIFO_ACKFIFO_0_USRAM_top
+# 
+# Top level modules:
+# 	ACKFIFO_ACKFIFO_0_USRAM_top
+# End time: 16:55:34 on Feb 07,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.4c Compiler 2015.07 Aug 12 2015
+# Start time: 16:55:34 on Feb 07,2017
+# vlog -reportprogress 300 -vlog01compat -work presynth C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/ACKFIFO/ACKFIFO_0/rtl/vlog/core/ACKFIFO_ACKFIFO_0_ram_wrapper.v 
+# -- Compiling module ACKFIFO_ACKFIFO_0_ram_wrapper
+# 
+# Top level modules:
+# 	ACKFIFO_ACKFIFO_0_ram_wrapper
+# End time: 16:55:34 on Feb 07,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.4c Compiler 2015.07 Aug 12 2015
+# Start time: 16:55:34 on Feb 07,2017
+# vlog -reportprogress 300 -vlog01compat -work presynth C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/ACKFIFO/ACKFIFO_0/rtl/vlog/core/COREFIFO.v 
+# -- Compiling module ACKFIFO_ACKFIFO_0_COREFIFO
+# 
+# Top level modules:
+# 	ACKFIFO_ACKFIFO_0_COREFIFO
+# End time: 16:55:34 on Feb 07,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.4c Compiler 2015.07 Aug 12 2015
+# Start time: 16:55:34 on Feb 07,2017
+# vlog -reportprogress 300 -vlog01compat -work presynth C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/hdl/acc_if.v 
+# -- Compiling module acc_if
+# 
+# Top level modules:
+# 	acc_if
+# End time: 16:55:34 on Feb 07,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.4c Compiler 2015.07 Aug 12 2015
+# Start time: 16:55:34 on Feb 07,2017
+# vlog -reportprogress 300 -vlog01compat -work presynth C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/hdl/acc_irq_proc.v 
+# -- Compiling module acc_irq_proc
+# 
+# Top level modules:
+# 	acc_irq_proc
+# End time: 16:55:34 on Feb 07,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.4c Compiler 2015.07 Aug 12 2015
+# Start time: 16:55:34 on Feb 07,2017
+# vlog -reportprogress 300 -vlog01compat -work presynth C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/hdl/acc_apb_proc.v 
+# -- Compiling module acc_apb_proc
+# ** Warning: C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/hdl/acc_apb_proc.v(213): (vlog-2182) 'rd_pending' might be read before written in always_comb or always @* block.
+# 
+# 
+# Top level modules:
+# 	acc_apb_proc
+# End time: 16:55:34 on Feb 07,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim Microsemi vlog 10.4c Compiler 2015.07 Aug 12 2015
+# Start time: 16:55:34 on Feb 07,2017
+# vlog -reportprogress 300 -vlog01compat -work presynth C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/hdl/cmam_if_wrap.v 
+# -- Compiling module cmam_if_wrap
+# 
+# Top level modules:
+# 	cmam_if_wrap
+# End time: 16:55:34 on Feb 07,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.4c Compiler 2015.07 Aug 12 2015
+# Start time: 16:55:34 on Feb 07,2017
+# vlog -reportprogress 300 -vlog01compat -work presynth C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/hdl/pdma_if.v 
+# -- Compiling module pdma_if
+# 
+# Top level modules:
+# 	pdma_if
+# End time: 16:55:34 on Feb 07,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.4c Compiler 2015.07 Aug 12 2015
+# Start time: 16:55:34 on Feb 07,2017
+# vlog -reportprogress 300 -vlog01compat -work presynth C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/PDMAFIFO/PDMAFIFO.v 
+# -- Compiling module PDMAFIFO
+# 
+# Top level modules:
+# 	PDMAFIFO
+# End time: 16:55:34 on Feb 07,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.4c Compiler 2015.07 Aug 12 2015
+# Start time: 16:55:35 on Feb 07,2017
+# vlog -reportprogress 300 -vlog01compat -work presynth C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/PDMAFIFO/PDMAFIFO_0/rtl/vlog/core/PDMAFIFO_PDMAFIFO_0_USRAM_top.v 
+# -- Compiling module PDMAFIFO_PDMAFIFO_0_USRAM_top
+# 
+# Top level modules:
+# 	PDMAFIFO_PDMAFIFO_0_USRAM_top
+# End time: 16:55:35 on Feb 07,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.4c Compiler 2015.07 Aug 12 2015
+# Start time: 16:55:35 on Feb 07,2017
+# vlog -reportprogress 300 -vlog01compat -work presynth C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/PDMAFIFO/PDMAFIFO_0/rtl/vlog/core/PDMAFIFO_PDMAFIFO_0_ram_wrapper.v 
+# -- Compiling module PDMAFIFO_PDMAFIFO_0_ram_wrapper
+# 
+# Top level modules:
+# 	PDMAFIFO_PDMAFIFO_0_ram_wrapper
+# End time: 16:55:35 on Feb 07,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.4c Compiler 2015.07 Aug 12 2015
+# Start time: 16:55:35 on Feb 07,2017
+# vlog -reportprogress 300 -vlog01compat -work presynth C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/PDMAFIFO/PDMAFIFO_0/rtl/vlog/core/COREFIFO.v 
+# -- Compiling module PDMAFIFO_PDMAFIFO_0_COREFIFO
+# 
+# Top level modules:
+# 	PDMAFIFO_PDMAFIFO_0_COREFIFO
+# End time: 16:55:35 on Feb 07,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.4c Compiler 2015.07 Aug 12 2015
+# Start time: 16:55:35 on Feb 07,2017
+# vlog -reportprogress 300 -vlog01compat -work presynth C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/PDMAFIFO/PDMAFIFO_0/rtl/vlog/core/corefifo_async.v 
+# -- Compiling module PDMAFIFO_PDMAFIFO_0_corefifo_async
+# 
+# Top level modules:
+# 	PDMAFIFO_PDMAFIFO_0_corefifo_async
+# End time: 16:55:35 on Feb 07,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.4c Compiler 2015.07 Aug 12 2015
+# Start time: 16:55:35 on Feb 07,2017
+# vlog -reportprogress 300 -vlog01compat -work presynth C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/PDMAFIFO/PDMAFIFO_0/rtl/vlog/core/corefifo_doubleSync.v 
+# -- Compiling module PDMAFIFO_PDMAFIFO_0_corefifo_doubleSync
+# 
+# Top level modules:
+# 	PDMAFIFO_PDMAFIFO_0_corefifo_doubleSync
+# End time: 16:55:35 on Feb 07,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.4c Compiler 2015.07 Aug 12 2015
+# Start time: 16:55:35 on Feb 07,2017
+# vlog -reportprogress 300 -vlog01compat -work presynth C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/PDMAFIFO/PDMAFIFO_0/rtl/vlog/core/corefifo_fwft.v 
+# -- Compiling module PDMAFIFO_PDMAFIFO_0_corefifo_fwft
+# 
+# Top level modules:
+# 	PDMAFIFO_PDMAFIFO_0_corefifo_fwft
+# End time: 16:55:35 on Feb 07,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.4c Compiler 2015.07 Aug 12 2015
+# Start time: 16:55:35 on Feb 07,2017
+# vlog -reportprogress 300 -vlog01compat -work presynth C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/PDMAFIFO/PDMAFIFO_0/rtl/vlog/core/corefifo_grayToBinConv.v 
+# -- Compiling module PDMAFIFO_PDMAFIFO_0_corefifo_grayToBinConv
+# 
+# Top level modules:
+# 	PDMAFIFO_PDMAFIFO_0_corefifo_grayToBinConv
+# End time: 16:55:36 on Feb 07,2017, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.4c Compiler 2015.07 Aug 12 2015
+# Start time: 16:55:36 on Feb 07,2017
+# vlog -reportprogress 300 -vlog01compat -work presynth C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/PDMAFIFO/PDMAFIFO_0/rtl/vlog/core/corefifo_sync.v 
+# -- Compiling module PDMAFIFO_PDMAFIFO_0_corefifo_sync
+# 
+# Top level modules:
+# 	PDMAFIFO_PDMAFIFO_0_corefifo_sync
+# End time: 16:55:36 on Feb 07,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.4c Compiler 2015.07 Aug 12 2015
+# Start time: 16:55:36 on Feb 07,2017
+# vlog -reportprogress 300 -vlog01compat -work presynth C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/PDMAFIFO/PDMAFIFO_0/rtl/vlog/core/corefifo_sync_scntr.v 
+# -- Compiling module PDMAFIFO_PDMAFIFO_0_corefifo_sync_scntr
+# 
+# Top level modules:
+# 	PDMAFIFO_PDMAFIFO_0_corefifo_sync_scntr
+# End time: 16:55:36 on Feb 07,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.4c Compiler 2015.07 Aug 12 2015
+# Start time: 16:55:36 on Feb 07,2017
+# vlog -reportprogress 300 -vlog01compat -work COREAPB3_LIB C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vlog/core_obfuscated/coreapb3.v 
+# -- Compiling module CoreAPB3
+# 
+# Top level modules:
+# 	CoreAPB3
+# End time: 16:55:36 on Feb 07,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.4c Compiler 2015.07 Aug 12 2015
+# Start time: 16:55:36 on Feb 07,2017
+# vlog -reportprogress 300 -vlog01compat -work COREAPB3_LIB C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vlog/core_obfuscated/coreapb3_iaddr_reg.v 
+# -- Compiling module CAPB3O
+# 
+# Top level modules:
+# 	CAPB3O
+# End time: 16:55:36 on Feb 07,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.4c Compiler 2015.07 Aug 12 2015
+# Start time: 16:55:36 on Feb 07,2017
+# vlog -reportprogress 300 -vlog01compat -work COREAPB3_LIB C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vlog/core_obfuscated/coreapb3_muxptob3.v 
+# -- Compiling module CAPB3II
+# 
+# Top level modules:
+# 	CAPB3II
+# End time: 16:55:36 on Feb 07,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.4c Compiler 2015.07 Aug 12 2015
+# Start time: 16:55:36 on Feb 07,2017
+# vlog -reportprogress 300 -vlog01compat -work presynth C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/Actel/DirectCore/CoreInterrupt/1.1.101/rtl/verilog/o/CoreInterrupt.v 
+# -- Compiling module CoreInterrupt
+# 
+# Top level modules:
+# 	CoreInterrupt
+# End time: 16:55:36 on Feb 07,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.4c Compiler 2015.07 Aug 12 2015
+# Start time: 16:55:36 on Feb 07,2017
+# vlog -reportprogress 300 -vlog01compat -work presynth C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/Actel/SgCore/OSC/2.0.101/osc_comps.v 
+# -- Compiling module RCOSC_1MHZ
+# -- Compiling module RCOSC_25_50MHZ
+# -- Compiling module XTLOSC
+# -- Compiling module RCOSC_1MHZ_FAB
+# -- Compiling module RCOSC_25_50MHZ_FAB
+# -- Compiling module XTLOSC_FAB
+# 
+# Top level modules:
+# 	RCOSC_1MHZ
+# 	RCOSC_25_50MHZ
+# 	XTLOSC
+# 	RCOSC_1MHZ_FAB
+# 	RCOSC_25_50MHZ_FAB
+# 	XTLOSC_FAB
+# End time: 16:55:36 on Feb 07,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.4c Compiler 2015.07 Aug 12 2015
+# Start time: 16:55:36 on Feb 07,2017
+# vlog -reportprogress 300 -vlog01compat -work presynth C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/Actel/SgCore/OSC/2.0.101/osc_comps_pre.v 
+# -- Compiling module RCOSC_1MHZ
+# -- Compiling module RCOSC_25_50MHZ
+# -- Compiling module XTLOSC
+# -- Compiling module RCOSC_1MHZ_FAB
+# -- Compiling module RCOSC_25_50MHZ_FAB
+# -- Compiling module XTLOSC_FAB
+# 
+# Top level modules:
+# 	RCOSC_1MHZ
+# 	RCOSC_25_50MHZ
+# 	XTLOSC
+# 	RCOSC_1MHZ_FAB
+# 	RCOSC_25_50MHZ_FAB
+# 	XTLOSC_FAB
+# End time: 16:55:36 on Feb 07,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.4c Compiler 2015.07 Aug 12 2015
+# Start time: 16:55:36 on Feb 07,2017
+# vlog -reportprogress 300 -vlog01compat -work presynth C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/Mario_Libero/FCCC_0/Mario_Libero_FCCC_0_FCCC.v 
+# -- Compiling module Mario_Libero_FCCC_0_FCCC
+# 
+# Top level modules:
+# 	Mario_Libero_FCCC_0_FCCC
+# End time: 16:55:36 on Feb 07,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.4c Compiler 2015.07 Aug 12 2015
+# Start time: 16:55:36 on Feb 07,2017
+# vlog -reportprogress 300 -vlog01compat -work presynth C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/Mario_Libero/Mario_Libero.v 
+# -- Compiling module Mario_Libero
+# 
+# Top level modules:
+# 	Mario_Libero
+# End time: 16:55:37 on Feb 07,2017, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.4c Compiler 2015.07 Aug 12 2015
+# Start time: 16:55:37 on Feb 07,2017
+# vlog -reportprogress 300 -vlog01compat -work presynth C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/Mario_Libero/OSC_0/Mario_Libero_OSC_0_OSC.v 
+# -- Compiling module Mario_Libero_OSC_0_OSC
+# 
+# Top level modules:
+# 	Mario_Libero_OSC_0_OSC
+# End time: 16:55:37 on Feb 07,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.4c Compiler 2015.07 Aug 12 2015
+# Start time: 16:55:37 on Feb 07,2017
+# vlog -reportprogress 300 -vlog01compat -work presynth C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/Mario_Libero_MSS/Mario_Libero_MSS.v 
+# -- Compiling module Mario_Libero_MSS
+# 
+# Top level modules:
+# 	Mario_Libero_MSS
+# End time: 16:55:37 on Feb 07,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.4c Compiler 2015.07 Aug 12 2015
+# Start time: 16:55:37 on Feb 07,2017
+# vlog -reportprogress 300 -vlog01compat -work presynth C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/Mario_Libero_MSS/Mario_Libero_MSS_pre.v 
+# -- Compiling module MSS_050
+# 
+# Top level modules:
+# 	MSS_050
+# End time: 16:55:37 on Feb 07,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.4c Compiler 2015.07 Aug 12 2015
+# Start time: 16:55:37 on Feb 07,2017
+# vlog -reportprogress 300 -vlog01compat -work presynth C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/Mario_Libero_MSS/Mario_Libero_MSS_syn.v 
+# -- Compiling module MSS_050
+# 
+# Top level modules:
+# 	MSS_050
+# End time: 16:55:37 on Feb 07,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.4c Compiler 2015.07 Aug 12 2015
+# Start time: 16:55:37 on Feb 07,2017
+# vlog -reportprogress 300 "+incdir+C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/stimulus" -vlog01compat -work presynth C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/hdl/acc_sim.v 
+# -- Compiling module acc_sim
+# 
+# Top level modules:
+# 	acc_sim
+# End time: 16:55:37 on Feb 07,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.4c Compiler 2015.07 Aug 12 2015
+# Start time: 16:55:37 on Feb 07,2017
+# vlog -reportprogress 300 "+incdir+C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/stimulus" -vlog01compat -work presynth C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/hdl/nm_sim.v 
+# -- Compiling module nm_sim
+# 
+# Top level modules:
+# 	nm_sim
+# End time: 16:55:37 on Feb 07,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.4c Compiler 2015.07 Aug 12 2015
+# Start time: 16:55:37 on Feb 07,2017
+# vlog -reportprogress 300 "+incdir+C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/stimulus" -vlog01compat -work presynth C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/hdl/nm_sim_adc_gen.v 
+# -- Compiling module nm_sim_adc_gen
+# 
+# Top level modules:
+# 	nm_sim_adc_gen
+# End time: 16:55:37 on Feb 07,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.4c Compiler 2015.07 Aug 12 2015
+# Start time: 16:55:37 on Feb 07,2017
+# vlog -reportprogress 300 "+incdir+C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/stimulus" -vlog01compat -work presynth C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/hdl/nm_sim_cmd_and_reg.v 
+# -- Compiling module nm_sim_cmd_and_reg
+# 
+# Top level modules:
+# 	nm_sim_cmd_and_reg
+# End time: 16:55:37 on Feb 07,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.4c Compiler 2015.07 Aug 12 2015
+# Start time: 16:55:37 on Feb 07,2017
+# vlog -reportprogress 300 "+incdir+C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/stimulus" -vlog01compat -work presynth C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/stimulus/toplevel_tb.v 
+# -- Compiling module toplevel_tb
+# 
+# Top level modules:
+# 	toplevel_tb
+# End time: 16:55:37 on Feb 07,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -L SmartFusion2 -L presynth -L COREAPB3_LIB -L CORESPI_LIB -t 1fs presynth.toplevel_tb 
+# Start time: 16:55:37 on Feb 07,2017
+# //  ModelSim Microsemi 10.4c Aug 12 2015 
+# //
+# //  Copyright 1991-2015 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //  THIS DOCUMENT CONTAINS TRADE SECRETS AND COMMERCIAL OR FINANCIAL
+# //  INFORMATION THAT ARE PRIVILEGED, CONFIDENTIAL, AND EXEMPT FROM
+# //  DISCLOSURE UNDER THE FREEDOM OF INFORMATION ACT, 5 U.S.C. SECTION 552.
+# //  FURTHERMORE, THIS INFORMATION IS PROHIBITED FROM DISCLOSURE UNDER
+# //  THE TRADE SECRETS ACT, 18 U.S.C. SECTION 1905.
+# //
+# Loading presynth.toplevel_tb
+# Loading presynth.Mario_Libero
+# Loading presynth.acc_sim
+# Loading presynth.cmam_if_wrap
+# Loading presynth.cmam
+# Loading presynth.nmic_if
+# Loading presynth.cm_demux
+# Loading presynth.nm_channel
+# Loading presynth.nmic_rx
+# Loading presynth.adc_datapath
+# Loading presynth.ADCFIFO
+# Loading presynth.ADCFIFO_ADCFIFO_0_COREFIFO
+# Loading presynth.ack_datapath
+# Loading presynth.ack_deserializer
+# Loading presynth.ACKFIFO
+# Loading presynth.ACKFIFO_ACKFIFO_0_COREFIFO
+# Loading presynth.nmic_tx
+# Loading presynth.pdma_if
+# Loading presynth.PDMAFIFO
+# Loading presynth.PDMAFIFO_PDMAFIFO_0_COREFIFO
+# Loading presynth.am
+# Loading presynth.acc_if
+# Loading presynth.acc_apb_proc
+# Loading presynth.acc_irq_proc
+# Loading COREAPB3_LIB.CoreAPB3
+# Loading COREAPB3_LIB.CAPB3II
+# Loading presynth.Mario_Libero_FCCC_0_FCCC
+# Loading SmartFusion2.VCC
+# Loading SmartFusion2.GND
+# Loading SmartFusion2.CLKINT
+# Loading SmartFusion2.CCC
+# Loading SmartFusion2.CCC_PLL
+# Loading SmartFusion2.ABISCB82
+# Loading SmartFusion2.ABI_PLL_FRONT
+# Loading SmartFusion2.Divide_2
+# Loading SmartFusion2.ABI_PHASE
+# Loading SmartFusion2.CCC_FB_DELAY
+# Loading SmartFusion2.CCC_DELAY
+# Loading SmartFusion2.CCC_RF_DELAY
+# Loading SmartFusion2.CCC_RF_DIV
+# Loading SmartFusion2.Freq_Divider
+# Loading SmartFusion2.Even_Divider
+# Loading SmartFusion2.Odd_Divider
+# Loading SmartFusion2.CCC_FB_DIV
+# Loading SmartFusion2.CCC_RF_MUX
+# Loading SmartFusion2.CCC_FB_MUX
+# Loading SmartFusion2.CCC_GPD0
+# Loading SmartFusion2.CCC_GPD
+# Loading SmartFusion2.CCC_GPD1
+# Loading SmartFusion2.CCC_GPD2
+# Loading SmartFusion2.CCC_GPD3
+# Loading SmartFusion2.CCC_SYNCB_GEN
+# Loading SmartFusion2.RSTN_SYNC
+# Loading SmartFusion2.SYNCGEN_CNT14
+# Loading SmartFusion2.CCC_GPD_MUX0
+# Loading SmartFusion2.CCC_GPD_MUX
+# Loading SmartFusion2.CCC_GPD_MUX1
+# Loading SmartFusion2.CCC_GPD_MUX2
+# Loading SmartFusion2.CCC_GPD_MUX3
+# Loading SmartFusion2.CCC_NGMUX0
+# Loading SmartFusion2.CCC_NGMUX
+# Loading SmartFusion2.CCC_NGPREMUX
+# Loading SmartFusion2.CCC_NGMUX1
+# Loading SmartFusion2.CCC_NGMUX2
+# Loading SmartFusion2.CCC_NGMUX3
+# Loading SmartFusion2.CCC_CONFIG
+# Loading SmartFusion2.INV
+# Loading presynth.Mario_Libero_MSS
+# Loading SmartFusion2.INBUF
+# Loading SmartFusion2.TRIBUFF
+# Loading SmartFusion2.MSS_050
+# Loading SmartFusion2.MSS_050_IP
+# Loading SmartFusion2.MSS_050_MAIN
+# Loading SmartFusion2.MSS_IOMUX
+# Loading SmartFusion2.M3_BFM
+# Loading SmartFusion2.BFM_MAIN
+# Loading SmartFusion2.MSS_APBSLAVES
+# Loading SmartFusion2.MSS_PCLK_DIVISOR
+# Loading SmartFusion2.MSS_MMUART
+# Loading SmartFusion2.MSS_SPI
+# Loading SmartFusion2.MSS_I2C
+# Loading SmartFusion2.MSS_RTC
+# Loading SmartFusion2.MSS_COMBLK
+# Loading SmartFusion2.MSS_COMBLK_FIFO
+# Loading SmartFusion2.MSS_SIIMASTER
+# Loading SmartFusion2.G4M_GPIO
+# Loading SmartFusion2.G4M_PDMA
+# Loading SmartFusion2.PDMARegs
+# Loading SmartFusion2.PDMAReg
+# Loading SmartFusion2.chanArb
+# Loading SmartFusion2.writeAdjust
+# Loading SmartFusion2.DMAExec
+# Loading SmartFusion2.MSS_H2FINTCTRL
+# Loading SmartFusion2.MSS_AHBTOAPB
+# Loading SmartFusion2.G4M_AHBTOAPB
+# Loading SmartFusion2.AhbToApbSM
+# Loading SmartFusion2.PenableScheduler
+# Loading SmartFusion2.PreadyMarshal
+# Loading SmartFusion2.ApbAddrData
+# Loading SmartFusion2.G4M_FABRICIF
+# Loading SmartFusion2.FABRICIF_HM
+# Loading SmartFusion2.AhbWrapper_HM
+# Loading SmartFusion2.ClientAddrData_HM
+# Loading SmartFusion2.AhbClient_HM
+# Loading SmartFusion2.ApbClient_HM
+# Loading SmartFusion2.FABRICIF_FM
+# Loading SmartFusion2.Client_FM
+# Loading SmartFusion2.ClientAddrData_FM
+# Loading SmartFusion2.AhbWrapper_FM
+# Loading SmartFusion2.ApbWrapper_FM
+# Loading SmartFusion2.MSS_CCC
+# Loading SmartFusion2.MSS_FACC
+# Loading SmartFusion2.MSS_RESETSYNC
+# Loading SmartFusion2.MSS_SYNCHRONISER
+# Loading SmartFusion2.div2
+# Loading SmartFusion2.mss_facc_divider
+# Loading SmartFusion2.prog_delay_line
+# Loading SmartFusion2.buffcell
+# Loading SmartFusion2.real_clockmux
+# Loading SmartFusion2.MSS_ResetController
+# Loading SmartFusion2.MSS_SYSREG
+# Loading SmartFusion2.MSS_AHB2X
+# Loading SmartFusion2.MSS_RWP
+# Loading SmartFusion2.MSS_RWP_SF
+# Loading SmartFusion2.MSS_SWC
+# Loading SmartFusion2.MSS_W1P
+# Loading SmartFusion2.MSS_SWITCH
+# Loading SmartFusion2.G4M_SWITCH
+# Loading SmartFusion2.SW_Matrix9x7
+# Loading SmartFusion2.SWMaster0Stage
+# Loading SmartFusion2.AddrDecM0
+# Loading SmartFusion2.DefaultSlaveSM
+# Loading SmartFusion2.SWMaster2Stage
+# Loading SmartFusion2.AddrDecM2
+# Loading SmartFusion2.SWMaster3Stage
+# Loading SmartFusion2.AddrDecM3
+# Loading SmartFusion2.SWMaster4Stage
+# Loading SmartFusion2.AddrDecM4
+# Loading SmartFusion2.SWMaster6Stage
+# Loading SmartFusion2.AddrDecM6
+# Loading SmartFusion2.SWMaster7Stage
+# Loading SmartFusion2.AddrDecM7
+# Loading SmartFusion2.SWMaster9Stage
+# Loading SmartFusion2.AddrDecM9
+# Loading SmartFusion2.SWSlaveStageM9_ESRAM
+# Loading SmartFusion2.SlaveArbiterM9_ESRAM
+# Loading SmartFusion2.SWSlaveStageM9
+# Loading SmartFusion2.SlaveArbiterM9
+# Loading SmartFusion2.SW_A2ABridge
+# Loading SmartFusion2.SW_A2Aaddrdec
+# Loading SmartFusion2.A2A_Matrix2x16
+# Loading SmartFusion2.A2A_Masterstage
+# Loading SmartFusion2.A2A_addrdec
+# Loading SmartFusion2.A2A_Slavestage
+# Loading SmartFusion2.G4M_HPDMA
+# Loading SmartFusion2.hpd_config_regs
+# Loading SmartFusion2.hpd_dma_controller
+# Loading SmartFusion2.fsm_hpd_dma_cntrl
+# Loading SmartFusion2.fsm_hpd_rnd_rbin
+# Loading SmartFusion2.hpd_write_bfrc
+# Loading SmartFusion2.hpd_read_bfrc
+# Loading SmartFusion2.hpd_data_buffer
+# Loading SmartFusion2.hpd_glu_logic_mux
+# Loading SmartFusion2.hpd_ahb_master
+# Loading SmartFusion2.MSS_CACHE
+# Loading SmartFusion2.G4M_CACHE
+# Loading SmartFusion2.g4m_cache_digital
+# Loading SmartFusion2.cc_cache_engine
+# Loading SmartFusion2.cc_ahbmstr
+# Loading SmartFusion2.DW_ecc
+# Loading SmartFusion2.MG_Ecc
+# Loading SmartFusion2.cachematrix5x6
+# Loading SmartFusion2.cc_cm_master0stg
+# Loading SmartFusion2.cc_cm_addrdecm0
+# Loading SmartFusion2.cc_cm_defslavesm
+# Loading SmartFusion2.cc_cm_master1stg
+# Loading SmartFusion2.cc_cm_addrdecm1
+# Loading SmartFusion2.cc_cm_master2stg
+# Loading SmartFusion2.cc_cm_addrdecm2
+# Loading SmartFusion2.cc_cm_master4stg
+# Loading SmartFusion2.cc_cm_slave0stg
+# Loading SmartFusion2.cc_cm_slave1stg
+# Loading SmartFusion2.cc_cm_slave1arb
+# Loading SmartFusion2.cc_cm_slave2stg
+# Loading SmartFusion2.cc_cm_slave2arb
+# Loading SmartFusion2.cc_cm_slave3stg
+# Loading SmartFusion2.cc_cm_slave4stg
+# Loading SmartFusion2.cc_cm_slave5stg
+# Loading SmartFusion2.cc_cm_slave5arb
+# Loading SmartFusion2.cc_cm_slave6stg
+# Loading SmartFusion2.cc_sbus2mem
+# Loading SmartFusion2.tagmem64x21
+# Loading SmartFusion2.RAMSP256X72
+# Loading SmartFusion2.SYKA65_256X72X1CM2
+# Loading SmartFusion2.spmbist_mux_bypass
+# Loading SmartFusion2.MSS_BFM_AHBSLAVE
+# Loading SmartFusion2.MSS_BFM_AHBSLAVEEXT
+# Loading SmartFusion2.MSS_AHB_NVM
+# Loading SmartFusion2.ahb_nvm_bfm
+# Loading SmartFusion2.nvm_ram
+# Loading SmartFusion2.G4M_MDDR_SUBSYS
+# Loading SmartFusion2.synchroniser
+# Loading SmartFusion2.G4M_AXI_DDR_PHYWRP
+# Loading SmartFusion2.G4M_AXI_DDRINTF
+# Loading SmartFusion2.aximon
+# Loading SmartFusion2.ddrc_monitor
+# Loading SmartFusion2.ddrc_axi_wrp
+# Loading SmartFusion2.ex_monitor
+# Loading SmartFusion2.reorder_block
+# Loading SmartFusion2.f_reorder_block
+# Loading SmartFusion2.f_axi_read_port
+# Loading SmartFusion2.axi_write_port
+# Loading SmartFusion2.trans_schd
+# Loading SmartFusion2.ddrc_apb_wrp
+# Loading SmartFusion2.ddrc_axi_dyn_reg_sync
+# Loading SmartFusion2.ddrc_apb_reg_sync
+# Loading SmartFusion2.ddrc_op_registers
+# Loading SmartFusion2.ddrc_wdata_ram
+# Loading SmartFusion2.ddrc
+# Loading SmartFusion2.bypass
+# Loading SmartFusion2.ih
+# Loading SmartFusion2.ih_core_in_if
+# Loading SmartFusion2.ingot_sync_fifo_flopout_rst
+# Loading SmartFusion2.ih_core_out_if
+# Loading SmartFusion2.ih_address_map
+# Loading SmartFusion2.ih_te_if
+# Loading SmartFusion2.ih_be_if
+# Loading SmartFusion2.ih_fifo_if
+# Loading SmartFusion2.ih_fifo_control
+# Loading SmartFusion2.mr
+# Loading SmartFusion2.mr_ram_rd_pipeline
+# Loading SmartFusion2.mr_data_steering_ecc
+# Loading SmartFusion2.mr_test_mode
+# Loading SmartFusion2.mr_ecc_encoder
+# Loading SmartFusion2.pi
+# Loading SmartFusion2.ra_ecc64
+# Loading SmartFusion2.rd
+# Loading SmartFusion2.rd_test_mode
+# Loading SmartFusion2.rd_ecc_decoder
+# Loading SmartFusion2.rt
+# Loading SmartFusion2.teengine
+# Loading SmartFusion2.te_rd_cam
+# Loading SmartFusion2.te_rd_replace
+# Loading SmartFusion2.selnet
+# Loading SmartFusion2.te_filter
+# Loading SmartFusion2.te_rd_nxt
+# Loading SmartFusion2.te_wr_cam
+# Loading SmartFusion2.te_wr_replace
+# Loading SmartFusion2.te_wr_nxt
+# Loading SmartFusion2.te_misc
+# Loading SmartFusion2.dti
+# Loading SmartFusion2.ts
+# Loading SmartFusion2.os_select_net_tags
+# Loading SmartFusion2.os_select_net
+# Loading SmartFusion2.os_glue
+# Loading SmartFusion2.gs
+# Loading SmartFusion2.gs_glue
+# Loading SmartFusion2.gs_dll_calib
+# Loading SmartFusion2.gs_global_constraints
+# Loading SmartFusion2.gs_next_xact
+# Loading SmartFusion2.gs_odt
+# Loading SmartFusion2.gs_rank_constraints
+# Loading SmartFusion2.gs_global_fsm
+# Loading SmartFusion2.gs_q_fsm
+# Loading SmartFusion2.gs_init_ddr_fsm
+# Loading SmartFusion2.gs_zq_calib
+# Loading SmartFusion2.gs_load_mr
+# Loading SmartFusion2.memc_wu
+# Loading SmartFusion2.memc_wu_wdata_if
+# Loading SmartFusion2.phy_apb_reg_sync
+# Loading SmartFusion2.phy_apb_wrp
+# Loading SmartFusion2.phy_op_registers
+# Loading SmartFusion2.phy_axi_dyn_reg_sync
+# Loading SmartFusion2.dfi_phy_core
+# Loading SmartFusion2.dll
+# Loading SmartFusion2.dll_ffwrap
+# Loading SmartFusion2.dll_mux21wrap
+# Loading SmartFusion2.dl
+# Loading SmartFusion2.dl_dec
+# Loading SmartFusion2.dl_scan_logic
+# Loading SmartFusion2.dl_balanced_mux2
+# Loading SmartFusion2.dl_nandwrap
+# Loading SmartFusion2.dl_invwrap
+# Loading SmartFusion2.dl_scan_ffwrap
+# Loading SmartFusion2.dl_cd
+# Loading SmartFusion2.dl_fd1
+# Loading SmartFusion2.dl_inv1wrap
+# Loading SmartFusion2.dl_orwrap
+# Loading SmartFusion2.dl_invwrap1
+# Loading SmartFusion2.dll_dc_fsm
+# Loading SmartFusion2.dl_0dly
+# Loading SmartFusion2.dll_dlywrap
+# Loading SmartFusion2.dll_pd
+# Loading SmartFusion2.dll_of
+# Loading SmartFusion2.dfi_rank_tracker
+# Loading SmartFusion2.dfi_upd_stat_if
+# Loading SmartFusion2.dfi_resp_gen
+# Loading SmartFusion2.ingot_acthigh_sync
+# Loading SmartFusion2.fifo_re_gen_dfi
+# Loading SmartFusion2.G4M_FIC64
+# Loading SmartFusion2.G4M_DDRBRIDGE
+# Loading SmartFusion2.ddrb_idc_rdcntrl
+# Loading SmartFusion2.ddrb_htrans_decode
+# Loading SmartFusion2.ddrb_idc_rdbuf
+# Loading SmartFusion2.ddrb_idc_rdbuf_cntrl
+# Loading SmartFusion2.ddrb_idc_arb_rd_if
+# Loading SmartFusion2.ddrb_wcb
+# Loading SmartFusion2.ddrb_wrcntrl
+# Loading SmartFusion2.ddrb_wrbuf_cntrl
+# Loading SmartFusion2.ddrb_wrbuf
+# Loading SmartFusion2.ddrb_flush_cntrl
+# Loading SmartFusion2.ddrb_arb_wr_if
+# Loading SmartFusion2.ddrb_rdcntrl
+# Loading SmartFusion2.ddrb_rdbuf
+# Loading SmartFusion2.ddrb_rdbuf_cntrl
+# Loading SmartFusion2.ddrb_arb_rd_if
+# Loading SmartFusion2.ddrb_ahb_slave
+# Loading SmartFusion2.ddrb_axi_arbiter
+# Loading SmartFusion2.ddrb_arb_wreq_gen
+# Loading SmartFusion2.ddrb_arb_rreq_gen
+# Loading SmartFusion2.ddrb_wr_arbiter
+# Loading SmartFusion2.ddrb_waddr_chctrl
+# Loading SmartFusion2.ddrb_wdata_chctrl
+# Loading SmartFusion2.ddrb_wresp_chctrl
+# Loading SmartFusion2.ddrb_rd_arbiter
+# Loading SmartFusion2.ddrb_raddr_chctrl
+# Loading SmartFusion2.ddrb_rdata_chctrl
+# Loading SmartFusion2.G4MAIN_AXISYNC
+# Loading SmartFusion2.fic64_confg_regs
+# Loading SmartFusion2.G4M_DDRIO_CALIB
+# Loading SmartFusion2.iocalib_fsm
+# Loading SmartFusion2.G4M_AHBTOAPB_CONFIG
+# Loading SmartFusion2.AhbWrapper_config_HM
+# Loading SmartFusion2.ClientAddrData_config_HM
+# Loading SmartFusion2.ApbClient_config_HM
+# Loading SmartFusion2.APB_CONFIG_MUX
+# Loading SmartFusion2.clockmux
+# Loading SmartFusion2.G4M_REVFIC
+# Loading SmartFusion2.G4MAIN_AXITOAHB_REVFIC
+# Loading SmartFusion2.MSSDDR_SDRMUX
+# Loading SmartFusion2.MSS_DDRBRIDGE
+# Loading SmartFusion2.BIBUF
+# Loading SmartFusion2.MX2
+# Loading SmartFusion2.CFG3
+# Loading presynth.nm_sim
+# Loading presynth.nm_sim_adc_gen
+# Loading presynth.nm_sim_cmd_and_reg
+# Loading presynth.Mario_Libero_OSC_0_OSC
+# Loading SmartFusion2.XTLOSC
+# Loading presynth.ADCFIFO_ADCFIFO_0_corefifo_sync_scntr
+# Loading presynth.ADCFIFO_ADCFIFO_0_ram_wrapper
+# Loading presynth.ADCFIFO_ADCFIFO_0_LSRAM_top
+# Loading SmartFusion2.RAM1K18
+# Loading SmartFusion2.RAM_DLY
+# Loading presynth.ACKFIFO_ACKFIFO_0_corefifo_sync_scntr
+# Loading presynth.ACKFIFO_ACKFIFO_0_corefifo_fwft
+# Loading presynth.ACKFIFO_ACKFIFO_0_ram_wrapper
+# Loading presynth.ACKFIFO_ACKFIFO_0_USRAM_top
+# Loading SmartFusion2.RAM64x18
+# Loading SmartFusion2.RAM64x18_IP
+# Loading SmartFusion2.SLE_Prim
+# Loading presynth.PDMAFIFO_PDMAFIFO_0_corefifo_sync
+# Loading presynth.PDMAFIFO_PDMAFIFO_0_ram_wrapper
+# Loading presynth.PDMAFIFO_PDMAFIFO_0_USRAM_top
+# Loading SmartFusion2.IOMUX
+# Loading SmartFusion2.setresetenableflop
+# Loading SmartFusion2.b_axi_read_port
+# Loading SmartFusion2.priority_block
+# Loading SmartFusion2.mr_secded_lane
+# Loading SmartFusion2.rd_secded_lane
+# Loading SmartFusion2.te_rd_mux
+# Loading SmartFusion2.te_rd_entry
+# Loading SmartFusion2.select_block_l1
+# Loading SmartFusion2.select_block_l2plus
+# Loading SmartFusion2.te_wr_mux
+# Loading SmartFusion2.te_wr_entry
+# Loading SmartFusion2.select_block_l1_tags
+# Loading SmartFusion2.bsm
+# Loading SmartFusion2.dl_element
+# Loading SmartFusion2.phy_ctrl_slice
+# Loading SmartFusion2.dll_rl
+# Loading SmartFusion2.phy_ctrl_wrapper
+# Loading SmartFusion2.phy_ctrl
+# Loading SmartFusion2.phy_ctrl_clkbuf16_wrapper
+# Loading SmartFusion2.phy_ctrl_nor2_wrapper
+# Loading SmartFusion2.phy_ctrl_load_wrapper
+# Loading SmartFusion2.phy_ctrl_mux21_wrapper
+# Loading SmartFusion2.phy_ctrl_clkinv16_wrapper
+# Loading SmartFusion2.phy_data_slice_swapbits
+# Loading SmartFusion2.phy_wr_level_fsm
+# Loading SmartFusion2.dfi_multi_rank_ratio_logic
+# Loading SmartFusion2.phy_gate_level_fsm
+# Loading SmartFusion2.phy_rd_level_fsm
+# Loading SmartFusion2.phy_data
+# Loading SmartFusion2.phy_data_clkbuf16_wrapper
+# Loading SmartFusion2.phy_data_inv8_wrapper
+# Loading SmartFusion2.phy_data_clkbuf8_wrapper
+# Loading SmartFusion2.phy_data_mux21_wrapper
+# Loading SmartFusion2.phy_data_clkinv16_wrapper
+# Loading SmartFusion2.phy_data_posff_wrapper
+# Loading SmartFusion2.phy_data_and2_16_wrapper
+# Loading SmartFusion2.phy_data_wrdqsclk_load_wrapper
+# Loading SmartFusion2.phy_data_wrdataclk_load_wrapper
+# Loading SmartFusion2.phy_data_nor2_wrapper
+# Loading SmartFusion2.phy_data_clkbuf12_wrapper
+# Loading SmartFusion2.phy_data_wr_fifo
+# Loading SmartFusion2.phy_data_clk_dly_wrapper
+# Loading SmartFusion2.phy_data_out_bit
+# Loading SmartFusion2.phy_data_negff_wrapper
+# Loading SmartFusion2.phy_data_stoy_mux21_wrapper
+# Loading SmartFusion2.phy_data_buf1_wrapper
+# Loading SmartFusion2.phy_data_inv1_wrapper
+# Loading SmartFusion2.phy_data_posff_set_wrapper
+# Loading SmartFusion2.phy_data_dqs_out
+# Loading SmartFusion2.phy_data_local_odt_dqs_load_wrapper
+# Loading SmartFusion2.phy_data_fifo_we_out
+# Loading SmartFusion2.phy_data_and2_wrapper
+# Loading SmartFusion2.phy_data_fifoweout_load_wrapper
+# Loading SmartFusion2.phy_data_dqin_dly
+# Loading SmartFusion2.phy_data_in_bit
+# Loading SmartFusion2.phy_data_dqin_nor2_load_wrapper
+# Loading SmartFusion2.phy_data_dqin_load_wrapper
+# Loading SmartFusion2.phy_data_pos_captff_wrapper
+# Loading SmartFusion2.phy_data_rd_fifo
+# Loading SmartFusion2.phy_data_xor2_wrapper
+# Loading SmartFusion2.dfi_phy_bist
+# Loading SmartFusion2.dfi_prbs
+# Loading SmartFusion2.ingot_sync_fifo_rst
+# Loading SmartFusion2.phy_data_slice
+# Loading SmartFusion2.phy_ctrl_cmd_bit
+# Loading SmartFusion2.phy_ctrl_posff_wrapper
+# Loading SmartFusion2.phy_ctrl_cmd_bit_load_wrapper
+# Loading SmartFusion2.phy_ctrl_buf1_wrapper
+# Loading SmartFusion2.phy_ctrl_clkout
+# Loading SmartFusion2.phy_ctrl_inv1_wrapper
+# Loading SmartFusion2.phy_ctrl_negff_set_wrapper
+# Loading SmartFusion2.phy_ctrl_stoy_mux21_wrapper
+# Loading SmartFusion2.phy_ctrl_clkout_load_wrapper
+# Loading SmartFusion2.dfi_single_rank_ratio_logic
+# Loading SmartFusion2.UDP_MUX2
+# Loading SmartFusion2.UDP_DFF
+# Loading SmartFusion2.UDP_DL
+# ** Error: (vish-4014) No objects found matching '/toplevel_tb/Mario_Libero_0/cmam_if_wrap_0/EMULATE_NMS'.
+# Executing ONERROR command at macro ./wave.do line 22
+# ** Error: (vish-4014) No objects found matching '/toplevel_tb/Mario_Libero_0/nm_sim_0/nm_cnr/is_rst'.
+# Executing ONERROR command at macro ./wave.do line 232
+# ** Error: (vish-4014) No objects found matching '/toplevel_tb/Mario_Libero_0/nm_sim_0/nm_cnr/tx_idle'.
+# Executing ONERROR command at macro ./wave.do line 239
+# ** Error: (vish-4014) No objects found matching '/toplevel_tb/Mario_Libero_0/cmam_if_wrap_0/acc_if_m/irq_go'.
+# Executing ONERROR command at macro ./wave.do line 357
+# ** Warning: (vsim-7) Failed to open readmem file "status.txt" in read mode.
+# 
+# No such file or directory. (errno = ENOENT)    : nofile(1366)
+#    Time: 0 fs  Iteration: 0  Instance: /toplevel_tb/Mario_Libero_0/Mario_Libero_MSS_0/MSS_ADLIB_INST/u_mss/u_mss/u_APBSLAVES/U_COMBLK
+# ** ENVM_init.mem.
+# ** Warning: (vsim-3534) [FOFIR] - Failed to open file "ENVM_init.mem" for reading.
+# 
+# No such file or directory. (errno = ENOENT)    : nofile(43)
+#    Time: 0 fs  Iteration: 0  Instance: /toplevel_tb/Mario_Libero_0/Mario_Libero_MSS_0/MSS_ADLIB_INST/u_mss/u_mss/ENVM_0/ram_0
+# ** Warning: Please ignore the above warning message if you have not initialized the eNVM.
+#  Warning: A_ADDR_EN went unknown at time 1000.0ps! Instance: toplevel_tb.Mario_Libero_0.cmam_if_wrap_0.cmam_if.nif.nmc1.ack_dp.ackfifo.ACKFIFO_0.genblk20.UI_ram_wrapper_1.U5_syncnonpipe.ACKFIFO_ACKFIFO_0_USRAM_top_R0C0.u0
+#  Warning: B_ADDR_EN went unknown at time 1000.0ps! Instance: toplevel_tb.Mario_Libero_0.cmam_if_wrap_0.cmam_if.nif.nmc1.ack_dp.ackfifo.ACKFIFO_0.genblk20.UI_ram_wrapper_1.U5_syncnonpipe.ACKFIFO_ACKFIFO_0_USRAM_top_R0C0.u0
+#  Warning: A_ADDR_EN went unknown at time 1000.0ps! Instance: toplevel_tb.Mario_Libero_0.cmam_if_wrap_0.cmam_if.nif.nmc0.ack_dp.ackfifo.ACKFIFO_0.genblk20.UI_ram_wrapper_1.U5_syncnonpipe.ACKFIFO_ACKFIFO_0_USRAM_top_R0C0.u0
+#  Warning: B_ADDR_EN went unknown at time 1000.0ps! Instance: toplevel_tb.Mario_Libero_0.cmam_if_wrap_0.cmam_if.nif.nmc0.ack_dp.ackfifo.ACKFIFO_0.genblk20.UI_ram_wrapper_1.U5_syncnonpipe.ACKFIFO_ACKFIFO_0_USRAM_top_R0C0.u0
+#  Warning: A_ADDR_EN went unknown at time 1000.0ps! Instance: toplevel_tb.Mario_Libero_0.cmam_if_wrap_0.cmam_if.nif.pdma.pdma_fifo.PDMAFIFO_0.genblk21.UI_ram_wrapper_1.U5_syncnonpipe.PDMAFIFO_PDMAFIFO_0_USRAM_top_R0C2.u0
+#  Warning: B_ADDR_EN went unknown at time 1000.0ps! Instance: toplevel_tb.Mario_Libero_0.cmam_if_wrap_0.cmam_if.nif.pdma.pdma_fifo.PDMAFIFO_0.genblk21.UI_ram_wrapper_1.U5_syncnonpipe.PDMAFIFO_PDMAFIFO_0_USRAM_top_R0C2.u0
+#  Warning: A_ADDR_EN went unknown at time 1000.0ps! Instance: toplevel_tb.Mario_Libero_0.cmam_if_wrap_0.cmam_if.nif.pdma.pdma_fifo.PDMAFIFO_0.genblk21.UI_ram_wrapper_1.U5_syncnonpipe.PDMAFIFO_PDMAFIFO_0_USRAM_top_R0C0.u0
+#  Warning: B_ADDR_EN went unknown at time 1000.0ps! Instance: toplevel_tb.Mario_Libero_0.cmam_if_wrap_0.cmam_if.nif.pdma.pdma_fifo.PDMAFIFO_0.genblk21.UI_ram_wrapper_1.U5_syncnonpipe.PDMAFIFO_PDMAFIFO_0_USRAM_top_R0C0.u0
+#  Warning: A_ADDR_EN went unknown at time 1000.0ps! Instance: toplevel_tb.Mario_Libero_0.cmam_if_wrap_0.cmam_if.nif.pdma.pdma_fifo.PDMAFIFO_0.genblk21.UI_ram_wrapper_1.U5_syncnonpipe.PDMAFIFO_PDMAFIFO_0_USRAM_top_R0C3.u0
+#  Warning: B_ADDR_EN went unknown at time 1000.0ps! Instance: toplevel_tb.Mario_Libero_0.cmam_if_wrap_0.cmam_if.nif.pdma.pdma_fifo.PDMAFIFO_0.genblk21.UI_ram_wrapper_1.U5_syncnonpipe.PDMAFIFO_PDMAFIFO_0_USRAM_top_R0C3.u0
+#  Warning: A_ADDR_EN went unknown at time 1000.0ps! Instance: toplevel_tb.Mario_Libero_0.cmam_if_wrap_0.cmam_if.nif.pdma.pdma_fifo.PDMAFIFO_0.genblk21.UI_ram_wrapper_1.U5_syncnonpipe.PDMAFIFO_PDMAFIFO_0_USRAM_top_R0C1.u0
+#  Warning: B_ADDR_EN went unknown at time 1000.0ps! Instance: toplevel_tb.Mario_Libero_0.cmam_if_wrap_0.cmam_if.nif.pdma.pdma_fifo.PDMAFIFO_0.genblk21.UI_ram_wrapper_1.U5_syncnonpipe.PDMAFIFO_PDMAFIFO_0_USRAM_top_R0C1.u0
+#  
+###########################################################################
+# AMBA BFM Model
+# Version 2.1 22Dec08
+#  
+# Opening BFM Script file test.vec
+# ** Warning: (vsim-7) Failed to open readmem file "test.vec" in read mode.
+# 
+# No such file or directory. (errno = ENOENT)    : v:/sim_lily_sn/release/lib/smartfusion2/special//mss_050/bfm_main.v(995)
+#    Time: 26887610 ps  Iteration: 3  Instance: /toplevel_tb/Mario_Libero_0/Mario_Libero_MSS_0/MSS_ADLIB_INST/u_mss/u_mss/U_M3BFM/BFM_MAIN_INST
+# Read x Vectors - Compiler Version x.x
+# BFM:Filenames referenced in Vectors
+# BFM: Instruction x Line Number X Command X
+#        Stimulus file   Line No x
+# Instruction not yet implemented (ERROR)
+# ** Note: $stop    : v:/sim_lily_sn/release/lib/smartfusion2/special//mss_050/bfm_main.v(2474)
+#    Time: 26887610 ps  Iteration: 3  Instance: /toplevel_tb/Mario_Libero_0/Mario_Libero_MSS_0/MSS_ADLIB_INST/u_mss/u_mss/U_M3BFM/BFM_MAIN_INST
+# Break in NamedBeginStat BFM at v:/sim_lily_sn/release/lib/smartfusion2/special//mss_050/bfm_main.v line 2474
+# Error opening v:/sim_lily_sn/release/lib/smartfusion2/special/mss_050/bfm_main.v
+# Path name 'v:/sim_lily_sn/release/lib/smartfusion2/special/mss_050/bfm_main.v' doesn't exist.
+# End time: 16:56:23 on Feb 07,2017, Elapsed time: 0:00:46
+# Errors: 13, Warnings: 3

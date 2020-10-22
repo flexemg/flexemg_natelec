@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<?xml-stylesheet type="text/xsl" href="drcss.xsl"?>
+<drcreport>
+  <header>DESIGN_FIRMWARE</header>
+  <drc>
+    <status>C:\Microsemi\Libero_SoC_v11.7\Designer/data/drcreport\error.png</status>
+    <StatusMessage>Error</StatusMessage>
+    <message>Missing Core Definition</message>
+    <detail>Core 'Actel:Firmware:SmartFusion2_CMSIS:2.3.105 ' is missing from the vault.</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/DESIGN_FIRMWARE/instances/SmartFusion2_CMSIS_0</crossprobe>
+  </drc>
+  <drc>
+    <status>C:\Microsemi\Libero_SoC_v11.7\Designer/data/drcreport\error.png</status>
+    <StatusMessage>Error</StatusMessage>
+    <message>Missing Core Definition</message>
+    <detail>Core 'Actel:Firmware:SmartFusion2_MSS_GPIO_Driver:2.1.102 ' is missing from the vault.</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/DESIGN_FIRMWARE/instances/SmartFusion2_MSS_GPIO_Driver_0</crossprobe>
+  </drc>
+  <drc>
+    <status>C:\Microsemi\Libero_SoC_v11.7\Designer/data/drcreport\error.png</status>
+    <StatusMessage>Error</StatusMessage>
+    <message>Missing Core Definition</message>
+    <detail>Core 'Actel:Firmware:SmartFusion2_MSS_HPDMA_Driver:2.2.100 ' is missing from the vault.</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/DESIGN_FIRMWARE/instances/SmartFusion2_MSS_HPDMA_Driver_0</crossprobe>
+  </drc>
+  <drc>
+    <status>C:\Microsemi\Libero_SoC_v11.7\Designer/data/drcreport\error.png</status>
+    <StatusMessage>Error</StatusMessage>
+    <message>Missing Core Definition</message>
+    <detail>Core 'Actel:Firmware:SmartFusion2_MSS_MMUART_Driver:2.1.100 ' is missing from the vault.</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/DESIGN_FIRMWARE/instances/SmartFusion2_MSS_MMUART_Driver_0</crossprobe>
+  </drc>
+  <drc>
+    <status>C:\Microsemi\Libero_SoC_v11.7\Designer/data/drcreport\error.png</status>
+    <StatusMessage>Error</StatusMessage>
+    <message>Missing Core Definition</message>
+    <detail>Core 'Actel:Firmware:SmartFusion2_MSS_NVM_Driver:2.4.100 ' is missing from the vault.</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/DESIGN_FIRMWARE/instances/SmartFusion2_MSS_NVM_Driver_0</crossprobe>
+  </drc>
+  <drc>
+    <status>C:\Microsemi\Libero_SoC_v11.7\Designer/data/drcreport\error.png</status>
+    <StatusMessage>Error</StatusMessage>
+    <message>Missing Core Definition</message>
+    <detail>Core 'Actel:Firmware:SmartFusion2_MSS_System_Services_Driver:2.7.100 ' is missing from the vault.</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/DESIGN_FIRMWARE/instances/SmartFusion2_MSS_System_Services_Driver_0</crossprobe>
+  </drc>
+  <drc>
+    <status>C:\Microsemi\Libero_SoC_v11.7\Designer/data/drcreport\error.png</status>
+    <StatusMessage>Error</StatusMessage>
+    <message>Missing Core Definition</message>
+    <detail>Core 'Actel:Firmware:SmartFusion2_MSS_Timer_Driver:2.2.100 ' is missing from the vault.</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/DESIGN_FIRMWARE/instances/SmartFusion2_MSS_Timer_Driver_0</crossprobe>
+  </drc>
+</drcreport>

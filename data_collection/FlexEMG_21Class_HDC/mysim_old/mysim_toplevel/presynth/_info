@@ -1,0 +1,1403 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/flb.EECS/Desktop/mario_laptop_sf2/Mario_SF2/mysim
+vacc_apb_proc
+Z0 !s110 1486515334
+!i10b 1
+!s100 Q3I2kAZCjBzGg8jG1[f=m2
+I8k91nP_V:7O2CI<:GbQ^>3
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dC:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/mysim_toplevel
+w1484885006
+8C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/hdl/acc_apb_proc.v
+FC:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/hdl/acc_apb_proc.v
+Z3 L0 21
+Z4 OW;L;10.4c;61
+r1
+!s85 0
+31
+Z5 !s108 1486515334.000000
+!s107 C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/hdl/acc_apb_proc.v|
+!s90 -reportprogress|300|-vlog01compat|-work|presynth|C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/hdl/acc_apb_proc.v|
+!s101 -O0
+!i113 1
+Z6 o-vlog01compat -work presynth -O0
+vacc_if
+R0
+!i10b 1
+!s100 4_nCQ7P4M0^2WjEG56VVF3
+Ia9fCT=BE:JZhJ]d3o]dSB0
+R1
+R2
+w1486512330
+8C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/hdl/acc_if.v
+FC:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/hdl/acc_if.v
+R3
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/hdl/acc_if.v|
+!s90 -reportprogress|300|-vlog01compat|-work|presynth|C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/hdl/acc_if.v|
+!s101 -O0
+!i113 1
+R6
+vacc_irq_proc
+R0
+!i10b 1
+!s100 <oL7jPhhh3gm:<D515XF:0
+I8a5`VZ1hPQ>Ukehk_@^=f2
+R1
+R2
+w1486064119
+8C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/hdl/acc_irq_proc.v
+FC:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/hdl/acc_irq_proc.v
+R3
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/hdl/acc_irq_proc.v|
+!s90 -reportprogress|300|-vlog01compat|-work|presynth|C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/hdl/acc_irq_proc.v|
+!s101 -O0
+!i113 1
+R6
+vacc_sim
+Z7 !s110 1486515337
+!i10b 1
+!s100 ?Ke4`gfd@PhYZE<KIB<TT0
+IhX0OSL:b=zbl;IQWT;2;72
+R1
+R2
+w1486062839
+8C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/hdl/acc_sim.v
+FC:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/hdl/acc_sim.v
+R3
+R4
+r1
+!s85 0
+31
+Z8 !s108 1486515337.000000
+!s107 C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/hdl/acc_sim.v|
+!s90 -reportprogress|300|+incdir+C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/stimulus|-vlog01compat|-work|presynth|C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/hdl/acc_sim.v|
+!s101 -O0
+!i113 1
+R6
+Z9 !s92 +incdir+C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/stimulus -vlog01compat -work presynth -O0
+vack_datapath
+Z10 !s110 1486515332
+!i10b 1
+!s100 jOTl5h3mioM<FBhf6_5c90
+IdJZ4aQDng:4T9l1B04=en3
+R1
+R2
+w1486432228
+8C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/hdl/ack_datapath.v
+FC:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/hdl/ack_datapath.v
+Z11 L0 29
+R4
+r1
+!s85 0
+31
+Z12 !s108 1486515332.000000
+!s107 C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/hdl/ack_datapath.v|
+!s90 -reportprogress|300|-vlog01compat|-work|presynth|C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/hdl/ack_datapath.v|
+!s101 -O0
+!i113 1
+R6
+vack_deserializer
+Z13 !s110 1486515333
+!i10b 1
+!s100 <h2O;=jaLV1DV9<<DR:_^0
+IHh?11R0I6^j^7Tgm7Y07P1
+R1
+R2
+w1486497494
+8C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/hdl/ack_deserializer.v
+FC:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/hdl/ack_deserializer.v
+R11
+R4
+r1
+!s85 0
+31
+Z14 !s108 1486515333.000000
+!s107 C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/hdl/ack_deserializer.v|
+!s90 -reportprogress|300|-vlog01compat|-work|presynth|C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/hdl/ack_deserializer.v|
+!s101 -O0
+!i113 1
+R6
+vACKFIFO
+R13
+!i10b 1
+!s100 >QI]DLWo5RT8@9IJXJ9X60
+IcNlhnc0EDU0h7lH5L3bKL1
+R1
+R2
+Z15 w1483672452
+8C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/ACKFIFO/ACKFIFO.v
+FC:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/ACKFIFO/ACKFIFO.v
+L0 9
+R4
+r1
+!s85 0
+31
+R14
+!s107 C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/ACKFIFO/ACKFIFO.v|
+!s90 -reportprogress|300|-vlog01compat|-work|presynth|C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/ACKFIFO/ACKFIFO.v|
+!s101 -O0
+!i113 1
+R6
+n@a@c@k@f@i@f@o
+vACKFIFO_ACKFIFO_0_COREFIFO
+R0
+!i10b 1
+!s100 0>[=kEhH]EUe>zEI56DzZ1
+IZKh;oOELa>RdCVFlD<HMd2
+R1
+R2
+Z16 w1483672450
+8C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/ACKFIFO/ACKFIFO_0/rtl/vlog/core/COREFIFO.v
+FC:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/ACKFIFO/ACKFIFO_0/rtl/vlog/core/COREFIFO.v
+R11
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/ACKFIFO/ACKFIFO_0/rtl/vlog/core/COREFIFO.v|
+!s90 -reportprogress|300|-vlog01compat|-work|presynth|C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/ACKFIFO/ACKFIFO_0/rtl/vlog/core/COREFIFO.v|
+!s101 -O0
+!i113 1
+R6
+n@a@c@k@f@i@f@o_@a@c@k@f@i@f@o_0_@c@o@r@e@f@i@f@o
+vACKFIFO_ACKFIFO_0_corefifo_async
+R0
+!i10b 1
+!s100 <@iCSWJ<cGF6W?[l3hKX51
+I7nPGj4NJ?5^CPDIDZ_kJ>3
+R1
+R2
+R16
+8C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/ACKFIFO/ACKFIFO_0/rtl/vlog/core/corefifo_async.v
+FC:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/ACKFIFO/ACKFIFO_0/rtl/vlog/core/corefifo_async.v
+Z17 L0 28
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/ACKFIFO/ACKFIFO_0/rtl/vlog/core/corefifo_async.v|
+!s90 -reportprogress|300|-vlog01compat|-work|presynth|C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/ACKFIFO/ACKFIFO_0/rtl/vlog/core/corefifo_async.v|
+!s101 -O0
+!i113 1
+R6
+n@a@c@k@f@i@f@o_@a@c@k@f@i@f@o_0_corefifo_async
+vACKFIFO_ACKFIFO_0_corefifo_doubleSync
+R13
+!i10b 1
+!s100 W]GAcMlaOoR90CbSSd]ki3
+IgIM[YObJ>fV3C4mgefA>A2
+R1
+R2
+R16
+8C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/ACKFIFO/ACKFIFO_0/rtl/vlog/core/corefifo_doubleSync.v
+FC:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/ACKFIFO/ACKFIFO_0/rtl/vlog/core/corefifo_doubleSync.v
+R11
+R4
+r1
+!s85 0
+31
+R14
+!s107 C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/ACKFIFO/ACKFIFO_0/rtl/vlog/core/corefifo_doubleSync.v|
+!s90 -reportprogress|300|-vlog01compat|-work|presynth|C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/ACKFIFO/ACKFIFO_0/rtl/vlog/core/corefifo_doubleSync.v|
+!s101 -O0
+!i113 1
+R6
+n@a@c@k@f@i@f@o_@a@c@k@f@i@f@o_0_corefifo_double@sync
+vACKFIFO_ACKFIFO_0_corefifo_fwft
+R0
+!i10b 1
+!s100 @:`BCS3fYLAO]aJBUl[H`2
+Iz2lLYG:i7gLAm<0]c?@cZ0
+R1
+R2
+R15
+8C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/ACKFIFO/ACKFIFO_0/rtl/vlog/core/corefifo_fwft.v
+FC:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/ACKFIFO/ACKFIFO_0/rtl/vlog/core/corefifo_fwft.v
+R17
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/ACKFIFO/ACKFIFO_0/rtl/vlog/core/corefifo_fwft.v|
+!s90 -reportprogress|300|-vlog01compat|-work|presynth|C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/ACKFIFO/ACKFIFO_0/rtl/vlog/core/corefifo_fwft.v|
+!s101 -O0
+!i113 1
+R6
+n@a@c@k@f@i@f@o_@a@c@k@f@i@f@o_0_corefifo_fwft
+vACKFIFO_ACKFIFO_0_corefifo_grayToBinConv
+R13
+!i10b 1
+!s100 ;30HL^@j=CW2UI7l7nblc3
+ITGAEbG8VmDhX7Mm15M9Q?0
+R1
+R2
+R15
+8C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/ACKFIFO/ACKFIFO_0/rtl/vlog/core/corefifo_grayToBinConv.v
+FC:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/ACKFIFO/ACKFIFO_0/rtl/vlog/core/corefifo_grayToBinConv.v
+R11
+R4
+r1
+!s85 0
+31
+R14
+!s107 C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/ACKFIFO/ACKFIFO_0/rtl/vlog/core/corefifo_grayToBinConv.v|
+!s90 -reportprogress|300|-vlog01compat|-work|presynth|C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/ACKFIFO/ACKFIFO_0/rtl/vlog/core/corefifo_grayToBinConv.v|
+!s101 -O0
+!i113 1
+R6
+n@a@c@k@f@i@f@o_@a@c@k@f@i@f@o_0_corefifo_gray@to@bin@conv
+vACKFIFO_ACKFIFO_0_corefifo_sync
+R0
+!i10b 1
+!s100 3060^G98n7?iK;A5>_XbQ1
+I7OlX;h?RhTb4JIQEo^HnO3
+R1
+R2
+R16
+8C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/ACKFIFO/ACKFIFO_0/rtl/vlog/core/corefifo_sync.v
+FC:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/ACKFIFO/ACKFIFO_0/rtl/vlog/core/corefifo_sync.v
+R17
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/ACKFIFO/ACKFIFO_0/rtl/vlog/core/corefifo_sync.v|
+!s90 -reportprogress|300|-vlog01compat|-work|presynth|C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/ACKFIFO/ACKFIFO_0/rtl/vlog/core/corefifo_sync.v|
+!s101 -O0
+!i113 1
+R6
+n@a@c@k@f@i@f@o_@a@c@k@f@i@f@o_0_corefifo_sync
+vACKFIFO_ACKFIFO_0_corefifo_sync_scntr
+R0
+!i10b 1
+!s100 ]1ndj<YooGZLBbzkXj7g]0
+I0H^BFfJK3dFzKXkkf59401
+R1
+R2
+R16
+8C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/ACKFIFO/ACKFIFO_0/rtl/vlog/core/corefifo_sync_scntr.v
+FC:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/ACKFIFO/ACKFIFO_0/rtl/vlog/core/corefifo_sync_scntr.v
+R17
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/ACKFIFO/ACKFIFO_0/rtl/vlog/core/corefifo_sync_scntr.v|
+!s90 -reportprogress|300|-vlog01compat|-work|presynth|C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/ACKFIFO/ACKFIFO_0/rtl/vlog/core/corefifo_sync_scntr.v|
+!s101 -O0
+!i113 1
+R6
+n@a@c@k@f@i@f@o_@a@c@k@f@i@f@o_0_corefifo_sync_scntr
+vACKFIFO_ACKFIFO_0_ram_wrapper
+R0
+!i10b 1
+!s100 6YabU2VkdWXICg3mQ=nY43
+I<=3gC@DZUGO@n6C6iY4?U2
+R1
+R2
+R16
+8C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/ACKFIFO/ACKFIFO_0/rtl/vlog/core/ACKFIFO_ACKFIFO_0_ram_wrapper.v
+FC:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/ACKFIFO/ACKFIFO_0/rtl/vlog/core/ACKFIFO_ACKFIFO_0_ram_wrapper.v
+L0 4
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/ACKFIFO/ACKFIFO_0/rtl/vlog/core/ACKFIFO_ACKFIFO_0_ram_wrapper.v|
+!s90 -reportprogress|300|-vlog01compat|-work|presynth|C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/ACKFIFO/ACKFIFO_0/rtl/vlog/core/ACKFIFO_ACKFIFO_0_ram_wrapper.v|
+!s101 -O0
+!i113 1
+R6
+n@a@c@k@f@i@f@o_@a@c@k@f@i@f@o_0_ram_wrapper
+vACKFIFO_ACKFIFO_0_USRAM_top
+R0
+!i10b 1
+!s100 zDWN`B3]=;5[NSJZZaInE0
+IR[kTOQO2LVXDSlP_k=^BU2
+R1
+R2
+R16
+8C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/ACKFIFO/ACKFIFO_0/rtl/vlog/core/ACKFIFO_ACKFIFO_0_USRAM_top.v
+FC:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/ACKFIFO/ACKFIFO_0/rtl/vlog/core/ACKFIFO_ACKFIFO_0_USRAM_top.v
+L0 5
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/ACKFIFO/ACKFIFO_0/rtl/vlog/core/ACKFIFO_ACKFIFO_0_USRAM_top.v|
+!s90 -reportprogress|300|-vlog01compat|-work|presynth|C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/ACKFIFO/ACKFIFO_0/rtl/vlog/core/ACKFIFO_ACKFIFO_0_USRAM_top.v|
+!s101 -O0
+!i113 1
+R6
+n@a@c@k@f@i@f@o_@a@c@k@f@i@f@o_0_@u@s@r@a@m_top
+vadc_datapath
+R13
+!i10b 1
+!s100 kNi?X1>CJJ^3c7cEzdSzH0
+Ie_0_4m5ZC2NJic@Q6[McO0
+R1
+R2
+w1486429352
+8C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/hdl/adc_datapath.v
+FC:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/hdl/adc_datapath.v
+L0 5
+R4
+r1
+!s85 0
+31
+R14
+!s107 C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/hdl/adc_datapath.v|
+!s90 -reportprogress|300|-vlog01compat|-work|presynth|C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/hdl/adc_datapath.v|
+!s101 -O0
+!i113 1
+R6
+vADCFIFO
+R13
+!i10b 1
+!s100 GPIROgo46^F[E:a1Kdm7e3
+I<??OJcAKOlJaKA?PohhHE2
+R1
+R2
+Z18 w1485129848
+8C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/ADCFIFO/ADCFIFO.v
+FC:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/ADCFIFO/ADCFIFO.v
+L0 9
+R4
+r1
+!s85 0
+31
+R14
+!s107 C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/ADCFIFO/ADCFIFO.v|
+!s90 -reportprogress|300|-vlog01compat|-work|presynth|C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/ADCFIFO/ADCFIFO.v|
+!s101 -O0
+!i113 1
+R6
+n@a@d@c@f@i@f@o
+vADCFIFO_ADCFIFO_0_COREFIFO
+R13
+!i10b 1
+!s100 XA_<TERoDzdF_e72YekYa3
+IaT0l;?9K35Mk[_?l2Zg];2
+R1
+R2
+R18
+8C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/ADCFIFO/ADCFIFO_0/rtl/vlog/core/COREFIFO.v
+FC:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/ADCFIFO/ADCFIFO_0/rtl/vlog/core/COREFIFO.v
+R11
+R4
+r1
+!s85 0
+31
+R14
+!s107 C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/ADCFIFO/ADCFIFO_0/rtl/vlog/core/COREFIFO.v|
+!s90 -reportprogress|300|-vlog01compat|-work|presynth|C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/ADCFIFO/ADCFIFO_0/rtl/vlog/core/COREFIFO.v|
+!s101 -O0
+!i113 1
+R6
+n@a@d@c@f@i@f@o_@a@d@c@f@i@f@o_0_@c@o@r@e@f@i@f@o
+vADCFIFO_ADCFIFO_0_corefifo_async
+R13
+!i10b 1
+!s100 o96fgQC6k9E[5=fCg3ZLW1
+IETDzCac7j@8TCIXjg=Y4D0
+R1
+R2
+R18
+8C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/ADCFIFO/ADCFIFO_0/rtl/vlog/core/corefifo_async.v
+FC:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/ADCFIFO/ADCFIFO_0/rtl/vlog/core/corefifo_async.v
+R17
+R4
+r1
+!s85 0
+31
+R14
+!s107 C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/ADCFIFO/ADCFIFO_0/rtl/vlog/core/corefifo_async.v|
+!s90 -reportprogress|300|-vlog01compat|-work|presynth|C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/ADCFIFO/ADCFIFO_0/rtl/vlog/core/corefifo_async.v|
+!s101 -O0
+!i113 1
+R6
+n@a@d@c@f@i@f@o_@a@d@c@f@i@f@o_0_corefifo_async
+vADCFIFO_ADCFIFO_0_corefifo_doubleSync
+R13
+!i10b 1
+!s100 WbJ[g:=>mmP?i]Alh[n5m0
+I;02VL^nf_M>eMa?57^Fa00
+R1
+R2
+R18
+8C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/ADCFIFO/ADCFIFO_0/rtl/vlog/core/corefifo_doubleSync.v
+FC:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/ADCFIFO/ADCFIFO_0/rtl/vlog/core/corefifo_doubleSync.v
+R11
+R4
+r1
+!s85 0
+31
+R14
+!s107 C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/ADCFIFO/ADCFIFO_0/rtl/vlog/core/corefifo_doubleSync.v|
+!s90 -reportprogress|300|-vlog01compat|-work|presynth|C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/ADCFIFO/ADCFIFO_0/rtl/vlog/core/corefifo_doubleSync.v|
+!s101 -O0
+!i113 1
+R6
+n@a@d@c@f@i@f@o_@a@d@c@f@i@f@o_0_corefifo_double@sync
+vADCFIFO_ADCFIFO_0_corefifo_fwft
+R13
+!i10b 1
+!s100 _c5:bfV0WogCB3dMkWUZj0
+I_^bZKNMSUfbQ`9fT:PMeT1
+R1
+R2
+R18
+8C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/ADCFIFO/ADCFIFO_0/rtl/vlog/core/corefifo_fwft.v
+FC:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/ADCFIFO/ADCFIFO_0/rtl/vlog/core/corefifo_fwft.v
+R17
+R4
+r1
+!s85 0
+31
+R14
+!s107 C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/ADCFIFO/ADCFIFO_0/rtl/vlog/core/corefifo_fwft.v|
+!s90 -reportprogress|300|-vlog01compat|-work|presynth|C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/ADCFIFO/ADCFIFO_0/rtl/vlog/core/corefifo_fwft.v|
+!s101 -O0
+!i113 1
+R6
+n@a@d@c@f@i@f@o_@a@d@c@f@i@f@o_0_corefifo_fwft
+vADCFIFO_ADCFIFO_0_corefifo_grayToBinConv
+R13
+!i10b 1
+!s100 =_9595B6<Fhn6:jVOQfRY1
+IemFPFiJDGKL4SOz:7gPXI2
+R1
+R2
+R18
+8C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/ADCFIFO/ADCFIFO_0/rtl/vlog/core/corefifo_grayToBinConv.v
+FC:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/ADCFIFO/ADCFIFO_0/rtl/vlog/core/corefifo_grayToBinConv.v
+R11
+R4
+r1
+!s85 0
+31
+R14
+!s107 C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/ADCFIFO/ADCFIFO_0/rtl/vlog/core/corefifo_grayToBinConv.v|
+!s90 -reportprogress|300|-vlog01compat|-work|presynth|C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/ADCFIFO/ADCFIFO_0/rtl/vlog/core/corefifo_grayToBinConv.v|
+!s101 -O0
+!i113 1
+R6
+n@a@d@c@f@i@f@o_@a@d@c@f@i@f@o_0_corefifo_gray@to@bin@conv
+vADCFIFO_ADCFIFO_0_corefifo_sync
+R13
+!i10b 1
+!s100 TnoIXdba6P@CdV<;Bm>^Y1
+IMICWISUJd@N9zRNI;Agg32
+R1
+R2
+R18
+8C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/ADCFIFO/ADCFIFO_0/rtl/vlog/core/corefifo_sync.v
+FC:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/ADCFIFO/ADCFIFO_0/rtl/vlog/core/corefifo_sync.v
+R17
+R4
+r1
+!s85 0
+31
+R14
+!s107 C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/ADCFIFO/ADCFIFO_0/rtl/vlog/core/corefifo_sync.v|
+!s90 -reportprogress|300|-vlog01compat|-work|presynth|C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/ADCFIFO/ADCFIFO_0/rtl/vlog/core/corefifo_sync.v|
+!s101 -O0
+!i113 1
+R6
+n@a@d@c@f@i@f@o_@a@d@c@f@i@f@o_0_corefifo_sync
+vADCFIFO_ADCFIFO_0_corefifo_sync_scntr
+R13
+!i10b 1
+!s100 3YCVHMeVzE0dUZ8JGTnEP0
+IHf=GLP@?Blk:@eKQ@?kLQ0
+R1
+R2
+R18
+8C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/ADCFIFO/ADCFIFO_0/rtl/vlog/core/corefifo_sync_scntr.v
+FC:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/ADCFIFO/ADCFIFO_0/rtl/vlog/core/corefifo_sync_scntr.v
+R17
+R4
+r1
+!s85 0
+31
+R14
+!s107 C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/ADCFIFO/ADCFIFO_0/rtl/vlog/core/corefifo_sync_scntr.v|
+!s90 -reportprogress|300|-vlog01compat|-work|presynth|C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/ADCFIFO/ADCFIFO_0/rtl/vlog/core/corefifo_sync_scntr.v|
+!s101 -O0
+!i113 1
+R6
+n@a@d@c@f@i@f@o_@a@d@c@f@i@f@o_0_corefifo_sync_scntr
+vADCFIFO_ADCFIFO_0_LSRAM_top
+R13
+!i10b 1
+!s100 RPIAAQ`a3LR?_N:<6W5EK2
+IhmkGE@3:^l[?TFYd2kcOW0
+R1
+R2
+R18
+8C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/ADCFIFO/ADCFIFO_0/rtl/vlog/core/ADCFIFO_ADCFIFO_0_LSRAM_top.v
+FC:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/ADCFIFO/ADCFIFO_0/rtl/vlog/core/ADCFIFO_ADCFIFO_0_LSRAM_top.v
+L0 5
+R4
+r1
+!s85 0
+31
+R14
+!s107 C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/ADCFIFO/ADCFIFO_0/rtl/vlog/core/ADCFIFO_ADCFIFO_0_LSRAM_top.v|
+!s90 -reportprogress|300|-vlog01compat|-work|presynth|C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/ADCFIFO/ADCFIFO_0/rtl/vlog/core/ADCFIFO_ADCFIFO_0_LSRAM_top.v|
+!s101 -O0
+!i113 1
+R6
+n@a@d@c@f@i@f@o_@a@d@c@f@i@f@o_0_@l@s@r@a@m_top
+vADCFIFO_ADCFIFO_0_ram_wrapper
+R13
+!i10b 1
+!s100 9nO2aYVinm1:D5XhT0>TZ0
+IMOAbe@V2oeJQjLc1a:4dR1
+R1
+R2
+w1485129846
+8C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/ADCFIFO/ADCFIFO_0/rtl/vlog/core/ADCFIFO_ADCFIFO_0_ram_wrapper.v
+FC:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/ADCFIFO/ADCFIFO_0/rtl/vlog/core/ADCFIFO_ADCFIFO_0_ram_wrapper.v
+L0 4
+R4
+r1
+!s85 0
+31
+R14
+!s107 C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/ADCFIFO/ADCFIFO_0/rtl/vlog/core/ADCFIFO_ADCFIFO_0_ram_wrapper.v|
+!s90 -reportprogress|300|-vlog01compat|-work|presynth|C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/ADCFIFO/ADCFIFO_0/rtl/vlog/core/ADCFIFO_ADCFIFO_0_ram_wrapper.v|
+!s101 -O0
+!i113 1
+R6
+n@a@d@c@f@i@f@o_@a@d@c@f@i@f@o_0_ram_wrapper
+vam
+R10
+!i10b 1
+!s100 7GW0lbMPG6h4`I9B<6<>E2
+IcmA2XCkd>M`f9GBR[MXnz3
+R1
+R2
+w1486427997
+8C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/hdl/am.v
+FC:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/hdl/am.v
+L0 1
+R4
+r1
+!s85 0
+31
+R12
+!s107 C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/hdl/am.v|
+!s90 -reportprogress|300|-vlog01compat|-work|presynth|C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/hdl/am.v|
+!s101 -O0
+!i113 1
+R6
+vcm_demux
+R10
+!i10b 1
+!s100 CjRK]FH9U4Q?bKUKf3ocz3
+I_mVYeOWfkeID>BPKBagWN1
+R1
+R2
+w1486499950
+8C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/hdl/cm_demux.v
+FC:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/hdl/cm_demux.v
+L0 30
+R4
+r1
+!s85 0
+31
+R12
+!s107 C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/hdl/cm_demux.v|
+!s90 -reportprogress|300|-vlog01compat|-work|presynth|C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/hdl/cm_demux.v|
+!s101 -O0
+!i113 1
+R6
+vcmam
+R10
+!i10b 1
+!s100 cb?em6CL8KImO70N7khB?1
+IzgMPUl_C>^gDc_OJQ;>hi0
+R1
+R2
+w1486489527
+8C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/hdl/cmam.v
+FC:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/hdl/cmam.v
+L0 1
+R4
+r1
+!s85 0
+31
+R12
+!s107 C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/hdl/cmam.v|
+!s90 -reportprogress|300|-vlog01compat|-work|presynth|C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/hdl/cmam.v|
+!s101 -O0
+!i113 1
+R6
+vcmam_if_wrap
+R0
+!i10b 1
+!s100 Mi2^a<gHQ4EC>CZd2D<^O1
+IZN[8LD>;kERBDW8F@Z0Hn1
+R1
+R2
+w1486512467
+8C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/hdl/cmam_if_wrap.v
+FC:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/hdl/cmam_if_wrap.v
+L0 5
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/hdl/cmam_if_wrap.v|
+!s90 -reportprogress|300|-vlog01compat|-work|presynth|C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/hdl/cmam_if_wrap.v|
+!s101 -O0
+!i113 1
+R6
+vcmam_tb
+Z19 !s110 1485283245
+!i10b 1
+!s100 P<alm<?5QomckS=AfUm1D2
+I[_MzQ0oScgVi:9J]TXOoY0
+R1
+Z20 dC:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2/mysim
+w1485189970
+8C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2/stimulus/cmam_tb.v
+FC:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2/stimulus/cmam_tb.v
+L0 3
+R4
+r1
+!s85 0
+31
+!s108 1485283244.000000
+!s107 C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2/stimulus/cmam_tb.v|
+!s90 -reportprogress|300|+incdir+C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2/stimulus|-vlog01compat|-work|presynth|C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2/stimulus/cmam_tb.v|
+!s101 -O0
+!i113 1
+R6
+Z21 !s92 +incdir+C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2/stimulus -vlog01compat -work presynth -O0
+vCoreInterrupt
+Z22 !s110 1486515336
+!i10b 1
+!s100 :9W@dQ7fFPN12@hOW`EQ`1
+I1RIz8Fe<=4:2JF:5IX_Tk3
+R1
+R2
+w1484339677
+8C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/Actel/DirectCore/CoreInterrupt/1.1.101/rtl/verilog/o/CoreInterrupt.v
+FC:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/Actel/DirectCore/CoreInterrupt/1.1.101/rtl/verilog/o/CoreInterrupt.v
+L0 3
+R4
+r1
+!s85 0
+31
+Z23 !s108 1486515336.000000
+!s107 C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/Actel/DirectCore/CoreInterrupt/1.1.101/rtl/verilog/o/CoreInterrupt.v|
+!s90 -reportprogress|300|-vlog01compat|-work|presynth|C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/Actel/DirectCore/CoreInterrupt/1.1.101/rtl/verilog/o/CoreInterrupt.v|
+!s101 -O0
+!i113 1
+R6
+n@core@interrupt
+vMario_Libero
+R7
+!i10b 1
+!s100 3AX?ecYdR3R79>IYURB4N0
+IEV<H?VP7`Y?9I7QVe16H73
+R1
+R2
+Z24 w1486510941
+8C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/Mario_Libero/Mario_Libero.v
+FC:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/Mario_Libero/Mario_Libero.v
+L0 9
+R4
+r1
+!s85 0
+31
+R23
+!s107 C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/Mario_Libero/Mario_Libero.v|
+!s90 -reportprogress|300|-vlog01compat|-work|presynth|C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/Mario_Libero/Mario_Libero.v|
+!s101 -O0
+!i113 1
+R6
+n@mario_@libero
+vMario_Libero_FCCC_0_FCCC
+R22
+!i10b 1
+!s100 31OdlA?;E]jKEFJlPfj5R2
+IgPoDOA>6D1<1k[Na9@0EF3
+R1
+R2
+w1486510939
+8C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/Mario_Libero/FCCC_0/Mario_Libero_FCCC_0_FCCC.v
+FC:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/Mario_Libero/FCCC_0/Mario_Libero_FCCC_0_FCCC.v
+L0 5
+R4
+r1
+!s85 0
+31
+R23
+!s107 C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/Mario_Libero/FCCC_0/Mario_Libero_FCCC_0_FCCC.v|
+!s90 -reportprogress|300|-vlog01compat|-work|presynth|C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/Mario_Libero/FCCC_0/Mario_Libero_FCCC_0_FCCC.v|
+!s101 -O0
+!i113 1
+R6
+n@mario_@libero_@f@c@c@c_0_@f@c@c@c
+vMario_Libero_MSS
+R7
+!i10b 1
+!s100 ZNh4I6]UlD`70iXU7Tn@01
+I2mB8AUJaCLC6<GAPif]0[2
+R1
+R2
+Z25 w1485484661
+8C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/Mario_Libero_MSS/Mario_Libero_MSS.v
+FC:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/Mario_Libero_MSS/Mario_Libero_MSS.v
+L0 9
+R4
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/Mario_Libero_MSS/Mario_Libero_MSS.v|
+!s90 -reportprogress|300|-vlog01compat|-work|presynth|C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/Mario_Libero_MSS/Mario_Libero_MSS.v|
+!s101 -O0
+!i113 1
+R6
+n@mario_@libero_@m@s@s
+vMario_Libero_OSC_0_OSC
+R7
+!i10b 1
+!s100 9Ia_CS]YZQ20HTHf^AmT93
+I0]_jn`9<de?Z2ZDZ_5MID2
+R1
+R2
+R24
+8C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/Mario_Libero/OSC_0/Mario_Libero_OSC_0_OSC.v
+FC:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/Mario_Libero/OSC_0/Mario_Libero_OSC_0_OSC.v
+L0 5
+R4
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/Mario_Libero/OSC_0/Mario_Libero_OSC_0_OSC.v|
+!s90 -reportprogress|300|-vlog01compat|-work|presynth|C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/Mario_Libero/OSC_0/Mario_Libero_OSC_0_OSC.v|
+!s101 -O0
+!i113 1
+R6
+n@mario_@libero_@o@s@c_0_@o@s@c
+vMSS_050
+R7
+!i10b 1
+!s100 P;VU`QFa7IXcPM>5>38H=1
+Ilc4=nHjSd8Ao<_2zU?n151
+R1
+R2
+R25
+8C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/Mario_Libero_MSS/Mario_Libero_MSS_syn.v
+FC:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/Mario_Libero_MSS/Mario_Libero_MSS_syn.v
+L0 5
+R4
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/Mario_Libero_MSS/Mario_Libero_MSS_syn.v|
+!s90 -reportprogress|300|-vlog01compat|-work|presynth|C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/Mario_Libero_MSS/Mario_Libero_MSS_syn.v|
+!s101 -O0
+!i113 1
+R6
+n@m@s@s_050
+vnm_channel
+R10
+!i10b 1
+!s100 ?;4ZFj@NKU=fk^85m680o0
+I]Rig9TXEc]RbFP2LhR2Ck0
+R1
+R2
+w1486164069
+8C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/hdl/nm_channel.v
+FC:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/hdl/nm_channel.v
+R11
+R4
+r1
+!s85 0
+31
+R12
+!s107 C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/hdl/nm_channel.v|
+!s90 -reportprogress|300|-vlog01compat|-work|presynth|C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/hdl/nm_channel.v|
+!s101 -O0
+!i113 1
+R6
+vnm_sim
+R7
+!i10b 1
+!s100 4MYUzWokCna4V1WT8_Fff2
+IW42R^Bc^MKD@:;QgV?2Th2
+R1
+R2
+w1486414984
+8C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/hdl/nm_sim.v
+FC:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/hdl/nm_sim.v
+R3
+R4
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/hdl/nm_sim.v|
+!s90 -reportprogress|300|+incdir+C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/stimulus|-vlog01compat|-work|presynth|C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/hdl/nm_sim.v|
+!s101 -O0
+!i113 1
+R6
+R9
+vnm_sim_adc_gen
+R7
+!i10b 1
+!s100 G<aPDdCEWeJ7n<WHG0T^:2
+I6Tf9o9WbQX=7[O2C?F@g70
+R1
+R2
+w1486432255
+8C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/hdl/nm_sim_adc_gen.v
+FC:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/hdl/nm_sim_adc_gen.v
+Z26 L0 22
+R4
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/hdl/nm_sim_adc_gen.v|
+!s90 -reportprogress|300|+incdir+C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/stimulus|-vlog01compat|-work|presynth|C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/hdl/nm_sim_adc_gen.v|
+!s101 -O0
+!i113 1
+R6
+R9
+vnm_sim_cmd_and_reg
+R7
+!i10b 1
+!s100 8iiI@P[4on5G[7i=@`FF00
+I^>8M6[WO]UHZR5ahhbJAT3
+R1
+R2
+w1486489581
+8C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/hdl/nm_sim_cmd_and_reg.v
+FC:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/hdl/nm_sim_cmd_and_reg.v
+R26
+R4
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/hdl/nm_sim_cmd_and_reg.v|
+!s90 -reportprogress|300|+incdir+C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/stimulus|-vlog01compat|-work|presynth|C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/hdl/nm_sim_cmd_and_reg.v|
+!s101 -O0
+!i113 1
+R6
+R9
+vnmic_if
+R10
+!i10b 1
+!s100 c7KU794k@F?^LEi`YKOkR0
+ILKaPO7>PXO0E]QRi;fFzR2
+R1
+R2
+w1486495502
+8C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/hdl/nmic_if.v
+FC:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/hdl/nmic_if.v
+R11
+R4
+r1
+!s85 0
+31
+R12
+!s107 C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/hdl/nmic_if.v|
+!s90 -reportprogress|300|-vlog01compat|-work|presynth|C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/hdl/nmic_if.v|
+!s101 -O0
+!i113 1
+R6
+vnmic_rx
+R10
+!i10b 1
+!s100 C3XlMCaUQhJV3DVMGc]PV3
+InG0iPA9IakJ>aAI]z5AIJ2
+R1
+R2
+w1486428721
+8C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/hdl/nmic_rx.v
+FC:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/hdl/nmic_rx.v
+R11
+R4
+r1
+!s85 0
+31
+R12
+!s107 C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/hdl/nmic_rx.v|
+!s90 -reportprogress|300|-vlog01compat|-work|presynth|C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/hdl/nmic_rx.v|
+!s101 -O0
+!i113 1
+R6
+vnmic_tx
+R10
+!i10b 1
+!s100 >b`VW@f6Mc4DNHF066`2f1
+I@5LD:8OHWe;B?NO3FejPj1
+R1
+R2
+w1486489845
+8C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/hdl/nmic_tx.v
+FC:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/hdl/nmic_tx.v
+R11
+R4
+r1
+!s85 0
+31
+R12
+!s107 C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/hdl/nmic_tx.v|
+!s90 -reportprogress|300|-vlog01compat|-work|presynth|C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/hdl/nmic_tx.v|
+!s101 -O0
+!i113 1
+R6
+vpdma_if
+R0
+!i10b 1
+!s100 R3[=mV_U[^eV_8hl?=e;e1
+I][mZ?=0eA2_MGL6M8mAn31
+R1
+R2
+w1486430359
+8C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/hdl/pdma_if.v
+FC:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/hdl/pdma_if.v
+R3
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/hdl/pdma_if.v|
+!s90 -reportprogress|300|-vlog01compat|-work|presynth|C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/hdl/pdma_if.v|
+!s101 -O0
+!i113 1
+R6
+vpdma_sim
+R19
+!i10b 1
+!s100 ;`SY<lj3Gb2l;7O;?zeOU1
+IK3=nQRcB86]1P`36^WaMj1
+R1
+R20
+w1484706682
+8C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2/stimulus/pdma_sim.v
+FC:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2/stimulus/pdma_sim.v
+R3
+R4
+r1
+!s85 0
+31
+!s108 1485283245.000000
+!s107 C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2/stimulus/pdma_sim.v|
+!s90 -reportprogress|300|+incdir+C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2/stimulus|-vlog01compat|-work|presynth|C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2/stimulus/pdma_sim.v|
+!s101 -O0
+!i113 1
+R6
+R21
+vPDMAFIFO
+R0
+!i10b 1
+!s100 Hz_zd6[5cn[HRRTTg<_n13
+IGUj2clFS1Zmz<:[c852fb0
+R1
+R2
+Z27 w1484357520
+8C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/PDMAFIFO/PDMAFIFO.v
+FC:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/PDMAFIFO/PDMAFIFO.v
+L0 9
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/PDMAFIFO/PDMAFIFO.v|
+!s90 -reportprogress|300|-vlog01compat|-work|presynth|C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/PDMAFIFO/PDMAFIFO.v|
+!s101 -O0
+!i113 1
+R6
+n@p@d@m@a@f@i@f@o
+vPDMAFIFO_PDMAFIFO_0_COREFIFO
+Z28 !s110 1486515335
+!i10b 1
+!s100 la18hDld8Rk2a1SAMnbm01
+IGH6]eSQZNK7865@RoD?b<2
+R1
+R2
+R27
+8C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/PDMAFIFO/PDMAFIFO_0/rtl/vlog/core/COREFIFO.v
+FC:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/PDMAFIFO/PDMAFIFO_0/rtl/vlog/core/COREFIFO.v
+R11
+R4
+r1
+!s85 0
+31
+Z29 !s108 1486515335.000000
+!s107 C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/PDMAFIFO/PDMAFIFO_0/rtl/vlog/core/COREFIFO.v|
+!s90 -reportprogress|300|-vlog01compat|-work|presynth|C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/PDMAFIFO/PDMAFIFO_0/rtl/vlog/core/COREFIFO.v|
+!s101 -O0
+!i113 1
+R6
+n@p@d@m@a@f@i@f@o_@p@d@m@a@f@i@f@o_0_@c@o@r@e@f@i@f@o
+vPDMAFIFO_PDMAFIFO_0_corefifo_async
+R28
+!i10b 1
+!s100 dD^9dFTS^Eld8NQajUnSO0
+IJ2O8l2TIW[_0[_7z^=9V51
+R1
+R2
+R27
+8C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/PDMAFIFO/PDMAFIFO_0/rtl/vlog/core/corefifo_async.v
+FC:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/PDMAFIFO/PDMAFIFO_0/rtl/vlog/core/corefifo_async.v
+R17
+R4
+r1
+!s85 0
+31
+R29
+!s107 C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/PDMAFIFO/PDMAFIFO_0/rtl/vlog/core/corefifo_async.v|
+!s90 -reportprogress|300|-vlog01compat|-work|presynth|C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/PDMAFIFO/PDMAFIFO_0/rtl/vlog/core/corefifo_async.v|
+!s101 -O0
+!i113 1
+R6
+n@p@d@m@a@f@i@f@o_@p@d@m@a@f@i@f@o_0_corefifo_async
+vPDMAFIFO_PDMAFIFO_0_corefifo_doubleSync
+R28
+!i10b 1
+!s100 WG@ZXj0FUPW0Qd0X]WCWF3
+I0]4TT^Unc^fRe8_8RPFak3
+R1
+R2
+R27
+8C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/PDMAFIFO/PDMAFIFO_0/rtl/vlog/core/corefifo_doubleSync.v
+FC:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/PDMAFIFO/PDMAFIFO_0/rtl/vlog/core/corefifo_doubleSync.v
+R11
+R4
+r1
+!s85 0
+31
+R29
+!s107 C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/PDMAFIFO/PDMAFIFO_0/rtl/vlog/core/corefifo_doubleSync.v|
+!s90 -reportprogress|300|-vlog01compat|-work|presynth|C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/PDMAFIFO/PDMAFIFO_0/rtl/vlog/core/corefifo_doubleSync.v|
+!s101 -O0
+!i113 1
+R6
+n@p@d@m@a@f@i@f@o_@p@d@m@a@f@i@f@o_0_corefifo_double@sync
+vPDMAFIFO_PDMAFIFO_0_corefifo_fwft
+R28
+!i10b 1
+!s100 a`94j=91z6Gk:gCP6B4dd2
+I>l7FFa;el]oihFS1zIhC61
+R1
+R2
+R27
+8C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/PDMAFIFO/PDMAFIFO_0/rtl/vlog/core/corefifo_fwft.v
+FC:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/PDMAFIFO/PDMAFIFO_0/rtl/vlog/core/corefifo_fwft.v
+R17
+R4
+r1
+!s85 0
+31
+R29
+!s107 C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/PDMAFIFO/PDMAFIFO_0/rtl/vlog/core/corefifo_fwft.v|
+!s90 -reportprogress|300|-vlog01compat|-work|presynth|C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/PDMAFIFO/PDMAFIFO_0/rtl/vlog/core/corefifo_fwft.v|
+!s101 -O0
+!i113 1
+R6
+n@p@d@m@a@f@i@f@o_@p@d@m@a@f@i@f@o_0_corefifo_fwft
+vPDMAFIFO_PDMAFIFO_0_corefifo_grayToBinConv
+R28
+!i10b 1
+!s100 9LlS4PVMDX0a88zY121S51
+IT^@bR1e[U:X6eZfgmjNLe0
+R1
+R2
+R27
+8C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/PDMAFIFO/PDMAFIFO_0/rtl/vlog/core/corefifo_grayToBinConv.v
+FC:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/PDMAFIFO/PDMAFIFO_0/rtl/vlog/core/corefifo_grayToBinConv.v
+R11
+R4
+r1
+!s85 0
+31
+R29
+!s107 C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/PDMAFIFO/PDMAFIFO_0/rtl/vlog/core/corefifo_grayToBinConv.v|
+!s90 -reportprogress|300|-vlog01compat|-work|presynth|C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/PDMAFIFO/PDMAFIFO_0/rtl/vlog/core/corefifo_grayToBinConv.v|
+!s101 -O0
+!i113 1
+R6
+n@p@d@m@a@f@i@f@o_@p@d@m@a@f@i@f@o_0_corefifo_gray@to@bin@conv
+vPDMAFIFO_PDMAFIFO_0_corefifo_sync
+R22
+!i10b 1
+!s100 `WjblaE7H6LRa2E0zJdMQ1
+IQSOB[aMoESLz`8Z=R8h9k2
+R1
+R2
+R27
+8C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/PDMAFIFO/PDMAFIFO_0/rtl/vlog/core/corefifo_sync.v
+FC:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/PDMAFIFO/PDMAFIFO_0/rtl/vlog/core/corefifo_sync.v
+R17
+R4
+r1
+!s85 0
+31
+R23
+!s107 C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/PDMAFIFO/PDMAFIFO_0/rtl/vlog/core/corefifo_sync.v|
+!s90 -reportprogress|300|-vlog01compat|-work|presynth|C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/PDMAFIFO/PDMAFIFO_0/rtl/vlog/core/corefifo_sync.v|
+!s101 -O0
+!i113 1
+R6
+n@p@d@m@a@f@i@f@o_@p@d@m@a@f@i@f@o_0_corefifo_sync
+vPDMAFIFO_PDMAFIFO_0_corefifo_sync_scntr
+R22
+!i10b 1
+!s100 oQk]a1NNcU1bO?jnKc3A03
+IO7Q3C<WT:hTD:?6iz27jM0
+R1
+R2
+R27
+8C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/PDMAFIFO/PDMAFIFO_0/rtl/vlog/core/corefifo_sync_scntr.v
+FC:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/PDMAFIFO/PDMAFIFO_0/rtl/vlog/core/corefifo_sync_scntr.v
+R17
+R4
+r1
+!s85 0
+31
+R23
+!s107 C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/PDMAFIFO/PDMAFIFO_0/rtl/vlog/core/corefifo_sync_scntr.v|
+!s90 -reportprogress|300|-vlog01compat|-work|presynth|C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/PDMAFIFO/PDMAFIFO_0/rtl/vlog/core/corefifo_sync_scntr.v|
+!s101 -O0
+!i113 1
+R6
+n@p@d@m@a@f@i@f@o_@p@d@m@a@f@i@f@o_0_corefifo_sync_scntr
+vPDMAFIFO_PDMAFIFO_0_ram_wrapper
+R28
+!i10b 1
+!s100 Th?PzIei5n^5C9[8fM[hN1
+IBOB`j@QP:0ziF7`OXj1hc3
+R1
+R2
+R27
+8C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/PDMAFIFO/PDMAFIFO_0/rtl/vlog/core/PDMAFIFO_PDMAFIFO_0_ram_wrapper.v
+FC:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/PDMAFIFO/PDMAFIFO_0/rtl/vlog/core/PDMAFIFO_PDMAFIFO_0_ram_wrapper.v
+L0 4
+R4
+r1
+!s85 0
+31
+R29
+!s107 C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/PDMAFIFO/PDMAFIFO_0/rtl/vlog/core/PDMAFIFO_PDMAFIFO_0_ram_wrapper.v|
+!s90 -reportprogress|300|-vlog01compat|-work|presynth|C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/PDMAFIFO/PDMAFIFO_0/rtl/vlog/core/PDMAFIFO_PDMAFIFO_0_ram_wrapper.v|
+!s101 -O0
+!i113 1
+R6
+n@p@d@m@a@f@i@f@o_@p@d@m@a@f@i@f@o_0_ram_wrapper
+vPDMAFIFO_PDMAFIFO_0_USRAM_top
+R28
+!i10b 1
+!s100 EY[CZf@F7E2>h>km992>;0
+IFbR<8Zg:3B6[lVVC54@M<1
+R1
+R2
+R27
+8C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/PDMAFIFO/PDMAFIFO_0/rtl/vlog/core/PDMAFIFO_PDMAFIFO_0_USRAM_top.v
+FC:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/PDMAFIFO/PDMAFIFO_0/rtl/vlog/core/PDMAFIFO_PDMAFIFO_0_USRAM_top.v
+L0 5
+R4
+r1
+!s85 0
+31
+R29
+!s107 C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/PDMAFIFO/PDMAFIFO_0/rtl/vlog/core/PDMAFIFO_PDMAFIFO_0_USRAM_top.v|
+!s90 -reportprogress|300|-vlog01compat|-work|presynth|C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/PDMAFIFO/PDMAFIFO_0/rtl/vlog/core/PDMAFIFO_PDMAFIFO_0_USRAM_top.v|
+!s101 -O0
+!i113 1
+R6
+n@p@d@m@a@f@i@f@o_@p@d@m@a@f@i@f@o_0_@u@s@r@a@m_top
+vRCOSC_1MHZ
+R22
+!i10b 1
+!s100 <BSNM`6<nXcCQceZl1PY92
+I^GM:P8bXef8SjD[F>F<[70
+R1
+R2
+Z30 w1480719737
+Z31 8C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/Actel/SgCore/OSC/2.0.101/osc_comps_pre.v
+Z32 FC:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/Actel/SgCore/OSC/2.0.101/osc_comps_pre.v
+L0 1
+R4
+r1
+!s85 0
+31
+R23
+Z33 !s107 C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/Actel/SgCore/OSC/2.0.101/osc_comps_pre.v|
+Z34 !s90 -reportprogress|300|-vlog01compat|-work|presynth|C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/Actel/SgCore/OSC/2.0.101/osc_comps_pre.v|
+!s101 -O0
+!i113 1
+R6
+n@r@c@o@s@c_1@m@h@z
+vRCOSC_1MHZ_FAB
+R22
+!i10b 1
+!s100 [<QCMOKj]Y@IJ4oh=SQRD0
+ICL4k`Lo]KiV79EdE[SV2l0
+R1
+R2
+R30
+R31
+R32
+L0 36
+R4
+r1
+!s85 0
+31
+R23
+R33
+R34
+!s101 -O0
+!i113 1
+R6
+n@r@c@o@s@c_1@m@h@z_@f@a@b
+vRCOSC_25_50MHZ
+R22
+!i10b 1
+!s100 k1Jg1gQ[e2O3nbNlWmf_g2
+I1NDa2L;9UnkRYT816mn2i3
+R1
+R2
+R30
+R31
+R32
+L0 10
+R4
+r1
+!s85 0
+31
+R23
+R33
+R34
+!s101 -O0
+!i113 1
+R6
+n@r@c@o@s@c_25_50@m@h@z
+vRCOSC_25_50MHZ_FAB
+R22
+!i10b 1
+!s100 GK5OgUBoj4alK[D^]iB;Z0
+IHWaWTJVDf70C2=]IGKGPT1
+R1
+R2
+R30
+R31
+R32
+L0 47
+R4
+r1
+!s85 0
+31
+R23
+R33
+R34
+!s101 -O0
+!i113 1
+R6
+n@r@c@o@s@c_25_50@m@h@z_@f@a@b
+vtoplevel_tb
+R7
+!i10b 1
+!s100 kH[d=;;eaY65MF88Oc6D<0
+IWE?z9OI3=dg3m?5VmQGSW0
+R1
+R2
+w1486066910
+8C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/stimulus/toplevel_tb.v
+FC:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/stimulus/toplevel_tb.v
+R3
+R4
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/stimulus/toplevel_tb.v|
+!s90 -reportprogress|300|+incdir+C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/stimulus|-vlog01compat|-work|presynth|C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/stimulus/toplevel_tb.v|
+!s101 -O0
+!i113 1
+R6
+R9
+vXTLOSC
+R22
+!i10b 1
+!s100 OW9d=a96P?BKbkmoeh@V?3
+IH5ZRM8cZc;9FX:4RNnJfV3
+R1
+R2
+R30
+R31
+R32
+R3
+R4
+r1
+!s85 0
+31
+R23
+R33
+R34
+!s101 -O0
+!i113 1
+R6
+n@x@t@l@o@s@c
+vXTLOSC_FAB
+R22
+!i10b 1
+!s100 @>0aSYoVL=^[:=zN:Cb:;2
+Iz[eGh5LJo6lbKQ9`OCh3F3
+R1
+R2
+R30
+R31
+R32
+L0 58
+R4
+r1
+!s85 0
+31
+R23
+R33
+R34
+!s101 -O0
+!i113 1
+R6
+n@x@t@l@o@s@c_@f@a@b

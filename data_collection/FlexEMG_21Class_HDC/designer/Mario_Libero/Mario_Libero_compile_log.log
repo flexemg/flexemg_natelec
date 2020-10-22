@@ -1,0 +1,32 @@
+
+===============================================================================.
+
+Info: Global design data: 
+      Total globals:                       7 
+      Globals that cannot be demoted:      2 
+      Globals considered for demotion:     5 
+
+
+Info: List of globals that cannot be demoted: 
+    CLK    ASYN   DATA   Instance Name 
+    ---    ----   ----   ------------- 
+    44528  0      0      'FCCC_0/GL1_INST' 
+    2517   0      1      'FCCC_0/GL0_INST' 
+
+Info: List of globals considered for demotion: 
+    CLK    ASYN   DATA   Instance Name 
+    ---    ----   ----   ------------- 
+    0      2387   44235  'Mario_Libero_MSS_0/MSS_ADLIB_INST_RNIERND' 
+    0      0      21105  'cm_top_0/nm_if_0/nm_channel_0/adc_datapath_0/hdc_top_0/associative_memory/QueryHypervectorEN_S_1_sqmuxa_1_a2_0_a2_RNIJDE12_0' 
+    0      0      6999   'cm_top_0/nm_if_0/nm_channel_0/adc_datapath_0/hdc_top_0/temporal_encoder/TemporalAccum/BundleCounter_DP[0]6_RNIN667_0' 
+    0      0      5440   'I_22080' 
+    0      47     0      'I_22082' 
+
+Info: Demotion information: 
+Info: CMPG4-302: Added 0 row global instances.
+Info: CMPG4-303: Deleted 0 global instances.
+
+===============================================================================.
+
+INFO: Reading User PDC file C:/Users/bwrc/Desktop/HyperFlexEMG_190405_21Class/constraint/io/Mario_Libero.io.pdc. 0 error(s) and 0 warning(s)
+INFO: Reading User PDC file C:/Users/bwrc/Desktop/HyperFlexEMG_190405_21Class/constraint/fp/Mario_Libero.fp.pdc. 0 error(s) and 0 warning(s)

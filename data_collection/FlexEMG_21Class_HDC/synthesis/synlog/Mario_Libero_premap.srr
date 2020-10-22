@@ -1,0 +1,189 @@
+# Fri Apr 05 22:54:15 2019
+
+Synopsys Generic Technology Pre-mapping, Version map201609actrcp1, Build 005R, Built Jan 25 2017 01:01:33
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+Product Version L-2016.09M-2
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
+
+Reading constraint file: C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\constraint\andy_clock_constraint.sdc
+@L: C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\synthesis\Mario_Libero_scck.rpt 
+Printing clock  summary report in "C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\synthesis\Mario_Libero_scck.rpt" file 
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 187MB peak: 250MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 187MB peak: 250MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 188MB peak: 250MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 188MB peak: 250MB)
+
+@N: MO111 :"c:\users\bwrc\desktop\hyperflexemg_190405_21class\component\work\pdmafifo\pdmafifo_0\rtl\vlog\core\pdmafifo_pdmafifo_0_ram_wrapper.v":44:25:44:35|Tristate driver A_DB_DETECT (in view: work.PDMAFIFO_PDMAFIFO_0_ram_wrapper_8s_16s_8_7_1s_1s_3s(verilog)) on net A_DB_DETECT (in view: work.PDMAFIFO_PDMAFIFO_0_ram_wrapper_8s_16s_8_7_1s_1s_3s(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\users\bwrc\desktop\hyperflexemg_190405_21class\component\work\pdmafifo\pdmafifo_0\rtl\vlog\core\pdmafifo_pdmafifo_0_ram_wrapper.v":42:25:42:36|Tristate driver A_SB_CORRECT (in view: work.PDMAFIFO_PDMAFIFO_0_ram_wrapper_8s_16s_8_7_1s_1s_3s(verilog)) on net A_SB_CORRECT (in view: work.PDMAFIFO_PDMAFIFO_0_ram_wrapper_8s_16s_8_7_1s_1s_3s(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\users\bwrc\desktop\hyperflexemg_190405_21class\component\work\pdmafifo\pdmafifo_0\rtl\vlog\core\pdmafifo_pdmafifo_0_ram_wrapper.v":45:25:45:35|Tristate driver B_DB_DETECT (in view: work.PDMAFIFO_PDMAFIFO_0_ram_wrapper_8s_16s_8_7_1s_1s_3s(verilog)) on net B_DB_DETECT (in view: work.PDMAFIFO_PDMAFIFO_0_ram_wrapper_8s_16s_8_7_1s_1s_3s(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\users\bwrc\desktop\hyperflexemg_190405_21class\component\work\pdmafifo\pdmafifo_0\rtl\vlog\core\pdmafifo_pdmafifo_0_ram_wrapper.v":43:25:43:36|Tristate driver B_SB_CORRECT (in view: work.PDMAFIFO_PDMAFIFO_0_ram_wrapper_8s_16s_8_7_1s_1s_3s(verilog)) on net B_SB_CORRECT (in view: work.PDMAFIFO_PDMAFIFO_0_ram_wrapper_8s_16s_8_7_1s_1s_3s(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\users\bwrc\desktop\hyperflexemg_190405_21class\component\work\pdmafifo\pdmafifo_0\rtl\vlog\core\corefifo.v":164:37:164:45|Tristate driver DB_DETECT (in view: work.PDMAFIFO_PDMAFIFO_0_COREFIFO_Z4(verilog)) on net DB_DETECT (in view: work.PDMAFIFO_PDMAFIFO_0_COREFIFO_Z4(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\users\bwrc\desktop\hyperflexemg_190405_21class\component\work\pdmafifo\pdmafifo_0\rtl\vlog\core\corefifo.v":163:37:163:46|Tristate driver SB_CORRECT (in view: work.PDMAFIFO_PDMAFIFO_0_COREFIFO_Z4(verilog)) on net SB_CORRECT (in view: work.PDMAFIFO_PDMAFIFO_0_COREFIFO_Z4(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\users\bwrc\desktop\hyperflexemg_190405_21class\component\work\mario_libero\osc_0\mario_libero_osc_0_osc.v":17:7:17:20|Tristate driver RCOSC_1MHZ_CCC (in view: work.Mario_Libero_OSC_0_OSC(verilog)) on net RCOSC_1MHZ_CCC (in view: work.Mario_Libero_OSC_0_OSC(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\users\bwrc\desktop\hyperflexemg_190405_21class\component\work\mario_libero\osc_0\mario_libero_osc_0_osc.v":18:7:18:20|Tristate driver RCOSC_1MHZ_O2F (in view: work.Mario_Libero_OSC_0_OSC(verilog)) on net RCOSC_1MHZ_O2F (in view: work.Mario_Libero_OSC_0_OSC(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\users\bwrc\desktop\hyperflexemg_190405_21class\component\work\mario_libero\osc_0\mario_libero_osc_0_osc.v":15:7:15:24|Tristate driver RCOSC_25_50MHZ_CCC (in view: work.Mario_Libero_OSC_0_OSC(verilog)) on net RCOSC_25_50MHZ_CCC (in view: work.Mario_Libero_OSC_0_OSC(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\users\bwrc\desktop\hyperflexemg_190405_21class\component\work\mario_libero\osc_0\mario_libero_osc_0_osc.v":16:7:16:24|Tristate driver RCOSC_25_50MHZ_O2F (in view: work.Mario_Libero_OSC_0_OSC(verilog)) on net RCOSC_25_50MHZ_O2F (in view: work.Mario_Libero_OSC_0_OSC(verilog)) has its enable tied to GND.
+@N: BN362 :"c:\users\bwrc\desktop\hyperflexemg_190405_21class\hdl\fifo_error_decoder.v":89:0:89:5|Removing sequential instance nm1_of (in view: work.fifo_error_decoder(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\bwrc\desktop\hyperflexemg_190405_21class\hdl\fifo_error_decoder.v":97:0:97:5|Removing sequential instance nm1_uf (in view: work.fifo_error_decoder(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\bwrc\desktop\hyperflexemg_190405_21class\hdl\adcmem_dp.v":41:0:41:5|Removing sequential instance mem_1[15:0] (in view: work.ADCMEM_DP(verilog)) of type view:PrimLib.ram1(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\bwrc\desktop\hyperflexemg_190405_21class\hdl\adc_vector_compressor.v":188:0:188:5|Removing sequential instance stim_flag (in view: work.adc_vector_compressor(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\bwrc\desktop\hyperflexemg_190405_21class\hdl\nm_if_apb.v":228:0:228:5|Removing sequential instance adc_vec_n1[63:0] (in view: work.nm_if_apb(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\bwrc\desktop\hyperflexemg_190405_21class\hdl\nm_if_apb.v":228:0:228:5|Removing sequential instance tx_data_n1[33:0] (in view: work.nm_if_apb(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\bwrc\desktop\hyperflexemg_190405_21class\hdl\cm_if_apb.v":137:0:137:5|Removing sequential instance debug_sel[4:0] (in view: work.cm_if_apb_4s_3s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\bwrc\desktop\hyperflexemg_190405_21class\hdl\cm_if_apb.v":137:0:137:5|Removing sequential instance nm1_num_stims[2:0] (in view: work.cm_if_apb_4s_3s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\bwrc\desktop\hyperflexemg_190405_21class\hdl\cm_if_apb.v":137:0:137:5|Removing sequential instance nm0_num_stims[2:0] (in view: work.cm_if_apb_4s_3s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\bwrc\desktop\hyperflexemg_190405_21class\hdl\cm_if_apb.v":137:0:137:5|Removing sequential instance mode_dbg[15:0] (in view: work.cm_if_apb_4s_3s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\bwrc\desktop\hyperflexemg_190405_21class\hdl\cm_if_apb.v":137:0:137:5|Removing sequential instance scope_trigger (in view: work.cm_if_apb_4s_3s(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN115 :"c:\users\bwrc\desktop\hyperflexemg_190405_21class\component\work\nm_if\nm_if.v":269:19:269:38|Removing instance fifo_error_decoder_0 (in view: work.nm_if(verilog)) of type view:work.fifo_error_decoder(verilog) because it does not drive other instances.
+@N: BN362 :"c:\users\bwrc\desktop\hyperflexemg_190405_21class\component\work\adcfifo\adcfifo_0\rtl\vlog\core\corefifo_sync_scntr.v":444:7:444:12|Removing sequential instance genblk5\.afull_r (in view: work.ADCFIFO_ADCFIFO_0_corefifo_sync_scntr_Z2(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\bwrc\desktop\hyperflexemg_190405_21class\component\work\adcfifo\adcfifo_0\rtl\vlog\core\corefifo_sync_scntr.v":432:9:432:14|Removing sequential instance genblk5\.aempty_r (in view: work.ADCFIFO_ADCFIFO_0_corefifo_sync_scntr_Z2(verilog)) of type view:PrimLib.dffse(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\bwrc\desktop\hyperflexemg_190405_21class\component\work\pdmafifo\pdmafifo_0\rtl\vlog\core\corefifo_sync.v":385:16:385:21|Removing sequential instance genblk1\.afull_r (in view: work.PDMAFIFO_PDMAFIFO_0_corefifo_sync_Z5(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\bwrc\desktop\hyperflexemg_190405_21class\component\work\pdmafifo\pdmafifo_0\rtl\vlog\core\corefifo_sync.v":348:16:348:21|Removing sequential instance genblk1\.aempty_r (in view: work.PDMAFIFO_PDMAFIFO_0_corefifo_sync_Z5(verilog)) of type view:PrimLib.dffs(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\bwrc\desktop\hyperflexemg_190405_21class\component\work\adcfifo\adcfifo_0\rtl\vlog\core\corefifo_sync_scntr.v":259:3:259:8|Removing sequential instance rdcnt_1[6:0] (in view: work.ADCFIFO_ADCFIFO_0_corefifo_sync_scntr_Z2(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\bwrc\desktop\hyperflexemg_190405_21class\component\work\pdmafifo\pdmafifo_0\rtl\vlog\core\corefifo_sync.v":385:16:385:21|Removing sequential instance genblk1\.wrcnt_r[7:0] (in view: work.PDMAFIFO_PDMAFIFO_0_corefifo_sync_Z5(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\bwrc\desktop\hyperflexemg_190405_21class\component\work\pdmafifo\pdmafifo_0\rtl\vlog\core\corefifo_sync.v":348:16:348:21|Removing sequential instance genblk1\.rdcnt_r[8:0] (in view: work.PDMAFIFO_PDMAFIFO_0_corefifo_sync_Z5(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\bwrc\desktop\hyperflexemg_190405_21class\component\work\pdmafifo\pdmafifo_0\rtl\vlog\core\corefifo_sync.v":348:16:348:21|Removing sequential instance genblk1\.dvld_r (in view: work.PDMAFIFO_PDMAFIFO_0_corefifo_sync_Z5(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\bwrc\desktop\hyperflexemg_190405_21class\component\work\pdmafifo\pdmafifo_0\rtl\vlog\core\corefifo_sync.v":385:16:385:21|Removing sequential instance genblk1\.wack_r (in view: work.PDMAFIFO_PDMAFIFO_0_corefifo_sync_Z5(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\bwrc\desktop\hyperflexemg_190405_21class\hdl\fifo_error_decoder.v":81:0:81:5|Removing sequential instance pdma_uf (in view: work.fifo_error_decoder(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\bwrc\desktop\hyperflexemg_190405_21class\hdl\fifo_error_decoder.v":113:0:113:5|Removing sequential instance nm0_uf (in view: work.fifo_error_decoder(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\bwrc\desktop\hyperflexemg_190405_21class\hdl\fifo_error_decoder.v":73:0:73:5|Removing sequential instance pdma_of (in view: work.fifo_error_decoder(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\bwrc\desktop\hyperflexemg_190405_21class\hdl\fifo_error_decoder.v":105:0:105:5|Removing sequential instance nm0_of (in view: work.fifo_error_decoder(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\bwrc\desktop\hyperflexemg_190405_21class\component\work\pdmafifo\pdmafifo_0\rtl\vlog\core\corefifo_sync.v":348:16:348:21|Removing sequential instance genblk1\.underflow_r (in view: work.PDMAFIFO_PDMAFIFO_0_corefifo_sync_Z5(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\bwrc\desktop\hyperflexemg_190405_21class\component\work\adcfifo\adcfifo_0\rtl\vlog\core\corefifo_sync_scntr.v":391:4:391:9|Removing sequential instance underflow_r (in view: work.ADCFIFO_ADCFIFO_0_corefifo_sync_scntr_Z2(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\bwrc\desktop\hyperflexemg_190405_21class\component\work\adcfifo\adcfifo_0\rtl\vlog\core\corefifo_sync_scntr.v":444:7:444:12|Removing sequential instance genblk5\.overflow_r (in view: work.ADCFIFO_ADCFIFO_0_corefifo_sync_scntr_Z2(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\bwrc\desktop\hyperflexemg_190405_21class\component\work\adcfifo\adcfifo_0\rtl\vlog\core\corefifo_sync_scntr.v":369:3:369:8|Removing sequential instance full_reg (in view: work.ADCFIFO_ADCFIFO_0_corefifo_sync_scntr_Z2(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+syn_allowed_resources : blockrams=69  set on top level netlist Mario_Libero
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 291MB peak: 307MB)
+
+
+
+Clock Summary
+*****************
+
+Start             Requested     Requested     Clock                           Clock                Clock
+Clock             Frequency     Period        Type                            Group                Load 
+--------------------------------------------------------------------------------------------------------
+clk_20_48         20.5 MHz      48.828        generated (from xtal_20MHz)     default_clkgroup     2546 
+clk_20_48_hdc     20.5 MHz      48.828        generated (from xtal_20MHz)     default_clkgroup     45408
+xtal_20MHz        20.0 MHz      50.000        declared                        default_clkgroup     0    
+========================================================================================================
+
+Finished Pre Mapping Phase.
+@N: BN225 |Writing default property annotation file C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\synthesis\Mario_Libero.sap.
+
+Starting constraint checker (Real Time elapsed 0h:00m:08s; CPU Time elapsed 0h:00m:08s; Memory used current: 279MB peak: 307MB)
+
+Encoding state machine current_state[4:0] (in view: work.ack_datapath_4s_0_1_3_5_4_4s(verilog))
+original code -> new code
+   000 -> 00001
+   001 -> 00010
+   011 -> 00100
+   100 -> 01000
+   101 -> 10000
+Encoding state machine current_state[5:0] (in view: work.adc_vector_compressor(verilog))
+original code -> new code
+   000 -> 000001
+   001 -> 000010
+   010 -> 000100
+   011 -> 001000
+   110 -> 010000
+   111 -> 100000
+Encoding state machine prev_state[2:0] (in view: work.feature_encoder(verilog))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+Encoding state machine prev_state[3:0] (in view: work.spatial_encoder_N_pong(verilog))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+   11 -> 11
+@N: MO225 :"c:\users\bwrc\desktop\hyperflexemg_190405_21class\hdl\spatial_encoder_n_pong.v":211:0:211:5|There are no possible illegal states for state machine prev_state[3:0] (in view: work.spatial_encoder_N_pong(verilog)); safe FSM implementation is not required.
+Encoding state machine prev_state[3:0] (in view: work.temporal_encoder_counter(verilog))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+   11 -> 11
+@N: MO225 :"c:\users\bwrc\desktop\hyperflexemg_190405_21class\hdl\temporal_encoder_counter.v":247:0:247:5|There are no possible illegal states for state machine prev_state[3:0] (in view: work.temporal_encoder_counter(verilog)); safe FSM implementation is not required.
+Encoding state machine prev_state[2:0] (in view: work.associative_memory(verilog))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+Encoding state machine current_state[13:0] (in view: work.nmic_rx_Z3(verilog))
+original code -> new code
+   0000 -> 00000000000001
+   0001 -> 00000000000010
+   0010 -> 00000000000100
+   0011 -> 00000000001000
+   0101 -> 00000000010000
+   0110 -> 00000000100000
+   0111 -> 00000001000000
+   1000 -> 00000010000000
+   1010 -> 00000100000000
+   1011 -> 00001000000000
+   1100 -> 00010000000000
+   1101 -> 00100000000000
+   1110 -> 01000000000000
+   1111 -> 10000000000000
+Encoding state machine current_state[5:0] (in view: work.nmic_tx_4s_0_1_3_2_4_6_5_4s(verilog))
+original code -> new code
+   000 -> 000001
+   001 -> 000010
+   011 -> 000100
+   100 -> 001000
+   101 -> 010000
+   110 -> 100000
+Encoding state machine current_state[8:0] (in view: work.pdma_if_Z6(verilog))
+original code -> new code
+   0000 -> 000000001
+   0001 -> 000000010
+   0010 -> 000000100
+   0011 -> 000001000
+   0111 -> 000010000
+   1000 -> 000100000
+   1100 -> 001000000
+   1110 -> 010000000
+   1111 -> 100000000
+@N: BN362 :"c:\users\bwrc\desktop\hyperflexemg_190405_21class\hdl\nm_if_apb.v":228:0:228:5|Removing sequential instance tx_start[1] (in view: work.nm_if_apb(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\bwrc\desktop\hyperflexemg_190405_21class\hdl\adc_frame_buffer.v":45:0:45:5|Removing sequential instance dout[15] (in view: work.adc_frame_buffer(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\bwrc\desktop\hyperflexemg_190405_21class\hdl\adc_frame_buffer.v":45:0:45:5|Removing sequential instance dout[31] (in view: work.adc_frame_buffer(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\bwrc\desktop\hyperflexemg_190405_21class\hdl\adc_frame_buffer.v":45:0:45:5|Removing sequential instance dout[47] (in view: work.adc_frame_buffer(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\bwrc\desktop\hyperflexemg_190405_21class\hdl\adc_frame_buffer.v":45:0:45:5|Removing sequential instance dout[63] (in view: work.adc_frame_buffer(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\bwrc\desktop\hyperflexemg_190405_21class\hdl\adc_frame_buffer.v":45:0:45:5|Removing sequential instance dout[79] (in view: work.adc_frame_buffer(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\bwrc\desktop\hyperflexemg_190405_21class\hdl\adc_frame_buffer.v":45:0:45:5|Removing sequential instance dout[95] (in view: work.adc_frame_buffer(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\bwrc\desktop\hyperflexemg_190405_21class\hdl\adc_frame_buffer.v":45:0:45:5|Removing sequential instance dout[111] (in view: work.adc_frame_buffer(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\bwrc\desktop\hyperflexemg_190405_21class\hdl\adc_frame_buffer.v":45:0:45:5|Removing sequential instance dout[127] (in view: work.adc_frame_buffer(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\bwrc\desktop\hyperflexemg_190405_21class\hdl\adc_frame_buffer.v":45:0:45:5|Removing sequential instance dout[143] (in view: work.adc_frame_buffer(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\bwrc\desktop\hyperflexemg_190405_21class\hdl\adc_frame_buffer.v":45:0:45:5|Removing sequential instance dout[159] (in view: work.adc_frame_buffer(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\bwrc\desktop\hyperflexemg_190405_21class\hdl\adc_frame_buffer.v":45:0:45:5|Removing sequential instance dout[175] (in view: work.adc_frame_buffer(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\bwrc\desktop\hyperflexemg_190405_21class\hdl\adc_frame_buffer.v":45:0:45:5|Removing sequential instance dout[191] (in view: work.adc_frame_buffer(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\bwrc\desktop\hyperflexemg_190405_21class\hdl\adc_frame_buffer.v":45:0:45:5|Removing sequential instance dout[207] (in view: work.adc_frame_buffer(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\bwrc\desktop\hyperflexemg_190405_21class\hdl\adc_frame_buffer.v":45:0:45:5|Removing sequential instance dout[223] (in view: work.adc_frame_buffer(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\bwrc\desktop\hyperflexemg_190405_21class\hdl\adc_frame_buffer.v":45:0:45:5|Removing sequential instance dout[239] (in view: work.adc_frame_buffer(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+None
+None
+
+Finished constraint checker (Real Time elapsed 0h:00m:10s; CPU Time elapsed 0h:00m:10s; Memory used current: 306MB peak: 325MB)
+
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:10s; CPU Time elapsed 0h:00m:10s; Memory used current: 208MB peak: 325MB)
+
+Process took 0h:00m:10s realtime, 0h:00m:10s cputime
+# Fri Apr 05 22:54:26 2019
+
+###########################################################]

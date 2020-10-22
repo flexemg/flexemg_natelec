@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<?xml-stylesheet type="text/xsl" href="drcss.xsl"?>
+<drcreport>
+  <header>cm_top</header>
+  <drc>
+    <status>C:\Microsemi\Libero_SoC_v11.8\Designer/data/drcreport\warn.png</status>
+    <StatusMessage>Warning</StatusMessage>
+    <message>Floating Driver</message>
+    <detail>Floating output pin cm_if_apb_0:emulate_nm_1</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/cm_top/pins/cm_if_apb_0:emulate_nm_1</crossprobe>
+  </drc>
+</drcreport>

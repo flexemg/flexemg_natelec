@@ -1,0 +1,1015 @@
+#### START OF AREA REPORT #####[
+
+Part:			M2S060TFCSBGA325STD (Microsemi)
+
+----------------------------------------------------------------------------
+########   Utilization report for  Top level view:   Mario_Libero   ########
+============================================================================
+
+SEQUENTIAL ELEMENTS
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+SLE      46974              100 %                
+=================================================
+Total SEQUENTIAL ELEMENTS in the block Mario_Libero:	46974 (51.06 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+CFG           25654              100 %                
+ARI1          19213              100 %                
+BLACK BOX     2160               100 %                
+======================================================
+Total COMBINATIONAL LOGIC in the block Mario_Libero:	47027 (51.12 % Utilization)
+
+
+MEMORY ELEMENTS
+Name         Total elements     Utilization     Notes
+-----------------------------------------------------
+RAM1K18      28                 100 %                
+RAM64X18     10                 100 %                
+=====================================================
+Total MEMORY ELEMENTS in the block Mario_Libero:	38 (0.04 % Utilization)
+
+
+GLOBAL BUFFERS
+Name       Total elements     Utilization     Notes
+---------------------------------------------------
+GLOBAL     7                  100 %                
+===================================================
+Total GLOBAL BUFFERS in the block Mario_Libero:	7 (0.01 % Utilization)
+
+
+IO PADS
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+IO       15                 100 %                
+=================================================
+Total IO PADS in the block Mario_Libero:	15 (0.02 % Utilization)
+
+-----------------------------------------------------------------
+########   Utilization report for  cell:   CoreAPB3_Z7   ########
+Instance path:   Mario_Libero.CoreAPB3_Z7                        
+=================================================================
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+CFG      36                 0.140 %              
+=================================================
+Total COMBINATIONAL LOGIC in the block Mario_Libero.CoreAPB3_Z7:	36 (0.04 % Utilization)
+
+-------------------------------------------------------------
+########   Utilization report for  cell:   CAPB3II   ########
+Instance path:   CoreAPB3_Z7.CAPB3II                         
+=============================================================
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+CFG      36                 0.140 %              
+=================================================
+Total COMBINATIONAL LOGIC in the block CoreAPB3_Z7.CAPB3II:	36 (0.04 % Utilization)
+
+-----------------------------------------------------------------------------------------
+########   Utilization report for  cell:   Mario_Libero_CoreGPIO_0_CoreGPIO_Z8   ########
+Instance path:   Mario_Libero.Mario_Libero_CoreGPIO_0_CoreGPIO_Z8                        
+=========================================================================================
+
+SEQUENTIAL ELEMENTS
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+SLE      54                 0.1150 %             
+=================================================
+Total SEQUENTIAL ELEMENTS in the block Mario_Libero.Mario_Libero_CoreGPIO_0_CoreGPIO_Z8:	54 (0.06 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+CFG           122                0.4760 %             
+ARI1          14                 0.07290 %            
+BLACK BOX     2                  0.09260 %            
+======================================================
+Total COMBINATIONAL LOGIC in the block Mario_Libero.Mario_Libero_CoreGPIO_0_CoreGPIO_Z8:	138 (0.15 % Utilization)
+
+------------------------------------------------------------------------------
+########   Utilization report for  cell:   Mario_Libero_FCCC_0_FCCC   ########
+Instance path:   Mario_Libero.Mario_Libero_FCCC_0_FCCC                        
+==============================================================================
+
+COMBINATIONAL LOGIC
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+BLACK BOX     3                  0.1390 %             
+======================================================
+Total COMBINATIONAL LOGIC in the block Mario_Libero.Mario_Libero_FCCC_0_FCCC:	3 (0.00 % Utilization)
+
+
+GLOBAL BUFFERS
+Name       Total elements     Utilization     Notes
+---------------------------------------------------
+GLOBAL     2                  28.6 %               
+===================================================
+Total GLOBAL BUFFERS in the block Mario_Libero.Mario_Libero_FCCC_0_FCCC:	2 (0.00 % Utilization)
+
+----------------------------------------------------------------------
+########   Utilization report for  cell:   Mario_Libero_MSS   ########
+Instance path:   Mario_Libero.Mario_Libero_MSS                        
+======================================================================
+
+COMBINATIONAL LOGIC
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+CFG           4                  0.01560 %            
+BLACK BOX     1                  0.04630 %            
+======================================================
+Total COMBINATIONAL LOGIC in the block Mario_Libero.Mario_Libero_MSS:	5 (0.01 % Utilization)
+
+
+GLOBAL BUFFERS
+Name       Total elements     Utilization     Notes
+---------------------------------------------------
+GLOBAL     1                  14.3 %               
+===================================================
+Total GLOBAL BUFFERS in the block Mario_Libero.Mario_Libero_MSS:	1 (0.00 % Utilization)
+
+
+IO PADS
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+IO       2                  13.3 %               
+=================================================
+Total IO PADS in the block Mario_Libero.Mario_Libero_MSS:	2 (0.00 % Utilization)
+
+----------------------------------------------------------------------------
+########   Utilization report for  cell:   Mario_Libero_OSC_0_OSC   ########
+Instance path:   Mario_Libero.Mario_Libero_OSC_0_OSC                        
+============================================================================
+
+COMBINATIONAL LOGIC
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+BLACK BOX     2                  0.09260 %            
+======================================================
+Total COMBINATIONAL LOGIC in the block Mario_Libero.Mario_Libero_OSC_0_OSC:	2 (0.00 % Utilization)
+
+------------------------------------------------------------
+########   Utilization report for  cell:   cm_top   ########
+Instance path:   Mario_Libero.cm_top                        
+============================================================
+
+SEQUENTIAL ELEMENTS
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+SLE      46920              99.9 %               
+=================================================
+Total SEQUENTIAL ELEMENTS in the block Mario_Libero.cm_top:	46920 (51.00 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+CFG           25492              99.4 %               
+ARI1          19199              99.9 %               
+BLACK BOX     2151               99.6 %               
+======================================================
+Total COMBINATIONAL LOGIC in the block Mario_Libero.cm_top:	46842 (50.92 % Utilization)
+
+
+MEMORY ELEMENTS
+Name         Total elements     Utilization     Notes
+-----------------------------------------------------
+RAM1K18      28                 100 %                
+RAM64X18     10                 100 %                
+=====================================================
+Total MEMORY ELEMENTS in the block Mario_Libero.cm_top:	38 (0.04 % Utilization)
+
+
+GLOBAL BUFFERS
+Name       Total elements     Utilization     Notes
+---------------------------------------------------
+GLOBAL     2                  28.6 %               
+===================================================
+Total GLOBAL BUFFERS in the block Mario_Libero.cm_top:	2 (0.00 % Utilization)
+
+---------------------------------------------------------------------
+########   Utilization report for  cell:   cm_if_apb_4s_3s   ########
+Instance path:   cm_top.cm_if_apb_4s_3s                              
+=====================================================================
+
+SEQUENTIAL ELEMENTS
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+SLE      20                 0.04260 %            
+=================================================
+Total SEQUENTIAL ELEMENTS in the block cm_top.cm_if_apb_4s_3s:	20 (0.02 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+CFG           7                  0.02730 %            
+BLACK BOX     28                 1.3 %                
+======================================================
+Total COMBINATIONAL LOGIC in the block cm_top.cm_if_apb_4s_3s:	35 (0.04 % Utilization)
+
+-----------------------------------------------------------
+########   Utilization report for  cell:   nm_if   ########
+Instance path:   cm_top.nm_if                              
+===========================================================
+
+SEQUENTIAL ELEMENTS
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+SLE      46900              99.8 %               
+=================================================
+Total SEQUENTIAL ELEMENTS in the block cm_top.nm_if:	46900 (50.98 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+CFG           25485              99.3 %               
+ARI1          19199              99.9 %               
+BLACK BOX     2121               98.2 %               
+======================================================
+Total COMBINATIONAL LOGIC in the block cm_top.nm_if:	46805 (50.88 % Utilization)
+
+
+MEMORY ELEMENTS
+Name         Total elements     Utilization     Notes
+-----------------------------------------------------
+RAM1K18      28                 100 %                
+RAM64X18     10                 100 %                
+=====================================================
+Total MEMORY ELEMENTS in the block cm_top.nm_if:	38 (0.04 % Utilization)
+
+
+GLOBAL BUFFERS
+Name       Total elements     Utilization     Notes
+---------------------------------------------------
+GLOBAL     2                  28.6 %               
+===================================================
+Total GLOBAL BUFFERS in the block cm_top.nm_if:	2 (0.00 % Utilization)
+
+----------------------------------------------------------------
+########   Utilization report for  cell:   nm_channel   ########
+Instance path:   nm_if.nm_channel                               
+================================================================
+
+SEQUENTIAL ELEMENTS
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+SLE      46715              99.4 %               
+=================================================
+Total SEQUENTIAL ELEMENTS in the block nm_if.nm_channel:	46715 (50.78 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+CFG           25348              98.8 %               
+ARI1          19149              99.7 %               
+BLACK BOX     1997               92.5 %               
+======================================================
+Total COMBINATIONAL LOGIC in the block nm_if.nm_channel:	46494 (50.54 % Utilization)
+
+
+MEMORY ELEMENTS
+Name         Total elements     Utilization     Notes
+-----------------------------------------------------
+RAM1K18      28                 100 %                
+RAM64X18     8                  80 %                 
+=====================================================
+Total MEMORY ELEMENTS in the block nm_if.nm_channel:	36 (0.04 % Utilization)
+
+
+GLOBAL BUFFERS
+Name       Total elements     Utilization     Notes
+---------------------------------------------------
+GLOBAL     2                  28.6 %               
+===================================================
+Total GLOBAL BUFFERS in the block nm_if.nm_channel:	2 (0.00 % Utilization)
+
+----------------------------------------------------------------------------------
+########   Utilization report for  cell:   ack_datapath_4s_0_1_3_5_4_4s   ########
+Instance path:   nm_channel.ack_datapath_4s_0_1_3_5_4_4s                          
+==================================================================================
+
+SEQUENTIAL ELEMENTS
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+SLE      43                 0.09150 %            
+=================================================
+Total SEQUENTIAL ELEMENTS in the block nm_channel.ack_datapath_4s_0_1_3_5_4_4s:	43 (0.05 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+CFG           48                 0.1870 %             
+ARI1          6                  0.03120 %            
+BLACK BOX     1                  0.04630 %            
+======================================================
+Total COMBINATIONAL LOGIC in the block nm_channel.ack_datapath_4s_0_1_3_5_4_4s:	55 (0.06 % Utilization)
+
+------------------------------------------------------------------
+########   Utilization report for  cell:   adc_datapath   ########
+Instance path:   nm_channel.adc_datapath                          
+==================================================================
+
+SEQUENTIAL ELEMENTS
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+SLE      46601              99.2 %               
+=================================================
+Total SEQUENTIAL ELEMENTS in the block nm_channel.adc_datapath:	46601 (50.66 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+CFG           25179              98.1 %               
+ARI1          19102              99.4 %               
+BLACK BOX     1994               92.3 %               
+======================================================
+Total COMBINATIONAL LOGIC in the block nm_channel.adc_datapath:	46275 (50.30 % Utilization)
+
+
+MEMORY ELEMENTS
+Name         Total elements     Utilization     Notes
+-----------------------------------------------------
+RAM1K18      28                 100 %                
+RAM64X18     8                  80 %                 
+=====================================================
+Total MEMORY ELEMENTS in the block nm_channel.adc_datapath:	36 (0.04 % Utilization)
+
+
+GLOBAL BUFFERS
+Name       Total elements     Utilization     Notes
+---------------------------------------------------
+GLOBAL     2                  28.6 %               
+===================================================
+Total GLOBAL BUFFERS in the block nm_channel.adc_datapath:	2 (0.00 % Utilization)
+
+-------------------------------------------------------------
+########   Utilization report for  cell:   ADCFIFO   ########
+Instance path:   adc_datapath.ADCFIFO                        
+=============================================================
+
+SEQUENTIAL ELEMENTS
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+SLE      41                 0.08730 %            
+=================================================
+Total SEQUENTIAL ELEMENTS in the block adc_datapath.ADCFIFO:	41 (0.04 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+CFG           19                 0.07410 %            
+ARI1          19                 0.09890 %            
+BLACK BOX     12                 0.5560 %             
+======================================================
+Total COMBINATIONAL LOGIC in the block adc_datapath.ADCFIFO:	50 (0.05 % Utilization)
+
+
+MEMORY ELEMENTS
+Name        Total elements     Utilization     Notes
+----------------------------------------------------
+RAM1K18     1                  3.57 %               
+====================================================
+Total MEMORY ELEMENTS in the block adc_datapath.ADCFIFO:	1 (0.00 % Utilization)
+
+-----------------------------------------------------------------------------------
+########   Utilization report for  cell:   ADCFIFO_ADCFIFO_0_COREFIFO_Z1   ########
+Instance path:   ADCFIFO.ADCFIFO_ADCFIFO_0_COREFIFO_Z1                             
+===================================================================================
+
+SEQUENTIAL ELEMENTS
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+SLE      41                 0.08730 %            
+=================================================
+Total SEQUENTIAL ELEMENTS in the block ADCFIFO.ADCFIFO_ADCFIFO_0_COREFIFO_Z1:	41 (0.04 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+CFG           19                 0.07410 %            
+ARI1          19                 0.09890 %            
+BLACK BOX     12                 0.5560 %             
+======================================================
+Total COMBINATIONAL LOGIC in the block ADCFIFO.ADCFIFO_ADCFIFO_0_COREFIFO_Z1:	50 (0.05 % Utilization)
+
+
+MEMORY ELEMENTS
+Name        Total elements     Utilization     Notes
+----------------------------------------------------
+RAM1K18     1                  3.57 %               
+====================================================
+Total MEMORY ELEMENTS in the block ADCFIFO.ADCFIFO_ADCFIFO_0_COREFIFO_Z1:	1 (0.00 % Utilization)
+
+----------------------------------------------------------------------------------------------
+########   Utilization report for  cell:   ADCFIFO_ADCFIFO_0_corefifo_sync_scntr_Z2   ########
+Instance path:   ADCFIFO_ADCFIFO_0_COREFIFO_Z1.ADCFIFO_ADCFIFO_0_corefifo_sync_scntr_Z2       
+==============================================================================================
+
+SEQUENTIAL ELEMENTS
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+SLE      21                 0.04470 %            
+=================================================
+Total SEQUENTIAL ELEMENTS in the block ADCFIFO_ADCFIFO_0_COREFIFO_Z1.ADCFIFO_ADCFIFO_0_corefifo_sync_scntr_Z2:	21 (0.02 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+CFG           11                 0.04290 %            
+ARI1          19                 0.09890 %            
+BLACK BOX     12                 0.5560 %             
+======================================================
+Total COMBINATIONAL LOGIC in the block ADCFIFO_ADCFIFO_0_COREFIFO_Z1.ADCFIFO_ADCFIFO_0_corefifo_sync_scntr_Z2:	42 (0.05 % Utilization)
+
+--------------------------------------------------------------------------------------------------------
+########   Utilization report for  cell:   ADCFIFO_ADCFIFO_0_ram_wrapper_16s_16s_6_6_1s_1s_2s   ########
+Instance path:   ADCFIFO_ADCFIFO_0_COREFIFO_Z1.ADCFIFO_ADCFIFO_0_ram_wrapper_16s_16s_6_6_1s_1s_2s       
+========================================================================================================
+
+MEMORY ELEMENTS
+Name        Total elements     Utilization     Notes
+----------------------------------------------------
+RAM1K18     1                  3.57 %               
+====================================================
+Total MEMORY ELEMENTS in the block ADCFIFO_ADCFIFO_0_COREFIFO_Z1.ADCFIFO_ADCFIFO_0_ram_wrapper_16s_16s_6_6_1s_1s_2s:	1 (0.00 % Utilization)
+
+-----------------------------------------------------------------------------------------------
+########   Utilization report for  cell:   ADCFIFO_ADCFIFO_0_LSRAM_top   ########              
+Instance path:   ADCFIFO_ADCFIFO_0_ram_wrapper_16s_16s_6_6_1s_1s_2s.ADCFIFO_ADCFIFO_0_LSRAM_top
+===============================================================================================
+
+MEMORY ELEMENTS
+Name        Total elements     Utilization     Notes
+----------------------------------------------------
+RAM1K18     1                  3.57 %               
+====================================================
+Total MEMORY ELEMENTS in the block ADCFIFO_ADCFIFO_0_ram_wrapper_16s_16s_6_6_1s_1s_2s.ADCFIFO_ADCFIFO_0_LSRAM_top:	1 (0.00 % Utilization)
+
+---------------------------------------------------------------
+########   Utilization report for  cell:   ADCMEM_DP   ########
+Instance path:   adc_datapath.ADCMEM_DP                        
+===============================================================
+
+COMBINATIONAL LOGIC
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+CFG           16                 0.06240 %            
+BLACK BOX     16                 0.7410 %             
+======================================================
+Total COMBINATIONAL LOGIC in the block adc_datapath.ADCMEM_DP:	32 (0.03 % Utilization)
+
+
+MEMORY ELEMENTS
+Name         Total elements     Utilization     Notes
+-----------------------------------------------------
+RAM64X18     8                  80 %                 
+=====================================================
+Total MEMORY ELEMENTS in the block adc_datapath.ADCMEM_DP:	8 (0.01 % Utilization)
+
+----------------------------------------------------------------------
+########   Utilization report for  cell:   adc_frame_buffer   ########
+Instance path:   adc_datapath.adc_frame_buffer                        
+======================================================================
+
+SEQUENTIAL ELEMENTS
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+SLE      2033               4.33 %               
+=================================================
+Total SEQUENTIAL ELEMENTS in the block adc_datapath.adc_frame_buffer:	2033 (2.21 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+CFG           1025               4 %                  
+BLACK BOX     15                 0.6940 %             
+======================================================
+Total COMBINATIONAL LOGIC in the block adc_datapath.adc_frame_buffer:	1040 (1.13 % Utilization)
+
+---------------------------------------------------------------------------
+########   Utilization report for  cell:   adc_vector_compressor   ########
+Instance path:   adc_datapath.adc_vector_compressor                        
+===========================================================================
+
+SEQUENTIAL ELEMENTS
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+SLE      22                 0.04680 %            
+=================================================
+Total SEQUENTIAL ELEMENTS in the block adc_datapath.adc_vector_compressor:	22 (0.02 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+CFG           95                 0.370 %              
+ARI1          758                3.95 %               
+BLACK BOX     3                  0.1390 %             
+======================================================
+Total COMBINATIONAL LOGIC in the block adc_datapath.adc_vector_compressor:	856 (0.93 % Utilization)
+
+-------------------------------------------------------------
+########   Utilization report for  cell:   hdc_top   ########
+Instance path:   adc_datapath.hdc_top                        
+=============================================================
+
+SEQUENTIAL ELEMENTS
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+SLE      44505              94.7 %               
+=================================================
+Total SEQUENTIAL ELEMENTS in the block adc_datapath.hdc_top:	44505 (48.38 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+CFG           24024              93.6 %               
+ARI1          18325              95.4 %               
+BLACK BOX     1948               90.2 %               
+======================================================
+Total COMBINATIONAL LOGIC in the block adc_datapath.hdc_top:	44297 (48.15 % Utilization)
+
+
+MEMORY ELEMENTS
+Name        Total elements     Utilization     Notes
+----------------------------------------------------
+RAM1K18     27                 96.4 %               
+====================================================
+Total MEMORY ELEMENTS in the block adc_datapath.hdc_top:	27 (0.03 % Utilization)
+
+
+GLOBAL BUFFERS
+Name       Total elements     Utilization     Notes
+---------------------------------------------------
+GLOBAL     2                  28.6 %               
+===================================================
+Total GLOBAL BUFFERS in the block adc_datapath.hdc_top:	2 (0.00 % Utilization)
+
+------------------------------------------------------------------------
+########   Utilization report for  cell:   associative_memory   ########
+Instance path:   hdc_top.associative_memory                             
+========================================================================
+
+SEQUENTIAL ELEMENTS
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+SLE      22142              47.1 %               
+=================================================
+Total SEQUENTIAL ELEMENTS in the block hdc_top.associative_memory:	22142 (24.07 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+CFG           4087               15.9 %               
+ARI1          15                 0.07810 %            
+BLACK BOX     1                  0.04630 %            
+======================================================
+Total COMBINATIONAL LOGIC in the block hdc_top.associative_memory:	4103 (4.46 % Utilization)
+
+
+GLOBAL BUFFERS
+Name       Total elements     Utilization     Notes
+---------------------------------------------------
+GLOBAL     1                  14.3 %               
+===================================================
+Total GLOBAL BUFFERS in the block hdc_top.associative_memory:	1 (0.00 % Utilization)
+
+---------------------------------------------------------------------
+########   Utilization report for  cell:   feature_encoder   ########
+Instance path:   hdc_top.feature_encoder                             
+=====================================================================
+
+SEQUENTIAL ELEMENTS
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+SLE      7417               15.8 %               
+=================================================
+Total SEQUENTIAL ELEMENTS in the block hdc_top.feature_encoder:	7417 (8.06 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+CFG           7821               30.5 %               
+ARI1          8647               45 %                 
+BLACK BOX     1945               90 %                 
+======================================================
+Total COMBINATIONAL LOGIC in the block hdc_top.feature_encoder:	18413 (20.02 % Utilization)
+
+
+MEMORY ELEMENTS
+Name        Total elements     Utilization     Notes
+----------------------------------------------------
+RAM1K18     27                 96.4 %               
+====================================================
+Total MEMORY ELEMENTS in the block hdc_top.feature_encoder:	27 (0.03 % Utilization)
+
+----------------------------------------------------------------------
+########   Utilization report for  cell:   fifo_960s_32s_5s   ########
+Instance path:   feature_encoder.fifo_960s_32s_5s                     
+======================================================================
+
+SEQUENTIAL ELEMENTS
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+SLE      1002               2.13 %               
+=================================================
+Total SEQUENTIAL ELEMENTS in the block feature_encoder.fifo_960s_32s_5s:	1002 (1.09 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+CFG           1099               4.28 %               
+BLACK BOX     1944               90 %                 
+======================================================
+Total COMBINATIONAL LOGIC in the block feature_encoder.fifo_960s_32s_5s:	3043 (3.31 % Utilization)
+
+
+MEMORY ELEMENTS
+Name        Total elements     Utilization     Notes
+----------------------------------------------------
+RAM1K18     27                 96.4 %               
+====================================================
+Total MEMORY ELEMENTS in the block feature_encoder.fifo_960s_32s_5s:	27 (0.03 % Utilization)
+
+----------------------------------------------------------------------------
+########   Utilization report for  cell:   spatial_encoder_N_pong   ########
+Instance path:   hdc_top.spatial_encoder_N_pong                             
+============================================================================
+
+SEQUENTIAL ELEMENTS
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+SLE      3902               8.31 %               
+=================================================
+Total SEQUENTIAL ELEMENTS in the block hdc_top.spatial_encoder_N_pong:	3902 (4.24 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+CFG           4066               15.8 %               
+ARI1          2646               13.8 %               
+BLACK BOX     1                  0.04630 %            
+======================================================
+Total COMBINATIONAL LOGIC in the block hdc_top.spatial_encoder_N_pong:	6713 (7.30 % Utilization)
+
+------------------------------------------------------------------------
+########   Utilization report for  cell:   cellular_automaton   ########
+Instance path:   spatial_encoder_N_pong.cellular_automaton              
+========================================================================
+
+SEQUENTIAL ELEMENTS
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+SLE      1000               2.13 %               
+=================================================
+Total SEQUENTIAL ELEMENTS in the block spatial_encoder_N_pong.cellular_automaton:	1000 (1.09 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+CFG      1001               3.9 %                
+=================================================
+Total COMBINATIONAL LOGIC in the block spatial_encoder_N_pong.cellular_automaton:	1001 (1.09 % Utilization)
+
+-------------------------------------------------------------------------
+########   Utilization report for  cell:   spatial_accumulator   ########
+Instance path:   spatial_encoder_N_pong.spatial_accumulator              
+=========================================================================
+
+SEQUENTIAL ELEMENTS
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+SLE      1625               3.46 %               
+=================================================
+Total SEQUENTIAL ELEMENTS in the block spatial_encoder_N_pong.spatial_accumulator:	1625 (1.77 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+CFG      3029               11.8 %               
+ARI1     1750               9.11 %               
+=================================================
+Total COMBINATIONAL LOGIC in the block spatial_encoder_N_pong.spatial_accumulator:	4779 (5.20 % Utilization)
+
+------------------------------------------------------------------------------
+########   Utilization report for  cell:   temporal_encoder_counter   ########
+Instance path:   hdc_top.temporal_encoder_counter                             
+==============================================================================
+
+SEQUENTIAL ELEMENTS
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+SLE      11013              23.4 %               
+=================================================
+Total SEQUENTIAL ELEMENTS in the block hdc_top.temporal_encoder_counter:	11013 (11.97 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+CFG           8044               31.4 %               
+ARI1          7000               36.4 %               
+BLACK BOX     1                  0.04630 %            
+======================================================
+Total COMBINATIONAL LOGIC in the block hdc_top.temporal_encoder_counter:	15045 (16.35 % Utilization)
+
+
+GLOBAL BUFFERS
+Name       Total elements     Utilization     Notes
+---------------------------------------------------
+GLOBAL     1                  14.3 %               
+===================================================
+Total GLOBAL BUFFERS in the block hdc_top.temporal_encoder_counter:	1 (0.00 % Utilization)
+
+--------------------------------------------------------------------
+########   Utilization report for  cell:   bundle_counter   ########
+Instance path:   temporal_encoder_counter.bundle_counter            
+====================================================================
+
+SEQUENTIAL ELEMENTS
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+SLE      7000               14.9 %               
+=================================================
+Total SEQUENTIAL ELEMENTS in the block temporal_encoder_counter.bundle_counter:	7000 (7.61 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+CFG      6003               23.4 %               
+ARI1     7000               36.4 %               
+=================================================
+Total COMBINATIONAL LOGIC in the block temporal_encoder_counter.bundle_counter:	13003 (14.13 % Utilization)
+
+
+GLOBAL BUFFERS
+Name       Total elements     Utilization     Notes
+---------------------------------------------------
+GLOBAL     1                  14.3 %               
+===================================================
+Total GLOBAL BUFFERS in the block temporal_encoder_counter.bundle_counter:	1 (0.00 % Utilization)
+
+----------------------------------------------------------------
+########   Utilization report for  cell:   nmic_rx_Z3   ########
+Instance path:   nm_channel.nmic_rx_Z3                          
+================================================================
+
+SEQUENTIAL ELEMENTS
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+SLE      47                 0.10 %               
+=================================================
+Total SEQUENTIAL ELEMENTS in the block nm_channel.nmic_rx_Z3:	47 (0.05 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+CFG           44                 0.1720 %             
+ARI1          12                 0.06250 %            
+BLACK BOX     1                  0.04630 %            
+======================================================
+Total COMBINATIONAL LOGIC in the block nm_channel.nmic_rx_Z3:	57 (0.06 % Utilization)
+
+---------------------------------------------------------------------------------
+########   Utilization report for  cell:   nmic_tx_4s_0_1_3_2_4_6_5_4s   ########
+Instance path:   nm_channel.nmic_tx_4s_0_1_3_2_4_6_5_4s                          
+=================================================================================
+
+SEQUENTIAL ELEMENTS
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+SLE      19                 0.04040 %            
+=================================================
+Total SEQUENTIAL ELEMENTS in the block nm_channel.nmic_tx_4s_0_1_3_2_4_6_5_4s:	19 (0.02 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+CFG           72                 0.2810 %             
+ARI1          29                 0.1510 %             
+BLACK BOX     1                  0.04630 %            
+======================================================
+Total COMBINATIONAL LOGIC in the block nm_channel.nmic_tx_4s_0_1_3_2_4_6_5_4s:	102 (0.11 % Utilization)
+
+-------------------------------------------------------------------
+########   Utilization report for  cell:   twoMHz_strobe   ########
+Instance path:   nm_channel.twoMHz_strobe                          
+===================================================================
+
+SEQUENTIAL ELEMENTS
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+SLE      5                  0.01060 %            
+=================================================
+Total SEQUENTIAL ELEMENTS in the block nm_channel.twoMHz_strobe:	5 (0.01 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+CFG      5                  0.01950 %            
+=================================================
+Total COMBINATIONAL LOGIC in the block nm_channel.twoMHz_strobe:	5 (0.01 % Utilization)
+
+---------------------------------------------------------------
+########   Utilization report for  cell:   nm_if_apb   ########
+Instance path:   nm_if.nm_if_apb                               
+===============================================================
+
+SEQUENTIAL ELEMENTS
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+SLE      127                0.270 %              
+=================================================
+Total SEQUENTIAL ELEMENTS in the block nm_if.nm_if_apb:	127 (0.14 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+CFG           93                 0.3630 %             
+BLACK BOX     99                 4.58 %               
+======================================================
+Total COMBINATIONAL LOGIC in the block nm_if.nm_if_apb:	192 (0.21 % Utilization)
+
+----------------------------------------------------------------
+########   Utilization report for  cell:   pdma_if_Z6   ########
+Instance path:   nm_if.pdma_if_Z6                               
+================================================================
+
+SEQUENTIAL ELEMENTS
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+SLE      58                 0.1230 %             
+=================================================
+Total SEQUENTIAL ELEMENTS in the block nm_if.pdma_if_Z6:	58 (0.06 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+CFG           44                 0.1720 %             
+ARI1          50                 0.260 %              
+BLACK BOX     23                 1.06 %               
+======================================================
+Total COMBINATIONAL LOGIC in the block nm_if.pdma_if_Z6:	117 (0.13 % Utilization)
+
+
+MEMORY ELEMENTS
+Name         Total elements     Utilization     Notes
+-----------------------------------------------------
+RAM64X18     2                  20 %                 
+=====================================================
+Total MEMORY ELEMENTS in the block nm_if.pdma_if_Z6:	2 (0.00 % Utilization)
+
+--------------------------------------------------------------
+########   Utilization report for  cell:   PDMAFIFO   ########
+Instance path:   pdma_if_Z6.PDMAFIFO                          
+==============================================================
+
+SEQUENTIAL ELEMENTS
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+SLE      47                 0.10 %               
+=================================================
+Total SEQUENTIAL ELEMENTS in the block pdma_if_Z6.PDMAFIFO:	47 (0.05 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+CFG           37                 0.1440 %             
+ARI1          50                 0.260 %              
+BLACK BOX     22                 1.02 %               
+======================================================
+Total COMBINATIONAL LOGIC in the block pdma_if_Z6.PDMAFIFO:	109 (0.12 % Utilization)
+
+
+MEMORY ELEMENTS
+Name         Total elements     Utilization     Notes
+-----------------------------------------------------
+RAM64X18     2                  20 %                 
+=====================================================
+Total MEMORY ELEMENTS in the block pdma_if_Z6.PDMAFIFO:	2 (0.00 % Utilization)
+
+-------------------------------------------------------------------------------------
+########   Utilization report for  cell:   PDMAFIFO_PDMAFIFO_0_COREFIFO_Z4   ########
+Instance path:   PDMAFIFO.PDMAFIFO_PDMAFIFO_0_COREFIFO_Z4                            
+=====================================================================================
+
+SEQUENTIAL ELEMENTS
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+SLE      47                 0.10 %               
+=================================================
+Total SEQUENTIAL ELEMENTS in the block PDMAFIFO.PDMAFIFO_PDMAFIFO_0_COREFIFO_Z4:	47 (0.05 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+CFG           37                 0.1440 %             
+ARI1          50                 0.260 %              
+BLACK BOX     22                 1.02 %               
+======================================================
+Total COMBINATIONAL LOGIC in the block PDMAFIFO.PDMAFIFO_PDMAFIFO_0_COREFIFO_Z4:	109 (0.12 % Utilization)
+
+
+MEMORY ELEMENTS
+Name         Total elements     Utilization     Notes
+-----------------------------------------------------
+RAM64X18     2                  20 %                 
+=====================================================
+Total MEMORY ELEMENTS in the block PDMAFIFO.PDMAFIFO_PDMAFIFO_0_COREFIFO_Z4:	2 (0.00 % Utilization)
+
+------------------------------------------------------------------------------------------
+########   Utilization report for  cell:   PDMAFIFO_PDMAFIFO_0_corefifo_sync_Z5   ########
+Instance path:   PDMAFIFO_PDMAFIFO_0_COREFIFO_Z4.PDMAFIFO_PDMAFIFO_0_corefifo_sync_Z5     
+==========================================================================================
+
+SEQUENTIAL ELEMENTS
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+SLE      35                 0.07450 %            
+=================================================
+Total SEQUENTIAL ELEMENTS in the block PDMAFIFO_PDMAFIFO_0_COREFIFO_Z4.PDMAFIFO_PDMAFIFO_0_corefifo_sync_Z5:	35 (0.04 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+CFG           21                 0.08190 %            
+ARI1          50                 0.260 %              
+BLACK BOX     22                 1.02 %               
+======================================================
+Total COMBINATIONAL LOGIC in the block PDMAFIFO_PDMAFIFO_0_COREFIFO_Z4.PDMAFIFO_PDMAFIFO_0_corefifo_sync_Z5:	93 (0.10 % Utilization)
+
+---------------------------------------------------------------------------------------------------------
+########   Utilization report for  cell:   PDMAFIFO_PDMAFIFO_0_ram_wrapper_8s_16s_8_7_1s_1s_3s   ########
+Instance path:   PDMAFIFO_PDMAFIFO_0_COREFIFO_Z4.PDMAFIFO_PDMAFIFO_0_ram_wrapper_8s_16s_8_7_1s_1s_3s     
+=========================================================================================================
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+CFG      12                 0.04680 %            
+=================================================
+Total COMBINATIONAL LOGIC in the block PDMAFIFO_PDMAFIFO_0_COREFIFO_Z4.PDMAFIFO_PDMAFIFO_0_ram_wrapper_8s_16s_8_7_1s_1s_3s:	12 (0.01 % Utilization)
+
+
+MEMORY ELEMENTS
+Name         Total elements     Utilization     Notes
+-----------------------------------------------------
+RAM64X18     2                  20 %                 
+=====================================================
+Total MEMORY ELEMENTS in the block PDMAFIFO_PDMAFIFO_0_COREFIFO_Z4.PDMAFIFO_PDMAFIFO_0_ram_wrapper_8s_16s_8_7_1s_1s_3s:	2 (0.00 % Utilization)
+
+--------------------------------------------------------------------------------------------------
+########   Utilization report for  cell:   PDMAFIFO_PDMAFIFO_0_USRAM_top   ########               
+Instance path:   PDMAFIFO_PDMAFIFO_0_ram_wrapper_8s_16s_8_7_1s_1s_3s.PDMAFIFO_PDMAFIFO_0_USRAM_top
+==================================================================================================
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+CFG      12                 0.04680 %            
+=================================================
+Total COMBINATIONAL LOGIC in the block PDMAFIFO_PDMAFIFO_0_ram_wrapper_8s_16s_8_7_1s_1s_3s.PDMAFIFO_PDMAFIFO_0_USRAM_top:	12 (0.01 % Utilization)
+
+
+MEMORY ELEMENTS
+Name         Total elements     Utilization     Notes
+-----------------------------------------------------
+RAM64X18     2                  20 %                 
+=====================================================
+Total MEMORY ELEMENTS in the block PDMAFIFO_PDMAFIFO_0_ram_wrapper_8s_16s_8_7_1s_1s_3s.PDMAFIFO_PDMAFIFO_0_USRAM_top:	2 (0.00 % Utilization)
+
+
+##### END OF AREA REPORT #####]
+

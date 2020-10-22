@@ -1,0 +1,27 @@
+data HELP_TYPE_DES 1
+data DESIGN Mario_Libero
+data HPATH 'C:/Users/bwrc/Desktop/HyperFlexEG/designer/Mario_Libero'
+data CPATH 'C:/Users/bwrc/Desktop/HyperFlexEG/constraint/fp'
+data CDIR 'C:/Users/bwrc/Desktop/HyperFlexEG/constraint'
+data ETYPE CP
+data FAM SmartFusion2
+data DIE PA4M6000
+data PACKAGE fcs325
+data HYDRA_EXPORT_DATA 1
+data HYDRA_PRESERVE_DATA_FILES 1
+data REGION_DEFCOLOR_EMPTY 2143322112
+data REGION_DEFCOLOR_INCLUSIVE 2147442270
+data REGION_DEFCOLOR_EXCLUSIVE 2143338688
+data REGION_DEFCOLOR_CLOCK 16735838
+data VCCI_1.2_VOLTR COM
+data VCCI_1.5_VOLTR COM
+data VCCI_1.8_VOLTR COM
+data VCCI_2.5_VOLTR COM
+data VCCI_3.3_VOLTR COM
+data FLOW_TYPE OLD
+data AFL 'C:/Users/bwrc/Desktop/HyperFlexEG/designer/Mario_Libero/Mario_Libero.afl'
+data ADL 'C:/Users/bwrc/Desktop/HyperFlexEG/designer/Mario_Libero/Mario_Libero.adl'
+data LOC 'C:/Users/bwrc/Desktop/HyperFlexEG/designer/Mario_Libero/Mario_Libero.loc'
+data SEG 'C:/Users/bwrc/Desktop/HyperFlexEG/designer/Mario_Libero/Mario_Libero.seg'
+data GDEV_SKIP_UNASSIGN_CMP_CHECK    1 
+

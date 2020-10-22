@@ -1,0 +1,200 @@
+# Current time Mon Mar 27 18:28:10 2017
+# ModelSim Microsemi Stack Trace
+# Program = vsim
+# Id = "10.4c"
+# Version = "2015.07"
+# Date = "Aug 12 2015"
+# Platform = win32pe
+# Signature = 3f7b319f62c0d72953c802e7adec767e
+# 0    0x00f9b4e7: '<unknown (@0xf9b4e7)>'
+# 1    0x006e4ac4: '<unknown (@0x6e4ac4)>'
+# 2    0x006e898a: '<unknown (@0x6e898a)>'
+# 3    0x00a24f38: '<unknown (@0xa24f38)>'
+# 4    0x1000cb1f: 'TclInvokeStringCommand + 0x8f' in 'c:\microsemi\libero_soc_v11.7\model\win32acoem\tcl85.dll'
+# 5    0x100473b5: 'Tcl_ExprObj + 0x1605' in 'c:\microsemi\libero_soc_v11.7\model\win32acoem\tcl85.dll'
+# 6    0x100462b5: 'Tcl_ExprObj + 0x505' in 'c:\microsemi\libero_soc_v11.7\model\win32acoem\tcl85.dll'
+# 7    0x1000f6a9: 'TclEvalObjEx + 0x2f9' in 'c:\microsemi\libero_soc_v11.7\model\win32acoem\tcl85.dll'
+# End of Stack Trace
+
+
+# Current time Tue Mar 28 12:28:58 2017
+# ModelSim Microsemi Stack Trace
+# Program = vsim
+# Id = "10.4c"
+# Version = "2015.07"
+# Date = "Aug 12 2015"
+# Platform = win32pe
+# Signature = 3f7b319f62c0d72953c802e7adec767e
+# --> START OF USERCODE
+# 0    0x749e1bb0: 'vcwprintf_s + 0x2acb' in 'c:\windows\winsxs\x86_microsoft.vc90.crt_1fc8b3b9a1e18e3b_9.0.30729.6161_none_50934f2ebcb7eb57\msvcr90.dll'
+# 1    0x749c4951: 'vsnprintf_l + 0x8b' in 'c:\windows\winsxs\x86_microsoft.vc90.crt_1fc8b3b9a1e18e3b_9.0.30729.6161_none_50934f2ebcb7eb57\msvcr90.dll'
+# 2    0x749c4996: 'vsnprintf + 0x18' in 'c:\windows\winsxs\x86_microsoft.vc90.crt_1fc8b3b9a1e18e3b_9.0.30729.6161_none_50934f2ebcb7eb57\msvcr90.dll'
+# <-- END OF USERCODE
+# 3    0x0110bc25: '<unknown (@0x110bc25)>'
+# 4    0x00fce0a0: '<unknown (@0xfce0a0)>'
+# 5    0x00fce7bf: '<unknown (@0xfce7bf)>'
+# 6    0x00fcb86a: '<unknown (@0xfcb86a)>'
+# 7    0x00527150: '<unknown (@0x527150)>'
+# 8    0x005271d6: '<unknown (@0x5271d6)>'
+# 9    0x00527204: '<unknown (@0x527204)>'
+# 10   0x006e8795: '<unknown (@0x6e8795)>'
+# 11   0x00a24f38: '<unknown (@0xa24f38)>'
+# 12   0x1000cb1f: 'TclInvokeStringCommand + 0x8f' in 'c:\microsemi\libero_soc_v11.7\model\win32acoem\tcl85.dll'
+# 13   0x100473b5: 'Tcl_ExprObj + 0x1605' in 'c:\microsemi\libero_soc_v11.7\model\win32acoem\tcl85.dll'
+# 14   0x100462b5: 'Tcl_ExprObj + 0x505' in 'c:\microsemi\libero_soc_v11.7\model\win32acoem\tcl85.dll'
+# 15   0x1000f6a9: 'TclEvalObjEx + 0x2f9' in 'c:\microsemi\libero_soc_v11.7\model\win32acoem\tcl85.dll'
+# End of Stack Trace
+
+
+# Current time Tue Mar 28 17:08:31 2017
+# ModelSim Microsemi Stack Trace
+# Program = vsim
+# Id = "10.4c"
+# Version = "2015.07"
+# Date = "Aug 12 2015"
+# Platform = win32pe
+# Signature = 3f7b319f62c0d72953c802e7adec767e
+# 0    0x00f9b4e7: '<unknown (@0xf9b4e7)>'
+# 1    0x006e4ac4: '<unknown (@0x6e4ac4)>'
+# 2    0x006e898a: '<unknown (@0x6e898a)>'
+# 3    0x00a24f38: '<unknown (@0xa24f38)>'
+# 4    0x1000cb1f: 'TclInvokeStringCommand + 0x8f' in 'c:\microsemi\libero_soc_v11.7\model\win32acoem\tcl85.dll'
+# 5    0x100473b5: 'Tcl_ExprObj + 0x1605' in 'c:\microsemi\libero_soc_v11.7\model\win32acoem\tcl85.dll'
+# 6    0x100462b5: 'Tcl_ExprObj + 0x505' in 'c:\microsemi\libero_soc_v11.7\model\win32acoem\tcl85.dll'
+# 7    0x1000f6a9: 'TclEvalObjEx + 0x2f9' in 'c:\microsemi\libero_soc_v11.7\model\win32acoem\tcl85.dll'
+# End of Stack Trace
+
+
+# Current time Tue Apr 04 11:52:44 2017
+# ModelSim Microsemi Stack Trace
+# Program = vsim
+# Id = "10.4c"
+# Version = "2015.07"
+# Date = "Aug 12 2015"
+# Platform = win32pe
+# Signature = 3f7b319f62c0d72953c802e7adec767e
+# 0    0x00f9b4e7: '<unknown (@0xf9b4e7)>'
+# 1    0x006e4ac4: '<unknown (@0x6e4ac4)>'
+# 2    0x006e898a: '<unknown (@0x6e898a)>'
+# 3    0x00a24f38: '<unknown (@0xa24f38)>'
+# 4    0x1000cb1f: 'TclInvokeStringCommand + 0x8f' in 'c:\microsemi\libero_soc_v11.7\model\win32acoem\tcl85.dll'
+# 5    0x100473b5: 'Tcl_ExprObj + 0x1605' in 'c:\microsemi\libero_soc_v11.7\model\win32acoem\tcl85.dll'
+# 6    0x100462b5: 'Tcl_ExprObj + 0x505' in 'c:\microsemi\libero_soc_v11.7\model\win32acoem\tcl85.dll'
+# 7    0x1000f6a9: 'TclEvalObjEx + 0x2f9' in 'c:\microsemi\libero_soc_v11.7\model\win32acoem\tcl85.dll'
+# End of Stack Trace
+
+
+# Current time Tue Apr 04 13:56:45 2017
+# ModelSim Microsemi Stack Trace
+# Program = vsim
+# Id = "10.4c"
+# Version = "2015.07"
+# Date = "Aug 12 2015"
+# Platform = win32pe
+# Signature = 3f7b319f62c0d72953c802e7adec767e
+# 0    0x00f9b4e7: '<unknown (@0xf9b4e7)>'
+# 1    0x006e4ac4: '<unknown (@0x6e4ac4)>'
+# 2    0x006e898a: '<unknown (@0x6e898a)>'
+# 3    0x00a24f38: '<unknown (@0xa24f38)>'
+# 4    0x1000cb1f: 'TclInvokeStringCommand + 0x8f' in 'c:\microsemi\libero_soc_v11.7\model\win32acoem\tcl85.dll'
+# 5    0x100473b5: 'Tcl_ExprObj + 0x1605' in 'c:\microsemi\libero_soc_v11.7\model\win32acoem\tcl85.dll'
+# 6    0x100462b5: 'Tcl_ExprObj + 0x505' in 'c:\microsemi\libero_soc_v11.7\model\win32acoem\tcl85.dll'
+# 7    0x1000f6a9: 'TclEvalObjEx + 0x2f9' in 'c:\microsemi\libero_soc_v11.7\model\win32acoem\tcl85.dll'
+# End of Stack Trace
+
+
+# Current time Tue Apr 04 14:37:22 2017
+# ModelSim Microsemi Stack Trace
+# Program = vsim
+# Id = "10.4c"
+# Version = "2015.07"
+# Date = "Aug 12 2015"
+# Platform = win32pe
+# Signature = 3f7b319f62c0d72953c802e7adec767e
+# 0    0x00f9b4e4: '<unknown (@0xf9b4e4)>'
+# 1    0x006e4ac4: '<unknown (@0x6e4ac4)>'
+# 2    0x006e898a: '<unknown (@0x6e898a)>'
+# 3    0x00a24f38: '<unknown (@0xa24f38)>'
+# 4    0x1000cb1f: 'TclInvokeStringCommand + 0x8f' in 'c:\microsemi\libero_soc_v11.7\model\win32acoem\tcl85.dll'
+# 5    0x100473b5: 'Tcl_ExprObj + 0x1605' in 'c:\microsemi\libero_soc_v11.7\model\win32acoem\tcl85.dll'
+# 6    0x100462b5: 'Tcl_ExprObj + 0x505' in 'c:\microsemi\libero_soc_v11.7\model\win32acoem\tcl85.dll'
+# 7    0x1000f6a9: 'TclEvalObjEx + 0x2f9' in 'c:\microsemi\libero_soc_v11.7\model\win32acoem\tcl85.dll'
+# End of Stack Trace
+
+
+# Current time Mon Apr 10 10:29:28 2017
+# ModelSim Microsemi Stack Trace
+# Program = vsim
+# Id = "10.4c"
+# Version = "2015.07"
+# Date = "Aug 12 2015"
+# Platform = win32pe
+# Signature = 3f7b319f62c0d72953c802e7adec767e
+# 0    0x00f9b4e4: '<unknown (@0xf9b4e4)>'
+# 1    0x006e4ac4: '<unknown (@0x6e4ac4)>'
+# 2    0x006e898a: '<unknown (@0x6e898a)>'
+# 3    0x00a24f38: '<unknown (@0xa24f38)>'
+# 4    0x1000cb1f: 'TclInvokeStringCommand + 0x8f' in 'c:\microsemi\libero_soc_v11.7\model\win32acoem\tcl85.dll'
+# 5    0x100473b5: 'Tcl_ExprObj + 0x1605' in 'c:\microsemi\libero_soc_v11.7\model\win32acoem\tcl85.dll'
+# 6    0x100462b5: 'Tcl_ExprObj + 0x505' in 'c:\microsemi\libero_soc_v11.7\model\win32acoem\tcl85.dll'
+# 7    0x1000f6a9: 'TclEvalObjEx + 0x2f9' in 'c:\microsemi\libero_soc_v11.7\model\win32acoem\tcl85.dll'
+# End of Stack Trace
+
+
+# Current time Mon May 15 12:27:55 2017
+# ModelSim Microsemi Stack Trace
+# Program = vsim
+# Id = "10.4c"
+# Version = "2015.07"
+# Date = "Aug 12 2015"
+# Platform = win32pe
+# Signature = 3f7b319f62c0d72953c802e7adec767e
+# 0    0x00f9b4e4: '<unknown (@0xf9b4e4)>'
+# 1    0x006e4ac4: '<unknown (@0x6e4ac4)>'
+# 2    0x006e898a: '<unknown (@0x6e898a)>'
+# 3    0x00a24f38: '<unknown (@0xa24f38)>'
+# 4    0x1000cb1f: 'TclInvokeStringCommand + 0x8f' in 'c:\microsemi\libero_soc_v11.7\model\win32acoem\tcl85.dll'
+# 5    0x100473b5: 'Tcl_ExprObj + 0x1605' in 'c:\microsemi\libero_soc_v11.7\model\win32acoem\tcl85.dll'
+# 6    0x100462b5: 'Tcl_ExprObj + 0x505' in 'c:\microsemi\libero_soc_v11.7\model\win32acoem\tcl85.dll'
+# 7    0x1000f6a9: 'TclEvalObjEx + 0x2f9' in 'c:\microsemi\libero_soc_v11.7\model\win32acoem\tcl85.dll'
+# End of Stack Trace
+
+
+# Current time Wed May 17 12:50:51 2017
+# ModelSim Microsemi Stack Trace
+# Program = vsim
+# Id = "10.4c"
+# Version = "2015.07"
+# Date = "Aug 12 2015"
+# Platform = win32pe
+# Signature = 3f7b319f62c0d72953c802e7adec767e
+# 0    0x00f9b4e7: '<unknown (@0xf9b4e7)>'
+# 1    0x006e4ac4: '<unknown (@0x6e4ac4)>'
+# 2    0x006e898a: '<unknown (@0x6e898a)>'
+# 3    0x00a24f38: '<unknown (@0xa24f38)>'
+# 4    0x1000cb1f: 'TclInvokeStringCommand + 0x8f' in 'c:\microsemi\libero_soc_v11.7\model\win32acoem\tcl85.dll'
+# 5    0x100473b5: 'Tcl_ExprObj + 0x1605' in 'c:\microsemi\libero_soc_v11.7\model\win32acoem\tcl85.dll'
+# 6    0x100462b5: 'Tcl_ExprObj + 0x505' in 'c:\microsemi\libero_soc_v11.7\model\win32acoem\tcl85.dll'
+# 7    0x1000f6a9: 'TclEvalObjEx + 0x2f9' in 'c:\microsemi\libero_soc_v11.7\model\win32acoem\tcl85.dll'
+# End of Stack Trace
+
+
+# Current time Wed May 17 15:41:40 2017
+# ModelSim Microsemi Stack Trace
+# Program = vsim
+# Id = "10.4c"
+# Version = "2015.07"
+# Date = "Aug 12 2015"
+# Platform = win32pe
+# Signature = 3f7b319f62c0d72953c802e7adec767e
+# 0    0x00f9b4e7: '<unknown (@0xf9b4e7)>'
+# 1    0x006e4ac4: '<unknown (@0x6e4ac4)>'
+# 2    0x006e898a: '<unknown (@0x6e898a)>'
+# 3    0x00a24f38: '<unknown (@0xa24f38)>'
+# 4    0x1000cb1f: 'TclInvokeStringCommand + 0x8f' in 'c:\microsemi\libero_soc_v11.7\model\win32acoem\tcl85.dll'
+# 5    0x100473b5: 'Tcl_ExprObj + 0x1605' in 'c:\microsemi\libero_soc_v11.7\model\win32acoem\tcl85.dll'
+# 6    0x100462b5: 'Tcl_ExprObj + 0x505' in 'c:\microsemi\libero_soc_v11.7\model\win32acoem\tcl85.dll'
+# 7    0x1000f6a9: 'TclEvalObjEx + 0x2f9' in 'c:\microsemi\libero_soc_v11.7\model\win32acoem\tcl85.dll'
+# End of Stack Trace
+
+

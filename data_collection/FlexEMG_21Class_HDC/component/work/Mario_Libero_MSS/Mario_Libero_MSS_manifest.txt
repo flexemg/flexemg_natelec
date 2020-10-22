@@ -1,0 +1,37 @@
+Microsemi Corporation - Microsemi Libero Software Release v11.8 SP3 (Version 11.8.3.6)
+
+Date      :  Thu Feb 21 19:52:57 2019
+Project   :  C:\Users\bwrc\Desktop\HyperFlexEG
+Component :  Mario_Libero_MSS
+Family    :  SmartFusion2
+
+
+HDL source files for all Synthesis and Simulation tools:
+    C:/Users/bwrc/Desktop/HyperFlexEG/component/work/Mario_Libero_MSS/Mario_Libero_MSS.v
+
+HDL source files for Synopsys SynplifyPro Synthesis tool:
+    C:/Users/bwrc/Desktop/HyperFlexEG/component/work/Mario_Libero_MSS/Mario_Libero_MSS_syn.v
+
+HDL source files for Mentor Precision Synthesis tool:
+    C:/Users/bwrc/Desktop/HyperFlexEG/component/work/Mario_Libero_MSS/Mario_Libero_MSS_pre.v
+
+Stimulus files for all Simulation tools:
+    C:/Users/bwrc/Desktop/HyperFlexEG/component/Actel/SmartFusion2MSS/MSS/1.1.400/peripheral_init.bfm
+    C:/Users/bwrc/Desktop/HyperFlexEG/component/work/Mario_Libero_MSS/CM3_compile_bfm.tcl
+    C:/Users/bwrc/Desktop/HyperFlexEG/component/work/Mario_Libero_MSS/test.bfm
+    C:/Users/bwrc/Desktop/HyperFlexEG/component/work/Mario_Libero_MSS/user.bfm
+
+Firmware files for all Software IDE tools:
+    C:/Users/bwrc/Desktop/HyperFlexEG/component/work/Mario_Libero_MSS/sys_config_mddr_define.h
+    C:/Users/bwrc/Desktop/HyperFlexEG/component/work/Mario_Libero_MSS/sys_config_mss_clocks.h
+
+Configuration files to be used for Programming:
+    C:/Users/bwrc/Desktop/HyperFlexEG/component/work/Mario_Libero_MSS/ENVM.cfg
+
+Configuration files to be used for all Simulation tools:
+    C:/Users/bwrc/Desktop/HyperFlexEG/component/work/Mario_Libero_MSS/ENVM.cfg
+    C:/Users/bwrc/Desktop/HyperFlexEG/component/work/Mario_Libero_MSS/MDDR_init.bfm
+
+Configuration files to be used for Power Analysis:
+    C:/Users/bwrc/Desktop/HyperFlexEG/component/work/Mario_Libero_MSS/MDDR_init.reg
+

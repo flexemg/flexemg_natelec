@@ -1,0 +1,849 @@
+Selecting top level module Mario_Libero
+@N: CG364 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\hdl\cm_if_apb.v":31:7:31:15|Synthesizing module cm_if_apb in library work.
+
+	DEBUG_BUS_SIZE=32'b00000000000000000000000000000100
+	ASSIGNED_DEBUG_BITS=32'b00000000000000000000000000000011
+   Generated name = cm_if_apb_4s_3s
+
+@N: CG364 :"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\generic\smartfusion2.v":186:7:186:9|Synthesizing module MX2 in library work.
+
+@N: CG364 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\hdl\fifo_error_decoder.v":21:7:21:24|Synthesizing module fifo_error_decoder in library work.
+
+@N: CG364 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\hdl\ack_datapath.v":29:7:29:18|Synthesizing module ack_datapath in library work.
+
+	DEBUG_BUS_SIZE=32'b00000000000000000000000000000100
+	STATE_IDLE=3'b000
+	STATE_WAIT_BIT=3'b001
+	STATE_SHIFT=3'b011
+	STATE_WAIT_CRC=3'b101
+	STATE_READY=3'b100
+	ASSIGNED_DEBUG_BITS=32'b00000000000000000000000000000100
+   Generated name = ack_datapath_4s_0_1_3_5_4_4s
+
+@W: CG390 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\hdl\ack_datapath.v":157:17:157:51|Repeat multiplier in concatenation evaluates to 0
+@N: CG179 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\hdl\ack_datapath.v":62:19:62:25|Removing redundant assignment.
+@N: CG179 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\hdl\ack_datapath.v":78:14:78:21|Removing redundant assignment.
+@N: CG364 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\hdl\adc_frame_buffer.v":21:7:21:22|Synthesizing module adc_frame_buffer in library work.
+
+@N: CG179 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\hdl\adc_frame_buffer.v":41:21:41:29|Removing redundant assignment.
+@N: CG179 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\hdl\adc_frame_buffer.v":51:16:51:19|Removing redundant assignment.
+@N: CG364 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\hdl\adc_vector_compressor.v":5:7:5:27|Synthesizing module adc_vector_compressor in library work.
+
+@W: CG390 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\hdl\adc_vector_compressor.v":212:17:212:51|Repeat multiplier in concatenation evaluates to 0
+@N: CG179 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\hdl\adc_vector_compressor.v":53:20:53:27|Removing redundant assignment.
+@N: CG179 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\hdl\adc_vector_compressor.v":66:19:66:25|Removing redundant assignment.
+@N: CG179 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\hdl\adc_vector_compressor.v":83:23:83:34|Removing redundant assignment.
+@N: CG364 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\work\ADCFIFO\ADCFIFO_0\rtl\vlog\core\COREFIFO.v":29:7:29:32|Synthesizing module ADCFIFO_ADCFIFO_0_COREFIFO in library work.
+
+	FAMILY=32'b00000000000000000000000000010011
+	SYNC=32'b00000000000000000000000000000001
+	RCLK_EDGE=32'b00000000000000000000000000000001
+	WCLK_EDGE=32'b00000000000000000000000000000001
+	RE_POLARITY=32'b00000000000000000000000000000000
+	WE_POLARITY=32'b00000000000000000000000000000000
+	RWIDTH=32'b00000000000000000000000000010000
+	WWIDTH=32'b00000000000000000000000000010000
+	RDEPTH=32'b00000000000000000000000001000000
+	WDEPTH=32'b00000000000000000000000001000000
+	READ_DVALID=32'b00000000000000000000000000000000
+	WRITE_ACK=32'b00000000000000000000000000000000
+	CTRL_TYPE=32'b00000000000000000000000000000010
+	ESTOP=32'b00000000000000000000000000000001
+	FSTOP=32'b00000000000000000000000000000001
+	AE_STATIC_EN=32'b00000000000000000000000000000000
+	AF_STATIC_EN=32'b00000000000000000000000000000000
+	AEVAL=32'b00000000000000000000000010000001
+	AFVAL=32'b00000000000000000000001110111110
+	PIPE=32'b00000000000000000000000000000001
+	PREFETCH=32'b00000000000000000000000000000000
+	FWFT=32'b00000000000000000000000000000000
+	RESET_POLARITY=32'b00000000000000000000000000000000
+	OVERFLOW_EN=32'b00000000000000000000000000000001
+	UNDERFLOW_EN=32'b00000000000000000000000000000001
+	WRCNT_EN=32'b00000000000000000000000000000001
+	RDCNT_EN=32'b00000000000000000000000000000001
+	WMSB_DEPTH=32'b00000000000000000000000000000110
+	RMSB_DEPTH=32'b00000000000000000000000000000110
+	WDEPTH_CAL=32'b00000000000000000000000000000101
+	RDEPTH_CAL=32'b00000000000000000000000000000101
+	SYNC_RESET=32'b00000000000000000000000000000000
+   Generated name = ADCFIFO_ADCFIFO_0_COREFIFO_Z1
+
+@N: CG364 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\work\ADCFIFO\ADCFIFO_0\rtl\vlog\core\corefifo_sync_scntr.v":28:7:28:43|Synthesizing module ADCFIFO_ADCFIFO_0_corefifo_sync_scntr in library work.
+
+	WRITE_WIDTH=32'b00000000000000000000000000010000
+	WRITE_DEPTH=32'b00000000000000000000000000000110
+	FULL_WRITE_DEPTH=32'b00000000000000000000000001000000
+	READ_WIDTH=32'b00000000000000000000000000010000
+	READ_DEPTH=32'b00000000000000000000000000000110
+	FULL_READ_DEPTH=32'b00000000000000000000000001000000
+	PREFETCH=32'b00000000000000000000000000000000
+	FWFT=32'b00000000000000000000000000000000
+	WCLK_HIGH=32'b00000000000000000000000000000001
+	RESET_LOW=32'b00000000000000000000000000000000
+	WRITE_LOW=32'b00000000000000000000000000000000
+	READ_LOW=32'b00000000000000000000000000000000
+	AF_FLAG_STATIC=32'b00000000000000000000000000000000
+	AE_FLAG_STATIC=32'b00000000000000000000000000000000
+	AFULL_VAL=32'b00000000000000000000001110111110
+	AEMPTY_VAL=32'b00000000000000000000000010000001
+	ESTOP=32'b00000000000000000000000000000001
+	FSTOP=32'b00000000000000000000000000000001
+	PIPE=32'b00000000000000000000000000000001
+	REGISTER_RADDR=32'b00000000000000000000000000000001
+	READ_DVALID=32'b00000000000000000000000000000000
+	WRITE_ACK=32'b00000000000000000000000000000000
+	OVERFLOW_EN=32'b00000000000000000000000000000001
+	UNDERFLOW_EN=32'b00000000000000000000000000000001
+	WRCNT_EN=32'b00000000000000000000000000000001
+	RDCNT_EN=32'b00000000000000000000000000000001
+	SYNC_RESET=32'b00000000000000000000000000000000
+	WDEPTH_CAL=32'b00000000000000000000000000000101
+	RDEPTH_CAL=32'b00000000000000000000000000000101
+   Generated name = ADCFIFO_ADCFIFO_0_corefifo_sync_scntr_Z2
+
+@W: CG360 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\work\ADCFIFO\ADCFIFO_0\rtl\vlog\core\corefifo_sync_scntr.v":159:29:159:46|Removing wire almostfulli_assert, as there is no assignment to it.
+@W: CG360 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\work\ADCFIFO\ADCFIFO_0\rtl\vlog\core\corefifo_sync_scntr.v":160:29:160:48|Removing wire almostfulli_deassert, as there is no assignment to it.
+@W: CG360 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\work\ADCFIFO\ADCFIFO_0\rtl\vlog\core\corefifo_sync_scntr.v":161:29:161:40|Removing wire fulli_assert, as there is no assignment to it.
+@W: CG360 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\work\ADCFIFO\ADCFIFO_0\rtl\vlog\core\corefifo_sync_scntr.v":162:29:162:42|Removing wire fulli_deassert, as there is no assignment to it.
+@W: CG360 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\work\ADCFIFO\ADCFIFO_0\rtl\vlog\core\corefifo_sync_scntr.v":171:29:171:36|Removing wire re_top_p, as there is no assignment to it.
+@W: CL169 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\work\ADCFIFO\ADCFIFO_0\rtl\vlog\core\corefifo_sync_scntr.v":391:4:391:9|Pruning unused register empty_r_fwft. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\work\ADCFIFO\ADCFIFO_0\rtl\vlog\core\corefifo_sync_scntr.v":391:4:391:9|Pruning unused register aempty_r_fwft. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\work\ADCFIFO\ADCFIFO_0\rtl\vlog\core\corefifo_sync_scntr.v":369:3:369:8|Pruning unused register dvld_r2. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\work\ADCFIFO\ADCFIFO_0\rtl\vlog\core\corefifo_sync_scntr.v":369:3:369:8|Pruning unused register re_p_d1. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\work\ADCFIFO\ADCFIFO_0\rtl\vlog\core\corefifo_sync_scntr.v":369:3:369:8|Pruning unused register empty_top_fwft_r. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\work\ADCFIFO\ADCFIFO_0\rtl\vlog\core\corefifo_sync_scntr.v":296:3:296:8|Pruning unused register sc_r_fwft[6:0]. Make sure that there are no unused intermediate registers.
+@W: CL207 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\work\ADCFIFO\ADCFIFO_0\rtl\vlog\core\corefifo_sync_scntr.v":444:7:444:12|All reachable assignments to genblk5.wack_r assign 0, register removed by optimization.
+@W: CL207 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\work\ADCFIFO\ADCFIFO_0\rtl\vlog\core\corefifo_sync_scntr.v":391:4:391:9|All reachable assignments to dvld_r assign 0, register removed by optimization.
+@W: CL177 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\work\ADCFIFO\ADCFIFO_0\rtl\vlog\core\corefifo_sync_scntr.v":239:3:239:8|Sharing sequential element wrcnt. Add a syn_preserve attribute to the element to prevent sharing.
+@N: CG364 :"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\generic\smartfusion2.v":382:7:382:13|Synthesizing module RAM1K18 in library work.
+
+@N: CG364 :"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\generic\smartfusion2.v":372:7:372:9|Synthesizing module GND in library work.
+
+@N: CG364 :"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\generic\smartfusion2.v":376:7:376:9|Synthesizing module VCC in library work.
+
+@N: CG364 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\work\ADCFIFO\ADCFIFO_0\rtl\vlog\core\ADCFIFO_ADCFIFO_0_LSRAM_top.v":5:7:5:33|Synthesizing module ADCFIFO_ADCFIFO_0_LSRAM_top in library work.
+
+@N: CG364 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\work\ADCFIFO\ADCFIFO_0\rtl\vlog\core\ADCFIFO_ADCFIFO_0_ram_wrapper.v":4:7:4:35|Synthesizing module ADCFIFO_ADCFIFO_0_ram_wrapper in library work.
+
+	RWIDTH=32'b00000000000000000000000000010000
+	WWIDTH=32'b00000000000000000000000000010000
+	RDEPTH=32'b00000000000000000000000000000110
+	WDEPTH=32'b00000000000000000000000000000110
+	SYNC=32'b00000000000000000000000000000001
+	PIPE=32'b00000000000000000000000000000001
+	CTRL_TYPE=32'b00000000000000000000000000000010
+   Generated name = ADCFIFO_ADCFIFO_0_ram_wrapper_16s_16s_6_6_1s_1s_2s
+
+@W: CG360 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\work\ADCFIFO\ADCFIFO_0\rtl\vlog\core\COREFIFO.v":189:36:189:41|Removing wire EMPTY2, as there is no assignment to it.
+@W: CG360 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\work\ADCFIFO\ADCFIFO_0\rtl\vlog\core\COREFIFO.v":190:36:190:42|Removing wire AEMPTY2, as there is no assignment to it.
+@W: CG360 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\work\ADCFIFO\ADCFIFO_0\rtl\vlog\core\COREFIFO.v":191:36:191:45|Removing wire fifo_rd_en, as there is no assignment to it.
+@W: CG360 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\work\ADCFIFO\ADCFIFO_0\rtl\vlog\core\COREFIFO.v":195:36:195:46|Removing wire pf_MEMRADDR, as there is no assignment to it.
+@W: CG360 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\work\ADCFIFO\ADCFIFO_0\rtl\vlog\core\COREFIFO.v":196:36:196:48|Removing wire fwft_MEMRADDR, as there is no assignment to it.
+@W: CG360 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\work\ADCFIFO\ADCFIFO_0\rtl\vlog\core\COREFIFO.v":201:36:201:39|Removing wire pf_Q, as there is no assignment to it.
+@W: CG360 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\work\ADCFIFO\ADCFIFO_0\rtl\vlog\core\COREFIFO.v":202:36:202:41|Removing wire fwft_Q, as there is no assignment to it.
+@W: CG360 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\work\ADCFIFO\ADCFIFO_0\rtl\vlog\core\COREFIFO.v":220:36:220:45|Removing wire DVLD_async, as there is no assignment to it.
+@W: CG360 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\work\ADCFIFO\ADCFIFO_0\rtl\vlog\core\COREFIFO.v":222:36:222:44|Removing wire DVLD_sync, as there is no assignment to it.
+@W: CG360 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\work\ADCFIFO\ADCFIFO_0\rtl\vlog\core\COREFIFO.v":223:36:223:44|Removing wire fwft_dvld, as there is no assignment to it.
+@W: CG360 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\work\ADCFIFO\ADCFIFO_0\rtl\vlog\core\COREFIFO.v":224:36:224:49|Removing wire fwft_reg_valid, as there is no assignment to it.
+@W: CG360 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\work\ADCFIFO\ADCFIFO_0\rtl\vlog\core\COREFIFO.v":225:36:225:42|Removing wire pf_dvld, as there is no assignment to it.
+@W: CG133 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\work\ADCFIFO\ADCFIFO_0\rtl\vlog\core\COREFIFO.v":229:36:229:44|Object reg_valid is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\work\ADCFIFO\ADCFIFO_0\rtl\vlog\core\COREFIFO.v":243:36:243:41|Object reg_RD is declared but not assigned. Either assign a value or remove the declaration.
+@W: CL169 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\work\ADCFIFO\ADCFIFO_0\rtl\vlog\core\COREFIFO.v":929:3:929:8|Pruning unused register RDATA_ext_r1[15:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\work\ADCFIFO\ADCFIFO_0\rtl\vlog\core\COREFIFO.v":919:3:919:8|Pruning unused register RDATA_ext_r[15:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\work\ADCFIFO\ADCFIFO_0\rtl\vlog\core\COREFIFO.v":868:3:868:8|Pruning unused register REN_d2. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\work\ADCFIFO\ADCFIFO_0\rtl\vlog\core\COREFIFO.v":868:3:868:8|Pruning unused register RE_d2. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\work\ADCFIFO\ADCFIFO_0\rtl\vlog\core\COREFIFO.v":868:3:868:8|Pruning unused register re_pulse_d2. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\work\ADCFIFO\ADCFIFO_0\rtl\vlog\core\COREFIFO.v":856:3:856:8|Pruning unused register RDATA_r1[15:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\work\ADCFIFO\ADCFIFO_0\rtl\vlog\core\COREFIFO.v":846:3:846:8|Pruning unused register RDATA_r_pre[15:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\work\ADCFIFO\ADCFIFO_0\rtl\vlog\core\COREFIFO.v":836:3:836:8|Pruning unused register fwft_Q_r[15:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\work\ADCFIFO\ADCFIFO_0\rtl\vlog\core\COREFIFO.v":323:3:323:8|Pruning unused register AEMPTY1_r. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\work\ADCFIFO\ADCFIFO_0\rtl\vlog\core\COREFIFO.v":323:3:323:8|Pruning unused register AEMPTY1_r1. Make sure that there are no unused intermediate registers.
+@N: CG364 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\work\ADCFIFO\ADCFIFO.v":9:7:9:13|Synthesizing module ADCFIFO in library work.
+
+@N: CG364 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\hdl\ADCMEM_DP.v":21:7:21:15|Synthesizing module ADCMEM_DP in library work.
+
+@N: CL134 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\hdl\ADCMEM_DP.v":41:0:41:5|Found RAM mem, depth=512, width=16
+@N: CL134 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\hdl\ADCMEM_DP.v":41:0:41:5|Found RAM mem, depth=512, width=16
+@N: CG364 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\hdl\fifo.v":3:7:3:10|Synthesizing module fifo in library work.
+
+	data_width=32'b00000000000000000000001111000000
+	fifo_depth=32'b00000000000000000000000000100000
+	addr_width=32'b00000000000000000000000000000101
+   Generated name = fifo_960s_32s_5s
+
+@N: CG179 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\hdl\fifo.v":39:29:39:41|Removing redundant assignment.
+@N: CG179 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\hdl\fifo.v":52:22:52:27|Removing redundant assignment.
+@N: CG179 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\hdl\fifo.v":65:22:65:27|Removing redundant assignment.
+@N: CG179 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\hdl\fifo.v":78:28:78:40|Removing redundant assignment.
+@N: CG179 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\hdl\fifo.v":91:20:91:23|Removing redundant assignment.
+@W: CL169 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\hdl\fifo.v":28:4:28:9|Pruning unused register entry_counter[5:0]. Make sure that there are no unused intermediate registers.
+@N: CG364 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\hdl\feature_encoder.v":3:7:3:21|Synthesizing module feature_encoder in library work.
+
+@N: CG179 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\hdl\feature_encoder.v":77:25:77:33|Removing redundant assignment.
+@N: CG179 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\hdl\feature_encoder.v":78:26:78:35|Removing redundant assignment.
+@N: CG179 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\hdl\feature_encoder.v":79:63:79:72|Removing redundant assignment.
+@N: CG179 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\hdl\feature_encoder.v":169:34:169:44|Removing redundant assignment.
+@N: CG179 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\hdl\feature_encoder.v":170:37:170:50|Removing redundant assignment.
+@N: CG179 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\hdl\feature_encoder.v":172:31:172:41|Removing redundant assignment.
+@N: CG179 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\hdl\feature_encoder.v":194:34:194:44|Removing redundant assignment.
+@N: CG179 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\hdl\feature_encoder.v":195:37:195:50|Removing redundant assignment.
+@N: CG179 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\hdl\feature_encoder.v":197:31:197:41|Removing redundant assignment.
+@N: CG364 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\hdl\cellular_automaton.v":3:7:3:24|Synthesizing module cellular_automaton in library work.
+
+@W: CG532 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\hdl\cellular_automaton.v":23:0:23:6|Within an initial block, only Verilog force statements and memory $readmemh/$readmemb initialization statements are recognized, and all other content is ignored.
+@N: CG364 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\hdl\spatial_accumulator.v":3:7:3:25|Synthesizing module spatial_accumulator in library work.
+
+@N: CG364 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\hdl\spatial_encoder_N_pong.v":3:7:3:28|Synthesizing module spatial_encoder_N_pong in library work.
+
+@N: CG364 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\hdl\bundle_counter.v":3:7:3:20|Synthesizing module bundle_counter in library work.
+
+@N: CG364 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\hdl\temporal_encoder_counter.v":3:7:3:30|Synthesizing module temporal_encoder_counter in library work.
+
+@N: CG364 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\hdl\associative_memory.v":3:7:3:24|Synthesizing module associative_memory in library work.
+
+@N: CG364 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\hdl\hdc_top.v":3:7:3:13|Synthesizing module hdc_top in library work.
+
+@N: CG179 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\hdl\hdc_top.v":96:14:96:21|Removing redundant assignment.
+@N: CG179 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\hdl\hdc_top.v":97:17:97:27|Removing redundant assignment.
+@N: CG364 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\work\adc_datapath\adc_datapath.v":9:7:9:18|Synthesizing module adc_datapath in library work.
+
+@N: CG364 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\hdl\nmic_rx.v":29:7:29:13|Synthesizing module nmic_rx in library work.
+
+	DEBUG_BUS_SIZE=32'b00000000000000000000000000000100
+	IDLE=4'b0000
+	NEWPKT=4'b0001
+	TYPEBIT=4'b0011
+	WAIT1=4'b0010
+	HEADERBIT1=4'b0110
+	WAIT2=4'b0111
+	HEADERBIT2=4'b0101
+	WAIT3=4'b1101
+	FIRSTBIT=4'b1100
+	WAITn=4'b1110
+	NEXTBIT=4'b1111
+	WAITc=4'b1011
+	CRCBIT=4'b1010
+	DONE=4'b1000
+	ASSIGNED_DEBUG_BITS=32'b00000000000000000000000000000100
+   Generated name = nmic_rx_Z3
+
+@W: CG390 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\hdl\nmic_rx.v":249:17:249:51|Repeat multiplier in concatenation evaluates to 0
+@N: CG364 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\hdl\nmic_tx.v":29:7:29:13|Synthesizing module nmic_tx in library work.
+
+	DEBUG_BUS_SIZE=32'b00000000000000000000000000000100
+	STATE_IDLE=3'b000
+	STATE_TX=3'b001
+	STATE_TX_CRC=3'b011
+	STATE_TX_WAIT=3'b010
+	STATE_RST=3'b100
+	STATE_RST_2=3'b110
+	STATE_RST_WAIT=3'b101
+	ASSIGNED_DEBUG_BITS=32'b00000000000000000000000000000100
+   Generated name = nmic_tx_4s_0_1_3_2_4_6_5_4s
+
+@W: CG390 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\hdl\nmic_tx.v":229:17:229:51|Repeat multiplier in concatenation evaluates to 0
+@N: CG179 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\hdl\nmic_tx.v":67:21:67:29|Removing redundant assignment.
+@N: CG364 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\hdl\twoMHz_strobe.v":21:7:21:19|Synthesizing module twoMHz_strobe in library work.
+
+@N: CG364 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\work\nm_channel\nm_channel.v":9:7:9:16|Synthesizing module nm_channel in library work.
+
+@N: CG364 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\hdl\nm_if_apb.v":29:7:29:15|Synthesizing module nm_if_apb in library work.
+
+@W: CG390 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\hdl\nm_if_apb.v":295:17:295:51|Repeat multiplier in concatenation evaluates to 0
+@W: CL169 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\hdl\nm_if_apb.v":137:0:137:5|Pruning unused register nm1_has_adc. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\hdl\nm_if_apb.v":129:0:129:5|Pruning unused register nm0_has_adc. Make sure that there are no unused intermediate registers.
+@A: CL282 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\hdl\nm_if_apb.v":228:0:228:5|Feedback mux created for signal tx_data_n1[33:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\hdl\nm_if_apb.v":228:0:228:5|Feedback mux created for signal tx_data_n0[33:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@N: CG364 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\work\PDMAFIFO\PDMAFIFO_0\rtl\vlog\core\COREFIFO.v":29:7:29:34|Synthesizing module PDMAFIFO_PDMAFIFO_0_COREFIFO in library work.
+
+	FAMILY=32'b00000000000000000000000000010011
+	SYNC=32'b00000000000000000000000000000001
+	RCLK_EDGE=32'b00000000000000000000000000000001
+	WCLK_EDGE=32'b00000000000000000000000000000001
+	RE_POLARITY=32'b00000000000000000000000000000000
+	WE_POLARITY=32'b00000000000000000000000000000000
+	RWIDTH=32'b00000000000000000000000000001000
+	WWIDTH=32'b00000000000000000000000000010000
+	RDEPTH=32'b00000000000000000000000011001000
+	WDEPTH=32'b00000000000000000000000001100100
+	READ_DVALID=32'b00000000000000000000000000000001
+	WRITE_ACK=32'b00000000000000000000000000000001
+	CTRL_TYPE=32'b00000000000000000000000000000011
+	ESTOP=32'b00000000000000000000000000000001
+	FSTOP=32'b00000000000000000000000000000001
+	AE_STATIC_EN=32'b00000000000000000000000000000000
+	AF_STATIC_EN=32'b00000000000000000000000000000000
+	AEVAL=32'b00000000000000000000000000000100
+	AFVAL=32'b00000000000000000000000001100011
+	PIPE=32'b00000000000000000000000000000001
+	PREFETCH=32'b00000000000000000000000000000000
+	FWFT=32'b00000000000000000000000000000000
+	ECC=32'b00000000000000000000000000000000
+	RESET_POLARITY=32'b00000000000000000000000000000000
+	OVERFLOW_EN=32'b00000000000000000000000000000001
+	UNDERFLOW_EN=32'b00000000000000000000000000000001
+	WRCNT_EN=32'b00000000000000000000000000000001
+	RDCNT_EN=32'b00000000000000000000000000000001
+	WMSB_DEPTH=32'b00000000000000000000000000000111
+	RMSB_DEPTH=32'b00000000000000000000000000001000
+	WDEPTH_CAL=32'b00000000000000000000000000000110
+	RDEPTH_CAL=32'b00000000000000000000000000000111
+	SYNC_RESET=32'b00000000000000000000000000000000
+   Generated name = PDMAFIFO_PDMAFIFO_0_COREFIFO_Z4
+
+@N: CG364 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\work\PDMAFIFO\PDMAFIFO_0\rtl\vlog\core\corefifo_sync.v":28:7:28:39|Synthesizing module PDMAFIFO_PDMAFIFO_0_corefifo_sync in library work.
+
+	WRITE_WIDTH=32'b00000000000000000000000000010000
+	WRITE_DEPTH=32'b00000000000000000000000000000111
+	FULL_WRITE_DEPTH=32'b00000000000000000000000001100100
+	READ_WIDTH=32'b00000000000000000000000000001000
+	READ_DEPTH=32'b00000000000000000000000000001000
+	VAR_ASPECT_WRDEPTH=32'b00000000000000000000000000001000
+	VAR_ASPECT_RDDEPTH=32'b00000000000000000000000000001000
+	FULL_READ_DEPTH=32'b00000000000000000000000011001000
+	PREFETCH=32'b00000000000000000000000000000000
+	FWFT=32'b00000000000000000000000000000000
+	WCLK_HIGH=32'b00000000000000000000000000000001
+	RESET_LOW=32'b00000000000000000000000000000000
+	WRITE_LOW=32'b00000000000000000000000000000000
+	READ_LOW=32'b00000000000000000000000000000000
+	AF_FLAG_STATIC=32'b00000000000000000000000000000000
+	AE_FLAG_STATIC=32'b00000000000000000000000000000000
+	AFULL_VAL=32'b00000000000000000000000001100011
+	AEMPTY_VAL=32'b00000000000000000000000000000100
+	ESTOP=32'b00000000000000000000000000000001
+	FSTOP=32'b00000000000000000000000000000001
+	PIPE=32'b00000000000000000000000000000001
+	REGISTER_RADDR=32'b00000000000000000000000000000001
+	READ_DVALID=32'b00000000000000000000000000000001
+	WRITE_ACK=32'b00000000000000000000000000000001
+	OVERFLOW_EN=32'b00000000000000000000000000000001
+	UNDERFLOW_EN=32'b00000000000000000000000000000001
+	WRCNT_EN=32'b00000000000000000000000000000001
+	RDCNT_EN=32'b00000000000000000000000000000001
+	SYNC_RESET=32'b00000000000000000000000000000000
+	WDEPTH_CAL=32'b00000000000000000000000000000110
+	RDEPTH_CAL=32'b00000000000000000000000000000111
+   Generated name = PDMAFIFO_PDMAFIFO_0_corefifo_sync_Z5
+
+@W: CG133 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\work\PDMAFIFO\PDMAFIFO_0\rtl\vlog\core\corefifo_sync.v":320:11:320:11|Object k is declared but not assigned. Either assign a value or remove the declaration.
+@W: CL169 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\work\PDMAFIFO\PDMAFIFO_0\rtl\vlog\core\corefifo_sync.v":303:4:303:9|Pruning unused register dvld_r2. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\work\PDMAFIFO\PDMAFIFO_0\rtl\vlog\core\corefifo_sync.v":260:4:260:9|Pruning unused register re_p_d1. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\work\PDMAFIFO\PDMAFIFO_0\rtl\vlog\core\corefifo_sync.v":250:4:250:9|Pruning unused register wptr[7:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\work\PDMAFIFO\PDMAFIFO_0\rtl\vlog\core\corefifo_sync.v":237:4:237:9|Pruning unused register rptr[8:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\work\PDMAFIFO\PDMAFIFO_0\rtl\vlog\core\corefifo_sync.v":224:4:224:9|Pruning unused register full_reg. Make sure that there are no unused intermediate registers.
+@N: CG364 :"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\generic\smartfusion2.v":455:7:455:14|Synthesizing module RAM64x18 in library work.
+
+@N: CG364 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\work\PDMAFIFO\PDMAFIFO_0\rtl\vlog\core\PDMAFIFO_PDMAFIFO_0_USRAM_top.v":5:7:5:35|Synthesizing module PDMAFIFO_PDMAFIFO_0_USRAM_top in library work.
+
+@N: CG364 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\work\PDMAFIFO\PDMAFIFO_0\rtl\vlog\core\PDMAFIFO_PDMAFIFO_0_ram_wrapper.v":4:7:4:37|Synthesizing module PDMAFIFO_PDMAFIFO_0_ram_wrapper in library work.
+
+	RWIDTH=32'b00000000000000000000000000001000
+	WWIDTH=32'b00000000000000000000000000010000
+	RDEPTH=32'b00000000000000000000000000001000
+	WDEPTH=32'b00000000000000000000000000000111
+	SYNC=32'b00000000000000000000000000000001
+	PIPE=32'b00000000000000000000000000000001
+	CTRL_TYPE=32'b00000000000000000000000000000011
+   Generated name = PDMAFIFO_PDMAFIFO_0_ram_wrapper_8s_16s_8_7_1s_1s_3s
+
+@W: CG360 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\work\PDMAFIFO\PDMAFIFO_0\rtl\vlog\core\COREFIFO.v":163:37:163:46|Removing wire SB_CORRECT, as there is no assignment to it.
+@W: CG360 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\work\PDMAFIFO\PDMAFIFO_0\rtl\vlog\core\COREFIFO.v":164:37:164:45|Removing wire DB_DETECT, as there is no assignment to it.
+@W: CG360 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\work\PDMAFIFO\PDMAFIFO_0\rtl\vlog\core\COREFIFO.v":195:36:195:41|Removing wire EMPTY2, as there is no assignment to it.
+@W: CG360 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\work\PDMAFIFO\PDMAFIFO_0\rtl\vlog\core\COREFIFO.v":196:36:196:42|Removing wire AEMPTY2, as there is no assignment to it.
+@W: CG360 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\work\PDMAFIFO\PDMAFIFO_0\rtl\vlog\core\COREFIFO.v":197:36:197:45|Removing wire fifo_rd_en, as there is no assignment to it.
+@W: CG360 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\work\PDMAFIFO\PDMAFIFO_0\rtl\vlog\core\COREFIFO.v":201:36:201:46|Removing wire pf_MEMRADDR, as there is no assignment to it.
+@W: CG360 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\work\PDMAFIFO\PDMAFIFO_0\rtl\vlog\core\COREFIFO.v":202:36:202:48|Removing wire fwft_MEMRADDR, as there is no assignment to it.
+@W: CG360 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\work\PDMAFIFO\PDMAFIFO_0\rtl\vlog\core\COREFIFO.v":207:36:207:39|Removing wire pf_Q, as there is no assignment to it.
+@W: CG360 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\work\PDMAFIFO\PDMAFIFO_0\rtl\vlog\core\COREFIFO.v":208:36:208:41|Removing wire fwft_Q, as there is no assignment to it.
+@W: CG360 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\work\PDMAFIFO\PDMAFIFO_0\rtl\vlog\core\COREFIFO.v":226:36:226:45|Removing wire DVLD_async, as there is no assignment to it.
+@W: CG360 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\work\PDMAFIFO\PDMAFIFO_0\rtl\vlog\core\COREFIFO.v":227:36:227:45|Removing wire DVLD_scntr, as there is no assignment to it.
+@W: CG360 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\work\PDMAFIFO\PDMAFIFO_0\rtl\vlog\core\COREFIFO.v":229:36:229:44|Removing wire fwft_dvld, as there is no assignment to it.
+@W: CG360 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\work\PDMAFIFO\PDMAFIFO_0\rtl\vlog\core\COREFIFO.v":230:36:230:49|Removing wire fwft_reg_valid, as there is no assignment to it.
+@W: CG360 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\work\PDMAFIFO\PDMAFIFO_0\rtl\vlog\core\COREFIFO.v":231:36:231:42|Removing wire pf_dvld, as there is no assignment to it.
+@W: CG360 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\work\PDMAFIFO\PDMAFIFO_0\rtl\vlog\core\COREFIFO.v":236:36:236:47|Removing wire A_SB_CORRECT, as there is no assignment to it.
+@W: CG360 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\work\PDMAFIFO\PDMAFIFO_0\rtl\vlog\core\COREFIFO.v":237:36:237:46|Removing wire A_DB_DETECT, as there is no assignment to it.
+@W: CG360 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\work\PDMAFIFO\PDMAFIFO_0\rtl\vlog\core\COREFIFO.v":238:36:238:47|Removing wire B_SB_CORRECT, as there is no assignment to it.
+@W: CG360 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\work\PDMAFIFO\PDMAFIFO_0\rtl\vlog\core\COREFIFO.v":239:36:239:46|Removing wire B_DB_DETECT, as there is no assignment to it.
+@W: CG133 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\work\PDMAFIFO\PDMAFIFO_0\rtl\vlog\core\COREFIFO.v":240:36:240:44|Object reg_valid is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\work\PDMAFIFO\PDMAFIFO_0\rtl\vlog\core\COREFIFO.v":254:36:254:41|Object reg_RD is declared but not assigned. Either assign a value or remove the declaration.
+@W: CL169 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\work\PDMAFIFO\PDMAFIFO_0\rtl\vlog\core\COREFIFO.v":985:3:985:8|Pruning unused register RDATA_ext_r1[7:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\work\PDMAFIFO\PDMAFIFO_0\rtl\vlog\core\COREFIFO.v":975:3:975:8|Pruning unused register RDATA_ext_r[7:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\work\PDMAFIFO\PDMAFIFO_0\rtl\vlog\core\COREFIFO.v":912:3:912:8|Pruning unused register REN_d2. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\work\PDMAFIFO\PDMAFIFO_0\rtl\vlog\core\COREFIFO.v":912:3:912:8|Pruning unused register REN_d3. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\work\PDMAFIFO\PDMAFIFO_0\rtl\vlog\core\COREFIFO.v":912:3:912:8|Pruning unused register RE_d2. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\work\PDMAFIFO\PDMAFIFO_0\rtl\vlog\core\COREFIFO.v":912:3:912:8|Pruning unused register RE_d3. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\work\PDMAFIFO\PDMAFIFO_0\rtl\vlog\core\COREFIFO.v":912:3:912:8|Pruning unused register re_pulse_d2. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\work\PDMAFIFO\PDMAFIFO_0\rtl\vlog\core\COREFIFO.v":912:3:912:8|Pruning unused register re_pulse_d3. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\work\PDMAFIFO\PDMAFIFO_0\rtl\vlog\core\COREFIFO.v":900:3:900:8|Pruning unused register RDATA_r2[7:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\work\PDMAFIFO\PDMAFIFO_0\rtl\vlog\core\COREFIFO.v":890:3:890:8|Pruning unused register RDATA_r1[7:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\work\PDMAFIFO\PDMAFIFO_0\rtl\vlog\core\COREFIFO.v":880:3:880:8|Pruning unused register RDATA_r_pre[7:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\work\PDMAFIFO\PDMAFIFO_0\rtl\vlog\core\COREFIFO.v":870:3:870:8|Pruning unused register fwft_Q_r[7:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\work\PDMAFIFO\PDMAFIFO_0\rtl\vlog\core\COREFIFO.v":356:3:356:8|Pruning unused register DVLD_async_ecc. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\work\PDMAFIFO\PDMAFIFO_0\rtl\vlog\core\COREFIFO.v":356:3:356:8|Pruning unused register DVLD_sync_ecc. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\work\PDMAFIFO\PDMAFIFO_0\rtl\vlog\core\COREFIFO.v":356:3:356:8|Pruning unused register DVLD_scntr_ecc. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\work\PDMAFIFO\PDMAFIFO_0\rtl\vlog\core\COREFIFO.v":343:3:343:8|Pruning unused register AEMPTY1_r. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\work\PDMAFIFO\PDMAFIFO_0\rtl\vlog\core\COREFIFO.v":343:3:343:8|Pruning unused register AEMPTY1_r1. Make sure that there are no unused intermediate registers.
+@N: CG364 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\work\PDMAFIFO\PDMAFIFO.v":9:7:9:14|Synthesizing module PDMAFIFO in library work.
+
+@N: CG364 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\hdl\pdma_if.v":21:7:21:13|Synthesizing module pdma_if in library work.
+
+	DEBUG_BUS_SIZE=32'b00000000000000000000000000000100
+	HEADER_CONST=16'b1010101000000000
+	STATE_IDLE=4'b0000
+	STATE_HEADER=4'b0001
+	STATE_NM0=4'b0011
+	STATE_NM1=4'b0111
+	STATE_ACC_X=4'b1111
+	STATE_ACC_Y=4'b1110
+	STATE_ACC_Z=4'b1100
+	STATE_TOSS_PAD=4'b1000
+	STATE_OVERFLOW=4'b0010
+	ASSIGNED_DEBUG_BITS=32'b00000000000000000000000000000100
+   Generated name = pdma_if_Z6
+
+@W: CG390 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\hdl\pdma_if.v":259:17:259:51|Repeat multiplier in concatenation evaluates to 0
+@N: CG364 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\work\nm_if\nm_if.v":9:7:9:11|Synthesizing module nm_if in library work.
+
+@N: CG364 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\work\cm_top\cm_top.v":9:7:9:12|Synthesizing module cm_top in library work.
+
+@W: CG775 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":13:0:13:7|Found Component CoreAPB3 in library COREAPB3_LIB
+@N: CG364 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3_muxptob3.v":13:0:13:6|Synthesizing module CAPB3II in library COREAPB3_LIB.
+
+@N: CG364 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":13:0:13:7|Synthesizing module CoreAPB3 in library COREAPB3_LIB.
+
+	APB_DWIDTH=6'b100000
+	IADDR_OPTION=32'b00000000000000000000000000000000
+	APBSLOT0ENABLE=1'b1
+	APBSLOT1ENABLE=1'b1
+	APBSLOT2ENABLE=1'b0
+	APBSLOT3ENABLE=1'b0
+	APBSLOT4ENABLE=1'b0
+	APBSLOT5ENABLE=1'b0
+	APBSLOT6ENABLE=1'b0
+	APBSLOT7ENABLE=1'b0
+	APBSLOT8ENABLE=1'b0
+	APBSLOT9ENABLE=1'b0
+	APBSLOT10ENABLE=1'b0
+	APBSLOT11ENABLE=1'b0
+	APBSLOT12ENABLE=1'b0
+	APBSLOT13ENABLE=1'b0
+	APBSLOT14ENABLE=1'b0
+	APBSLOT15ENABLE=1'b0
+	SC_0=1'b0
+	SC_1=1'b0
+	SC_2=1'b0
+	SC_3=1'b0
+	SC_4=1'b0
+	SC_5=1'b0
+	SC_6=1'b0
+	SC_7=1'b0
+	SC_8=1'b0
+	SC_9=1'b0
+	SC_10=1'b0
+	SC_11=1'b0
+	SC_12=1'b0
+	SC_13=1'b0
+	SC_14=1'b0
+	SC_15=1'b0
+	MADDR_BITS=6'b010100
+	UPR_NIBBLE_POSN=4'b1000
+	FAMILY=32'b00000000000000000000000000010011
+	SYNC_RESET=32'b00000000000000000000000000000000
+	CAPB3OOl=32'b00000000000000000000000000000000
+	CAPB3IOl=32'b00000000000000000000000000000001
+	CAPB3lOl=32'b00000000000000000000000000000010
+	CAPB3OIl=32'b00000000000000000000000000000011
+	CAPB3IIl=32'b00000000000000000000000000000100
+	CAPB3lIl=32'b00000000000000000000000000000101
+	CAPB3Oll=32'b00000000000000000000000000000110
+	CAPB3Ill=32'b00000000000000000000000000000111
+	CAPB3lll=32'b00000000000000000000000000001000
+	CAPB3O0l=32'b00000000000000000000000000001001
+	CAPB3I0l=32'b00000000000000000000000000001010
+	CAPB3l0l=32'b00000000000000000000000000001011
+	CAPB3O1l=32'b00000000000000000000000000001100
+	CAPB3I1l=32'b00000000000000000000000000001101
+	CAPB3l1l=32'b00000000000000000000000000001110
+	CAPB3OO0=32'b00000000000000000000000000001111
+	CAPB3IO0=32'b00000000000000000000000000010000
+	CAPB3lO0=32'b00000000000000000000000000010001
+	CAPB3OI0=16'b0000000000000001
+	CAPB3II0=16'b0000000000000010
+	CAPB3lI0=16'b0000000000000000
+	CAPB3Ol0=16'b0000000000000000
+	CAPB3Il0=16'b0000000000000000
+	CAPB3ll0=16'b0000000000000000
+	CAPB3O00=16'b0000000000000000
+	CAPB3I00=16'b0000000000000000
+	CAPB3l00=16'b0000000000000000
+	CAPB3O10=16'b0000000000000000
+	CAPB3I10=16'b0000000000000000
+	CAPB3l10=16'b0000000000000000
+	CAPB3OO1=16'b0000000000000000
+	CAPB3IO1=16'b0000000000000000
+	CAPB3lO1=16'b0000000000000000
+	CAPB3OI1=16'b0000000000000000
+	CAPB3II1=16'b0000000000000000
+	CAPB3lI1=16'b0000000000000000
+   Generated name = CoreAPB3_Z7
+
+@W: CG360 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":1495:0:1495:8|Removing wire CAPB3IlOI, as there is no assignment to it.
+@N: CG364 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\work\Mario_Libero\CoreGPIO_0\rtl\vlog\core\coregpio.v":23:7:23:38|Synthesizing module Mario_Libero_CoreGPIO_0_CoreGPIO in library work.
+
+	IO_NUM=32'b00000000000000000000000000000100
+	APB_WIDTH=32'b00000000000000000000000000100000
+	OE_TYPE=1'b1
+	INT_BUS=1'b0
+	FIXED_CONFIG_0=1'b0
+	FIXED_CONFIG_1=1'b0
+	FIXED_CONFIG_2=1'b0
+	FIXED_CONFIG_3=1'b0
+	FIXED_CONFIG_4=1'b0
+	FIXED_CONFIG_5=1'b0
+	FIXED_CONFIG_6=1'b0
+	FIXED_CONFIG_7=1'b0
+	FIXED_CONFIG_8=1'b0
+	FIXED_CONFIG_9=1'b0
+	FIXED_CONFIG_10=1'b0
+	FIXED_CONFIG_11=1'b0
+	FIXED_CONFIG_12=1'b0
+	FIXED_CONFIG_13=1'b0
+	FIXED_CONFIG_14=1'b0
+	FIXED_CONFIG_15=1'b0
+	FIXED_CONFIG_16=1'b0
+	FIXED_CONFIG_17=1'b0
+	FIXED_CONFIG_18=1'b0
+	FIXED_CONFIG_19=1'b0
+	FIXED_CONFIG_20=1'b0
+	FIXED_CONFIG_21=1'b0
+	FIXED_CONFIG_22=1'b0
+	FIXED_CONFIG_23=1'b0
+	FIXED_CONFIG_24=1'b0
+	FIXED_CONFIG_25=1'b0
+	FIXED_CONFIG_26=1'b0
+	FIXED_CONFIG_27=1'b0
+	FIXED_CONFIG_28=1'b0
+	FIXED_CONFIG_29=1'b0
+	FIXED_CONFIG_30=1'b0
+	FIXED_CONFIG_31=1'b0
+	IO_TYPE_0=2'b01
+	IO_TYPE_1=2'b01
+	IO_TYPE_2=2'b01
+	IO_TYPE_3=2'b01
+	IO_TYPE_4=2'b00
+	IO_TYPE_5=2'b00
+	IO_TYPE_6=2'b00
+	IO_TYPE_7=2'b00
+	IO_TYPE_8=2'b00
+	IO_TYPE_9=2'b00
+	IO_TYPE_10=2'b00
+	IO_TYPE_11=2'b00
+	IO_TYPE_12=2'b00
+	IO_TYPE_13=2'b00
+	IO_TYPE_14=2'b00
+	IO_TYPE_15=2'b00
+	IO_TYPE_16=2'b00
+	IO_TYPE_17=2'b00
+	IO_TYPE_18=2'b00
+	IO_TYPE_19=2'b00
+	IO_TYPE_20=2'b00
+	IO_TYPE_21=2'b00
+	IO_TYPE_22=2'b00
+	IO_TYPE_23=2'b00
+	IO_TYPE_24=2'b00
+	IO_TYPE_25=2'b00
+	IO_TYPE_26=2'b00
+	IO_TYPE_27=2'b00
+	IO_TYPE_28=2'b00
+	IO_TYPE_29=2'b00
+	IO_TYPE_30=2'b00
+	IO_TYPE_31=2'b00
+	IO_INT_TYPE_0=3'b010
+	IO_INT_TYPE_1=3'b010
+	IO_INT_TYPE_2=3'b010
+	IO_INT_TYPE_3=3'b010
+	IO_INT_TYPE_4=3'b111
+	IO_INT_TYPE_5=3'b111
+	IO_INT_TYPE_6=3'b111
+	IO_INT_TYPE_7=3'b111
+	IO_INT_TYPE_8=3'b111
+	IO_INT_TYPE_9=3'b111
+	IO_INT_TYPE_10=3'b111
+	IO_INT_TYPE_11=3'b111
+	IO_INT_TYPE_12=3'b111
+	IO_INT_TYPE_13=3'b111
+	IO_INT_TYPE_14=3'b111
+	IO_INT_TYPE_15=3'b111
+	IO_INT_TYPE_16=3'b111
+	IO_INT_TYPE_17=3'b111
+	IO_INT_TYPE_18=3'b111
+	IO_INT_TYPE_19=3'b111
+	IO_INT_TYPE_20=3'b111
+	IO_INT_TYPE_21=3'b111
+	IO_INT_TYPE_22=3'b111
+	IO_INT_TYPE_23=3'b111
+	IO_INT_TYPE_24=3'b111
+	IO_INT_TYPE_25=3'b111
+	IO_INT_TYPE_26=3'b111
+	IO_INT_TYPE_27=3'b111
+	IO_INT_TYPE_28=3'b111
+	IO_INT_TYPE_29=3'b111
+	IO_INT_TYPE_30=3'b111
+	IO_INT_TYPE_31=3'b111
+	IO_VAL_0=1'b0
+	IO_VAL_1=1'b0
+	IO_VAL_2=1'b0
+	IO_VAL_3=1'b0
+	IO_VAL_4=1'b0
+	IO_VAL_5=1'b0
+	IO_VAL_6=1'b0
+	IO_VAL_7=1'b0
+	IO_VAL_8=1'b0
+	IO_VAL_9=1'b0
+	IO_VAL_10=1'b0
+	IO_VAL_11=1'b0
+	IO_VAL_12=1'b0
+	IO_VAL_13=1'b0
+	IO_VAL_14=1'b0
+	IO_VAL_15=1'b0
+	IO_VAL_16=1'b0
+	IO_VAL_17=1'b0
+	IO_VAL_18=1'b0
+	IO_VAL_19=1'b0
+	IO_VAL_20=1'b0
+	IO_VAL_21=1'b0
+	IO_VAL_22=1'b0
+	IO_VAL_23=1'b0
+	IO_VAL_24=1'b0
+	IO_VAL_25=1'b0
+	IO_VAL_26=1'b0
+	IO_VAL_27=1'b0
+	IO_VAL_28=1'b0
+	IO_VAL_29=1'b0
+	IO_VAL_30=1'b0
+	IO_VAL_31=1'b0
+	FIXED_CONFIG=32'b00000000000000000000000000000000
+	IO_INT_TYPE=96'b010010010010111111111111111111111111111111111111111111111111111111111111111111111111111111111111
+	IO_TYPE=64'b0101010100000000000000000000000000000000000000000000000000000000
+	IO_VAL=32'b00000000000000000000000000000000
+   Generated name = Mario_Libero_CoreGPIO_0_CoreGPIO_Z8
+
+@N: CG179 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\work\Mario_Libero\CoreGPIO_0\rtl\vlog\core\coregpio.v":436:15:436:26|Removing redundant assignment.
+@N: CG179 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\work\Mario_Libero\CoreGPIO_0\rtl\vlog\core\coregpio.v":456:15:456:26|Removing redundant assignment.
+@N: CG179 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\work\Mario_Libero\CoreGPIO_0\rtl\vlog\core\coregpio.v":476:16:476:28|Removing redundant assignment.
+@N: CG364 :"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\generic\smartfusion2.v":347:7:347:13|Synthesizing module GCLKINT in library work.
+
+@N: CG364 :"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\generic\smartfusion2.v":362:7:362:12|Synthesizing module CLKINT in library work.
+
+@N: CG364 :"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\generic\smartfusion2.v":727:7:727:9|Synthesizing module CCC in library work.
+
+@N: CG364 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\work\Mario_Libero\FCCC_0\Mario_Libero_FCCC_0_FCCC.v":5:7:5:30|Synthesizing module Mario_Libero_FCCC_0_FCCC in library work.
+
+@N: CG364 :"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\generic\smartfusion2.v":228:7:228:9|Synthesizing module INV in library work.
+
+@N: CG364 :"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\generic\smartfusion2.v":268:7:268:11|Synthesizing module INBUF in library work.
+
+@N: CG364 :"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\generic\smartfusion2.v":280:7:280:13|Synthesizing module TRIBUFF in library work.
+
+@N: CG364 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\work\Mario_Libero_MSS\Mario_Libero_MSS_syn.v":5:7:5:13|Synthesizing module MSS_060 in library work.
+
+@N: CG364 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\work\Mario_Libero_MSS\Mario_Libero_MSS.v":9:7:9:22|Synthesizing module Mario_Libero_MSS in library work.
+
+@N: CG364 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\Actel\SgCore\OSC\2.0.101\osc_comps.v":23:7:23:12|Synthesizing module XTLOSC in library work.
+
+@N: CG364 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\work\Mario_Libero\OSC_0\Mario_Libero_OSC_0_OSC.v":5:7:5:28|Synthesizing module Mario_Libero_OSC_0_OSC in library work.
+
+@N: CG364 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\work\Mario_Libero\Mario_Libero.v":9:7:9:18|Synthesizing module Mario_Libero in library work.
+
+@W: CL157 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\work\Mario_Libero\OSC_0\Mario_Libero_OSC_0_OSC.v":15:7:15:24|*Output RCOSC_25_50MHZ_CCC has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL157 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\work\Mario_Libero\OSC_0\Mario_Libero_OSC_0_OSC.v":16:7:16:24|*Output RCOSC_25_50MHZ_O2F has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL157 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\work\Mario_Libero\OSC_0\Mario_Libero_OSC_0_OSC.v":17:7:17:20|*Output RCOSC_1MHZ_CCC has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL157 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\work\Mario_Libero\OSC_0\Mario_Libero_OSC_0_OSC.v":18:7:18:20|*Output RCOSC_1MHZ_O2F has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL157 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\work\Mario_Libero\OSC_0\Mario_Libero_OSC_0_OSC.v":20:7:20:16|*Output XTLOSC_O2F has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL246 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\work\Mario_Libero\CoreGPIO_0\rtl\vlog\core\coregpio.v":182:26:182:31|Input port bits 31 to 8 of PWDATA[31:0] are unused. Assign logic for all port bits or change the input port size.
+@W: CL246 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":407:0:407:4|Input port bits 31 to 20 of PADDR[31:0] are unused. Assign logic for all port bits or change the input port size.
+@N: CL159 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":396:0:396:4|Input IADDR is unused.
+@N: CL159 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":398:0:398:6|Input PRESETN is unused.
+@N: CL159 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":400:0:400:3|Input PCLK is unused.
+@N: CL159 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":528:0:528:7|Input PRDATAS2 is unused.
+@N: CL159 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":535:0:535:7|Input PRDATAS3 is unused.
+@N: CL159 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":542:0:542:7|Input PRDATAS4 is unused.
+@N: CL159 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":549:0:549:7|Input PRDATAS5 is unused.
+@N: CL159 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":556:0:556:7|Input PRDATAS6 is unused.
+@N: CL159 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":563:0:563:7|Input PRDATAS7 is unused.
+@N: CL159 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":570:0:570:7|Input PRDATAS8 is unused.
+@N: CL159 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":577:0:577:7|Input PRDATAS9 is unused.
+@N: CL159 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":584:0:584:8|Input PRDATAS10 is unused.
+@N: CL159 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":591:0:591:8|Input PRDATAS11 is unused.
+@N: CL159 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":598:0:598:8|Input PRDATAS12 is unused.
+@N: CL159 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":605:0:605:8|Input PRDATAS13 is unused.
+@N: CL159 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":612:0:612:8|Input PRDATAS14 is unused.
+@N: CL159 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":619:0:619:8|Input PRDATAS15 is unused.
+@N: CL159 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":632:0:632:7|Input PREADYS2 is unused.
+@N: CL159 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":634:0:634:7|Input PREADYS3 is unused.
+@N: CL159 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":636:0:636:7|Input PREADYS4 is unused.
+@N: CL159 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":638:0:638:7|Input PREADYS5 is unused.
+@N: CL159 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":640:0:640:7|Input PREADYS6 is unused.
+@N: CL159 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":642:0:642:7|Input PREADYS7 is unused.
+@N: CL159 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":644:0:644:7|Input PREADYS8 is unused.
+@N: CL159 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":646:0:646:7|Input PREADYS9 is unused.
+@N: CL159 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":648:0:648:8|Input PREADYS10 is unused.
+@N: CL159 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":650:0:650:8|Input PREADYS11 is unused.
+@N: CL159 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":652:0:652:8|Input PREADYS12 is unused.
+@N: CL159 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":654:0:654:8|Input PREADYS13 is unused.
+@N: CL159 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":656:0:656:8|Input PREADYS14 is unused.
+@N: CL159 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":658:0:658:8|Input PREADYS15 is unused.
+@N: CL159 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":666:0:666:8|Input PSLVERRS2 is unused.
+@N: CL159 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":668:0:668:8|Input PSLVERRS3 is unused.
+@N: CL159 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":670:0:670:8|Input PSLVERRS4 is unused.
+@N: CL159 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":672:0:672:8|Input PSLVERRS5 is unused.
+@N: CL159 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":674:0:674:8|Input PSLVERRS6 is unused.
+@N: CL159 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":676:0:676:8|Input PSLVERRS7 is unused.
+@N: CL159 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":678:0:678:8|Input PSLVERRS8 is unused.
+@N: CL159 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":680:0:680:8|Input PSLVERRS9 is unused.
+@N: CL159 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":682:0:682:9|Input PSLVERRS10 is unused.
+@N: CL159 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":684:0:684:9|Input PSLVERRS11 is unused.
+@N: CL159 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":686:0:686:9|Input PSLVERRS12 is unused.
+@N: CL159 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":688:0:688:9|Input PSLVERRS13 is unused.
+@N: CL159 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":690:0:690:9|Input PSLVERRS14 is unused.
+@N: CL159 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":692:0:692:9|Input PSLVERRS15 is unused.
+@W: CL246 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\work\nm_if\nm_if.v":56:14:56:24|Input port bits 11 to 6 of fft_channel[11:0] are unused. Assign logic for all port bits or change the input port size.
+@N: CL201 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\hdl\pdma_if.v":161:0:161:5|Trying to extract state machine for register current_state.
+Extracted state machine for register current_state
+State machine has 9 reachable states with original encodings of:
+   0000
+   0001
+   0010
+   0011
+   0111
+   1000
+   1100
+   1110
+   1111
+@W: CL157 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\work\PDMAFIFO\PDMAFIFO_0\rtl\vlog\core\PDMAFIFO_PDMAFIFO_0_ram_wrapper.v":42:25:42:36|*Output A_SB_CORRECT has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL157 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\work\PDMAFIFO\PDMAFIFO_0\rtl\vlog\core\PDMAFIFO_PDMAFIFO_0_ram_wrapper.v":43:25:43:36|*Output B_SB_CORRECT has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL157 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\work\PDMAFIFO\PDMAFIFO_0\rtl\vlog\core\PDMAFIFO_PDMAFIFO_0_ram_wrapper.v":44:25:44:35|*Output A_DB_DETECT has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL157 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\work\PDMAFIFO\PDMAFIFO_0\rtl\vlog\core\PDMAFIFO_PDMAFIFO_0_ram_wrapper.v":45:25:45:35|*Output B_DB_DETECT has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@N: CL159 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\work\PDMAFIFO\PDMAFIFO_0\rtl\vlog\core\PDMAFIFO_PDMAFIFO_0_ram_wrapper.v":46:25:46:30|Input WCLOCK is unused.
+@N: CL159 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\work\PDMAFIFO\PDMAFIFO_0\rtl\vlog\core\PDMAFIFO_PDMAFIFO_0_ram_wrapper.v":47:25:47:30|Input RCLOCK is unused.
+@W: CL157 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\work\PDMAFIFO\PDMAFIFO_0\rtl\vlog\core\COREFIFO.v":163:37:163:46|*Output SB_CORRECT has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL157 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\work\PDMAFIFO\PDMAFIFO_0\rtl\vlog\core\COREFIFO.v":164:37:164:45|*Output DB_DETECT has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@N: CL159 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\work\PDMAFIFO\PDMAFIFO_0\rtl\vlog\core\COREFIFO.v":161:36:161:40|Input MEMRD is unused.
+@N: CL159 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\hdl\nm_if_apb.v":52:18:52:30|Input adc_frame_rdy is unused.
+@N: CL159 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\hdl\nm_if_apb.v":53:18:53:31|Input adc_fifo_empty is unused.
+@N: CL201 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\hdl\nmic_tx.v":120:0:120:5|Trying to extract state machine for register current_state.
+Extracted state machine for register current_state
+State machine has 6 reachable states with original encodings of:
+   000
+   001
+   011
+   100
+   101
+   110
+@N: CL201 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\hdl\nmic_rx.v":128:0:128:5|Trying to extract state machine for register current_state.
+Extracted state machine for register current_state
+State machine has 14 reachable states with original encodings of:
+   0000
+   0001
+   0010
+   0011
+   0101
+   0110
+   0111
+   1000
+   1010
+   1011
+   1100
+   1101
+   1110
+   1111
+@N: CL159 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\work\adc_datapath\adc_datapath.v":50:14:50:24|Input artifact_en is unused.
+@N: CL159 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\work\adc_datapath\adc_datapath.v":53:14:53:24|Input fft_channel is unused.
+@N: CL159 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\work\adc_datapath\adc_datapath.v":54:14:54:19|Input fft_en is unused.
+@N: CL159 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\work\adc_datapath\adc_datapath.v":55:14:55:26|Input fft_rd_strobe is unused.
+@N: CL159 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\work\adc_datapath\adc_datapath.v":57:14:57:21|Input pkt_done is unused.
+@W: CL247 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\hdl\hdc_top.v":18:19:18:24|Input port bit 239 of Raw_DI[1023:0] is unused
+
+@W: CL247 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\hdl\hdc_top.v":18:19:18:24|Input port bit 223 of Raw_DI[1023:0] is unused
+
+@W: CL247 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\hdl\hdc_top.v":18:19:18:24|Input port bit 207 of Raw_DI[1023:0] is unused
+
+@W: CL247 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\hdl\hdc_top.v":18:19:18:24|Input port bit 191 of Raw_DI[1023:0] is unused
+
+@W: CL247 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\hdl\hdc_top.v":18:19:18:24|Input port bit 175 of Raw_DI[1023:0] is unused
+
+@W: CL247 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\hdl\hdc_top.v":18:19:18:24|Input port bit 159 of Raw_DI[1023:0] is unused
+
+@W: CL247 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\hdl\hdc_top.v":18:19:18:24|Input port bit 143 of Raw_DI[1023:0] is unused
+
+@W: CL247 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\hdl\hdc_top.v":18:19:18:24|Input port bit 127 of Raw_DI[1023:0] is unused
+
+@W: CL247 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\hdl\hdc_top.v":18:19:18:24|Input port bit 111 of Raw_DI[1023:0] is unused
+
+@W: CL247 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\hdl\hdc_top.v":18:19:18:24|Input port bit 95 of Raw_DI[1023:0] is unused
+
+@W: CL247 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\hdl\hdc_top.v":18:19:18:24|Input port bit 79 of Raw_DI[1023:0] is unused
+
+@W: CL247 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\hdl\hdc_top.v":18:19:18:24|Input port bit 63 of Raw_DI[1023:0] is unused
+
+@W: CL247 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\hdl\hdc_top.v":18:19:18:24|Input port bit 47 of Raw_DI[1023:0] is unused
+
+@W: CL247 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\hdl\hdc_top.v":18:19:18:24|Input port bit 31 of Raw_DI[1023:0] is unused
+
+@W: CL247 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\hdl\hdc_top.v":18:19:18:24|Input port bit 15 of Raw_DI[1023:0] is unused
+
+@N: CL135 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\hdl\associative_memory.v":216:0:216:5|Found sequential shift TrainedMemory_DP[20] with address depth of 20 words and data bit width of 1000.
+@N: CL135 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\hdl\associative_memory.v":216:0:216:5|Found sequential shift LabelMemory_DP with address depth of 20 words and data bit width of 5.
+@N: CL201 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\hdl\associative_memory.v":255:0:255:5|Trying to extract state machine for register prev_state.
+Extracted state machine for register prev_state
+State machine has 3 reachable states with original encodings of:
+   00
+   01
+   10
+@N: CL201 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\hdl\temporal_encoder_counter.v":247:0:247:5|Trying to extract state machine for register prev_state.
+Extracted state machine for register prev_state
+State machine has 4 reachable states with original encodings of:
+   00
+   01
+   10
+   11
+@N: CL201 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\hdl\spatial_encoder_N_pong.v":211:0:211:5|Trying to extract state machine for register prev_state.
+Extracted state machine for register prev_state
+State machine has 4 reachable states with original encodings of:
+   00
+   01
+   10
+   11
+@N: CL201 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\hdl\feature_encoder.v":149:1:149:6|Trying to extract state machine for register prev_state.
+Extracted state machine for register prev_state
+State machine has 3 reachable states with original encodings of:
+   00
+   01
+   10
+@N: CL134 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\hdl\fifo.v":70:4:70:9|Found RAM data, depth=32, width=960
+@N: CL159 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\work\ADCFIFO\ADCFIFO_0\rtl\vlog\core\ADCFIFO_ADCFIFO_0_ram_wrapper.v":37:25:37:31|Input RESET_N is unused.
+@N: CL159 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\work\ADCFIFO\ADCFIFO_0\rtl\vlog\core\ADCFIFO_ADCFIFO_0_ram_wrapper.v":38:25:38:30|Input WCLOCK is unused.
+@N: CL159 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\work\ADCFIFO\ADCFIFO_0\rtl\vlog\core\ADCFIFO_ADCFIFO_0_ram_wrapper.v":39:25:39:30|Input RCLOCK is unused.
+@N: CL159 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\work\ADCFIFO\ADCFIFO_0\rtl\vlog\core\corefifo_sync_scntr.v":96:29:96:34|Input re_top is unused.
+@N: CL159 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\work\ADCFIFO\ADCFIFO_0\rtl\vlog\core\corefifo_sync_scntr.v":97:29:97:42|Input empty_top_fwft is unused.
+@W: CL156 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\work\ADCFIFO\ADCFIFO_0\rtl\vlog\core\COREFIFO.v":189:36:189:41|*Input EMPTY2 to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.
+@N: CL159 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\component\work\ADCFIFO\ADCFIFO_0\rtl\vlog\core\COREFIFO.v":158:36:158:40|Input MEMRD is unused.
+@N: CL201 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\hdl\adc_vector_compressor.v":103:0:103:5|Trying to extract state machine for register current_state.
+Extracted state machine for register current_state
+State machine has 6 reachable states with original encodings of:
+   000
+   001
+   010
+   011
+   110
+   111
+@N: CL201 :"C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\hdl\ack_datapath.v":96:0:96:5|Trying to extract state machine for register current_state.
+Extracted state machine for register current_state
+State machine has 5 reachable states with original encodings of:
+   000
+   001
+   011
+   100
+   101

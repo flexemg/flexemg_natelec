@@ -1,0 +1,15 @@
+@N: CD630 :"C:\Users\bwrc\Desktop\HyperFlexEG\synthesis\syntmp\gentmp1860a09184":4:7:4:9|Synthesizing work.top.gen.
+@N: CD630 :"syng0a09184":275:7:275:9|Synthesizing work.div.cell_level.
+@W: CD326 :"syng0a09184":318:2:318:6|Port divide_by_0 of entity work.dw_div is unconnected. If a port needs to remain unconnected, use the keyword open.
+@N: CD630 :"syng0a09184":26:7:26:12|Synthesizing work.dw_div.rtl.
+@W: CG296 :"syng0a09184":158:0:158:6|Incomplete sensitivity list; assuming completeness. Make sure all referenced variables in message CG290 are included in the sensitivity list.
+@W: CG290 :"syng0a09184":165:16:165:22|Referenced variable temp2_0 is not in sensitivity list.
+@W: CD434 :"syng0a09184":223:10:223:10|Signal a in the sensitivity list is not used in the process. Make sure all variables in the sensitivity list are referenced in the process.
+@W: CD434 :"syng0a09184":223:17:223:20|Signal temp in the sensitivity list is not used in the process. Make sure all variables in the sensitivity list are referenced in the process.
+@W: CG296 :"syng0a09184":223:0:223:6|Incomplete sensitivity list; assuming completeness. Make sure all referenced variables in message CG290 are included in the sensitivity list.
+@W: CG290 :"syng0a09184":260:15:260:19|Referenced variable temp4 is not in sensitivity list.
+@W: CG290 :"syng0a09184":233:16:233:22|Referenced variable temp3_1 is not in sensitivity list.
+@W: CG290 :"syng0a09184":232:16:232:22|Referenced variable temp2_0 is not in sensitivity list.
+Post processing for work.dw_div.rtl
+Post processing for work.div.cell_level
+Post processing for work.top.gen

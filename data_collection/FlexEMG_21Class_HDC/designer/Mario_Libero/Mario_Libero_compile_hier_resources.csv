@@ -1,0 +1,35 @@
+Detailed Resource Usage
+Module Name,Fabric 4LUT,Fabric DFF,Interface 4LUT,Interface DFF,Single-Ended I/O,uSRAM 1K,LSRAM 18K,PLLs and CCCs,Chip Globals,MSS,HS USB,Multi-Mode UART,XTLOSC
+CoreAPB3_0/CAPB3IIII/Primitives,36,0,0,0,0,0,0,0,0,0,0,0,0
+CoreGPIO_0/Primitives,136,54,0,0,0,0,0,0,0,0,0,0,0
+FCCC_0/Primitives,0,0,0,0,0,0,0,1,2,0,0,0,0
+Mario_Libero_MSS_0/Primitives,4,0,0,0,2,0,0,0,1,1,0,0,0
+OSC_0/Primitives,0,0,0,0,0,0,0,0,0,0,0,0,1
+Primitives/Primitives,2,0,0,0,13,0,0,0,2,0,0,0,0
+cm_top_0/Primitives,2,0,0,0,0,0,0,0,0,0,0,0,0
+cm_top_0/cm_if_apb_0/Primitives,7,20,0,0,0,0,0,0,0,0,0,0,0
+cm_top_0/nm_if_0/Primitives,2,0,0,0,0,0,0,0,0,0,0,0,0
+cm_top_0/nm_if_0/nm_channel_0/ack_datapath_0/Primitives,54,43,0,0,0,0,0,0,0,0,0,0,0
+cm_top_0/nm_if_0/nm_channel_0/adc_datapath_0/ADCFIFO_0/ADCFIFO_0/Primitives,8,20,0,0,0,0,0,0,0,0,0,0,0
+cm_top_0/nm_if_0/nm_channel_0/adc_datapath_0/ADCFIFO_0/ADCFIFO_0/genblk15.fifo_corefifo_sync_scntr/Primitives,30,21,0,0,0,0,0,0,0,0,0,0,0
+cm_top_0/nm_if_0/nm_channel_0/adc_datapath_0/ADCFIFO_0/ADCFIFO_0/genblk20.UI_ram_wrapper_1/L3_syncnonpipe/Primitives,0,0,36,36,0,0,1,0,0,0,0,0,0
+cm_top_0/nm_if_0/nm_channel_0/adc_datapath_0/ADCMEM_DP_0/Primitives,16,0,288,288,0,8,0,0,0,0,0,0,0
+cm_top_0/nm_if_0/nm_channel_0/adc_datapath_0/adc_frame_buffer_0/Primitives,1025,2033,0,0,0,0,0,0,0,0,0,0,0
+cm_top_0/nm_if_0/nm_channel_0/adc_datapath_0/adc_vector_compressor_0/Primitives,853,22,0,0,0,0,0,0,0,0,0,0,0
+cm_top_0/nm_if_0/nm_channel_0/adc_datapath_0/hdc_top_0/Primitives,23,31,0,0,0,0,0,0,0,0,0,0,0
+cm_top_0/nm_if_0/nm_channel_0/adc_datapath_0/hdc_top_0/associative_memory/Primitives,4102,22142,0,0,0,0,0,0,1,0,0,0,0
+cm_top_0/nm_if_0/nm_channel_0/adc_datapath_0/hdc_top_0/feature_encoder/Primitives,15433,6415,0,0,0,0,0,0,0,0,0,0,0
+cm_top_0/nm_if_0/nm_channel_0/adc_datapath_0/hdc_top_0/feature_encoder/SampleBuffer/Primitives,1099,1002,972,972,0,0,27,0,0,0,0,0,0
+cm_top_0/nm_if_0/nm_channel_0/adc_datapath_0/hdc_top_0/spatial_encoder/Cell_Auto/Primitives,1001,1000,0,0,0,0,0,0,0,0,0,0,0
+cm_top_0/nm_if_0/nm_channel_0/adc_datapath_0/hdc_top_0/spatial_encoder/Primitives,931,1277,0,0,0,0,0,0,0,0,0,0,0
+cm_top_0/nm_if_0/nm_channel_0/adc_datapath_0/hdc_top_0/spatial_encoder/Spat_Accum/Primitives,4779,1625,0,0,0,0,0,0,0,0,0,0,0
+cm_top_0/nm_if_0/nm_channel_0/adc_datapath_0/hdc_top_0/temporal_encoder/Primitives,2041,4013,0,0,0,0,0,0,0,0,0,0,0
+cm_top_0/nm_if_0/nm_channel_0/adc_datapath_0/hdc_top_0/temporal_encoder/TemporalAccum/Primitives,13003,7000,0,0,0,0,0,0,1,0,0,0,0
+cm_top_0/nm_if_0/nm_channel_0/nmic_rx_0/Primitives,56,47,0,0,0,0,0,0,0,0,0,0,0
+cm_top_0/nm_if_0/nm_channel_0/nmic_tx_0/Primitives,102,19,0,0,0,0,0,0,0,0,0,0,0
+cm_top_0/nm_if_0/nm_channel_0/twoMHz_strobe_0/Primitives,5,5,0,0,0,0,0,0,0,0,0,0,0
+cm_top_0/nm_if_0/nm_if_apb_0/Primitives,93,127,0,0,0,0,0,0,0,0,0,0,0
+cm_top_0/nm_if_0/pdma_if_0/Primitives,7,11,0,0,0,0,0,0,0,0,0,0,0
+cm_top_0/nm_if_0/pdma_if_0/pdma_fifo/PDMAFIFO_0/Primitives,4,12,0,0,0,0,0,0,0,0,0,0,0
+cm_top_0/nm_if_0/pdma_if_0/pdma_fifo/PDMAFIFO_0/genblk15.U_corefifo_sync/Primitives,71,35,0,0,0,0,0,0,0,0,0,0,0
+cm_top_0/nm_if_0/pdma_if_0/pdma_fifo/PDMAFIFO_0/genblk21.UI_ram_wrapper_1/U5_syncnonpipe/Primitives,12,0,72,72,0,2,0,0,0,0,0,0,0

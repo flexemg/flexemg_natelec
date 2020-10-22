@@ -1,0 +1,29 @@
+
+Router 
+Design: C:\Users\flb.EECS\Desktop\mario_laptop_sf2_newarch\Mario_SF2_devbrd\designer\Mario_Libero\Mario_Libero_prbi\Mario_LiberoStarted: Tue Jan 31 14:46:43 2017
+
+Parameters on the command line:
+
+   C:\Users\flb.EECS\Desktop\mario_laptop_sf2_newarch\Mario_SF2_devbrd\designer\Mario_Libero\Mario_Libero_prbi\Mario_Libero.dtf
+   -family             pa4m
+   -part               APA4MPA4M5000
+   -package            APA4MPA4M5000-FG484
+   -schedule           44
+   -astar              
+   -nomap              
+   -eco                
+
+Loading routing information for ECO mode...
+After loading previous routing information: Shorts = 0. Open nets = 1.
+Error: SYSTEM [run_time_error]:
+    Internal error during routing.
+
+Router failed.
+
+Design: C:\Users\flb.EECS\Desktop\mario_laptop_sf2_newarch\Mario_SF2_devbrd\designer\Mario_Libero\Mario_Libero_prbi\Mario_Libero
+Finished: Tue Jan 31 14:48:38 2017
+System errors reported:      1
+Total CPU Time:     00:01:53            Total Elapsed Time: 00:01:55
+Total Memory Usage: 2020.6 Mbytes
+                        o - o - o - o - o - o
+

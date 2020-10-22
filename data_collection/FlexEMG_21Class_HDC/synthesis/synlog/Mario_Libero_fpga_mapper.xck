@@ -1,0 +1,2 @@
+CKID0001:@|S:FCCC_0.CCC_INST@|E:Mario_Libero_MSS_0.MSS_ADLIB_INST@|F:@syn_sample_clock_path==CKID0001@|M:ClockId0001 
+CKID0002:@|S:FCCC_0.GL1_INST@|E:cm_top_0.nm_if_0.nm_channel_0.adc_datapath_0.hdc_top_0.associative_memory.CompDistance_DP[0]@|F:@syn_sample_clock_path==CKID0002@|M:ClockId0002 

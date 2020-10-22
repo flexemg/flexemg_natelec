@@ -1,0 +1,32 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/mysim_cmam
+vADCMEM_DP
+!s110 1490225438
+!i10b 1
+!s100 KT4a0=8^DKk=BH49:I3;d2
+I7FM8j:clP_>IkAWl2dD1@1
+VDg1SIo80bB@j0V0VzS_@n1
+dC:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/temp
+w1490225430
+8C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/hdl/ADCMEM_DP.v
+FC:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/hdl/ADCMEM_DP.v
+L0 21
+OW;L;10.4c;61
+r1
+!s85 0
+31
+!s108 1490225438.000000
+!s107 C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/hdl/ADCMEM_DP.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/hdl/ADCMEM_DP.v|
+!s101 -O0
+!i113 1
+o-work work -O0
+n@a@d@c@m@e@m_@d@p

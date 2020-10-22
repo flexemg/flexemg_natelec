@@ -1,0 +1,230 @@
+Compile Report
+Microsemi Corporation - Microsemi Libero Software Release v11.8 SP3 (Version 11.8.3.6)
+Date: Fri Apr 05 23:01:24 2019
+
+Device Selection
++--------------------------------+----------------+
+| Family                         | SmartFusion2   |
+| Device                         | M2S060T        |
+| Package                        | 325 FCSBGA     |
+| Speed Grade                    | STD            |
+| Temp                           | 0:25:85        |
+| Voltage                        | 1.26:1.20:1.14 |
+| Core Voltage                   | 1.2V           |
+| Ramp Rate                      | 100ms Minimum  |
+| System Controller Suspend Mode | No             |
+| PLL Supply Voltage             | 2.5V           |
+| Default I/O technology         | LVCMOS 3.3V    |
+| Restrict Probe Pins            | Yes            |
+| Restrict SPI Pins              | No             |
++--------------------------------+----------------+
+
+Source Files
++---------+-------------------------------------------------------------------------------------+
+| Topcell | Mario_Libero                                                                        |
+| Format  | EDIF                                                                                |
+| Source  | C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\synthesis\Mario_Libero.edn        |
+| Source  | C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\constraint\io\Mario_Libero.io.pdc |
+| Source  | C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\constraint\fp\Mario_Libero.fp.pdc |
++---------+-------------------------------------------------------------------------------------+
+
+Options
++---------------------------------------------------------+-------+
+| Merge User SDC file(s) with Existing Timing Constraints | true  |
+| Abort Compile if errors are found in PDC file(s)        | true  |
+| Enable Single Event Transient mitigation                | false |
+| Enable Design Separation Methodology                    | false |
+| Limit the number of high fanout nets to display to      | 10    |
++---------------------------------------------------------+-------+
+
+Resource Usage
++---------------------------+-------+-------+------------+
+| Type                      | Used  | Total | Percentage |
++---------------------------+-------+-------+------------+
+| 4LUT                      | 46305 | 56520 | 81.93      |
+| DFF                       | 48342 | 56520 | 85.53      |
+| I/O Register              | 0     | 594   | 0.00       |
+| User I/O                  | 15    | 198   | 7.58       |
+| -- Single-ended I/O       | 15    | 198   | 7.58       |
+| -- Differential I/O Pairs | 0     | 99    | 0.00       |
+| RAM64x18                  | 10    | 72    | 13.89      |
+| RAM1K18                   | 28    | 69    | 40.58      |
+| MACC                      | 0     | 72    | 0.00       |
+| Chip Globals              | 7     | 16    | 43.75      |
+| CCC                       | 1     | 6     | 16.67      |
+| RCOSC_25_50MHZ            | 0     | 1     | 0.00       |
+| RCOSC_1MHZ                | 0     | 1     | 0.00       |
+| XTLOSC                    | 1     | 1     | 100.00     |
+| SERDESIF Blocks           | 0     | 1     | 0.00       |
+| -- SERDESIF Lanes         | 0     | 2     | 0.00       |
+| MSS                       | 1     | 1     | 100.00     |
++---------------------------+-------+-------+------------+
+
+Detailed Logic Resource Usage
++--------------------------+-------+-------+
+| Type                     | 4LUT  | DFF   |
++--------------------------+-------+-------+
+| Fabric Logic             | 44937 | 46974 |
+| RAM64x18 Interface Logic | 360   | 360   |
+| RAM1K18 Interface Logic  | 1008  | 1008  |
+| MACC Interface Logic     | 0     | 0     |
+| Total Used               | 46305 | 48342 |
++--------------------------+-------+-------+
+
+MSS Resource Usage
++---------------+------+-------+
+| Type          | Used | Total |
++---------------+------+-------+
+| Cortex-M3*    | 1    | 1     |
+| eNVM (256KB)* | 1    | 1     |
+| eSRAM*        | 2    | 2     |
+| TIMER*        | 2    | 2     |
+| CAN           | 0    | 1     |
+| SPI           | 1    | 2     |
+| I2C           | 0    | 2     |
+| UART          | 1    | 2     |
+| USB           | 0    | 1     |
+| MAC           | 0    | 1     |
+| MDDR          | 0    | 1     |
+| HPDMA         | 1    | 1     |
+| PDMA          | 1    | 1     |
++---------------+------+-------+
+
+* These resources are always marked as used when you are using the MSS
+
+Detailed Carry Chains Resource Usage
++--------+------+
+| Length | Used |
+| 2      | 16   |
+| 5      | 126  |
+| 6      | 4    |
+| 7      | 1008 |
+| 8      | 2    |
+| 9      | 3    |
+| 11     | 1    |
+| 12     | 1    |
+| 14     | 125  |
+| 15     | 64   |
+| 16     | 64   |
+| 17     | 1    |
+| 20     | 128  |
+| 22     | 12   |
+| 46     | 16   |
+| 65     | 64   |
+| Total  | 1635 |
++--------+------+
+
+I/O Function
++-------------------------------+--------------+-------------+-----------------+
+| Type                          | w/o register | w/ register | w/ DDR register |
++-------------------------------+--------------+-------------+-----------------+
+| Input I/O                     | 3            | 0           | 0               |
+| Output I/O                    | 12           | 0           | 0               |
+| Bidirectional I/O             | 0            | 0           | 0               |
+| Differential Input I/O Pairs  | 0            | 0           | 0               |
+| Differential Output I/O Pairs | 0            | 0           | 0               |
++-------------------------------+--------------+-------------+-----------------+
+
+I/O Technology
++--------------+--------+------+-------+--------+---------------+
+| I/O Standard | Vddi   | Vref | Input | Output | Bidirectional |
++--------------+--------+------+-------+--------+---------------+
+| LVCMOS33     |  3.30v |  N/A |  1    |  2     |  0            |
+| LVCMOS12     |  1.20v |  N/A |  1    |  2     |  0            |
+| LVCMOS18     |  1.80v |  N/A |  1    |  8     |  0            |
++--------------+--------+------+-------+--------+---------------+
+
+I/O Placement
++----------+-------+------------+
+| Type     | Count | Percentage |
++----------+-------+------------+
+| Locked   |  14   | 93.33%     |
+| Placed   |  0    | 0.00%      |
+| UnPlaced |  1    | 6.67%      |
++----------+-------+------------+
+
+Nets assigned to chip global resources
++--------+---------+----------------------------------------------------------------------------------------------------------------------------------------------+
+| Fanout | Type    | Name                                                                                                                                         |
++--------+---------+----------------------------------------------------------------------------------------------------------------------------------------------+
+| 46622  | INT_NET | Net   : Mario_Libero_MSS_0_MSS_RESET_N_M2F                                                                                                   |
+|        |         | Driver: Mario_Libero_MSS_0/MSS_ADLIB_INST_RNIERND/U0_RGB1                                                                                    |
+|        |         | Source: NETLIST                                                                                                                              |
+| 44528  | INT_NET | Net   : FCCC_0_GL1_0                                                                                                                         |
+|        |         | Driver: FCCC_0/GL1_INST/U0_RGB1                                                                                                              |
+|        |         | Source: NETLIST                                                                                                                              |
+| 21105  | INT_NET | Net   : cm_top_0/nm_if_0/nm_channel_0/adc_datapath_0/hdc_top_0/associative_memory/QueryHypervectorEN_S_1_sqmuxa_1_a2_0_a2_RNIJDE12_0         |
+|        |         | Driver: cm_top_0/nm_if_0/nm_channel_0/adc_datapath_0/hdc_top_0/associative_memory/QueryHypervectorEN_S_1_sqmuxa_1_a2_0_a2_RNIJDE12_0/U0_RGB1 |
+|        |         | Source: NETLIST                                                                                                                              |
+| 6999   | INT_NET | Net   : cm_top_0/nm_if_0/nm_channel_0/adc_datapath_0/hdc_top_0/temporal_encoder/TemporalAccum/BundleCounter_DP[999]_0_sqmuxa_i               |
+|        |         | Driver: cm_top_0/nm_if_0/nm_channel_0/adc_datapath_0/hdc_top_0/temporal_encoder/TemporalAccum/BundleCounter_DP[0]6_RNIN667_0/U0_RGB1         |
+|        |         | Source: NETLIST                                                                                                                              |
+| 5440   | INT_NET | Net   : cm_top_0.nm_if_0.nm_channel_0.adc_datapath_0.hdc_top_0.feature_encoder.N_970_i                                                       |
+|        |         | Driver: I_22080/U0_RGB1                                                                                                                      |
+|        |         | Source: NETLIST                                                                                                                              |
+| 2518   | INT_NET | Net   : FCCC_0_GL0_0                                                                                                                         |
+|        |         | Driver: FCCC_0/GL0_INST/U0_RGB1                                                                                                              |
+|        |         | Source: NETLIST                                                                                                                              |
+| 47     | INT_NET | Net   : cm_top_0.nm_if_0.pdma_if_0.un1_rstb_i_i                                                                                              |
+|        |         | Driver: I_22082/U0_RGB1                                                                                                                      |
+|        |         | Source: NETLIST                                                                                                                              |
++--------+---------+----------------------------------------------------------------------------------------------------------------------------------------------+
+
+Nets assigned to row global resources
++--------+------+------+
+| Fanout | Type | Name |
++--------+------+------+
++--------+------+------+
+
+High fanout nets
++--------+---------+---------------------------------------------------------------------------------------------------------------------------------------+
+| Fanout | Type    | Name                                                                                                                                  |
++--------+---------+---------------------------------------------------------------------------------------------------------------------------------------+
+| 4801   | INT_NET | Net   : cm_top_0/nm_if_0/nm_channel_0/adc_datapath_0/hdc_top_0/feature_encoder/FeatureCntr19                                          |
+|        |         | Driver: cm_top_0/nm_if_0/nm_channel_0/adc_datapath_0/hdc_top_0/feature_encoder/SampleBuffer/un1_rd_ptr_1.FeatureCntr19_0_a2_3_a2_0_a3 |
+| 4160   | INT_NET | Net   : cm_top_0/nm_if_0/nm_channel_0/adc_datapath_0/hdc_top_0/feature_encoder/N_973_i                                                |
+|        |         | Driver: cm_top_0/nm_if_0/nm_channel_0/adc_datapath_0/hdc_top_0/feature_encoder/SampleBuffer/un1_rd_ptr_1.FeatureCntr20_i_a2_1_a2_1    |
+| 4007   | INT_NET | Net   : cm_top_0/nm_if_0/nm_channel_0/adc_datapath_0/hdc_top_0/temporal_encoder/prev_state_RNIJCNO7[1]                                |
+|        |         | Driver: cm_top_0/nm_if_0/nm_channel_0/adc_datapath_0/hdc_top_0/temporal_encoder/prev_state_RNIJCNO7[1]                                |
+| 1927   | INT_NET | Net   : cm_top_0/nm_if_0/nm_channel_0/adc_datapath_0/hdc_top_0/feature_encoder/un4_next_state_0_sqmuxa_or                             |
+|        |         | Driver: cm_top_0/nm_if_0/nm_channel_0/adc_datapath_0/hdc_top_0/feature_encoder/SampleBuffer/un1_rst_0_0_0                             |
+| 1634   | INT_NET | Net   : cm_top_0/nm_if_0/nm_channel_0/adc_datapath_0/hdc_top_0/spatial_encoder/Spat_Accum/N_6354                                      |
+|        |         | Driver: cm_top_0/nm_if_0/nm_channel_0/adc_datapath_0/hdc_top_0/spatial_encoder/Spat_Accum/Accumulator_DP[120]_3_iv_0_0_o4[6]          |
+| 1024   | INT_NET | Net   : cm_top_0/nm_if_0/nm_channel_0/start_i_2                                                                                       |
+|        |         | Driver: cm_top_0/nm_if_0/nm_channel_0/nmic_rx_0/current_state_RNIH033[3]                                                              |
+| 1024   | INT_NET | Net   : cm_top_0/nm_if_0/nm_channel_0/adc_datapath_0/adc_frame_buffer_0/un1_rx_bit_valid                                              |
+|        |         | Driver: cm_top_0/nm_if_0/nm_channel_0/adc_datapath_0/adc_frame_buffer_0/un1_rx_bit_valid                                              |
+| 1011   | INT_NET | Net   : cm_top_0/nm_if_0/nm_channel_0/N_363_i                                                                                         |
+|        |         | Driver: cm_top_0/nm_if_0/nm_channel_0/nmic_rx_0/adc_done_i_o2_i                                                                       |
+| 1009   | INT_NET | Net   : cm_top_0/nm_if_0/nm_channel_0/adc_datapath_0/hdc_top_0/spatial_encoder/CycleCntr_SP4                                          |
+|        |         | Driver: cm_top_0/nm_if_0/nm_channel_0/adc_datapath_0/hdc_top_0/spatial_encoder/CycleCntr_SP4                                          |
+| 1002   | INT_NET | Net   : cm_top_0/nm_if_0/nm_channel_0/adc_datapath_0/hdc_top_0/temporal_encoder/TemporalAccum/BundleCounter_DP[0]6                    |
+|        |         | Driver: cm_top_0/nm_if_0/nm_channel_0/adc_datapath_0/hdc_top_0/temporal_encoder/TemporalAccum/BundleCounter_DP[0]6                    |
++--------+---------+---------------------------------------------------------------------------------------------------------------------------------------+
+
+High fanout nets (through buffer trees)
++--------+---------+---------------------------------------------------------------------------------------------------------------------------------------+
+| Fanout | Type    | Name                                                                                                                                  |
++--------+---------+---------------------------------------------------------------------------------------------------------------------------------------+
+| 4801   | INT_NET | Net   : cm_top_0/nm_if_0/nm_channel_0/adc_datapath_0/hdc_top_0/feature_encoder/FeatureCntr19                                          |
+|        |         | Driver: cm_top_0/nm_if_0/nm_channel_0/adc_datapath_0/hdc_top_0/feature_encoder/SampleBuffer/un1_rd_ptr_1.FeatureCntr19_0_a2_3_a2_0_a3 |
+| 4160   | INT_NET | Net   : cm_top_0/nm_if_0/nm_channel_0/adc_datapath_0/hdc_top_0/feature_encoder/N_973_i                                                |
+|        |         | Driver: cm_top_0/nm_if_0/nm_channel_0/adc_datapath_0/hdc_top_0/feature_encoder/SampleBuffer/un1_rd_ptr_1.FeatureCntr20_i_a2_1_a2_1    |
+| 4007   | INT_NET | Net   : cm_top_0/nm_if_0/nm_channel_0/adc_datapath_0/hdc_top_0/temporal_encoder/prev_state_RNIJCNO7[1]                                |
+|        |         | Driver: cm_top_0/nm_if_0/nm_channel_0/adc_datapath_0/hdc_top_0/temporal_encoder/prev_state_RNIJCNO7[1]                                |
+| 1927   | INT_NET | Net   : cm_top_0/nm_if_0/nm_channel_0/adc_datapath_0/hdc_top_0/feature_encoder/un4_next_state_0_sqmuxa_or                             |
+|        |         | Driver: cm_top_0/nm_if_0/nm_channel_0/adc_datapath_0/hdc_top_0/feature_encoder/SampleBuffer/un1_rst_0_0_0                             |
+| 1634   | INT_NET | Net   : cm_top_0/nm_if_0/nm_channel_0/adc_datapath_0/hdc_top_0/spatial_encoder/Spat_Accum/N_6354                                      |
+|        |         | Driver: cm_top_0/nm_if_0/nm_channel_0/adc_datapath_0/hdc_top_0/spatial_encoder/Spat_Accum/Accumulator_DP[120]_3_iv_0_0_o4[6]          |
+| 1024   | INT_NET | Net   : cm_top_0/nm_if_0/nm_channel_0/start_i_2                                                                                       |
+|        |         | Driver: cm_top_0/nm_if_0/nm_channel_0/nmic_rx_0/current_state_RNIH033[3]                                                              |
+| 1024   | INT_NET | Net   : cm_top_0/nm_if_0/nm_channel_0/adc_datapath_0/adc_frame_buffer_0/un1_rx_bit_valid                                              |
+|        |         | Driver: cm_top_0/nm_if_0/nm_channel_0/adc_datapath_0/adc_frame_buffer_0/un1_rx_bit_valid                                              |
+| 1011   | INT_NET | Net   : cm_top_0/nm_if_0/nm_channel_0/N_363_i                                                                                         |
+|        |         | Driver: cm_top_0/nm_if_0/nm_channel_0/nmic_rx_0/adc_done_i_o2_i                                                                       |
+| 1009   | INT_NET | Net   : cm_top_0/nm_if_0/nm_channel_0/adc_datapath_0/hdc_top_0/spatial_encoder/CycleCntr_SP4                                          |
+|        |         | Driver: cm_top_0/nm_if_0/nm_channel_0/adc_datapath_0/hdc_top_0/spatial_encoder/CycleCntr_SP4                                          |
+| 1002   | INT_NET | Net   : cm_top_0/nm_if_0/nm_channel_0/adc_datapath_0/hdc_top_0/temporal_encoder/TemporalAccum/BundleCounter_DP[0]6                    |
+|        |         | Driver: cm_top_0/nm_if_0/nm_channel_0/adc_datapath_0/hdc_top_0/temporal_encoder/TemporalAccum/BundleCounter_DP[0]6                    |
++--------+---------+---------------------------------------------------------------------------------------------------------------------------------------+
+

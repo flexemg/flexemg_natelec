@@ -1,0 +1,222 @@
+# Microsemi I/O Physical Design Constraints file
+# Auto Generated User I/O Constraints file
+
+# Version: v11.7 SP3 11.7.3.7
+# Family: SmartFusion2 , Die: M2S060T , Package: 325 FCSBGA
+# Date generated: Tue Jun 27 12:30:58 2017 
+
+
+# 
+# User Locked I/O Bank Settings
+# 
+
+set_iobank Bank3  \
+    -vcci 1.20    \
+    -fixed yes
+
+set_iobank Bank4      \
+    -vcci 1.80        \
+    -fixed yes        \
+    -updateiostd yes
+
+set_iobank Bank1      \
+    -vcci 1.80        \
+    -fixed yes        \
+    -updateiostd yes
+
+
+# 
+# Unlocked I/O Bank Settings
+# The I/O Bank Settings can be locked by directly editing this file
+# or by making changes in the I/O Attribute Editor
+# 
+
+
+# 
+# User Locked I/O settings
+# 
+
+#set_io ACC_CLKIN       \
+    #-pinname T5        \
+    #-fixed yes         \
+    #-iostd LVCMOS18    \
+    #-DIRECTION OUTPUT
+#
+#
+#set_io ACC_IRQ        \
+    #-pinname U5       \
+    #-fixed yes        \
+    #-iostd LVCMOS18   \
+    #-DIRECTION INPUT
+
+
+set_io C2N_DATA_0      \
+    -pinname K5        \
+    -fixed yes         \
+    -iostd LVCMOS12    \
+    -DIRECTION OUTPUT
+
+
+#set_io C2N_DATA_1      \
+    #-pinname K2        \
+    #-fixed yes         \
+    #-iostd LVCMOS12    \
+    #-DIRECTION OUTPUT
+
+
+set_io C2N_VALID_0     \
+    -pinname K4        \
+    -fixed yes         \
+    -iostd LVCMOS12    \
+    -DIRECTION OUTPUT
+
+
+#set_io C2N_VALID_1     \
+    #-pinname L7        \
+    #-fixed yes         \
+    #-iostd LVCMOS12    \
+    #-DIRECTION OUTPUT
+
+
+set_io CLK_OUT         \
+    -pinname Y2        \
+    -fixed yes         \
+    -iostd LVCMOS18    \
+    -DIRECTION OUTPUT
+
+
+set_io CLK_OUT2        \
+    -pinname W2        \
+    -fixed yes         \
+    -iostd LVCMOS18    \
+    -DIRECTION OUTPUT
+
+
+set_io {SPI_DEBUG}      \
+    -pinname Y1        \
+    -fixed yes         \
+    -iostd LVCMOS18    \
+    -DIRECTION OUTPUT
+
+#set_io {DEBUG[0]}      \
+    #-pinname Y1        \
+    #-fixed yes         \
+    #-iostd LVCMOS18    \
+    #-DIRECTION OUTPUT
+#
+#
+#set_io {DEBUG[1]}      \
+    #-pinname AA2       \
+    #-fixed yes         \
+    #-iostd LVCMOS18    \
+    #-DIRECTION OUTPUT
+#
+#
+#set_io {DEBUG[2]}      \
+    #-pinname T3        \
+    #-fixed yes         \
+    #-iostd LVCMOS18    \
+    #-DIRECTION OUTPUT
+#
+#
+#set_io {DEBUG[3]}      \
+    #-pinname U4        \
+    #-fixed yes         \
+    #-iostd LVCMOS18    \
+    #-DIRECTION OUTPUT
+#
+#
+#set_io {DEBUG[4]}      \
+    #-pinname V1        \
+    #-fixed yes         \
+    #-iostd LVCMOS18    \
+    #-DIRECTION OUTPUT
+#
+#
+#set_io {DEBUG[5]}      \
+    #-pinname W1        \
+    #-fixed yes         \
+    #-iostd LVCMOS18    \
+    #-DIRECTION OUTPUT
+
+
+#set_io I2C_1_SCL      \
+    #-pinname R5       \
+    #-fixed yes        \
+    #-iostd LVCMOS18   \
+    #-RES_PULL Up      \
+    #-DIRECTION INOUT
+#
+#
+#set_io I2C_1_SDA      \
+    #-pinname R4       \
+    #-fixed yes        \
+    #-iostd LVCMOS18   \
+    #-RES_PULL Up      \
+    #-DIRECTION INOUT
+
+
+set_io N2C_DATA_0     \
+    -pinname K7       \
+    -fixed yes        \
+    -iostd LVCMOS12   \
+    -DIRECTION INPUT
+
+
+#set_io N2C_DATA_1     \
+    #-pinname J4       \
+    #-fixed yes        \
+    #-iostd LVCMOS12   \
+    #-DIRECTION INPUT
+
+
+set_io SPI_0_CLK       \
+    -pinname U2        \
+    -fixed yes         \
+    -iostd LVCMOS18    \
+    -DIRECTION OUTPUT
+
+
+set_io SPI_0_DI       \
+    -pinname U1       \
+    -fixed yes        \
+    -iostd LVCMOS18   \
+    -DIRECTION INPUT
+
+
+set_io SPI_0_DO        \
+    -pinname P4        \
+    -fixed yes         \
+    -iostd LVCMOS18    \
+    -DIRECTION OUTPUT
+
+
+set_io SPI_0_SS0       \
+    -pinname P5        \
+    -fixed yes         \
+    -iostd LVCMOS18    \
+    -DIRECTION OUTPUT
+
+set_io DDR_CSN       \
+    -pinname G10        \
+    -fixed yes         \
+    -iostd LVCMOS18    \
+    -DIRECTION OUTPUT
+
+set_io DDR_CKE       \
+    -pinname G9        \
+    -fixed yes         \
+    -iostd LVCMOS18    \
+    -DIRECTION OUTPUT
+
+# 
+# Dedicated Peripheral I/O Settings
+# 
+
+
+# 
+# Unlocked I/O settings
+# The I/Os in this section are unplaced or placed but are not locked
+# the other listed attributes have been applied
+# 
+

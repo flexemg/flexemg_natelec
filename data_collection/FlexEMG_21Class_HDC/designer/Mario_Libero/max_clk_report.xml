@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<?xml-stylesheet href="rptstyle.xsl" type="text/xsl" ?>
+<doc>
+<section>
+<name> Clock Details Summary  </name>
+<table>
+<header>
+<cell>Clock Domain</cell>
+<cell>Period (ns)</cell>
+<cell>Frequency (MHz)</cell>
+<cell>Required Period (ns)</cell>
+<cell>Required Frequency (MHz)</cell>
+<cell>External Setup (ns)</cell>
+<cell>External Hold (ns)</cell>
+<cell>Min Clock-To-Out (ns)</cell>
+<cell>Max Clock-To-Out (ns)</cell>
+</header>
+<row>
+<cell>Mario_Libero_FCCC_0_FCCC|GL0_net_inferred_clock</cell><cell>75.253</cell><cell>13.289</cell><cell>10.000</cell><cell>100.000</cell><cell>7.977</cell><cell>-3.949</cell><cell>4.838</cell><cell>28.403</cell></row>
+</table>
+</section>
+</doc>

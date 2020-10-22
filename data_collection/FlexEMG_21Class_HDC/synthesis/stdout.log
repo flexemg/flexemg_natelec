@@ -1,0 +1,26 @@
+
+Starting:    C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\bin64\mbin\synplify.exe
+Install:     C:\Microsemi\Libero_SoC_v11.8\SynplifyPro
+Hostname:    DESKTOP-Q33MJTI
+Date:        Sat Feb 09 02:28:05 2019
+Version:     L-2016.09M-2
+
+Arguments:   -product synplify_pro Mario_Libero_syn.tcl
+ProductType: synplify_pro
+
+License checkout: synplifypro_actel
+License: synplifypro_actel from server 10.7.2.33 
+Licensed Vendor: actel
+License Option: actel_oem
+
+
+
+Warning: File already exists in project: "C:\Users\bwrc\Desktop\HyperFlexEG\hdl\const.vh"
+auto_infer_blackbox is not supported in current product.
+TCL script complete: "Mario_Libero_syn.tcl"
+New HDL Analyst: enabled
+Opening object source file c:\users\bwrc\desktop\hyperflexeg\hdl\cm_if_apb.v
+Opening object source file c:\users\bwrc\desktop\hyperflexeg\hdl\feature_encoder.v
+Opening object source file c:\users\bwrc\desktop\hyperflexeg\component\work\mario_libero\osc_0\mario_libero_osc_0_osc.v
+exit status=0
+License checkin: synplifypro_actel

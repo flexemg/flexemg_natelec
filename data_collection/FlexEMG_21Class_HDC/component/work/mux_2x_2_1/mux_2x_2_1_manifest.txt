@@ -1,0 +1,11 @@
+Microsemi Corporation - Microsemi Libero Software Release v11.7 SP3 (Version 11.7.3.8)
+
+Date      :  Sat Feb 04 07:43:02 2017
+Project   :  C:\Users\flb\Desktop\mario_laptop_sf2_newarch\Mario_SF2_devbrd
+Component :  mux_2x_2_1
+Family    :  SmartFusion2
+
+
+HDL source files for all Synthesis and Simulation tools:
+    C:/Users/flb/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/component/work/mux_2x_2_1/mux_2x_2_1.v
+

@@ -1,0 +1,7 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+USER_OBJS := C:/Users/flb/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/SoftConsole/Mario_Libero_MSS_CM3/Mario_Libero_MSS_CM3_hw_platform/Debug/CMSIS/startup_gcc/startup_m2sxxx.o C:/Users/flb/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/SoftConsole/Mario_Libero_MSS_CM3/Mario_Libero_MSS_CM3_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+
+LIBS := -lMario_Libero_MSS_CM3_hw_platform

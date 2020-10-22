@@ -1,0 +1,56 @@
+# Microsemi Physical design constraints file
+
+# Version: v11.8 SP3 11.8.3.6
+
+# Design Name:  
+
+# Input Netlist Format: EDIF 
+
+# Family: SmartFusion2 , Die: M2S060T , Package: 325 FCSBGA , Speed grade: STD 
+
+# Date generated: Fri Apr 05 23:01:34 2019 
+
+
+#
+# IO banks setting
+#
+
+set_iobank Bank1 -vcci 1.80 -fixed yes -updateiostd yes
+set_iobank Bank2 -vcci 3.30 -fixed no
+set_iobank Bank3 -vcci 1.20 -fixed yes
+set_iobank Bank4 -vcci 1.80 -fixed yes -updateiostd yes
+
+#
+# Local clock constraints
+#
+
+
+#
+# Region constraints
+#
+
+
+#
+# I/O constraints
+#
+
+set_io C2N_DATA_0 -DIRECTION OUTPUT -iostd LVCMOS12 -pinname K5 -fixed yes
+set_io C2N_VALID_0 -DIRECTION OUTPUT -iostd LVCMOS12 -pinname K4 -fixed yes
+set_io CLK_OUT -DIRECTION OUTPUT -iostd LVCMOS18 -pinname Y2 -fixed yes
+set_io CLK_OUT2 -DIRECTION OUTPUT -iostd LVCMOS18 -pinname W2 -fixed yes
+set_io DDR_CKE -DIRECTION OUTPUT -iostd LVCMOS18 -pinname G9 -fixed yes
+set_io DDR_CSN -DIRECTION OUTPUT -iostd LVCMOS18 -pinname G10 -fixed yes
+set_io MMUART_1_RXD -DIRECTION INPUT -pinname D2 -fixed yes
+set_io MMUART_1_TXD -DIRECTION OUTPUT -pinname E1 -fixed yes
+set_io N2C_DATA_0 -DIRECTION INPUT -iostd LVCMOS12 -pinname K7 -fixed yes
+set_io SPI_0_CLK -DIRECTION OUTPUT -iostd LVCMOS18 -pinname U2 -fixed yes
+set_io SPI_0_DI -DIRECTION INPUT -iostd LVCMOS18 -pinname U1 -fixed yes
+set_io SPI_0_DO -DIRECTION OUTPUT -iostd LVCMOS18 -pinname P4 -fixed yes
+set_io SPI_0_SS0 -DIRECTION OUTPUT -iostd LVCMOS18 -pinname P5 -fixed yes
+set_io SPI_DEBUG -DIRECTION OUTPUT -iostd LVCMOS18 -pinname Y1 -fixed yes
+set_io XTL -DIRECTION INPUT -pinname AA4
+
+#
+# Core cell constraints
+#
+

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<?xml-stylesheet href="rptstyle.xsl" type="text/xsl" ?>
+<doc>
+<table>
+<header>
+</header>
+<row>
+ <cell>Design</cell>
+ <cell>Mario_Libero</cell>
+</row>
+<row>
+ <cell>Family</cell>
+ <cell>SmartFusion2</cell>
+</row>
+<row>
+ <cell>Die</cell>
+ <cell>M2S060T</cell>
+</row>
+<row>
+ <cell>Package</cell>
+ <cell>325 FCSBGA</cell>
+</row>
+<row>
+ <cell>Temperature Range</cell>
+ <cell>0 - 85 C</cell>
+</row>
+<row>
+ <cell>Voltage Range</cell>
+ <cell>1.14 - 1.26 V</cell>
+</row>
+<row>
+ <cell>Speed Grade</cell>
+ <cell>STD</cell>
+</row>
+<row>
+ <cell>Design State</cell>
+ <cell>Post-Layout</cell>
+</row>
+<row>
+ <cell>Data source</cell>
+ <cell>Production</cell>
+</row>
+<row>
+ <cell>Min Operating Conditions</cell>
+ <cell>BEST - 1.26 V - 0 C</cell>
+</row>
+<row>
+ <cell>Max Operating Conditions</cell>
+ <cell>WORST - 1.14 V - 85 C</cell>
+</row>
+<row>
+ <cell>Scenario for Timing Analysis</cell>
+ <cell>Primary</cell>
+</row>
+</table>
+<text></text>
+<section>
+<name>Summary</name>
+<table>
+<header>
+ <cell>Clock Domain</cell>
+ <cell>Period (ns)</cell>
+ <cell>Frequency (MHz)</cell>
+ <cell>Required Period (ns)</cell>
+ <cell>Required Frequency (MHz)</cell>
+ <cell>External Setup (ns)</cell>
+ <cell>External Hold (ns)</cell>
+ <cell>Min Clock-To-Out (ns)</cell>
+ <cell>Max Clock-To-Out (ns)</cell>
+</header>
+<row>
+ <cell>Mario_Libero_FCCC_0_FCCC|GL0_net_inferred_clock</cell>
+ <cell>75.253</cell>
+ <cell>13.289</cell>
+ <cell>10.000</cell>
+ <cell>100.000</cell>
+ <cell>7.977</cell>
+ <cell>-3.949</cell>
+ <cell>4.838</cell>
+ <cell>28.403</cell>
+</row>
+<row>
+ <cell>OSC_0/I_XTLOSC:CLKOUT</cell>
+ <cell>N/A</cell>
+ <cell>N/A</cell>
+ <cell>50.000</cell>
+ <cell>20.000</cell>
+ <cell>N/A</cell>
+ <cell>N/A</cell>
+ <cell>9.727</cell>
+ <cell>17.970</cell>
+</row>
+<row>
+ <cell>feature_encoder|prev_state_inferred_clock[1]</cell>
+ <cell>1.842</cell>
+ <cell>542.888</cell>
+ <cell>10.000</cell>
+ <cell>100.000</cell>
+ <cell>N/A</cell>
+ <cell>N/A</cell>
+ <cell>N/A</cell>
+ <cell>N/A</cell>
+</row>
+<row>
+ <cell>Mario_Libero_FCCC_0_FCCC|GL1_net_inferred_clock</cell>
+ <cell>N/A</cell>
+ <cell>N/A</cell>
+ <cell>10.000</cell>
+ <cell>100.000</cell>
+ <cell>N/A</cell>
+ <cell>N/A</cell>
+ <cell>N/A</cell>
+ <cell>N/A</cell>
+</row>
+<row>
+ <cell>fft_inpl_slowClock_0|divider_inferred_clock[2]</cell>
+ <cell>N/A</cell>
+ <cell>N/A</cell>
+ <cell>10.000</cell>
+ <cell>100.000</cell>
+ <cell>N/A</cell>
+ <cell>N/A</cell>
+ <cell>N/A</cell>
+ <cell>N/A</cell>
+</row>
+<row>
+ <cell>fft_inpl_slowClock_1|divider_inferred_clock[2]</cell>
+ <cell>N/A</cell>
+ <cell>N/A</cell>
+ <cell>10.000</cell>
+ <cell>100.000</cell>
+ <cell>N/A</cell>
+ <cell>N/A</cell>
+ <cell>N/A</cell>
+ <cell>N/A</cell>
+</row>
+<row>
+ <cell>Mario_Libero_MSS|SPI_0_CLK_M2F_inferred_clock</cell>
+ <cell>N/A</cell>
+ <cell>N/A</cell>
+ <cell>10.000</cell>
+ <cell>100.000</cell>
+ <cell>N/A</cell>
+ <cell>N/A</cell>
+ <cell>N/A</cell>
+ <cell>N/A</cell>
+</row>
+</table>
+<text></text>
+<table>
+<header>
+ <cell></cell>
+ <cell>Min Delay (ns)</cell>
+ <cell>Max Delay (ns)</cell>
+</header>
+<row>
+ <cell>Input to Output</cell>
+ <cell>N/A</cell>
+ <cell>N/A</cell>
+</row>
+</table>
+</section>
+</doc>

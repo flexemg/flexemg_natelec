@@ -1,0 +1,360 @@
+# Microsemi I/O Physical Design Constraints file
+# Auto Generated User I/O Constraints file
+
+# Version: v11.7 SP3 11.7.3.7
+# Family: SmartFusion2 , Die: M2S050 , Package: 484 FBGA
+# Date generated: Wed Mar 15 18:19:01 2017 
+
+
+# 
+# User Locked I/O Bank Settings
+# 
+
+set_iobank Bank1      \
+    -vcci 3.30        \
+    -fixed yes        \
+    -updateiostd yes
+
+set_iobank Bank3      \
+    -vcci 3.30        \
+    -fixed yes        \
+    -updateiostd yes
+
+set_iobank Bank4      \
+    -vcci 3.30        \
+    -fixed yes        \
+    -updateiostd yes
+
+set_iobank Bank5      \
+    -vcci 2.50        \
+    -fixed yes        \
+    -updateiostd yes
+
+set_iobank Bank7      \
+    -vcci 2.50        \
+    -fixed yes        \
+    -updateiostd yes
+
+set_iobank Bank8      \
+    -vcci 3.30        \
+    -fixed yes        \
+    -updateiostd yes
+
+
+# 
+# Unlocked I/O Bank Settings
+# The I/O Bank Settings can be locked by directly editing this file
+# or by making changes in the I/O Attribute Editor
+# 
+
+
+# 
+# User Locked I/O settings
+# 
+
+set_io A2N_DATA_0      \
+    -pinname J6        \
+    -fixed yes         \
+    -DIRECTION OUTPUT
+
+
+set_io A2N_DATA_1      \
+    -pinname H7        \
+    -fixed yes         \
+    -DIRECTION OUTPUT
+
+
+set_io A2N_VALID_0     \
+    -pinname G7        \
+    -fixed yes         \
+    -DIRECTION OUTPUT
+
+
+set_io A2N_VALID_1     \
+    -pinname F6        \
+    -fixed yes         \
+    -DIRECTION OUTPUT
+
+
+set_io ACC_CLKIN       \
+    -pinname E4        \
+    -fixed yes         \
+    -DIRECTION OUTPUT
+
+
+set_io ACC_IRQ        \
+    -pinname C4       \
+    -fixed yes        \
+    -DIRECTION INPUT
+
+
+set_io CLK_OUT         \
+    -pinname C3        \
+    -fixed yes         \
+    -DIRECTION OUTPUT
+
+
+set_io CLK_OUT2        \
+    -pinname B1        \
+    -fixed yes         \
+    -DIRECTION OUTPUT
+
+
+set_io {DEBUG[0]}      \
+    -pinname J18       \
+    -fixed yes         \
+    -DIRECTION OUTPUT
+
+
+set_io {DEBUG[1]}      \
+    -pinname K18       \
+    -fixed yes         \
+    -DIRECTION OUTPUT
+
+
+set_io {DEBUG[2]}      \
+    -pinname K16       \
+    -fixed yes         \
+    -DIRECTION OUTPUT
+
+
+set_io {DEBUG[3]}      \
+    -pinname G16       \
+    -fixed yes         \
+    -DIRECTION OUTPUT
+
+
+set_io {DEBUG[4]}      \
+    -pinname G17       \
+    -fixed yes         \
+    -DIRECTION OUTPUT
+
+
+set_io {DEBUG[5]}      \
+    -pinname P22       \
+    -fixed yes         \
+    -DIRECTION OUTPUT
+
+
+set_io {DEBUG[6]}      \
+    -pinname R22       \
+    -fixed yes         \
+    -DIRECTION OUTPUT
+
+
+set_io {DEBUG[7]}      \
+    -pinname D5        \
+    -fixed yes         \
+    -DIRECTION OUTPUT
+
+
+set_io {DEBUG[8]}      \
+    -pinname E5        \
+    -fixed yes         \
+    -DIRECTION OUTPUT
+
+
+set_io {DEBUG[9]}      \
+    -pinname B3        \
+    -fixed yes         \
+    -DIRECTION OUTPUT
+
+
+set_io {DEBUG[10]}     \
+    -pinname D4        \
+    -fixed yes         \
+    -DIRECTION OUTPUT
+
+
+set_io {DEBUG[11]}     \
+    -pinname A2        \
+    -fixed yes         \
+    -DIRECTION OUTPUT
+
+
+set_io {DEBUG[12]}     \
+    -pinname B2        \
+    -fixed yes         \
+    -DIRECTION OUTPUT
+
+
+set_io {DEBUG[13]}     \
+    -pinname K21       \
+    -fixed yes         \
+    -DIRECTION OUTPUT
+
+
+set_io {DEBUG[14]}     \
+    -pinname K20       \
+    -fixed yes         \
+    -DIRECTION OUTPUT
+
+
+set_io {DEBUG[15]}     \
+    -pinname B22       \
+    -fixed yes         \
+    -DIRECTION OUTPUT
+
+
+set_io {DEBUG[16]}     \
+    -pinname H20       \
+    -fixed yes         \
+    -DIRECTION OUTPUT
+
+
+set_io {DEBUG[17]}     \
+    -pinname G19       \
+    -fixed yes         \
+    -DIRECTION OUTPUT
+
+
+set_io {DEBUG[18]}     \
+    -pinname L19       \
+    -fixed yes         \
+    -DIRECTION OUTPUT
+
+
+set_io {DEBUG[19]}     \
+    -pinname F19       \
+    -fixed yes         \
+    -DIRECTION OUTPUT
+
+
+set_io {DEBUG[20]}     \
+    -pinname U19       \
+    -fixed yes         \
+    -DIRECTION OUTPUT
+
+
+set_io {DEBUG[21]}     \
+    -pinname L18       \
+    -fixed yes         \
+    -DIRECTION OUTPUT
+
+
+set_io {DEBUG[22]}     \
+    -pinname F18       \
+    -fixed yes         \
+    -DIRECTION OUTPUT
+
+
+set_io {DEBUG[23]}     \
+    -pinname K17       \
+    -fixed yes         \
+    -DIRECTION OUTPUT
+
+
+set_io {DEBUG[24]}     \
+    -pinname K7        \
+    -fixed yes         \
+    -DIRECTION OUTPUT
+
+
+set_io {DEBUG[25]}     \
+    -pinname K15       \
+    -fixed yes         \
+    -DIRECTION OUTPUT
+
+
+set_io {DEBUG[26]}     \
+    -pinname L16       \
+    -fixed yes         \
+    -DIRECTION OUTPUT
+
+
+set_io {DEBUG[27]}     \
+    -pinname P16       \
+    -fixed yes         \
+    -DIRECTION OUTPUT
+
+
+set_io {DEBUG[28]}     \
+    -pinname R16       \
+    -fixed yes         \
+    -DIRECTION OUTPUT
+
+
+set_io {DEBUG[29]}     \
+    -pinname N17       \
+    -fixed yes         \
+    -DIRECTION OUTPUT
+
+
+set_io {DEBUG[30]}     \
+    -pinname N16       \
+    -fixed yes         \
+    -DIRECTION OUTPUT
+
+
+set_io {DEBUG[31]}     \
+    -pinname P18       \
+    -fixed yes         \
+    -DIRECTION OUTPUT
+
+
+set_io GPIO0           \
+    -pinname E22       \
+    -fixed yes         \
+    -DIRECTION OUTPUT
+
+
+set_io GPIO1           \
+    -pinname F21       \
+    -fixed yes         \
+    -DIRECTION OUTPUT
+
+
+set_io GPIO2           \
+    -pinname E21       \
+    -fixed yes         \
+    -DIRECTION OUTPUT
+
+
+set_io GPIO3           \
+    -pinname F20       \
+    -fixed yes         \
+    -DIRECTION OUTPUT
+
+
+set_io I2C_1_SCL      \
+    -pinname H6       \
+    -fixed yes        \
+    -OUT_DRIVE 8      \
+    -OUT_LOAD 5       \
+    -RES_PULL Up      \
+    -DIRECTION INOUT
+
+
+set_io I2C_1_SDA      \
+    -pinname K6       \
+    -fixed yes        \
+    -OUT_DRIVE 8      \
+    -OUT_LOAD 5       \
+    -RES_PULL Up      \
+    -DIRECTION INOUT
+
+
+set_io N2A_DATA_0     \
+    -pinname G6       \
+    -fixed yes        \
+    -DIRECTION INPUT
+
+
+set_io N2A_DATA_1     \
+    -pinname F5       \
+    -fixed yes        \
+    -DIRECTION INPUT
+
+
+
+# 
+# Dedicated Peripheral I/O Settings
+# 
+
+
+# 
+# Unlocked I/O settings
+# The I/Os in this section are unplaced or placed but are not locked
+# the other listed attributes have been applied
+# 
+

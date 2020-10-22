@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;Mario_Libero_MSS_CM3_app/isr,c&apos;" deleteContents="false" description="Delete resource &apos;Mario_Libero_MSS_CM3_app/isr,c&apos;" element1="/Mario_Libero_MSS_CM3_app/isr,c" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1498165093094"/>&#x0A;<refactoring comment="Delete resource &apos;Mario_Libero_MSS_CM3_app/isr,h&apos;" deleteContents="false" description="Delete resource &apos;Mario_Libero_MSS_CM3_app/isr,h&apos;" element1="/Mario_Libero_MSS_CM3_app/isr,h" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1498165268519"/>
+</session>

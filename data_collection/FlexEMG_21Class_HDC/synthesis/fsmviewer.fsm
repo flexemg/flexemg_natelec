@@ -1,0 +1,131 @@
+fsm_options -device {acc_sim_0.current_state[15:0]}
+
+define_state IDLE 00000 {c:\users\flb.eecs\desktop\mario_laptop_sf2_newarch\mario_sf2_devbrd\hdl\acc_sim.v} 127 8 127 11
+state_output IDLE {acc_sim_0.current_state[0]} 1
+
+define_state S_DETECT_1 00001 {c:\users\flb.eecs\desktop\mario_laptop_sf2_newarch\mario_sf2_devbrd\hdl\acc_sim.v} 131 8 131 17
+state_output S_DETECT_1 {acc_sim_0.current_state[1]} 1
+
+define_state HDR_SETUP 00010 {c:\users\flb.eecs\desktop\mario_laptop_sf2_newarch\mario_sf2_devbrd\hdl\acc_sim.v} 138 8 138 16
+state_output HDR_SETUP {acc_sim_0.current_state[2]} 1
+
+define_state HDR_RUN 00011 {c:\users\flb.eecs\desktop\mario_laptop_sf2_newarch\mario_sf2_devbrd\hdl\acc_sim.v} 145 8 145 14
+state_output HDR_RUN {acc_sim_0.current_state[3]} 1
+
+define_state S_DELAY 00100 {c:\users\flb.eecs\desktop\mario_laptop_sf2_newarch\mario_sf2_devbrd\hdl\acc_sim.v} 155 8 155 14
+state_output S_DELAY {acc_sim_0.current_state[4]} 1
+
+define_state S_DETECT_2 00101 {c:\users\flb.eecs\desktop\mario_laptop_sf2_newarch\mario_sf2_devbrd\hdl\acc_sim.v} 162 8 162 17
+state_output S_DETECT_2 {acc_sim_0.current_state[5]} 1
+
+define_state RD_SETUP_1 00110 {c:\users\flb.eecs\desktop\mario_laptop_sf2_newarch\mario_sf2_devbrd\hdl\acc_sim.v} 174 8 174 17
+state_output RD_SETUP_1 {acc_sim_0.current_state[6]} 1
+
+define_state RD_SETUP_2 00111 {c:\users\flb.eecs\desktop\mario_laptop_sf2_newarch\mario_sf2_devbrd\hdl\acc_sim.v} 181 8 181 17
+state_output RD_SETUP_2 {acc_sim_0.current_state[7]} 1
+
+define_state RD_SETUP_3 01000 {c:\users\flb.eecs\desktop\mario_laptop_sf2_newarch\mario_sf2_devbrd\hdl\acc_sim.v} 189 8 189 17
+state_output RD_SETUP_3 {acc_sim_0.current_state[8]} 1
+
+define_state RD_RUN 01001 {c:\users\flb.eecs\desktop\mario_laptop_sf2_newarch\mario_sf2_devbrd\hdl\acc_sim.v} 196 8 196 13
+state_output RD_RUN {acc_sim_0.current_state[9]} 1
+
+define_state ACK_OR_NACK 01010 {c:\users\flb.eecs\desktop\mario_laptop_sf2_newarch\mario_sf2_devbrd\hdl\acc_sim.v} 204 8 204 18
+state_output ACK_OR_NACK {acc_sim_0.current_state[10]} 1
+
+define_state WR_SETUP 01011 {c:\users\flb.eecs\desktop\mario_laptop_sf2_newarch\mario_sf2_devbrd\hdl\acc_sim.v} 221 8 221 15
+state_output WR_SETUP {acc_sim_0.current_state[11]} 1
+
+define_state WR_RUN 01100 {c:\users\flb.eecs\desktop\mario_laptop_sf2_newarch\mario_sf2_devbrd\hdl\acc_sim.v} 228 8 228 13
+state_output WR_RUN {acc_sim_0.current_state[12]} 1
+
+define_state SKIP_BIT_1 01110 {c:\users\flb.eecs\desktop\mario_laptop_sf2_newarch\mario_sf2_devbrd\hdl\acc_sim.v} 168 8 168 17
+state_output SKIP_BIT_1 {acc_sim_0.current_state[13]} 1
+
+define_state SKIP_BIT_2 01111 {c:\users\flb.eecs\desktop\mario_laptop_sf2_newarch\mario_sf2_devbrd\hdl\acc_sim.v} 171 8 171 17
+state_output SKIP_BIT_2 {acc_sim_0.current_state[14]} 1
+
+define_state SKIP_BIT_3 10000 {c:\users\flb.eecs\desktop\mario_laptop_sf2_newarch\mario_sf2_devbrd\hdl\acc_sim.v} 135 8 135 17
+state_output SKIP_BIT_3 {acc_sim_0.current_state[15]} 1
+
+fsm_options -resetState IDLE
+
+define_transition S_DETECT_1 SKIP_BIT_3 {cmam_if_wrap_0_EMULATE_ACC,acc_sim_0.bc_cnt[0],acc_sim_0.bc_cnt[1],acc_sim_0.bc_cnt[2],acc_sim_0.bc_cnt[3],acc_sim_0.bc_cnt[4],acc_sim_0.bc_cnt[5],acc_sim_0.bc_cnt[6],cmam_if_wrap_0_I2C_SDA_O,cmam_if_wrap_0_I2C_SCL = 1-------01}
+define_transition SKIP_BIT_1 SKIP_BIT_2 {cmam_if_wrap_0_EMULATE_ACC,acc_sim_0.bc_cnt[0],acc_sim_0.bc_cnt[1],acc_sim_0.bc_cnt[2],acc_sim_0.bc_cnt[3],acc_sim_0.bc_cnt[4],acc_sim_0.bc_cnt[5],acc_sim_0.bc_cnt[6],cmam_if_wrap_0_I2C_SDA_O,cmam_if_wrap_0_I2C_SCL = 1---------}
+define_transition S_DETECT_2 SKIP_BIT_1 {cmam_if_wrap_0_EMULATE_ACC,acc_sim_0.bc_cnt[0],acc_sim_0.bc_cnt[1],acc_sim_0.bc_cnt[2],acc_sim_0.bc_cnt[3],acc_sim_0.bc_cnt[4],acc_sim_0.bc_cnt[5],acc_sim_0.bc_cnt[6],cmam_if_wrap_0_I2C_SDA_O,cmam_if_wrap_0_I2C_SCL = 1--------1}
+define_transition WR_RUN WR_RUN {cmam_if_wrap_0_EMULATE_ACC,acc_sim_0.bc_cnt[0],acc_sim_0.bc_cnt[1],acc_sim_0.bc_cnt[2],acc_sim_0.bc_cnt[3],acc_sim_0.bc_cnt[4],acc_sim_0.bc_cnt[5],acc_sim_0.bc_cnt[6],cmam_if_wrap_0_I2C_SDA_O,cmam_if_wrap_0_I2C_SCL = 1--1------}
+define_transition WR_RUN WR_RUN {cmam_if_wrap_0_EMULATE_ACC,acc_sim_0.bc_cnt[0],acc_sim_0.bc_cnt[1],acc_sim_0.bc_cnt[2],acc_sim_0.bc_cnt[3],acc_sim_0.bc_cnt[4],acc_sim_0.bc_cnt[5],acc_sim_0.bc_cnt[6],cmam_if_wrap_0_I2C_SDA_O,cmam_if_wrap_0_I2C_SCL = 1------1--}
+define_transition WR_RUN WR_RUN {cmam_if_wrap_0_EMULATE_ACC,acc_sim_0.bc_cnt[0],acc_sim_0.bc_cnt[1],acc_sim_0.bc_cnt[2],acc_sim_0.bc_cnt[3],acc_sim_0.bc_cnt[4],acc_sim_0.bc_cnt[5],acc_sim_0.bc_cnt[6],cmam_if_wrap_0_I2C_SDA_O,cmam_if_wrap_0_I2C_SCL = 1---1-----}
+define_transition WR_RUN WR_RUN {cmam_if_wrap_0_EMULATE_ACC,acc_sim_0.bc_cnt[0],acc_sim_0.bc_cnt[1],acc_sim_0.bc_cnt[2],acc_sim_0.bc_cnt[3],acc_sim_0.bc_cnt[4],acc_sim_0.bc_cnt[5],acc_sim_0.bc_cnt[6],cmam_if_wrap_0_I2C_SDA_O,cmam_if_wrap_0_I2C_SCL = 1----1----}
+define_transition WR_RUN WR_RUN {cmam_if_wrap_0_EMULATE_ACC,acc_sim_0.bc_cnt[0],acc_sim_0.bc_cnt[1],acc_sim_0.bc_cnt[2],acc_sim_0.bc_cnt[3],acc_sim_0.bc_cnt[4],acc_sim_0.bc_cnt[5],acc_sim_0.bc_cnt[6],cmam_if_wrap_0_I2C_SDA_O,cmam_if_wrap_0_I2C_SCL = 1-0-------}
+define_transition WR_RUN WR_RUN {cmam_if_wrap_0_EMULATE_ACC,acc_sim_0.bc_cnt[0],acc_sim_0.bc_cnt[1],acc_sim_0.bc_cnt[2],acc_sim_0.bc_cnt[3],acc_sim_0.bc_cnt[4],acc_sim_0.bc_cnt[5],acc_sim_0.bc_cnt[6],cmam_if_wrap_0_I2C_SDA_O,cmam_if_wrap_0_I2C_SCL = 10--------}
+define_transition WR_RUN WR_RUN {cmam_if_wrap_0_EMULATE_ACC,acc_sim_0.bc_cnt[0],acc_sim_0.bc_cnt[1],acc_sim_0.bc_cnt[2],acc_sim_0.bc_cnt[3],acc_sim_0.bc_cnt[4],acc_sim_0.bc_cnt[5],acc_sim_0.bc_cnt[6],cmam_if_wrap_0_I2C_SDA_O,cmam_if_wrap_0_I2C_SCL = 1-----0---}
+define_transition WR_SETUP WR_RUN {cmam_if_wrap_0_EMULATE_ACC,acc_sim_0.bc_cnt[0],acc_sim_0.bc_cnt[1],acc_sim_0.bc_cnt[2],acc_sim_0.bc_cnt[3],acc_sim_0.bc_cnt[4],acc_sim_0.bc_cnt[5],acc_sim_0.bc_cnt[6],cmam_if_wrap_0_I2C_SDA_O,cmam_if_wrap_0_I2C_SCL = 1---------}
+define_transition S_DETECT_2 WR_SETUP {cmam_if_wrap_0_EMULATE_ACC,acc_sim_0.bc_cnt[0],acc_sim_0.bc_cnt[1],acc_sim_0.bc_cnt[2],acc_sim_0.bc_cnt[3],acc_sim_0.bc_cnt[4],acc_sim_0.bc_cnt[5],acc_sim_0.bc_cnt[6],cmam_if_wrap_0_I2C_SDA_O,cmam_if_wrap_0_I2C_SCL = 1--------0}
+define_transition RD_RUN ACK_OR_NACK {cmam_if_wrap_0_EMULATE_ACC,acc_sim_0.bc_cnt[0],acc_sim_0.bc_cnt[1],acc_sim_0.bc_cnt[2],acc_sim_0.bc_cnt[3],acc_sim_0.bc_cnt[4],acc_sim_0.bc_cnt[5],acc_sim_0.bc_cnt[6],cmam_if_wrap_0_I2C_SDA_O,cmam_if_wrap_0_I2C_SCL = 10010010--}
+define_transition ACK_OR_NACK RD_RUN {cmam_if_wrap_0_EMULATE_ACC,acc_sim_0.bc_cnt[0],acc_sim_0.bc_cnt[1],acc_sim_0.bc_cnt[2],acc_sim_0.bc_cnt[3],acc_sim_0.bc_cnt[4],acc_sim_0.bc_cnt[5],acc_sim_0.bc_cnt[6],cmam_if_wrap_0_I2C_SDA_O,cmam_if_wrap_0_I2C_SCL = 1-------00}
+define_transition RD_RUN RD_RUN {cmam_if_wrap_0_EMULATE_ACC,acc_sim_0.bc_cnt[0],acc_sim_0.bc_cnt[1],acc_sim_0.bc_cnt[2],acc_sim_0.bc_cnt[3],acc_sim_0.bc_cnt[4],acc_sim_0.bc_cnt[5],acc_sim_0.bc_cnt[6],cmam_if_wrap_0_I2C_SDA_O,cmam_if_wrap_0_I2C_SCL = 1------1--}
+define_transition RD_RUN RD_RUN {cmam_if_wrap_0_EMULATE_ACC,acc_sim_0.bc_cnt[0],acc_sim_0.bc_cnt[1],acc_sim_0.bc_cnt[2],acc_sim_0.bc_cnt[3],acc_sim_0.bc_cnt[4],acc_sim_0.bc_cnt[5],acc_sim_0.bc_cnt[6],cmam_if_wrap_0_I2C_SDA_O,cmam_if_wrap_0_I2C_SCL = 1---1-----}
+define_transition RD_RUN RD_RUN {cmam_if_wrap_0_EMULATE_ACC,acc_sim_0.bc_cnt[0],acc_sim_0.bc_cnt[1],acc_sim_0.bc_cnt[2],acc_sim_0.bc_cnt[3],acc_sim_0.bc_cnt[4],acc_sim_0.bc_cnt[5],acc_sim_0.bc_cnt[6],cmam_if_wrap_0_I2C_SDA_O,cmam_if_wrap_0_I2C_SCL = 11--------}
+define_transition RD_RUN RD_RUN {cmam_if_wrap_0_EMULATE_ACC,acc_sim_0.bc_cnt[0],acc_sim_0.bc_cnt[1],acc_sim_0.bc_cnt[2],acc_sim_0.bc_cnt[3],acc_sim_0.bc_cnt[4],acc_sim_0.bc_cnt[5],acc_sim_0.bc_cnt[6],cmam_if_wrap_0_I2C_SDA_O,cmam_if_wrap_0_I2C_SCL = 1----1----}
+define_transition RD_RUN RD_RUN {cmam_if_wrap_0_EMULATE_ACC,acc_sim_0.bc_cnt[0],acc_sim_0.bc_cnt[1],acc_sim_0.bc_cnt[2],acc_sim_0.bc_cnt[3],acc_sim_0.bc_cnt[4],acc_sim_0.bc_cnt[5],acc_sim_0.bc_cnt[6],cmam_if_wrap_0_I2C_SDA_O,cmam_if_wrap_0_I2C_SCL = 1-1-------}
+define_transition RD_RUN RD_RUN {cmam_if_wrap_0_EMULATE_ACC,acc_sim_0.bc_cnt[0],acc_sim_0.bc_cnt[1],acc_sim_0.bc_cnt[2],acc_sim_0.bc_cnt[3],acc_sim_0.bc_cnt[4],acc_sim_0.bc_cnt[5],acc_sim_0.bc_cnt[6],cmam_if_wrap_0_I2C_SDA_O,cmam_if_wrap_0_I2C_SCL = 1-----0---}
+define_transition RD_RUN RD_RUN {cmam_if_wrap_0_EMULATE_ACC,acc_sim_0.bc_cnt[0],acc_sim_0.bc_cnt[1],acc_sim_0.bc_cnt[2],acc_sim_0.bc_cnt[3],acc_sim_0.bc_cnt[4],acc_sim_0.bc_cnt[5],acc_sim_0.bc_cnt[6],cmam_if_wrap_0_I2C_SDA_O,cmam_if_wrap_0_I2C_SCL = 1--0------}
+define_transition RD_SETUP_3 RD_RUN {cmam_if_wrap_0_EMULATE_ACC,acc_sim_0.bc_cnt[0],acc_sim_0.bc_cnt[1],acc_sim_0.bc_cnt[2],acc_sim_0.bc_cnt[3],acc_sim_0.bc_cnt[4],acc_sim_0.bc_cnt[5],acc_sim_0.bc_cnt[6],cmam_if_wrap_0_I2C_SDA_O,cmam_if_wrap_0_I2C_SCL = 1---------}
+define_transition RD_SETUP_2 RD_SETUP_3 {cmam_if_wrap_0_EMULATE_ACC,acc_sim_0.bc_cnt[0],acc_sim_0.bc_cnt[1],acc_sim_0.bc_cnt[2],acc_sim_0.bc_cnt[3],acc_sim_0.bc_cnt[4],acc_sim_0.bc_cnt[5],acc_sim_0.bc_cnt[6],cmam_if_wrap_0_I2C_SDA_O,cmam_if_wrap_0_I2C_SCL = 10000010--}
+define_transition RD_SETUP_2 RD_SETUP_2 {cmam_if_wrap_0_EMULATE_ACC,acc_sim_0.bc_cnt[0],acc_sim_0.bc_cnt[1],acc_sim_0.bc_cnt[2],acc_sim_0.bc_cnt[3],acc_sim_0.bc_cnt[4],acc_sim_0.bc_cnt[5],acc_sim_0.bc_cnt[6],cmam_if_wrap_0_I2C_SDA_O,cmam_if_wrap_0_I2C_SCL = 1--1------}
+define_transition RD_SETUP_2 RD_SETUP_2 {cmam_if_wrap_0_EMULATE_ACC,acc_sim_0.bc_cnt[0],acc_sim_0.bc_cnt[1],acc_sim_0.bc_cnt[2],acc_sim_0.bc_cnt[3],acc_sim_0.bc_cnt[4],acc_sim_0.bc_cnt[5],acc_sim_0.bc_cnt[6],cmam_if_wrap_0_I2C_SDA_O,cmam_if_wrap_0_I2C_SCL = 1------1--}
+define_transition RD_SETUP_2 RD_SETUP_2 {cmam_if_wrap_0_EMULATE_ACC,acc_sim_0.bc_cnt[0],acc_sim_0.bc_cnt[1],acc_sim_0.bc_cnt[2],acc_sim_0.bc_cnt[3],acc_sim_0.bc_cnt[4],acc_sim_0.bc_cnt[5],acc_sim_0.bc_cnt[6],cmam_if_wrap_0_I2C_SDA_O,cmam_if_wrap_0_I2C_SCL = 1---1-----}
+define_transition RD_SETUP_2 RD_SETUP_2 {cmam_if_wrap_0_EMULATE_ACC,acc_sim_0.bc_cnt[0],acc_sim_0.bc_cnt[1],acc_sim_0.bc_cnt[2],acc_sim_0.bc_cnt[3],acc_sim_0.bc_cnt[4],acc_sim_0.bc_cnt[5],acc_sim_0.bc_cnt[6],cmam_if_wrap_0_I2C_SDA_O,cmam_if_wrap_0_I2C_SCL = 11--------}
+define_transition RD_SETUP_2 RD_SETUP_2 {cmam_if_wrap_0_EMULATE_ACC,acc_sim_0.bc_cnt[0],acc_sim_0.bc_cnt[1],acc_sim_0.bc_cnt[2],acc_sim_0.bc_cnt[3],acc_sim_0.bc_cnt[4],acc_sim_0.bc_cnt[5],acc_sim_0.bc_cnt[6],cmam_if_wrap_0_I2C_SDA_O,cmam_if_wrap_0_I2C_SCL = 1----1----}
+define_transition RD_SETUP_2 RD_SETUP_2 {cmam_if_wrap_0_EMULATE_ACC,acc_sim_0.bc_cnt[0],acc_sim_0.bc_cnt[1],acc_sim_0.bc_cnt[2],acc_sim_0.bc_cnt[3],acc_sim_0.bc_cnt[4],acc_sim_0.bc_cnt[5],acc_sim_0.bc_cnt[6],cmam_if_wrap_0_I2C_SDA_O,cmam_if_wrap_0_I2C_SCL = 1-1-------}
+define_transition RD_SETUP_2 RD_SETUP_2 {cmam_if_wrap_0_EMULATE_ACC,acc_sim_0.bc_cnt[0],acc_sim_0.bc_cnt[1],acc_sim_0.bc_cnt[2],acc_sim_0.bc_cnt[3],acc_sim_0.bc_cnt[4],acc_sim_0.bc_cnt[5],acc_sim_0.bc_cnt[6],cmam_if_wrap_0_I2C_SDA_O,cmam_if_wrap_0_I2C_SCL = 1-----0---}
+define_transition RD_SETUP_1 RD_SETUP_2 {cmam_if_wrap_0_EMULATE_ACC,acc_sim_0.bc_cnt[0],acc_sim_0.bc_cnt[1],acc_sim_0.bc_cnt[2],acc_sim_0.bc_cnt[3],acc_sim_0.bc_cnt[4],acc_sim_0.bc_cnt[5],acc_sim_0.bc_cnt[6],cmam_if_wrap_0_I2C_SDA_O,cmam_if_wrap_0_I2C_SCL = 1---------}
+define_transition SKIP_BIT_2 RD_SETUP_1 {cmam_if_wrap_0_EMULATE_ACC,acc_sim_0.bc_cnt[0],acc_sim_0.bc_cnt[1],acc_sim_0.bc_cnt[2],acc_sim_0.bc_cnt[3],acc_sim_0.bc_cnt[4],acc_sim_0.bc_cnt[5],acc_sim_0.bc_cnt[6],cmam_if_wrap_0_I2C_SDA_O,cmam_if_wrap_0_I2C_SCL = 1---------}
+define_transition S_DELAY S_DETECT_2 {cmam_if_wrap_0_EMULATE_ACC,acc_sim_0.bc_cnt[0],acc_sim_0.bc_cnt[1],acc_sim_0.bc_cnt[2],acc_sim_0.bc_cnt[3],acc_sim_0.bc_cnt[4],acc_sim_0.bc_cnt[5],acc_sim_0.bc_cnt[6],cmam_if_wrap_0_I2C_SDA_O,cmam_if_wrap_0_I2C_SCL = 11000000--}
+define_transition S_DELAY S_DELAY {cmam_if_wrap_0_EMULATE_ACC,acc_sim_0.bc_cnt[0],acc_sim_0.bc_cnt[1],acc_sim_0.bc_cnt[2],acc_sim_0.bc_cnt[3],acc_sim_0.bc_cnt[4],acc_sim_0.bc_cnt[5],acc_sim_0.bc_cnt[6],cmam_if_wrap_0_I2C_SDA_O,cmam_if_wrap_0_I2C_SCL = 1--1------}
+define_transition S_DELAY S_DELAY {cmam_if_wrap_0_EMULATE_ACC,acc_sim_0.bc_cnt[0],acc_sim_0.bc_cnt[1],acc_sim_0.bc_cnt[2],acc_sim_0.bc_cnt[3],acc_sim_0.bc_cnt[4],acc_sim_0.bc_cnt[5],acc_sim_0.bc_cnt[6],cmam_if_wrap_0_I2C_SDA_O,cmam_if_wrap_0_I2C_SCL = 1------1--}
+define_transition S_DELAY S_DELAY {cmam_if_wrap_0_EMULATE_ACC,acc_sim_0.bc_cnt[0],acc_sim_0.bc_cnt[1],acc_sim_0.bc_cnt[2],acc_sim_0.bc_cnt[3],acc_sim_0.bc_cnt[4],acc_sim_0.bc_cnt[5],acc_sim_0.bc_cnt[6],cmam_if_wrap_0_I2C_SDA_O,cmam_if_wrap_0_I2C_SCL = 1-----1---}
+define_transition S_DELAY S_DELAY {cmam_if_wrap_0_EMULATE_ACC,acc_sim_0.bc_cnt[0],acc_sim_0.bc_cnt[1],acc_sim_0.bc_cnt[2],acc_sim_0.bc_cnt[3],acc_sim_0.bc_cnt[4],acc_sim_0.bc_cnt[5],acc_sim_0.bc_cnt[6],cmam_if_wrap_0_I2C_SDA_O,cmam_if_wrap_0_I2C_SCL = 1---1-----}
+define_transition S_DELAY S_DELAY {cmam_if_wrap_0_EMULATE_ACC,acc_sim_0.bc_cnt[0],acc_sim_0.bc_cnt[1],acc_sim_0.bc_cnt[2],acc_sim_0.bc_cnt[3],acc_sim_0.bc_cnt[4],acc_sim_0.bc_cnt[5],acc_sim_0.bc_cnt[6],cmam_if_wrap_0_I2C_SDA_O,cmam_if_wrap_0_I2C_SCL = 1----1----}
+define_transition S_DELAY S_DELAY {cmam_if_wrap_0_EMULATE_ACC,acc_sim_0.bc_cnt[0],acc_sim_0.bc_cnt[1],acc_sim_0.bc_cnt[2],acc_sim_0.bc_cnt[3],acc_sim_0.bc_cnt[4],acc_sim_0.bc_cnt[5],acc_sim_0.bc_cnt[6],cmam_if_wrap_0_I2C_SDA_O,cmam_if_wrap_0_I2C_SCL = 1-1-------}
+define_transition S_DELAY S_DELAY {cmam_if_wrap_0_EMULATE_ACC,acc_sim_0.bc_cnt[0],acc_sim_0.bc_cnt[1],acc_sim_0.bc_cnt[2],acc_sim_0.bc_cnt[3],acc_sim_0.bc_cnt[4],acc_sim_0.bc_cnt[5],acc_sim_0.bc_cnt[6],cmam_if_wrap_0_I2C_SDA_O,cmam_if_wrap_0_I2C_SCL = 10--------}
+define_transition HDR_RUN S_DELAY {cmam_if_wrap_0_EMULATE_ACC,acc_sim_0.bc_cnt[0],acc_sim_0.bc_cnt[1],acc_sim_0.bc_cnt[2],acc_sim_0.bc_cnt[3],acc_sim_0.bc_cnt[4],acc_sim_0.bc_cnt[5],acc_sim_0.bc_cnt[6],cmam_if_wrap_0_I2C_SDA_O,cmam_if_wrap_0_I2C_SCL = 10001001--}
+define_transition HDR_RUN HDR_RUN {cmam_if_wrap_0_EMULATE_ACC,acc_sim_0.bc_cnt[0],acc_sim_0.bc_cnt[1],acc_sim_0.bc_cnt[2],acc_sim_0.bc_cnt[3],acc_sim_0.bc_cnt[4],acc_sim_0.bc_cnt[5],acc_sim_0.bc_cnt[6],cmam_if_wrap_0_I2C_SDA_O,cmam_if_wrap_0_I2C_SCL = 1--1------}
+define_transition HDR_RUN HDR_RUN {cmam_if_wrap_0_EMULATE_ACC,acc_sim_0.bc_cnt[0],acc_sim_0.bc_cnt[1],acc_sim_0.bc_cnt[2],acc_sim_0.bc_cnt[3],acc_sim_0.bc_cnt[4],acc_sim_0.bc_cnt[5],acc_sim_0.bc_cnt[6],cmam_if_wrap_0_I2C_SDA_O,cmam_if_wrap_0_I2C_SCL = 1-----1---}
+define_transition HDR_RUN HDR_RUN {cmam_if_wrap_0_EMULATE_ACC,acc_sim_0.bc_cnt[0],acc_sim_0.bc_cnt[1],acc_sim_0.bc_cnt[2],acc_sim_0.bc_cnt[3],acc_sim_0.bc_cnt[4],acc_sim_0.bc_cnt[5],acc_sim_0.bc_cnt[6],cmam_if_wrap_0_I2C_SDA_O,cmam_if_wrap_0_I2C_SCL = 11--------}
+define_transition HDR_RUN HDR_RUN {cmam_if_wrap_0_EMULATE_ACC,acc_sim_0.bc_cnt[0],acc_sim_0.bc_cnt[1],acc_sim_0.bc_cnt[2],acc_sim_0.bc_cnt[3],acc_sim_0.bc_cnt[4],acc_sim_0.bc_cnt[5],acc_sim_0.bc_cnt[6],cmam_if_wrap_0_I2C_SDA_O,cmam_if_wrap_0_I2C_SCL = 1----1----}
+define_transition HDR_RUN HDR_RUN {cmam_if_wrap_0_EMULATE_ACC,acc_sim_0.bc_cnt[0],acc_sim_0.bc_cnt[1],acc_sim_0.bc_cnt[2],acc_sim_0.bc_cnt[3],acc_sim_0.bc_cnt[4],acc_sim_0.bc_cnt[5],acc_sim_0.bc_cnt[6],cmam_if_wrap_0_I2C_SDA_O,cmam_if_wrap_0_I2C_SCL = 1-1-------}
+define_transition HDR_RUN HDR_RUN {cmam_if_wrap_0_EMULATE_ACC,acc_sim_0.bc_cnt[0],acc_sim_0.bc_cnt[1],acc_sim_0.bc_cnt[2],acc_sim_0.bc_cnt[3],acc_sim_0.bc_cnt[4],acc_sim_0.bc_cnt[5],acc_sim_0.bc_cnt[6],cmam_if_wrap_0_I2C_SDA_O,cmam_if_wrap_0_I2C_SCL = 1---0-----}
+define_transition HDR_RUN HDR_RUN {cmam_if_wrap_0_EMULATE_ACC,acc_sim_0.bc_cnt[0],acc_sim_0.bc_cnt[1],acc_sim_0.bc_cnt[2],acc_sim_0.bc_cnt[3],acc_sim_0.bc_cnt[4],acc_sim_0.bc_cnt[5],acc_sim_0.bc_cnt[6],cmam_if_wrap_0_I2C_SDA_O,cmam_if_wrap_0_I2C_SCL = 1------0--}
+define_transition HDR_SETUP HDR_RUN {cmam_if_wrap_0_EMULATE_ACC,acc_sim_0.bc_cnt[0],acc_sim_0.bc_cnt[1],acc_sim_0.bc_cnt[2],acc_sim_0.bc_cnt[3],acc_sim_0.bc_cnt[4],acc_sim_0.bc_cnt[5],acc_sim_0.bc_cnt[6],cmam_if_wrap_0_I2C_SDA_O,cmam_if_wrap_0_I2C_SCL = 1---------}
+define_transition SKIP_BIT_3 HDR_SETUP {cmam_if_wrap_0_EMULATE_ACC,acc_sim_0.bc_cnt[0],acc_sim_0.bc_cnt[1],acc_sim_0.bc_cnt[2],acc_sim_0.bc_cnt[3],acc_sim_0.bc_cnt[4],acc_sim_0.bc_cnt[5],acc_sim_0.bc_cnt[6],cmam_if_wrap_0_I2C_SDA_O,cmam_if_wrap_0_I2C_SCL = 1---------}
+define_transition S_DETECT_1 S_DETECT_1 {cmam_if_wrap_0_EMULATE_ACC,acc_sim_0.bc_cnt[0],acc_sim_0.bc_cnt[1],acc_sim_0.bc_cnt[2],acc_sim_0.bc_cnt[3],acc_sim_0.bc_cnt[4],acc_sim_0.bc_cnt[5],acc_sim_0.bc_cnt[6],cmam_if_wrap_0_I2C_SDA_O,cmam_if_wrap_0_I2C_SCL = 1-------1-}
+define_transition S_DETECT_1 S_DETECT_1 {cmam_if_wrap_0_EMULATE_ACC,acc_sim_0.bc_cnt[0],acc_sim_0.bc_cnt[1],acc_sim_0.bc_cnt[2],acc_sim_0.bc_cnt[3],acc_sim_0.bc_cnt[4],acc_sim_0.bc_cnt[5],acc_sim_0.bc_cnt[6],cmam_if_wrap_0_I2C_SDA_O,cmam_if_wrap_0_I2C_SCL = 1--------0}
+define_transition IDLE S_DETECT_1 {cmam_if_wrap_0_EMULATE_ACC,acc_sim_0.bc_cnt[0],acc_sim_0.bc_cnt[1],acc_sim_0.bc_cnt[2],acc_sim_0.bc_cnt[3],acc_sim_0.bc_cnt[4],acc_sim_0.bc_cnt[5],acc_sim_0.bc_cnt[6],cmam_if_wrap_0_I2C_SDA_O,cmam_if_wrap_0_I2C_SCL = 1-------11}
+define_transition SKIP_BIT_3 IDLE {cmam_if_wrap_0_EMULATE_ACC,acc_sim_0.bc_cnt[0],acc_sim_0.bc_cnt[1],acc_sim_0.bc_cnt[2],acc_sim_0.bc_cnt[3],acc_sim_0.bc_cnt[4],acc_sim_0.bc_cnt[5],acc_sim_0.bc_cnt[6],cmam_if_wrap_0_I2C_SDA_O,cmam_if_wrap_0_I2C_SCL = 0---------}
+define_transition SKIP_BIT_2 IDLE {cmam_if_wrap_0_EMULATE_ACC,acc_sim_0.bc_cnt[0],acc_sim_0.bc_cnt[1],acc_sim_0.bc_cnt[2],acc_sim_0.bc_cnt[3],acc_sim_0.bc_cnt[4],acc_sim_0.bc_cnt[5],acc_sim_0.bc_cnt[6],cmam_if_wrap_0_I2C_SDA_O,cmam_if_wrap_0_I2C_SCL = 0---------}
+define_transition SKIP_BIT_1 IDLE {cmam_if_wrap_0_EMULATE_ACC,acc_sim_0.bc_cnt[0],acc_sim_0.bc_cnt[1],acc_sim_0.bc_cnt[2],acc_sim_0.bc_cnt[3],acc_sim_0.bc_cnt[4],acc_sim_0.bc_cnt[5],acc_sim_0.bc_cnt[6],cmam_if_wrap_0_I2C_SDA_O,cmam_if_wrap_0_I2C_SCL = 0---------}
+define_transition WR_RUN IDLE {cmam_if_wrap_0_EMULATE_ACC,acc_sim_0.bc_cnt[0],acc_sim_0.bc_cnt[1],acc_sim_0.bc_cnt[2],acc_sim_0.bc_cnt[3],acc_sim_0.bc_cnt[4],acc_sim_0.bc_cnt[5],acc_sim_0.bc_cnt[6],cmam_if_wrap_0_I2C_SDA_O,cmam_if_wrap_0_I2C_SCL = 0---------}
+define_transition WR_RUN IDLE {cmam_if_wrap_0_EMULATE_ACC,acc_sim_0.bc_cnt[0],acc_sim_0.bc_cnt[1],acc_sim_0.bc_cnt[2],acc_sim_0.bc_cnt[3],acc_sim_0.bc_cnt[4],acc_sim_0.bc_cnt[5],acc_sim_0.bc_cnt[6],cmam_if_wrap_0_I2C_SDA_O,cmam_if_wrap_0_I2C_SCL = -1100010--}
+define_transition WR_SETUP IDLE {cmam_if_wrap_0_EMULATE_ACC,acc_sim_0.bc_cnt[0],acc_sim_0.bc_cnt[1],acc_sim_0.bc_cnt[2],acc_sim_0.bc_cnt[3],acc_sim_0.bc_cnt[4],acc_sim_0.bc_cnt[5],acc_sim_0.bc_cnt[6],cmam_if_wrap_0_I2C_SDA_O,cmam_if_wrap_0_I2C_SCL = 0---------}
+define_transition ACK_OR_NACK IDLE {cmam_if_wrap_0_EMULATE_ACC,acc_sim_0.bc_cnt[0],acc_sim_0.bc_cnt[1],acc_sim_0.bc_cnt[2],acc_sim_0.bc_cnt[3],acc_sim_0.bc_cnt[4],acc_sim_0.bc_cnt[5],acc_sim_0.bc_cnt[6],cmam_if_wrap_0_I2C_SDA_O,cmam_if_wrap_0_I2C_SCL = --------1-}
+define_transition ACK_OR_NACK IDLE {cmam_if_wrap_0_EMULATE_ACC,acc_sim_0.bc_cnt[0],acc_sim_0.bc_cnt[1],acc_sim_0.bc_cnt[2],acc_sim_0.bc_cnt[3],acc_sim_0.bc_cnt[4],acc_sim_0.bc_cnt[5],acc_sim_0.bc_cnt[6],cmam_if_wrap_0_I2C_SDA_O,cmam_if_wrap_0_I2C_SCL = ---------1}
+define_transition ACK_OR_NACK IDLE {cmam_if_wrap_0_EMULATE_ACC,acc_sim_0.bc_cnt[0],acc_sim_0.bc_cnt[1],acc_sim_0.bc_cnt[2],acc_sim_0.bc_cnt[3],acc_sim_0.bc_cnt[4],acc_sim_0.bc_cnt[5],acc_sim_0.bc_cnt[6],cmam_if_wrap_0_I2C_SDA_O,cmam_if_wrap_0_I2C_SCL = 0---------}
+define_transition RD_RUN IDLE {cmam_if_wrap_0_EMULATE_ACC,acc_sim_0.bc_cnt[0],acc_sim_0.bc_cnt[1],acc_sim_0.bc_cnt[2],acc_sim_0.bc_cnt[3],acc_sim_0.bc_cnt[4],acc_sim_0.bc_cnt[5],acc_sim_0.bc_cnt[6],cmam_if_wrap_0_I2C_SDA_O,cmam_if_wrap_0_I2C_SCL = 0---------}
+define_transition RD_SETUP_3 IDLE {cmam_if_wrap_0_EMULATE_ACC,acc_sim_0.bc_cnt[0],acc_sim_0.bc_cnt[1],acc_sim_0.bc_cnt[2],acc_sim_0.bc_cnt[3],acc_sim_0.bc_cnt[4],acc_sim_0.bc_cnt[5],acc_sim_0.bc_cnt[6],cmam_if_wrap_0_I2C_SDA_O,cmam_if_wrap_0_I2C_SCL = 0---------}
+define_transition RD_SETUP_2 IDLE {cmam_if_wrap_0_EMULATE_ACC,acc_sim_0.bc_cnt[0],acc_sim_0.bc_cnt[1],acc_sim_0.bc_cnt[2],acc_sim_0.bc_cnt[3],acc_sim_0.bc_cnt[4],acc_sim_0.bc_cnt[5],acc_sim_0.bc_cnt[6],cmam_if_wrap_0_I2C_SDA_O,cmam_if_wrap_0_I2C_SCL = 0---------}
+define_transition RD_SETUP_1 IDLE {cmam_if_wrap_0_EMULATE_ACC,acc_sim_0.bc_cnt[0],acc_sim_0.bc_cnt[1],acc_sim_0.bc_cnt[2],acc_sim_0.bc_cnt[3],acc_sim_0.bc_cnt[4],acc_sim_0.bc_cnt[5],acc_sim_0.bc_cnt[6],cmam_if_wrap_0_I2C_SDA_O,cmam_if_wrap_0_I2C_SCL = 0---------}
+define_transition S_DETECT_2 IDLE {cmam_if_wrap_0_EMULATE_ACC,acc_sim_0.bc_cnt[0],acc_sim_0.bc_cnt[1],acc_sim_0.bc_cnt[2],acc_sim_0.bc_cnt[3],acc_sim_0.bc_cnt[4],acc_sim_0.bc_cnt[5],acc_sim_0.bc_cnt[6],cmam_if_wrap_0_I2C_SDA_O,cmam_if_wrap_0_I2C_SCL = 0---------}
+define_transition S_DELAY IDLE {cmam_if_wrap_0_EMULATE_ACC,acc_sim_0.bc_cnt[0],acc_sim_0.bc_cnt[1],acc_sim_0.bc_cnt[2],acc_sim_0.bc_cnt[3],acc_sim_0.bc_cnt[4],acc_sim_0.bc_cnt[5],acc_sim_0.bc_cnt[6],cmam_if_wrap_0_I2C_SDA_O,cmam_if_wrap_0_I2C_SCL = 0---------}
+define_transition HDR_RUN IDLE {cmam_if_wrap_0_EMULATE_ACC,acc_sim_0.bc_cnt[0],acc_sim_0.bc_cnt[1],acc_sim_0.bc_cnt[2],acc_sim_0.bc_cnt[3],acc_sim_0.bc_cnt[4],acc_sim_0.bc_cnt[5],acc_sim_0.bc_cnt[6],cmam_if_wrap_0_I2C_SDA_O,cmam_if_wrap_0_I2C_SCL = 0---------}
+define_transition HDR_SETUP IDLE {cmam_if_wrap_0_EMULATE_ACC,acc_sim_0.bc_cnt[0],acc_sim_0.bc_cnt[1],acc_sim_0.bc_cnt[2],acc_sim_0.bc_cnt[3],acc_sim_0.bc_cnt[4],acc_sim_0.bc_cnt[5],acc_sim_0.bc_cnt[6],cmam_if_wrap_0_I2C_SDA_O,cmam_if_wrap_0_I2C_SCL = 0---------}
+define_transition S_DETECT_1 IDLE {cmam_if_wrap_0_EMULATE_ACC,acc_sim_0.bc_cnt[0],acc_sim_0.bc_cnt[1],acc_sim_0.bc_cnt[2],acc_sim_0.bc_cnt[3],acc_sim_0.bc_cnt[4],acc_sim_0.bc_cnt[5],acc_sim_0.bc_cnt[6],cmam_if_wrap_0_I2C_SDA_O,cmam_if_wrap_0_I2C_SCL = 0---------}
+define_transition IDLE IDLE {cmam_if_wrap_0_EMULATE_ACC,acc_sim_0.bc_cnt[0],acc_sim_0.bc_cnt[1],acc_sim_0.bc_cnt[2],acc_sim_0.bc_cnt[3],acc_sim_0.bc_cnt[4],acc_sim_0.bc_cnt[5],acc_sim_0.bc_cnt[6],cmam_if_wrap_0_I2C_SDA_O,cmam_if_wrap_0_I2C_SCL = 0---------}
+define_transition IDLE IDLE {cmam_if_wrap_0_EMULATE_ACC,acc_sim_0.bc_cnt[0],acc_sim_0.bc_cnt[1],acc_sim_0.bc_cnt[2],acc_sim_0.bc_cnt[3],acc_sim_0.bc_cnt[4],acc_sim_0.bc_cnt[5],acc_sim_0.bc_cnt[6],cmam_if_wrap_0_I2C_SDA_O,cmam_if_wrap_0_I2C_SCL = ---------0}
+define_transition IDLE IDLE {cmam_if_wrap_0_EMULATE_ACC,acc_sim_0.bc_cnt[0],acc_sim_0.bc_cnt[1],acc_sim_0.bc_cnt[2],acc_sim_0.bc_cnt[3],acc_sim_0.bc_cnt[4],acc_sim_0.bc_cnt[5],acc_sim_0.bc_cnt[6],cmam_if_wrap_0_I2C_SDA_O,cmam_if_wrap_0_I2C_SCL = --------0-}
+fsm_options -SRSPath {C:\Users\flb.EECS\Desktop\mario_laptop_sf2_newarch\Mario_SF2_devbrd\synthesis\Mario_Libero.srs}
+fsm_options -SRSTime 1491348424
+fsm_options -FSMPath {acc_sim_0.current_state[15:0]}
+fsm_options -view {ScratchLib.cell12.netlist|i:acc_sim_0.current_state[15:0]}
+fsm_options -ID {11109010913}

@@ -1,0 +1,48 @@
+Microsemi Corporation - Microsemi Libero Software Release v11.7 SP3 (Version 11.7.3.7)
+
+Date      :  Mon May 22 18:45:48 2017
+Project   :  C:\Users\flb.EECS\Desktop\mario_laptop_sf2_newarch\Mario_SF2
+Component :  adc_fft_if
+Family    :  SmartFusion2
+
+
+HDL source files for all Synthesis and Simulation tools:
+    C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2/component/Actel/DirectCore/COREFFT/7.0.104/rtl/in_place/vlog/core/cmplx.v
+    C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2/component/Actel/DirectCore/COREFFT/7.0.104/rtl/in_place/vlog/core/fftSm.v
+    C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2/component/Actel/DirectCore/COREFFT/7.0.104/rtl/in_place/vlog/core/kit.v
+    C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2/component/Actel/DirectCore/COREFFT/7.0.104/rtl/in_place/vlog/core/mac_lib.v
+    C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2/component/work/adc_fft_if/COREFFT_0/rtl/in_place/vlog/core/COREFFT.v
+    C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2/component/work/adc_fft_if/COREFFT_0/rtl/in_place/vlog/core/COREFFT_TOP.v
+    C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2/component/work/adc_fft_if/COREFFT_0/rtl/in_place/vlog/core/adc_fft_if_COREFFT_0_uram_smGen.v
+    C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2/component/work/adc_fft_if/COREFFT_0/rtl/in_place/vlog/core/fftDp.v
+    C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2/component/work/adc_fft_if/COREFFT_0/twiddle32.v
+    C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2/component/work/adc_fft_if/COREFIFO_0/rtl/vlog/core/COREFIFO.v
+    C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2/component/work/adc_fft_if/COREFIFO_0/rtl/vlog/core/adc_fft_if_COREFIFO_0_LSRAM_top.v
+    C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2/component/work/adc_fft_if/COREFIFO_0/rtl/vlog/core/adc_fft_if_COREFIFO_0_ram_wrapper.v
+    C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2/component/work/adc_fft_if/COREFIFO_0/rtl/vlog/core/corefifo_async.v
+    C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2/component/work/adc_fft_if/COREFIFO_0/rtl/vlog/core/corefifo_doubleSync.v
+    C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2/component/work/adc_fft_if/COREFIFO_0/rtl/vlog/core/corefifo_fwft.v
+    C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2/component/work/adc_fft_if/COREFIFO_0/rtl/vlog/core/corefifo_grayToBinConv.v
+    C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2/component/work/adc_fft_if/COREFIFO_0/rtl/vlog/core/corefifo_sync.v
+    C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2/component/work/adc_fft_if/COREFIFO_0/rtl/vlog/core/corefifo_sync_scntr.v
+    C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2/component/work/adc_fft_if/adc_fft_if.v
+
+Stimulus files for all Simulation tools:
+    C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2/component/work/adc_fft_if/COREFIFO_0/mti/scripts/runall.do
+    C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2/component/work/adc_fft_if/COREFIFO_0/mti/scripts/wave.do
+
+    C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2/component/Actel/DirectCore/COREFFT/7.0.104/coreparameters.v
+    C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2/component/Actel/DirectCore/COREFFT/7.0.104/rtl/in_place/vlog/test/user/bhvKit.v
+    C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2/component/Actel/DirectCore/COREFIFO/2.6.108/rtl/vlog/test/user/MEM_WeqR.v
+    C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2/component/Actel/DirectCore/COREFIFO/2.6.108/rtl/vlog/test/user/MEM_WgtR.v
+    C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2/component/Actel/DirectCore/COREFIFO/2.6.108/rtl/vlog/test/user/MEM_WltR.v
+    C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2/component/Actel/DirectCore/COREFIFO/2.6.108/rtl/vlog/test/user/clock_driver.v
+    C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2/component/Actel/DirectCore/COREFIFO/2.6.108/rtl/vlog/test/user/fifo_driver.v
+    C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2/component/Actel/DirectCore/COREFIFO/2.6.108/rtl/vlog/test/user/fifo_monitor.v
+    C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2/component/Actel/DirectCore/COREFIFO/2.6.108/rtl/vlog/test/user/g4_dp_ext_mem.v
+    C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2/component/work/adc_fft_if/COREFFT_0/rtl/in_place/vlog/test/user/fft_tb_inc32.v
+    C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2/component/work/adc_fft_if/COREFFT_0/rtl/in_place/vlog/test/user/in_place_FFT_tb.v
+    C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2/component/work/adc_fft_if/COREFIFO_0/coreparameters.v
+    C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2/component/work/adc_fft_if/COREFIFO_0/rtl/vlog/test/user/testbench.v
+    C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2/component/work/adc_fft_if/COREFIFO_0/rtl/vlog/test/user/top_define.v
+

@@ -1,0 +1,177 @@
+# Microsemi I/O Physical Design Constraints file
+# Auto Generated User I/O Constraints file
+
+# Version: v11.7 SP3 11.7.3.7
+# Family: SmartFusion2 , Die: M2S050 , Package: 484 FBGA
+# Date generated: Thu Jan 26 16:50:46 2017 
+
+
+# 
+# User Locked I/O Bank Settings
+# 
+
+set_iobank Bank3      \
+    -vcci 1.20        \
+    -fixed yes        \
+    -updateiostd yes
+
+set_iobank Bank4  \
+    -vcci 1.80    \
+    -fixed yes
+
+
+# 
+# Unlocked I/O Bank Settings
+# The I/O Bank Settings can be locked by directly editing this file
+# or by making changes in the I/O Attribute Editor
+# 
+
+
+# 
+# User Locked I/O settings
+# 
+
+#P14.4
+set_io A2N_DATA_0      \
+    -pinname J6        \
+    -fixed yes         \
+    -DIRECTION OUTPUT
+
+
+#P14.6
+set_io A2N_DATA_1      \
+    -pinname H7        \
+    -fixed yes         \
+    -DIRECTION OUTPUT
+
+
+#P14.8
+set_io A2N_VALID_0     \
+    -pinname G7        \
+    -fixed yes         \
+    -DIRECTION OUTPUT
+
+
+#P14.10
+set_io A2N_VALID_1     \
+    -pinname F6        \
+    -fixed yes         \
+    -DIRECTION OUTPUT
+
+
+#P14.16
+set_io ACC_CLKIN       \
+    -pinname E4        \
+    -fixed yes         \
+    -DIRECTION OUTPUT
+
+
+#P14.18
+set_io ACC_IRQ        \
+    -pinname C4       \
+    -fixed yes        \
+    -DIRECTION INPUT
+
+
+#P14.20
+set_io CLK_OUT         \
+    -pinname C3        \
+    -fixed yes         \
+    -DIRECTION OUTPUT
+
+
+#P14.22
+set_io CLK_OUT2        \
+    -pinname B1        \
+    -fixed yes         \
+    -DIRECTION OUTPUT
+
+
+#P13.5
+set_io GPIO0           \
+    -pinname E22       \
+    -fixed yes         \
+    -DIRECTION OUTPUT
+
+
+#P13.6
+set_io GPIO1           \
+    -pinname F21       \
+    -fixed yes         \
+    -DIRECTION OUTPUT
+
+
+#P13.7
+set_io GPIO2           \
+    -pinname E21       \
+    -fixed yes         \
+    -DIRECTION OUTPUT
+
+
+#P13.8
+set_io GPIO3           \
+    -pinname F20       \
+    -fixed yes         \
+    -DIRECTION OUTPUT
+
+
+#P14.3
+set_io I2C_1_SCL       \
+    -pinname H6        \
+    -fixed yes         \
+    -DIRECTION OUTPUT
+
+
+#P14.5
+set_io I2C_1_SDA      \
+    -pinname K6       \
+    -fixed yes        \
+    -DIRECTION INOUT
+
+
+#P14.12
+set_io N2A_DATA_0     \
+    -pinname G6       \
+    -fixed yes        \
+    -DIRECTION INPUT
+
+
+#P14.14
+set_io N2A_DATA_1     \
+    -pinname F5       \
+    -fixed yes        \
+    -DIRECTION INPUT
+
+
+
+# 
+# Dedicated Peripheral I/O Settings
+# 
+
+set_io SPI_0_CLK_0    \
+    -iostd LVCMOS12   \
+    -DIRECTION INOUT
+
+
+set_io SPI_0_DI       \
+    -iostd LVCMOS12   \
+    -DIRECTION INPUT
+
+
+set_io SPI_0_DO        \
+    -iostd LVCMOS12    \
+    -DIRECTION OUTPUT
+
+
+set_io SPI_0_SS0_0    \
+    -iostd LVCMOS12   \
+    -DIRECTION INOUT
+
+
+
+# 
+# Unlocked I/O settings
+# The I/Os in this section are unplaced or placed but are not locked
+# the other listed attributes have been applied
+# 
+

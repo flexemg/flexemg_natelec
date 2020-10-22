@@ -1,0 +1,26 @@
+sourcing C:\Microsemi\Libero_SoC_v11.7\Synplify\lib\message_override.tcl
+
+Starting:    C:\Microsemi\Libero_SoC_v11.7\Synplify\bin64\mbin\synplify.exe
+Install:     C:\Microsemi\Libero_SoC_v11.7\Synplify
+Hostname:    BWRCDPT3600-01
+Date:        Tue Apr 04 17:55:47 2017
+Version:     J-2015.03M-SP1-2
+
+Arguments:   -product synplify_pro Mario_Libero_syn.tcl
+ProductType: synplify_pro
+
+License checkout: synplifypro_actel
+License: synplifypro_actel node-locked 
+Licensed Vendor: actel
+License Option: actel_oem
+
+
+
+auto_infer_blackbox is not supported in current product.
+TCL script complete: "Mario_Libero_syn.tcl"
+Note: Opening local project RTL file 'C:\Users\flb.EECS\Desktop\mario_laptop_sf2_newarch\Mario_SF2_devbrd\synthesis\Mario_Libero.srs'
+Opening object source file c:\users\flb.eecs\desktop\mario_laptop_sf2_newarch\mario_sf2_devbrd\hdl\nm_sim.v
+Note: Opening local project RTL file 'C:\Users\flb.EECS\Desktop\mario_laptop_sf2_newarch\Mario_SF2_devbrd\synthesis\Mario_Libero.srs'
+FSM Viewer - register encodings from synthesized design are available
+exit status=0
+License checkin: synplifypro_actel

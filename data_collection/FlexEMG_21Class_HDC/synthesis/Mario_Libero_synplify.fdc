@@ -1,0 +1,18 @@
+
+#1001 : create_clock -name xtal_20MHz -period 50 [get_pins OSC_0.XTLOSC_CCC]
+# line 1 in c:/users/bwrc/desktop/hyperflexemg_190405_21class/constraint/andy_clock_constraint.sdc
+
+create_clock -name {xtal_20MHz} -period {50.000} [get_nets {OSC_0.OSC_0_XTLOSC_CCC_OUT_XTLOSC_CCC}]
+
+#1002 : create_generated_clock -name clk_20_48 -divide_by 125 -multiply_by 128 -source [get_pins OSC_0.XTLOSC_CCC] [get_pins FCCC_0.GL0]
+# line 3 in c:/users/bwrc/desktop/hyperflexemg_190405_21class/constraint/andy_clock_constraint.sdc
+
+create_generated_clock -name {clk_20_48} -divide_by {125} -multiply_by {128} -source [get_nets {OSC_0.OSC_0_XTLOSC_CCC_OUT_XTLOSC_CCC}] [get_nets {FCCC_0.FCCC_0_GL0_0}]
+
+#1003 : create_generated_clock -name clk_20_48_hdc -divide_by 125 -multiply_by 128 -source [get_pins OSC_0.XTLOSC_CCC] [get_pins FCCC_0.GL1]
+# line 5 in c:/users/bwrc/desktop/hyperflexemg_190405_21class/constraint/andy_clock_constraint.sdc
+
+create_generated_clock -name {clk_20_48_hdc} -divide_by {125} -multiply_by {128} -source [get_nets {OSC_0.OSC_0_XTLOSC_CCC_OUT_XTLOSC_CCC}] [get_nets {FCCC_0.FCCC_0_GL1_0}]
+define_attribute {i:Mario_Libero_MSS_0.MMUART_1_RXD_PAD} {syn_noprune} 1
+define_attribute {i:Mario_Libero_MSS_0.MMUART_1_TXD_PAD} {syn_noprune} 1
+define_attribute {i:OSC_0} {syn_noprune} 1

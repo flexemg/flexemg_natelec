@@ -1,0 +1,33 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+C_SRCS += \
+../isr.c \
+../main_SPI_noam.c \
+../mpu6050.c \
+../utils.c 
+
+OBJS += \
+./isr.o \
+./main_SPI_noam.o \
+./mpu6050.o \
+./utils.o 
+
+C_DEPS += \
+./isr.d \
+./main_SPI_noam.d \
+./mpu6050.d \
+./utils.d 
+
+
+# Each subdirectory must supply rules for building sources it contributes
+%.o: ../%.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: GNU C Compiler'
+	arm-none-eabi-gcc -mthumb -mcpu=cortex-m3 -IC:\Users\flb.EECS\Desktop\mario_laptop_sf2_newarch\Mario_SF2_am\SoftConsole\Mario_Libero_MSS_CM3\Mario_Libero_MSS_CM3_hw_platform -IC:\Users\flb.EECS\Desktop\mario_laptop_sf2_newarch\Mario_SF2_am\SoftConsole\Mario_Libero_MSS_CM3\Mario_Libero_MSS_CM3_hw_platform\CMSIS -IC:\Users\flb.EECS\Desktop\mario_laptop_sf2_newarch\Mario_SF2_am\SoftConsole\Mario_Libero_MSS_CM3\Mario_Libero_MSS_CM3_hw_platform\CMSIS\startup_gcc -IC:\Users\flb.EECS\Desktop\mario_laptop_sf2_newarch\Mario_SF2_am\SoftConsole\Mario_Libero_MSS_CM3\Mario_Libero_MSS_CM3_hw_platform\drivers -IC:\Users\flb.EECS\Desktop\mario_laptop_sf2_newarch\Mario_SF2_am\SoftConsole\Mario_Libero_MSS_CM3\Mario_Libero_MSS_CM3_hw_platform\drivers_config -IC:\Users\flb.EECS\Desktop\mario_laptop_sf2_newarch\Mario_SF2_am\SoftConsole\Mario_Libero_MSS_CM3\Mario_Libero_MSS_CM3_hw_platform\drivers_config\sys_config -IC:\Users\flb.EECS\Desktop\mario_laptop_sf2_newarch\Mario_SF2_am\SoftConsole\Mario_Libero_MSS_CM3\Mario_Libero_MSS_CM3_hw_platform\drivers\mss_gpio -IC:\Users\flb.EECS\Desktop\mario_laptop_sf2_newarch\Mario_SF2_am\SoftConsole\Mario_Libero_MSS_CM3\Mario_Libero_MSS_CM3_hw_platform\drivers\mss_hpdma -IC:\Users\flb.EECS\Desktop\mario_laptop_sf2_newarch\Mario_SF2_am\SoftConsole\Mario_Libero_MSS_CM3\Mario_Libero_MSS_CM3_hw_platform\drivers\mss_nvm -IC:\Users\flb.EECS\Desktop\mario_laptop_sf2_newarch\Mario_SF2_am\SoftConsole\Mario_Libero_MSS_CM3\Mario_Libero_MSS_CM3_hw_platform\drivers\mss_pdma -IC:\Users\flb.EECS\Desktop\mario_laptop_sf2_newarch\Mario_SF2_am\SoftConsole\Mario_Libero_MSS_CM3\Mario_Libero_MSS_CM3_hw_platform\drivers\mss_spi -IC:\Users\flb.EECS\Desktop\mario_laptop_sf2_newarch\Mario_SF2_am\SoftConsole\Mario_Libero_MSS_CM3\Mario_Libero_MSS_CM3_hw_platform\drivers\mss_sys_services -IC:\Users\flb.EECS\Desktop\mario_laptop_sf2_newarch\Mario_SF2_am\SoftConsole\Mario_Libero_MSS_CM3\Mario_Libero_MSS_CM3_hw_platform\drivers\mss_timer -IC:\Users\flb.EECS\Desktop\mario_laptop_sf2_newarch\Mario_SF2_am\SoftConsole\Mario_Libero_MSS_CM3\Mario_Libero_MSS_CM3_hw_platform\drivers\mss_uart -I"C:\Users\flb.EECS\Desktop\mario_laptop_sf2_newarch\Mario_SF2_am\SoftConsole\Mario_Libero_MSS_CM3\Mario_Libero_MSS_CM3_hw_platform\drivers\CoreGPIO" -IC:\Users\flb.EECS\Desktop\mario_laptop_sf2_newarch\Mario_SF2_am\SoftConsole\Mario_Libero_MSS_CM3\Mario_Libero_MSS_CM3_hw_platform\hal -IC:\Users\flb.EECS\Desktop\mario_laptop_sf2_newarch\Mario_SF2_am\SoftConsole\Mario_Libero_MSS_CM3\Mario_Libero_MSS_CM3_hw_platform\hal\CortexM3 -IC:\Users\flb.EECS\Desktop\mario_laptop_sf2_newarch\Mario_SF2_am\SoftConsole\Mario_Libero_MSS_CM3\Mario_Libero_MSS_CM3_hw_platform\hal\CortexM3\GNU -O0 -ffunction-sections -fdata-sections -g3 -Wall -c -fmessage-length=0 -v -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o"$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+

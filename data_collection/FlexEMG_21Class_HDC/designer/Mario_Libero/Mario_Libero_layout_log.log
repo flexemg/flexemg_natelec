@@ -1,0 +1,65 @@
+***** Place and Route Configurations *****
+Timing-driven            : ON
+Power-driven             : OFF
+High-effort              : ON
+Repair min-delay         : ON
+Incremental              : OFF
+Inter-clock optimization : OFF
+TDPR scenario            : Primary
+
+
+Running the I/O Bank and Globals Assigner.
+Info:  I/O Bank and Globals Assigner identified 14 fixed I/O macros, 1 unfixed I/O macros
+Info:  I/O Bank and Globals Assigner identified bank 'Bank1' as being fixed at VCCI:1.80V VCCR:n/a
+Info:  I/O Bank and Globals Assigner identified bank 'Bank3' as being fixed at VCCI:1.20V VCCR:n/a
+Info:  I/O Bank and Globals Assigner identified bank 'Bank4' as being fixed at VCCI:1.80V VCCR:n/a
+Info:   I/O Bank and Globals Assigner detected (3) out of (10) I/O Bank(s) with locked I/O technologies.
+
+I/O Bank and Globals Assigner completed successfully.
+Total time spent in I/O Bank and Globals Assigner: 5 seconds
+
+Placer V4.0 - 11.8.3 
+Design: Mario_Libero                    Started: Fri Apr 05 23:03:14 2019
+
+Initializing High-Effort Timing-Driven Placement ...
+Placing design...
+Info:   This design was very difficult to place, and high-effort techniques were required to make it fit.  This may lead to increased layout runtime and diminished timing performance.
+End of placement.
+Pre-Placement Runtime        : 439 seconds
+Placement Runtime            : 1190 seconds
+
+Placer completed successfully.
+
+Design: Mario_Libero                    
+Finished: Fri Apr 05 23:32:06 2019
+Total CPU Time:     00:28:39            Total Elapsed Time: 00:28:52
+Total Memory Usage: 2917.8 Mbytes
+                        o - o - o - o - o - o
+
+
+Timing-driven Router 
+Design: C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\designer\Mario_Libero\Mario_LiberoStarted: Fri Apr 05 23:33:38 2019
+
+Final stats: search run time 359.935967
+
+Timing-driven Router completed successfully.
+
+Design: C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class\designer\Mario_Libero\Mario_Libero
+Finished: Fri Apr 05 23:43:18 2019
+Total CPU Time:     00:09:02            Total Elapsed Time: 00:09:40
+Total Memory Usage: 4698.4 Mbytes
+                        o - o - o - o - o - o
+
+Info: Iteration 1:
+  Total violating paths eligible for improvement: 0
+  Worst minimum delay slack: 
+Resource Usage
++---------------+-------+-------+------------+
+| Type          | Used  | Total | Percentage |
++---------------+-------+-------+------------+
+| 4LUT          | 46305 | 56520 | 81.93      |
+| DFF           | 48342 | 56520 | 85.53      |
+| I/O Register  | 0     | 594   | 0.00       |
+| Logic Element | 52822 | 56520 | 93.46      |
++---------------+-------+-------+------------+
+

@@ -1,0 +1,28 @@
+##
+## RESET
+##
+
+##
+## Reset AM
+##
+
+# Set link reset type to AM (3) and assert start
+write w cmam_if_0 status 0x000000103
+
+# wait 410us for training sequence to end
+set i 0
+loop i 0 82 1
+    waitns 5000
+endloop
+
+##
+## Reset NM0 (NM1 is identical)
+##
+
+# Enable reset for NM0
+write w cmam_if_0 rst 0x00000100
+# Set link reset type to NM (2) and assert start
+write w cmam_if_0 status 0x00000102
+
+waitns 2000
+

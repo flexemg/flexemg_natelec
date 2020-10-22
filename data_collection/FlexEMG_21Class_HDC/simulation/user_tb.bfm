@@ -1,0 +1,133 @@
+
+memmap timer  0x10000000
+
+constant R_timerload          0x00
+constant R_timervalue         0x04
+constant R_timercontrol       0x08
+constant R_timerprescale      0x0C
+constant R_timerintclr        0x10
+constant R_timerris           0x14
+constant R_timermis           0x18
+
+procedure main
+    print "CoreTimer User testbench"
+    debug 0
+    setup 7 1  # execute $stop at end
+    timeout 100000
+    
+    print "********************************************************************"
+    print "Test1: Read Initial Register values"
+    print "********************************************************************"
+    call read_reg
+    
+    print "********************************************************************"
+    print "Test2: One-Shot Mode"
+    print "********************************************************************"
+    call one_shot
+    
+    print "********************************************************************"
+    print "Test2: Continuous Mode * Interrupt Period set to 800 nanoseconds"
+    print "********************************************************************"
+    call continuous_mode
+return
+
+################################################################################
+## 
+################################################################################
+procedure read_reg
+    int i x
+    
+    print "CoreTimer registers"
+    loop i 0x00 0x18 4
+        readstore w timer i x
+        print "Read from %08x: %08x" i x
+    endloop
+return
+################################################################################
+## 
+################################################################################
+procedure one_shot
+    print "Load timer with 0x04.  This generates an interrupt after 5 prescaler cycles."
+    print "No prescaler set. Default PCLK/2 = 40ns"
+    print "Timer generates a pulse after 200 nanoseconds"
+    write w timer R_timerload 0x4
+    wait 5
+    
+    print "Enable interrupt, Configure to one-shot mode and start the counter"
+    write w timer R_timercontrol 0x7
+    
+    call clear_int
+        
+    print "Reload one-shot timer with 0x50; 40ns * 81 = 3.6 microsecond delay"
+    print "Starts counting since enable bit is already set"
+    write w timer R_timerload 0x50
+    
+    call clear_int
+    
+    print "Disable the timer"
+    write w timer R_timercontrol 0x6
+    wait 300
+return
+
+################################################################################
+## 
+################################################################################
+procedure continuous_mode
+    
+    print "Set the prescaler to divide by 8"
+    write w timer R_timerprescale 0x2
+    
+    print "Set the timer to continuous mode and enable it"
+    write w timer R_timercontrol 0x3
+        print "Load 4 as decrement value. Generates an interrupt every 5 prescaler cycles"
+        print "5 * 8 * 20ns = 800ns period between interrupts" 
+    write w timer R_timerload 0x4
+    call service_int
+    print "Disable the timer"
+    write w timer R_timercontrol 0x2
+    wait 100
+return
+
+################################################################################
+## 
+################################################################################
+procedure clear_int
+    print "Wait for interrupt assertion"
+    Iowaitbit 0 1
+    print "Clear the interrupt by writing to the Interrupt clear register "
+    write w timer R_timerintclr 0x1
+    wait 2
+    IOcheck 0x0
+    print "Interrupt cleared"
+return
+
+################################################################################
+## 
+################################################################################
+procedure service_int
+    int interrupt_cnt
+    
+    set interrupt_cnt 12
+    while interrupt_cnt
+        ioclrbit 0
+        call clear_int ## This function only returns when an interrupt has been received and cleared
+        iosetbit 0
+        set interrupt_cnt interrupt_cnt - 0x1
+        print "Interrupt Count %08x" interrupt_cnt
+        if interrupt_cnt == 7
+            print "Disable the timer for 100 PCLK cycles (2 microseconds)" 
+            write w timer R_timercontrol 0x2
+            wait 100
+            print "Re-enable the timer"
+            write w timer R_timercontrol 0x3
+        else
+            if interrupt_cnt == 5
+                print "Disable the TIMINT interrupt for 100 PCLK cycles (2 microseconds)"
+                write w timer R_timercontrol 0x1
+                wait 100
+                print "Re-enable the TIMINT interrupt"
+                write w timer R_timercontrol 0x3
+            endif
+        endif
+    endwhile
+return

@@ -1,0 +1,911 @@
+// begin working on channel selection and accelerometer integration
+
+#include <stdio.h>
+#include <stdbool.h>
+#include <m2sxxx.h>
+#include "mss_timer.h"
+#include <mss_pdma.h>
+#include "mss_uart.h"
+#include "mss_spi.h"
+#include "mss_gpio.h"
+#include "core_gpio.h"
+#include "core_spi.h"
+#include "mpu6050.h"
+#include "nm.h"
+
+#define SF2_CLK_MHZ 20
+
+// System mode mask bits
+#define PDMA_EN 		 0x01	// enable PDMA channels
+#define ACC_IRQ_EN 		 0x02	// enable accelerometer IRQ (normal or emulated mode)
+#define ARTIFACT_EN		 0x04	// enable artifact cancellation
+#define ACC_EMULATE_EN 	 0x08	// enable accelerometer emulator in HDL (sim/emulation only)
+#define NM0_EMULATE_EN	 0x10	// enable NM0 emulator in HDL (sim/emulation only)
+#define NM1_EMULATE_EN	 0x20	// enable NM1 emulator in HDL (sim/emulation only)
+#define PDMA_SIMULATE_EN 0x10	// enable PDMA ready - PDMA fifo pop loopback (simulation only)
+
+// Time to wait after PDMA complete ISR before starting GUI poll
+#define GUI_POLL_DELAY (SF2_CLK_MHZ * 100) // ~100us with a 20MHz source
+
+// Number of ADC frames between GUI polls
+#define GUI_POLL_PERIOD 3
+
+// CoreGPIO Memory Map: 0x30010000 to 0x3001FFFF
+#define CoreGPIO_REG_BASE 0x30010000
+
+// HDL TxRx addresses
+int *rst 	  = (int*)(REG_BASE+0x0004);	// Rx is readback
+int *n0d1 	  = (int*)(REG_BASE+0x0010);	// NM0 operation (Rx is readback)
+int *n0d2 	  = (int*)(REG_BASE+0x0014);	// NM0 register data and address or command (Rx readback)
+int *n1d1 	  = (int*)(REG_BASE+0x0020);	// NM1 operation (Rx is readback)
+int *n1d2 	  = (int*)(REG_BASE+0x0024);	// NM1 register data and address or command (Rx readback)
+
+// HDL Tx only addresses
+int *cmdaddr  = (int*)(REG_BASE+0x0000);
+int *dbgsel   = (int*)(REG_BASE+0x0008);
+int *mode     = (int*)(REG_BASE+0x000c);
+int *n0vechi  = (int*)(REG_BASE+0x0018);
+int *n0veclo  = (int*)(REG_BASE+0x001c);
+int *n1vechi  = (int*)(REG_BASE+0x0028);
+int *n1veclo  = (int*)(REG_BASE+0x002c);
+
+// HDL Rx only addresses
+int *status   = (int*)(REG_BASE+0x0000);
+int *pdma     = (int*)(REG_BASE+0x0008);	// debug only
+int *n0ack 	  = (int*)(REG_BASE+0x0018);	// N0 ACK data
+int *n0adc 	  = (int*)(REG_BASE+0x001c);	// N0 ADC data
+int *n1ack 	  = (int*)(REG_BASE+0x0028);	// N1 ACK data
+int *n1adc 	  = (int*)(REG_BASE+0x002c);	// N1 ADC data
+
+// Accelerometer data addresses (debug only)
+int *acc_X_addr	 = (int*)(REG_BASE+0x0300);
+int *acc_Y_addr	 = (int*)(REG_BASE+0x0304);
+int *acc_Z_addr	 = (int*)(REG_BASE+0x0308);
+
+// Stim injection (debug only)
+int *stim_cnt    = (int*)(REG_BASE+0x0100);
+//
+// Local state
+//
+
+// NM channel select masks
+// Channels are represented by MSB to LSB bits e.g. NM0 channel 0 would be 0x8000 in the leftmost 16 bits for NM0.
+uint32_t nm_rec_enable_vector[NUM_NMS][4] = {
+    {0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF},		// NM0 channels {0-15}, {16-31}, {32-47}, {48-63}
+//    {0xdb00, 0x0000, 0x0000, 0x0000},	// Use this for FFT-in-C hack
+    {0xFFFF, 0xFFFF, 0x0000, 0x0000}		// NM1 channels {0-15}, {16-31}, {32-47}, {48-63} (32-63 not connected on PCB)
+//    {0x0000, 0x0000, 0x0000, 0x0000}
+};
+
+// Ring buffer for command bytes received from GUI
+#define RINGBUF_SIZE 64
+static volatile char ringbuf[RINGBUF_SIZE];
+static volatile unsigned int rbwrptr = 0;
+static unsigned int rbrdptr = 0;
+#define BYTES_IN_RINGBUF() ((rbwrptr - rbrdptr) % RINGBUF_SIZE)
+
+// Storage buffers
+static uint8_t spi_rx_buf[6];		// For commands received from the GUI
+static uint8_t gui_poll_buf = 0; 	// Null header byte indicates no data
+static uint16_t nm0_ack_buf[5];		// ACK data from NM0
+static uint16_t nm1_ack_buf[5];		// ACK data from NM1
+
+// Flow control flags
+static bool nm0_ack_rdy = false;
+static bool nm1_ack_rdy = false;
+static bool poll_spi_flag = false;
+static bool rec_enable_write = false;
+
+// GUI command state
+static bool stream_en = 0; 		// for streaming mode
+static bool stream_on = 0;
+static bool stream_off = 0;
+
+static bool artifact_en = 0; 	// whether we should do artifact cancellation or not
+static bool artifact_on = 0;
+static bool artifact_off = 0;
+
+static bool blank_en = 0; 		// whether we should do artifact blanking or not
+static bool blank_on = 0;
+static bool blank_off = 0;
+
+static int stim_req = 0;
+static int stim_count = 0;
+static int stim_nm0 = 0; 		// stim on NM0
+static int stim_nm1 = 0; 		// stim on NM1
+
+static int data_ack_req = 1;
+
+static uint32_t stim_rep = 0;
+
+// Delay count for # of skipped ADC frames per GUI poll
+int poll_delay_ticks = GUI_POLL_PERIOD;
+
+//Structures for HDL library core functions
+gpio_instance_t gpio_core_handle;
+spi_instance_t spi_core_handle;
+
+// Function prototypes
+int sys_init(void);
+void AMreset(void);
+void PDMA_isr(void);
+void SPI_write_read(uint8_t *buf, int len);
+
+// Hardware debug mux channel selections
+// (see SF2 Dev Board debug channels.xlsx)
+#define DEBUG_AM       		0
+#define DEBUG_CM_DEMUX     	1
+#define DEBUG_CM_DEMUX_RST 	2
+#define DEBUG_NRX      		3
+#define DEBUG_NTX      		4
+#define DEBUG_ACK_DP   		5
+#define DEBUG_ADC_DP   		6
+#define DEBUG_ADC_VEC		7
+#define DEBUG_ADC_ART		8
+#define DEBUG_PDMA     		9
+#define DEBUG_NMIC_IF  		10
+#define DEBUG_ACC  			11
+#define DEBUG_CMAM_WRAP		12
+#define DEBUG_TOP			13
+#define DEBUG_NM0_ADC  		14
+#define DEBUG_NM0_CNR  		15
+
+int main()
+{
+	// Assert rstb the HDL blocks
+	SYSREG->SOFT_RST_CR |= SYSREG_FPGA_SOFTRESET_MASK;
+	SYSREG->SOFT_RST_CR &= ~SYSREG_FPGA_SOFTRESET_MASK;
+
+	// Set debug channel for HDL debug_mux.v
+    *dbgsel = DEBUG_TOP;
+
+	sys_init();
+
+	// Enable or disable NM emulation, accelerometer emulation, PDMA emulation, accelerometer IRQ or PDMA block
+	*mode = NM0_EMULATE_EN | NM1_EMULATE_EN | ACC_IRQ_EN | PDMA_EN | ARTIFACT_EN;
+
+	// Local declarations
+    bool stat_flag = false;
+    int stat = 0, ret, tmp, crcok;
+    uint16_t crcflag;
+    char buf[5];
+
+    while(1)
+	{
+		// Debug functions
+//		sendNMcmd(0, 0x489);
+//		writeNMreg(0, 0x0123, 0x4567);
+//		AMreset();
+//		NMreset(0);
+//		NMoff(0);
+//		NMon(0);
+
+    	int j = 100000;
+    	while (j > 0) j--;
+
+    	*stim_cnt = 4;
+
+    	// Serialize SPI access. Timing guarantees that this will succeed.
+    	// Preset poll delay when forwarding ACKs to avoid an empty GUI poll.
+    	if (poll_spi_flag) {
+    		poll_spi_flag = false;
+
+    		if (!poll_delay_ticks--)
+    		{
+        	 	SPI_write_read(&gui_poll_buf, 1);
+    			poll_delay_ticks = GUI_POLL_PERIOD;
+    		}
+
+     	 	if (nm0_ack_rdy)
+    	 	{
+    	 		SPI_write_read(((uint8_t *) nm0_ack_buf)+1, 5);
+    			poll_delay_ticks = GUI_POLL_PERIOD;
+    	 	}
+    	 	if (nm1_ack_rdy)
+    	 	{
+    	 		SPI_write_read(((uint8_t *) nm1_ack_buf)+1, 5);
+    			poll_delay_ticks = GUI_POLL_PERIOD;
+    	 	}
+    	}
+
+    	// Check for incoming GUI commands
+    	if (BYTES_IN_RINGBUF() >= 5)
+		{
+    		int i;
+			for(i = 0; i < 5; i++)
+			{
+				buf[i] = ringbuf[rbrdptr];
+				rbrdptr = (rbrdptr+1) % RINGBUF_SIZE;
+			}
+			if (buf[0] == 0xff)
+			{
+				// The command is a local state change
+
+            	stim_rep 	 = (buf[1] << 8 | buf[2]) - 1;
+                data_ack_req =  buf[3] 		 & 0x3;
+                stim_nm0 	 = (buf[3] >> 3) & 0x01;
+                stim_nm1 	 = (buf[3] >> 4) & 0x01;
+                stim_req	 = (buf[3] >> 5) & 0x1;
+                artifact_off = (buf[3] >> 6) & 0x1;
+                artifact_on  = (buf[3] >> 7) & 0x1;
+                stream_off 	 = (buf[4] >> 4) & 0x1;
+                stream_on 	 = (buf[4] >> 5) & 0x1;
+                blank_off 	 = (buf[4] >> 6) & 0x1;
+                blank_on 	 = (buf[4] >> 7) & 0x1;
+
+                if (stream_on)
+                {
+                	MSS_GPIO_enable_irq(MSS_GPIO_5);	// enable PDMA interrupt
+                }
+                if (stream_off)
+                {
+                	MSS_GPIO_disable_irq(MSS_GPIO_5);	// disable PDMA interrupt
+                    stim_rep = 0;
+                }
+
+                if (artifact_on)
+                {
+                    artifact_en = 1;
+                }
+                if (artifact_off)
+                {
+                    artifact_en = 0;
+                }
+
+                if (blank_on)
+                {
+                	blank_en = 1;
+                }
+                if (blank_off)
+                {
+                	blank_en = 0;
+                }
+
+                if (stim_req)
+                {
+                    if (stim_nm0)
+                    {
+                        NMstim(0x09 | (1 << 10), 0);
+                        if (stim_rep > 0)
+                        {
+                            *n0d2 = 0x01 << 16;
+                            *n0d1 = OP_REG_READ;
+                            stat = *status;
+                            stat_flag = true;
+                            *cmdaddr = NM0_TX_START_BIT;
+                        }
+                    }
+                    else if (stim_nm1)
+                    {
+                        NMstim(0x09 | (1 << 10), 1);
+                        if (stim_rep > 0)
+                        {
+                            *n1d2 = 0x01 << 16;
+                            *n1d1 = OP_REG_READ;
+                            stat = *status;
+                            stat_flag = true;
+                            *cmdaddr = NM1_TX_START_BIT;
+                        }
+                    }
+                }
+			}
+			else if ((unsigned char) buf[0] <= 0x4f)
+			{
+				// The command is for an NM
+
+				int reg_val, reg_addr, reg_data;
+
+				reg_val = buf[4] + ((uint32_t)buf[3] << 8) + ((uint32_t)buf[2] << 16) + ((uint32_t)buf[1] << 24);
+				reg_addr = (reg_val>>16) & 0xFFFF;
+				reg_data = reg_val & 0xFFFF;
+				*(int*)(REG_BASE+buf[0]) = reg_val;
+				while((*status) & (NM0_TX_BUSY_BIT | NM1_TX_BUSY_BIT));
+
+				if (rec_enable_write)
+				{
+					rec_enable_write = false;
+
+					if (buf[0] == 0x24)
+					{
+						// n1d2, need to check for rec_enable
+						updateVectors(1, reg_addr, reg_data);
+					}
+					else if (buf[0] == 0x14)
+					{
+						// n0d2, need to check for rec_enable
+						updateVectors(0, reg_addr, reg_data);
+					}
+				}
+
+				if (((buf[0] == 0x10) || (buf[0] == 0x20)) && (reg_data == 1))
+				{
+					rec_enable_write = true;
+				}
+			}
+		}
+
+		if (!stat_flag)
+		{
+			stat = *status;
+		}
+		stat_flag = false;
+
+        if (stim_rep > 0) // if we still have a stim train to start
+		{
+        	if (stat & NM0_ACK_BIT) // stim is happening on NM0
+			{
+        		int i;
+        		for(i = 0; i < 4; i++)
+				{
+					tmp = *n0ack;
+					if (i == 1)
+						crcok = (tmp == 0x01);
+					if (i == 2)
+						ret = tmp;
+					if (i == 3)
+						crcok &= (tmp & 1);
+				}
+//        		if (!(ret & (1 << 15)))
+        		if (crcok & !(ret & (1 << 15))) // previous stim ended, so start a new train
+        		{
+        			stim_rep--;
+        			NMstim(0x09 | (1 << 10), 0);
+        			if (stim_rep > 0)
+        			{
+        				*n0d2 = 0x01 << 16;
+						*n0d1 = OP_REG_READ;
+						stat = *status;
+						stat_flag = true;
+						*cmdaddr = NM0_TX_START_BIT;
+        			}
+        		}
+        		else
+        		{
+        			*n0d2 = 0x01 << 16;
+					*n0d1 = OP_REG_READ;
+					stat = *status;
+					stat_flag = true;
+					*cmdaddr = NM0_TX_START_BIT;
+        		}
+			}
+            else if (stat & NM1_ACK_BIT) // stim is happening on NM1
+            {
+            	int i;
+                for(i = 0; i < 4; i++)
+                {
+                    tmp = *n1ack;
+                    if (i == 1)
+                        crcok = (tmp == 0x01);
+                    if (i == 2)
+                        ret = tmp;
+                    if (i == 3)
+                        crcok &= (tmp & 1);
+                }
+                //        		if (!(ret & (1 << 15)))
+                if (crcok & !(ret & (1 << 15))) // previous stim ended, so start a new train
+                {
+                    stim_rep--;
+                    NMstim(0x09 | (1 << 10), 1);
+                    if (stim_rep > 0)
+                    {
+                        *n1d2 = 0x01 << 16;
+                        *n1d1 = OP_REG_READ;
+                        stat = *status;
+                        stat_flag = true;
+                        *cmdaddr = NM1_TX_START_BIT;
+                    }
+                }
+                else
+                {
+                    *n1d2 = 0x01 << 16;
+                    *n1d1 = OP_REG_READ;
+                    stat = *status;
+                    stat_flag = true;
+                    *cmdaddr = NM1_TX_START_BIT;
+                }
+            }
+        }
+        else // not doing stim, so continue with register operations
+        {
+            if (stat & NM0_ACK_BIT)
+			{
+				int i;
+				for(i = 1; i < 4; i++) // i = 1 doesn't overwrite the header
+				{
+                    if (i == 3)
+						crcflag = *n0ack;
+					else
+						nm0_ack_buf[i] = *n0ack;
+				}
+				if (crcflag && (data_ack_req & 0x01))
+				{
+					nm0_ack_rdy = true;
+					data_ack_req &= ~0x01;
+				}
+			}
+
+			if (stat & NM1_ACK_BIT)
+			{
+				int i;
+				for(i = 1; i < 4; i++) // i = 1 doesn't overwrite the header
+				{
+					if (i == 3)
+						crcflag = *n1ack;
+					else
+						nm1_ack_buf[i] = *n1ack;
+				}
+				if (crcflag && (data_ack_req & 0x02))
+				{
+					nm1_ack_rdy = true;
+					data_ack_req &= ~0x02;
+				}
+			}
+        }
+	}
+
+	return 0;
+}
+
+//
+// Main initialization function
+//
+int sys_init(void)
+{
+	// Initialize and configure MSS GPIO
+    // This is the MSS internal GPIO block as opposed to a library Core such as CoreGPIO (see below)
+    // Used for direct-from-M3 debug output and HDL-to-M3 interrupts
+	MSS_GPIO_init();
+
+	MSS_GPIO_config(MSS_GPIO_0, MSS_GPIO_OUTPUT_MODE);
+	MSS_GPIO_config(MSS_GPIO_1, MSS_GPIO_OUTPUT_MODE);
+	MSS_GPIO_config(MSS_GPIO_2, MSS_GPIO_OUTPUT_MODE);
+	MSS_GPIO_config(MSS_GPIO_3, MSS_GPIO_OUTPUT_MODE);
+	MSS_GPIO_config(MSS_GPIO_4, MSS_GPIO_OUTPUT_MODE);
+	MSS_GPIO_config(MSS_GPIO_5, MSS_GPIO_INPUT_MODE | MSS_GPIO_IRQ_EDGE_POSITIVE);	// PDMA interrupt
+	MSS_GPIO_config(MSS_GPIO_6, MSS_GPIO_INPUT_MODE | MSS_GPIO_IRQ_EDGE_POSITIVE);	// Accelerometer FIFO overflow interrupt
+
+	MSS_GPIO_set_output(MSS_GPIO_0, 0);
+	MSS_GPIO_set_output(MSS_GPIO_1, 1);
+	MSS_GPIO_set_output(MSS_GPIO_2, 0);
+	MSS_GPIO_set_output(MSS_GPIO_3, 1);
+	MSS_GPIO_set_output(MSS_GPIO_4, 1);
+
+	// Initialize and configure CoreGPIO
+    // This is a soft core from the HDL catalog as opposed to the MSS internal GPIO block (see above)
+	// Used for HDL-to-M3 interrupt management
+	GPIO_init(&gpio_core_handle, CoreGPIO_REG_BASE, GPIO_APB_32_BITS_BUS);
+	GPIO_config(&gpio_core_handle, GPIO_0, GPIO_IRQ_EDGE_POSITIVE);	// PDMA ready
+	GPIO_config(&gpio_core_handle, GPIO_1, GPIO_IRQ_EDGE_POSITIVE);	// accelerometer FIFO overflow
+
+	// Initialize SPI_1
+	MSS_SPI_init(&g_mss_spi1);
+	MSS_SPI_configure_master_mode(&g_mss_spi1,
+			MSS_SPI_SLAVE_0,
+			MSS_SPI_MODE0,
+//			12u, // changed to 12 so that we get 2.5MHz from the new 30MHz apb clock
+//			8u, // 20MHz/8 = 2.5MHz clock (max nordic is 8MHz)
+//			6u,
+            4u, // this seems to work best with PDMA - FLB
+			MSS_SPI_BLOCK_TRANSFER_FRAME_SIZE	 //needed for transmitting in blocks
+	);
+
+	// Initialize timer for SPI synchronization
+	MSS_TIM1_init(MSS_TIMER_ONE_SHOT_MODE);
+	MSS_TIM1_enable_irq();
+
+	// Initialize PDMA channels
+	PDMA_init();
+	PDMA_configure(PDMA_CHANNEL_0, PDMA_TO_SPI_1, PDMA_HIGH_PRIORITY | PDMA_BYTE_TRANSFER | PDMA_NO_INC, 16u);
+	PDMA_set_irq_handler(PDMA_CHANNEL_0, PDMA_isr);
+
+	// Turn on rec_en for both NMs
+	writeNMreg(0, NM_REC_CONFIG_REG, 0x3884);
+	writeNMreg(1, NM_REC_CONFIG_REG, 0x3884);
+
+	// Change LV charge pumps from 3:1 to 2:1 for both NMs
+	writeNMreg(0, NM_PWR_CONFIG_REG, 0x0001);
+	writeNMreg(1, NM_PWR_CONFIG_REG, 0x0001); //change NM1 LV charge pump from 3:1 to 2:1
+
+	// ?
+	writeNMreg(0, NM_SYS_CONFIG_REG, 0x4000);
+	writeNMreg(1, NM_SYS_CONFIG_REG, 0x4000);
+
+	// Initialize ADC channel enable vectors in HDL ADC data path
+	init_ADC_vectors();
+
+	// Initialize accelerometer and test
+	// Sometimes initialization fails if code restarted without power cycle
+    int retval = MPU6050_init();
+    if (retval < 0) {
+    	while(1);
+    }
+
+    // This value is fixed.
+	nm0_ack_buf[0] = 0xFF00; // header byte
+	nm1_ack_buf[0] = 0xFF00; // header byte
+
+	// The CoreGPIO block intercepts the PDMA ready signal from the CMAM block and generates an interrupt on MSS GPIO[5].
+	// CoreGPIO and MSS GPIOs are completely independent.
+	MSS_GPIO_enable_irq(MSS_GPIO_5);
+	GPIO_enable_irq(&gpio_core_handle, GPIO_0);
+
+	// If the accelerometer FIFO gets out of sync it may overflow.
+	// Take action to either reset the FIFO (doesn't always work) or read all data.
+//	MSS_GPIO_enable_irq(MSS_GPIO_6);
+
+	return 0;
+}
+//
+// Main SPI-PDMA ISR
+// The PDMA block informs the CoreGPIO block that data is ready for transfer.
+// The CoreGPIO block interrupts the M3 via MSS GPIO5.
+//
+ void GPIO5_IRQHandler()
+ {
+ 	// The PDMA data ready signal triggers this interrupt.
+ 	uint32_t gpio_ins = MSS_GPIO_get_inputs();
+
+ 	MSS_GPIO_clear_irq(MSS_GPIO_5);
+ 	GPIO_clear_irq(&gpio_core_handle, GPIO_0);
+
+	MSS_SPI_set_slave_select(&g_mss_spi1, MSS_SPI_SLAVE_0);
+ 	MSS_SPI_disable(&g_mss_spi1);
+ 	MSS_SPI_set_transfer_byte_count(&g_mss_spi1, 200);	// can only be set with SPI disabled
+ 	PDMA_start(PDMA_CHANNEL_0, REG_BASE+0x0008, PDMA_SPI1_TX_REGISTER, 200);
+ 	MSS_SPI_enable(&g_mss_spi1);
+
+ 	gpio_ins = MSS_GPIO_get_inputs();
+ }
+
+//
+// SPI-PDMA complete ISR
+// When the PDMA block completes a transfer it calls this handler. It does NOT mean that the SPI transfer is complete.
+// We set a timer to clear the end of the SPI transfer, then enable the SPI poll function.
+// This is the mutual exclusion mechanism for the SPI ADC transfer and the GUI poll.
+//
+void PDMA_isr(void)
+ {
+ 	PDMA_clear_irq(PDMA_CHANNEL_0);
+
+ 	// When this timer expires, Timer1_IRQHandler() sets a flag. In while(1) if the flag is set we poll the SPI slave (GUI).
+ 	MSS_TIM1_start();
+ 	MSS_TIM1_load_immediate(GUI_POLL_DELAY);
+ }
+
+ void Timer1_IRQHandler()
+ {
+		MSS_SPI_clear_slave_select(&g_mss_spi1, MSS_SPI_SLAVE_0);
+ 	MSS_TIM1_clear_irq();
+ 	poll_spi_flag = true;
+ 	*cmdaddr = 0x4;
+ 	*cmdaddr = 0x0;
+ }
+
+//
+// Accelerometer FIFO overflow ISR
+// This is an error condition - need to drain the FIFO before continuing.
+// DOES NOT WORK VERY WELL!!
+//
+ void GPIO6_IRQHandler()
+ {
+	MSS_GPIO_clear_irq(MSS_GPIO_6);
+	GPIO_clear_irq(&gpio_core_handle, GPIO_1);
+
+	int retval = MPU6050_clear_FIFO();
+ }
+
+//
+// Writes len bytes from buf to SPI (GUI via Nordic) and receives command (if any) in spi_rx_buf
+//
+void SPI_write_read(uint8_t *buf, int len)
+{
+	MSS_SPI_set_slave_select(&g_mss_spi1, MSS_SPI_SLAVE_0);
+ 	MSS_SPI_transfer_block(&g_mss_spi1, buf, len, spi_rx_buf, sizeof(spi_rx_buf));
+	MSS_SPI_clear_slave_select(&g_mss_spi1, MSS_SPI_SLAVE_0);
+
+	int i;
+	if (spi_rx_buf[0] == 0xAA) {
+ 		for(i = 0; i < 5; i++)
+		{
+			if ((rbwrptr+1)%RINGBUF_SIZE != rbrdptr)
+			{
+				ringbuf[rbwrptr] = spi_rx_buf[i+1];
+				rbwrptr = (rbwrptr+1) % RINGBUF_SIZE;
+			}
+		}
+	}
+}
+
+//
+// Initializes HDL channel vector tables from nm_rec_enable_vector
+//
+void init_ADC_vectors(void)
+{
+ 	int i;
+ 	uint32_t veclo, vechi;
+
+	for (i = 0; i < NUM_NMS; ++i) {
+		veclo = (nm_rec_enable_vector[i][2] << 16) | nm_rec_enable_vector[i][3];
+		vechi = (nm_rec_enable_vector[i][0] << 16) | nm_rec_enable_vector[i][1];
+
+		if (i == 0) {
+			*n0veclo = veclo;
+			*n0vechi = vechi;
+		}
+		else if (i == 1) {
+			*n1veclo = veclo;
+			*n1vechi = vechi;
+		}
+  	}
+}
+
+//
+// Updates local (nm_rec_enable_vector) and HDL channel vector tables to reflect channels enabled in NMs
+//
+void updateVectors(int nmid, int nm_addr, int data)
+{
+	switch (nmid){
+	case 0:
+		// need to update the channel select vector if writing to NM_REC_ENABLE reg
+		if (nm_addr == NM_REC_ENABLE0_REG)
+		{
+			// channels 0-15
+			nm_rec_enable_vector[nmid][0] = data;
+	 		*n0veclo = (nm_rec_enable_vector[nmid][0] << 16) | nm_rec_enable_vector[nmid][1];
+		}
+		else if (nm_addr == NM_REC_ENABLE1_REG)
+		{
+			// channels 16-31
+			nm_rec_enable_vector[nmid][1] = data;
+	 		*n0veclo = (nm_rec_enable_vector[nmid][0] << 16) | nm_rec_enable_vector[nmid][1];
+		}
+		else if (nm_addr == NM_REC_ENABLE2_REG)
+		{
+			// channels 32-47
+			nm_rec_enable_vector[nmid][2] = data;
+	 		*n0vechi = (nm_rec_enable_vector[nmid][2] << 16) | nm_rec_enable_vector[nmid][3];
+		}
+		else if (nm_addr == NM_REC_ENABLE3_REG)
+		{
+			// channels 48-63
+			nm_rec_enable_vector[nmid][3] = data;
+	 		*n0vechi = (nm_rec_enable_vector[nmid][2] << 16) | nm_rec_enable_vector[nmid][3];
+		}
+		break;
+
+	case 1:
+		// need to update the channel select vector if writing to NM_REC_ENABLE reg
+		if (nm_addr == NM_REC_ENABLE0_REG)
+		{
+			// channels 64-79
+			nm_rec_enable_vector[nmid][0] = data;
+	 		*n1veclo = (nm_rec_enable_vector[nmid][0] << 16) | nm_rec_enable_vector[nmid][1];
+		}
+		else if (nm_addr == NM_REC_ENABLE1_REG)
+		{
+			// channels 80-95
+			nm_rec_enable_vector[nmid][1] = data;
+	 		*n1veclo = (nm_rec_enable_vector[nmid][0] << 16) | nm_rec_enable_vector[nmid][1];
+		}
+		else if (nm_addr == NM_REC_ENABLE2_REG)
+		{
+			// channels 96-111
+			nm_rec_enable_vector[nmid][2] = data;
+	 		*n1vechi = (nm_rec_enable_vector[nmid][2] << 16) | nm_rec_enable_vector[nmid][3];
+		}
+		else if (nm_addr == NM_REC_ENABLE3_REG)
+		{
+			// channels 112-127
+			nm_rec_enable_vector[nmid][3] = data;
+	 		*n1vechi = (nm_rec_enable_vector[nmid][2] << 16) | nm_rec_enable_vector[nmid][3];
+		}
+		break;
+
+	default:
+		break;
+	}
+}
+
+//
+// Read contents of NM[nmid] register at regaddr
+//
+int readNMreg(int nmid, int regaddr)
+{
+	int ret, tmp, crcok, i;
+	switch (nmid){
+		case 0:
+			*n0d2 = regaddr << 16;
+			*n0d1 = OP_REG_READ;
+			*cmdaddr = NM0_TX_START_BIT;
+			while(!(*status & NM0_ACK_BIT));
+			for(i = 0; i < 4; i++)
+			{
+				tmp = *n0ack;
+				if (i == 1)
+					crcok = (tmp == regaddr);
+				if (i == 2)
+					ret = tmp;
+				if (i == 3)
+					crcok &= (tmp & 1);
+			}
+			return crcok ? ret : -1;
+			break;
+		case 1:
+			*n1d2 = regaddr << 16;
+			*n1d1 = OP_REG_READ;
+			*cmdaddr = NM1_TX_START_BIT;
+			while(!(*status & NM1_ACK_BIT));
+			for(i = 0; i < 4; i++)
+			{
+				tmp = *n1ack;
+				if (i == 1)
+					crcok = (tmp == regaddr);
+				if (i == 2)
+					ret = tmp;
+				if (i == 3)
+					crcok &= (tmp & 1);
+			}
+			return crcok ? ret : -1;
+			break;
+		default:
+			return 0;
+			break;
+		}
+}
+
+//
+// Write regdata to NM[nmid] register at regaddr
+//
+void writeNMreg(int nmid, int regaddr, int regdata)
+{
+	int i;
+
+	updateVectors(nmid, regaddr, regdata);
+
+	switch (nmid){
+	case 0:
+		*n0d2 = (regaddr << 16) | regdata;
+		*n0d1 = OP_REG_WRITE;						// select register operation (1 = write, 0 = read
+		*cmdaddr = NM0_TX_START_BIT;					// set
+		for (i = 0; i < 10; i++);				// delay a little bit to allow the busy flag to be set
+		while((*status) & NM0_TX_BUSY_BIT);
+		break;
+	case 1:
+		*n1d2 = (regaddr << 16) | regdata;
+		*n1d1 = OP_REG_WRITE;						// select register operation (1 = write, 0 = read
+		*cmdaddr = NM1_TX_START_BIT;					// set
+		for (i = 0; i < 10; i++);				// delay a little bit to allow the busy flag to be set
+		while((*status) & NM1_TX_BUSY_BIT);
+		break;
+	default:
+		break;
+	}
+}
+
+//
+// Send cmd to NM[nmid]
+//
+void sendNMcmd(int nmid, int cmd)
+{
+	int i;
+
+	switch (nmid){
+	case 0:
+		*n0d2 = cmd;
+		*n0d1 = OP_COMMAND;						// select register operation (1 = write, 0 = read
+		*cmdaddr = NM0_TX_START_BIT | NM0_CMD_MODE_BIT;		// set to command send mode
+		for (i = 0; i < 10; i++);				// delay a little bit to allow the busy flag to be set
+		while((*status) & NM0_TX_BUSY_BIT);
+		break;
+	case 1:
+		*n1d2 = cmd;
+		*n0d1 = OP_COMMAND;						// select register operation (1 = write, 0 = read
+		*status = NM0_TX_START_BIT | NM1_CMD_MODE_BIT;		// set to command send mode
+		for (i = 0; i < 10; i++);				// delay a little bit to allow the busy flag to be set
+		while((*status) & NM1_TX_BUSY_BIT);
+		break;
+	default:
+		break;
+	}
+}
+
+void NMstim(int command, int nmid)
+{
+	stim_count++;
+    switch (nmid)
+    {
+        case 0:
+            *n0d2 = command;
+            *cmdaddr = 0x1010;					// set
+            while((*status) & NM0_TX_BUSY_BIT);
+            break;
+        case 1:
+            *n1d2 = command;
+            *cmdaddr = 0x2020;					// set
+            while((*status) & NM1_TX_BUSY_BIT);
+            break;
+        default:
+            break;
+    }
+}
+
+//
+// Turn NM[nmid] power switch on
+// Used for protocol testing only, not used in Mario-CM
+//
+void NMon(int nmid)
+{
+	switch (nmid){
+	case 0:
+		*rst = 0x101;
+		*cmdaddr = RST_START_BIT | POWER_SW_MODE_BIT;
+		while((*status) & RST_BUSY_BIT);
+		break;
+	case 1:
+		*rst = 0x202;
+		*cmdaddr = RST_START_BIT | POWER_SW_MODE_BIT;
+		while((*status) & RST_BUSY_BIT);
+		break;
+	default:
+		break;
+	}
+}
+
+//
+// Turn NM[nmid] power switch off
+// Used for protocol testing only, not used in Mario-CM
+//
+void NMoff(int nmid)
+{
+	switch (nmid){
+	case 0:
+		*rst = 0x100;
+		*cmdaddr = RST_START_BIT | POWER_SW_MODE_BIT;
+		while((*status) & RST_BUSY_BIT);
+		break;
+	case 1:
+		*rst = 0x200;
+		*cmdaddr = RST_START_BIT | POWER_SW_MODE_BIT;
+		while((*status) & RST_BUSY_BIT);
+		break;
+	default:
+		break;
+	}
+}
+
+//
+// Send reset command to NM[nmid]
+//
+void NMreset(int nmid)
+	{
+	switch (nmid){
+	case 0:
+		*rst = 0x100;
+		*status = RST_START_BIT | RST_MODE_NM_BIT;
+		while((*status) & RST_BUSY_BIT);
+		break;
+	case 1:
+		*rst = 0x200;
+		*status = RST_START_BIT | RST_MODE_NM_BIT;
+		while((*status) & RST_BUSY_BIT);
+		break;
+	default:
+		break;
+	}
+}
+
+//
+// Send reset command to AM
+//
+void AMreset(void)
+{
+	*status = RST_START_BIT | RST_MODE_AM_BIT;
+	while((*status) & RST_BUSY_BIT);
+
+	// The AM initiates a training sequence on AM reset that takes
+	// about 8000 clock cycles (400us @ 20MHz). Delay any action until
+	// that's complete.
+	int i;
+	for (i = 0; i < 1000; i++);	// 1000 gives a little more time
+}
+

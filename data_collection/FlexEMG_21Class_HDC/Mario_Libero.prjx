@@ -1,0 +1,3274 @@
+KEY LIBERO "11.8"
+KEY CAPTURE "11.8.3.6"
+KEY DEFAULT_IMPORT_LOC "C:\Actelprj\a2f-lnx-evb-2A\Emcraft_IP\PSRAM_SR"
+KEY DEFAULT_OPEN_LOC ""
+KEY ProjectID "0"
+KEY HDLTechnology "VERILOG"
+KEY VERILOGMODE "VERILOG2001"
+KEY VHDLMODE "VHDL93"
+KEY UseConstraintFlowTechnology "FALSE"
+KEY VendorTechnology_Family "SmartFusion2"
+KEY VendorTechnology_Die "PA4M6000"
+KEY VendorTechnology_Package "fcs325"
+KEY VendorTechnology_Speed "STD"
+KEY VendorTechnology_DieVoltage "1.2"
+KEY VendorTechnology_PART_RANGE "COM"
+KEY VendorTechnology_DSW_VCCA_VOLTAGE_RAMP_RATE "100_MS"
+KEY VendorTechnology_IO_DEFT_STD "LVCMOS33"
+KEY VendorTechnology_OPCONR ""
+KEY VendorTechnology_PLL_SUPPLY "PLL_SUPPLY_25"
+KEY VendorTechnology_RAD_EXPOSURE ""
+KEY VendorTechnology_RESERVEMIGRATIONPINS "1"
+KEY VendorTechnology_RESTRICTPROBEPINS "1"
+KEY VendorTechnology_RESTRICTSPIPINS "0"
+KEY VendorTechnology_SYSTEM_CONTROLLER_SUSPEND_MODE "0"
+KEY VendorTechnology_TARGETDEVICESFORMIGRATION "PA4M6000"
+KEY VendorTechnology_TEMPR "COM"
+KEY VendorTechnology_UNUSED_MSS_IO_RESISTOR_PULL "None"
+KEY VendorTechnology_VCCI_1.2_VOLTR "COM"
+KEY VendorTechnology_VCCI_1.5_VOLTR "COM"
+KEY VendorTechnology_VCCI_1.8_VOLTR "COM"
+KEY VendorTechnology_VCCI_2.5_VOLTR "COM"
+KEY VendorTechnology_VCCI_3.3_VOLTR "COM"
+KEY VendorTechnology_VOLTR "COM"
+KEY ProjectLocation "C:\Users\bwrc\Desktop\HyperFlexEMG_190405_21Class"
+KEY ProjectDescription ""
+KEY Pa4PeripheralNewSeq "GOOD"
+KEY SimulationType "VERILOG"
+KEY Vendor "Actel"
+KEY ActiveRoot "Mario_Libero::work"
+LIST REVISIONS
+VALUE="Impl1",NUM=1
+CURREV=1
+ENDLIST
+LIST LIBRARIES
+COREAPB3_LIB
+CORESPI_LIB
+CORETIMER_LIB
+COREFFT_LIB
+ENDLIST
+LIST LIBRARY_COREAPB3_LIB
+ALIAS=COREAPB3_LIB
+COMPILE_OPTION=COMPILE
+CUSTOMPATH=false
+ENDLIST
+LIST LIBRARY_CORESPI_LIB
+ALIAS=CORESPI_LIB
+COMPILE_OPTION=COMPILE
+CUSTOMPATH=false
+ENDLIST
+LIST LIBRARY_CORETIMER_LIB
+ALIAS=CORETIMER_LIB
+COMPILE_OPTION=COMPILE
+CUSTOMPATH=false
+ENDLIST
+LIST LIBRARY_COREFFT_LIB
+ALIAS=COREFFT_LIB
+COMPILE_OPTION=COMPILE
+CUSTOMPATH=false
+ENDLIST
+LIST FileManager
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf,actgen_cxf"
+STATE="utd"
+TIME="1552696360"
+SIZE="2769"
+PARENT="<project>\component\work\Mario_Libero\Mario_Libero.cxf"
+ENDFILE
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\coreparameters.v,tb_hdl"
+STATE="utd"
+TIME="1552696360"
+SIZE="1284"
+PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
+IS_READONLY="TRUE"
+IS_INCLUDED="TRUE"
+ENDFILE
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\mti\scripts\wave_user.do,do"
+STATE="utd"
+TIME="1552696361"
+SIZE="912"
+PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_ahbtoapb.v,tb_hdl"
+STATE="utd"
+TIME="1552696361"
+SIZE="4636"
+LIBRARY="COREAPB3_LIB"
+PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_apb.v,tb_hdl"
+STATE="utd"
+TIME="1552696361"
+SIZE="9073"
+LIBRARY="COREAPB3_LIB"
+PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_apbslave.v,tb_hdl"
+STATE="utd"
+TIME="1552696361"
+SIZE="25129"
+LIBRARY="COREAPB3_LIB"
+PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_apbslaveext.v,tb_hdl"
+STATE="utd"
+TIME="1552696361"
+SIZE="36275"
+LIBRARY="COREAPB3_LIB"
+PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_main.v,tb_hdl"
+STATE="utd"
+TIME="1552696361"
+SIZE="122456"
+LIBRARY="COREAPB3_LIB"
+PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v,hdl"
+STATE="utd"
+TIME="1552696361"
+SIZE="32806"
+LIBRARY="COREAPB3_LIB"
+PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3_iaddr_reg.v,hdl"
+STATE="utd"
+TIME="1552696361"
+SIZE="3556"
+LIBRARY="COREAPB3_LIB"
+PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3_muxptob3.v,hdl"
+STATE="utd"
+TIME="1552696361"
+SIZE="6765"
+LIBRARY="COREAPB3_LIB"
+PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\test\user\testbench.v,tb_hdl"
+STATE="utd"
+TIME="1552696361"
+SIZE="23651"
+LIBRARY="COREAPB3_LIB"
+PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
+MODULE_UNDER_TEST="testbench"
+SIMULATION_TIME="-all"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\Actel\DirectCore\COREFFT\7.0.104\COREFFT.cxf,actgen_cxf"
+STATE="utd"
+TIME="1552696361"
+SIZE="1433"
+PARENT="<project>\component\work\adc_fft_if\adc_fft_if.cxf"
+ENDFILE
+VALUE "<project>\component\Actel\DirectCore\COREFFT\7.0.104\coreparameters.v,tb_hdl"
+STATE="utd"
+TIME="1552696361"
+SIZE="946"
+LIBRARY="COREFFT_LIB"
+PARENT="<project>\component\Actel\DirectCore\COREFFT\7.0.104\COREFFT.cxf"
+PARENT="<project>\component\work\adc_fft_if\COREFFT_0\adc_fft_if_COREFFT_0_COREFFT.cxf"
+IS_READONLY="TRUE"
+IS_INCLUDED="TRUE"
+ENDFILE
+VALUE "<project>\component\Actel\DirectCore\COREFFT\7.0.104\rtl\in_place\vlog\core\cmplx.v,hdl"
+STATE="utd"
+TIME="1552696361"
+SIZE="18685"
+LIBRARY="COREFFT_LIB"
+PARENT="<project>\component\Actel\DirectCore\COREFFT\7.0.104\COREFFT.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\Actel\DirectCore\COREFFT\7.0.104\rtl\in_place\vlog\core\fftSm.v,hdl"
+STATE="utd"
+TIME="1552696361"
+SIZE="24901"
+LIBRARY="COREFFT_LIB"
+PARENT="<project>\component\Actel\DirectCore\COREFFT\7.0.104\COREFFT.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\Actel\DirectCore\COREFFT\7.0.104\rtl\in_place\vlog\core\kit.v,hdl"
+STATE="utd"
+TIME="1552696361"
+SIZE="19296"
+LIBRARY="COREFFT_LIB"
+PARENT="<project>\component\Actel\DirectCore\COREFFT\7.0.104\COREFFT.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\Actel\DirectCore\COREFFT\7.0.104\rtl\in_place\vlog\core\mac_lib.v,hdl"
+STATE="utd"
+TIME="1552696361"
+SIZE="12937"
+LIBRARY="COREFFT_LIB"
+PARENT="<project>\component\Actel\DirectCore\COREFFT\7.0.104\COREFFT.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\Actel\DirectCore\COREFFT\7.0.104\rtl\in_place\vlog\test\user\bhvKit.v,tb_hdl"
+STATE="utd"
+TIME="1552696361"
+SIZE="11104"
+LIBRARY="COREFFT_LIB"
+PARENT="<project>\component\Actel\DirectCore\COREFFT\7.0.104\COREFFT.cxf"
+PARENT="<project>\component\work\adc_fft_if\COREFFT_0\adc_fft_if_COREFFT_0_COREFFT.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.4.100\COREFIFO.cxf,actgen_cxf"
+STATE="utd"
+TIME="1552696361"
+SIZE="1446"
+PARENT="<project>\component\work\ACKFIFO\ACKFIFO.cxf"
+PARENT="<project>\component\work\ADCFIFO\ADCFIFO.cxf"
+ENDFILE
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.4.100\rtl\vlog\test\user\clock_driver.v,tb_hdl"
+STATE="utd"
+TIME="1552696362"
+SIZE="697"
+PARENT="<project>\component\Actel\DirectCore\COREFIFO\2.4.100\COREFIFO.cxf"
+PARENT="<project>\component\work\ACKFIFO\ACKFIFO_0\ACKFIFO_ACKFIFO_0_COREFIFO.cxf"
+PARENT="<project>\component\work\ADCFIFO\ADCFIFO_0\ADCFIFO_ADCFIFO_0_COREFIFO.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.4.100\rtl\vlog\test\user\fifo_driver.v,tb_hdl"
+STATE="utd"
+TIME="1552696362"
+SIZE="10100"
+PARENT="<project>\component\Actel\DirectCore\COREFIFO\2.4.100\COREFIFO.cxf"
+PARENT="<project>\component\work\ACKFIFO\ACKFIFO_0\ACKFIFO_ACKFIFO_0_COREFIFO.cxf"
+PARENT="<project>\component\work\ADCFIFO\ADCFIFO_0\ADCFIFO_ADCFIFO_0_COREFIFO.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.4.100\rtl\vlog\test\user\fifo_monitor.v,tb_hdl"
+STATE="utd"
+TIME="1552696362"
+SIZE="22096"
+PARENT="<project>\component\Actel\DirectCore\COREFIFO\2.4.100\COREFIFO.cxf"
+PARENT="<project>\component\work\ACKFIFO\ACKFIFO_0\ACKFIFO_ACKFIFO_0_COREFIFO.cxf"
+PARENT="<project>\component\work\ADCFIFO\ADCFIFO_0\ADCFIFO_ADCFIFO_0_COREFIFO.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.4.100\rtl\vlog\test\user\g4_dp_ext_mem.v,tb_hdl"
+STATE="utd"
+TIME="1552696362"
+SIZE="3801"
+PARENT="<project>\component\Actel\DirectCore\COREFIFO\2.4.100\COREFIFO.cxf"
+PARENT="<project>\component\work\ACKFIFO\ACKFIFO_0\ACKFIFO_ACKFIFO_0_COREFIFO.cxf"
+PARENT="<project>\component\work\ADCFIFO\ADCFIFO_0\ADCFIFO_ADCFIFO_0_COREFIFO.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.4.100\rtl\vlog\test\user\MEM_WeqR.v,tb_hdl"
+STATE="utd"
+TIME="1552696362"
+SIZE="2194"
+PARENT="<project>\component\Actel\DirectCore\COREFIFO\2.4.100\COREFIFO.cxf"
+PARENT="<project>\component\work\ACKFIFO\ACKFIFO_0\ACKFIFO_ACKFIFO_0_COREFIFO.cxf"
+PARENT="<project>\component\work\ADCFIFO\ADCFIFO_0\ADCFIFO_ADCFIFO_0_COREFIFO.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.4.100\rtl\vlog\test\user\MEM_WgtR.v,tb_hdl"
+STATE="utd"
+TIME="1552696362"
+SIZE="2287"
+PARENT="<project>\component\Actel\DirectCore\COREFIFO\2.4.100\COREFIFO.cxf"
+PARENT="<project>\component\work\ACKFIFO\ACKFIFO_0\ACKFIFO_ACKFIFO_0_COREFIFO.cxf"
+PARENT="<project>\component\work\ADCFIFO\ADCFIFO_0\ADCFIFO_ADCFIFO_0_COREFIFO.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.4.100\rtl\vlog\test\user\MEM_WltR.v,tb_hdl"
+STATE="utd"
+TIME="1552696362"
+SIZE="1981"
+PARENT="<project>\component\Actel\DirectCore\COREFIFO\2.4.100\COREFIFO.cxf"
+PARENT="<project>\component\work\ACKFIFO\ACKFIFO_0\ACKFIFO_ACKFIFO_0_COREFIFO.cxf"
+PARENT="<project>\component\work\ADCFIFO\ADCFIFO_0\ADCFIFO_ADCFIFO_0_COREFIFO.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.5.106\COREFIFO.cxf,actgen_cxf"
+STATE="utd"
+TIME="1552696362"
+SIZE="1446"
+PARENT="<project>\component\work\PDMAFIFO\PDMAFIFO.cxf"
+ENDFILE
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.5.106\rtl\vlog\test\user\clock_driver.v,tb_hdl"
+STATE="utd"
+TIME="1552696362"
+SIZE="697"
+PARENT="<project>\component\Actel\DirectCore\COREFIFO\2.5.106\COREFIFO.cxf"
+PARENT="<project>\component\work\PDMAFIFO\PDMAFIFO_0\PDMAFIFO_PDMAFIFO_0_COREFIFO.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.5.106\rtl\vlog\test\user\fifo_driver.v,tb_hdl"
+STATE="utd"
+TIME="1552696362"
+SIZE="10100"
+PARENT="<project>\component\Actel\DirectCore\COREFIFO\2.5.106\COREFIFO.cxf"
+PARENT="<project>\component\work\PDMAFIFO\PDMAFIFO_0\PDMAFIFO_PDMAFIFO_0_COREFIFO.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.5.106\rtl\vlog\test\user\fifo_monitor.v,tb_hdl"
+STATE="utd"
+TIME="1552696362"
+SIZE="22096"
+PARENT="<project>\component\Actel\DirectCore\COREFIFO\2.5.106\COREFIFO.cxf"
+PARENT="<project>\component\work\PDMAFIFO\PDMAFIFO_0\PDMAFIFO_PDMAFIFO_0_COREFIFO.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.5.106\rtl\vlog\test\user\g4_dp_ext_mem.v,tb_hdl"
+STATE="utd"
+TIME="1552696362"
+SIZE="3801"
+PARENT="<project>\component\Actel\DirectCore\COREFIFO\2.5.106\COREFIFO.cxf"
+PARENT="<project>\component\work\PDMAFIFO\PDMAFIFO_0\PDMAFIFO_PDMAFIFO_0_COREFIFO.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.5.106\rtl\vlog\test\user\MEM_WeqR.v,tb_hdl"
+STATE="utd"
+TIME="1552696362"
+SIZE="2194"
+PARENT="<project>\component\Actel\DirectCore\COREFIFO\2.5.106\COREFIFO.cxf"
+PARENT="<project>\component\work\PDMAFIFO\PDMAFIFO_0\PDMAFIFO_PDMAFIFO_0_COREFIFO.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.5.106\rtl\vlog\test\user\MEM_WgtR.v,tb_hdl"
+STATE="utd"
+TIME="1552696362"
+SIZE="2287"
+PARENT="<project>\component\Actel\DirectCore\COREFIFO\2.5.106\COREFIFO.cxf"
+PARENT="<project>\component\work\PDMAFIFO\PDMAFIFO_0\PDMAFIFO_PDMAFIFO_0_COREFIFO.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.5.106\rtl\vlog\test\user\MEM_WltR.v,tb_hdl"
+STATE="utd"
+TIME="1552696362"
+SIZE="1981"
+PARENT="<project>\component\Actel\DirectCore\COREFIFO\2.5.106\COREFIFO.cxf"
+PARENT="<project>\component\work\PDMAFIFO\PDMAFIFO_0\PDMAFIFO_PDMAFIFO_0_COREFIFO.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.6.108\COREFIFO.cxf,actgen_cxf"
+STATE="utd"
+TIME="1552696362"
+SIZE="1298"
+PARENT="<project>\component\work\adc_fft_if\adc_fft_if.cxf"
+ENDFILE
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.6.108\rtl\vlog\test\user\clock_driver.v,tb_hdl"
+STATE="utd"
+TIME="1552696362"
+SIZE="697"
+PARENT="<project>\component\Actel\DirectCore\COREFIFO\2.6.108\COREFIFO.cxf"
+PARENT="<project>\component\work\adc_fft_if\COREFIFO_0\adc_fft_if_COREFIFO_0_COREFIFO.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.6.108\rtl\vlog\test\user\fifo_driver.v,tb_hdl"
+STATE="utd"
+TIME="1552696362"
+SIZE="13955"
+PARENT="<project>\component\Actel\DirectCore\COREFIFO\2.6.108\COREFIFO.cxf"
+PARENT="<project>\component\work\adc_fft_if\COREFIFO_0\adc_fft_if_COREFIFO_0_COREFIFO.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.6.108\rtl\vlog\test\user\fifo_monitor.v,tb_hdl"
+STATE="utd"
+TIME="1552696362"
+SIZE="22096"
+PARENT="<project>\component\Actel\DirectCore\COREFIFO\2.6.108\COREFIFO.cxf"
+PARENT="<project>\component\work\adc_fft_if\COREFIFO_0\adc_fft_if_COREFIFO_0_COREFIFO.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.6.108\rtl\vlog\test\user\g4_dp_ext_mem.v,tb_hdl"
+STATE="utd"
+TIME="1552696362"
+SIZE="3801"
+PARENT="<project>\component\Actel\DirectCore\COREFIFO\2.6.108\COREFIFO.cxf"
+PARENT="<project>\component\work\adc_fft_if\COREFIFO_0\adc_fft_if_COREFIFO_0_COREFIFO.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.6.108\rtl\vlog\test\user\MEM_WeqR.v,tb_hdl"
+STATE="utd"
+TIME="1552696362"
+SIZE="2194"
+PARENT="<project>\component\Actel\DirectCore\COREFIFO\2.6.108\COREFIFO.cxf"
+PARENT="<project>\component\work\adc_fft_if\COREFIFO_0\adc_fft_if_COREFIFO_0_COREFIFO.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.6.108\rtl\vlog\test\user\MEM_WgtR.v,tb_hdl"
+STATE="utd"
+TIME="1552696362"
+SIZE="2287"
+PARENT="<project>\component\Actel\DirectCore\COREFIFO\2.6.108\COREFIFO.cxf"
+PARENT="<project>\component\work\adc_fft_if\COREFIFO_0\adc_fft_if_COREFIFO_0_COREFIFO.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.6.108\rtl\vlog\test\user\MEM_WltR.v,tb_hdl"
+STATE="utd"
+TIME="1552696362"
+SIZE="1981"
+PARENT="<project>\component\Actel\DirectCore\COREFIFO\2.6.108\COREFIFO.cxf"
+PARENT="<project>\component\work\adc_fft_if\COREFIFO_0\adc_fft_if_COREFIFO_0_COREFIFO.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\Actel\DirectCore\CoreGPIO\3.2.102\CoreGPIO.cxf,actgen_cxf"
+STATE="utd"
+TIME="1552696364"
+SIZE="752"
+PARENT="<project>\component\work\Mario_Libero\Mario_Libero.cxf"
+ENDFILE
+VALUE "<project>\component\Actel\SgCore\FCCC\2.0.201\FCCC.cxf,actgen_cxf"
+STATE="utd"
+TIME="1552696368"
+SIZE="241"
+PARENT="<project>\component\work\Mario_Libero\Mario_Libero.cxf"
+ENDFILE
+VALUE "<project>\component\Actel\SgCore\OSC\2.0.101\OSC.cxf,actgen_cxf"
+STATE="utd"
+TIME="1552696368"
+SIZE="684"
+PARENT="<project>\component\work\Mario_Libero\Mario_Libero.cxf"
+ENDFILE
+VALUE "<project>\component\Actel\SgCore\OSC\2.0.101\osc_comps.v,hdl"
+STATE="utd"
+TIME="1552696368"
+SIZE="924"
+PARENT="<project>\component\Actel\SgCore\OSC\2.0.101\OSC.cxf"
+BEGIN_USE_CONSTRAINT
+TOOL_CONSTRAINT_TYPE="ideSYNTHESIS"
+TOOL_CONSTRAINT_USE="SYNPLIFY7_EXT"
+END_USE_CONSTRAINT
+USE_FOR_ANY_TOOL="FALSE"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\Actel\SgCore\OSC\2.0.101\osc_comps_pre.v,hdl"
+STATE="utd"
+TIME="1552696368"
+SIZE="726"
+PARENT="<project>\component\Actel\SgCore\OSC\2.0.101\OSC.cxf"
+BEGIN_USE_CONSTRAINT
+TOOL_CONSTRAINT_TYPE="ideSYNTHESIS"
+TOOL_CONSTRAINT_USE="PRECISION_EXT"
+END_USE_CONSTRAINT
+USE_FOR_ANY_TOOL="FALSE"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\Actel\SmartFusion2MSS\MSS\1.1.400\MSS.cxf,actgen_cxf"
+STATE="utd"
+TIME="1552696368"
+SIZE="526"
+PARENT="<project>\component\work\Mario_Libero_MSS\Mario_Libero_MSS.cxf"
+ENDFILE
+VALUE "<project>\component\Actel\SmartFusion2MSS\MSS_CCC\1.0.100\MSS_CCC.cxf,actgen_cxf"
+STATE="utd"
+TIME="1552696368"
+SIZE="253"
+PARENT="<project>\component\work\Mario_Libero_MSS\Mario_Libero_MSS.cxf"
+ENDFILE
+VALUE "<project>\component\Actel\SmartFusion2MSS\MSS_CC\1.0.100\MSS_CC.cxf,actgen_cxf"
+STATE="utd"
+TIME="1552696368"
+SIZE="252"
+PARENT="<project>\component\work\Mario_Libero_MSS\Mario_Libero_MSS.cxf"
+ENDFILE
+VALUE "<project>\component\Actel\SmartFusion2MSS\MSS_CFGM\1.1.100\MSS_CFGM.cxf,actgen_cxf"
+STATE="utd"
+TIME="1552696368"
+SIZE="254"
+PARENT="<project>\component\work\Mario_Libero_MSS\Mario_Libero_MSS.cxf"
+ENDFILE
+VALUE "<project>\component\Actel\SmartFusion2MSS\MSS_CM3\1.0.200\MSS_CM3.cxf,actgen_cxf"
+STATE="utd"
+TIME="1552696368"
+SIZE="253"
+PARENT="<project>\component\work\Mario_Libero_MSS\Mario_Libero_MSS.cxf"
+ENDFILE
+VALUE "<project>\component\Actel\SmartFusion2MSS\MSS_DDRB\1.0.200\MSS_DDRB.cxf,actgen_cxf"
+STATE="utd"
+TIME="1552696368"
+SIZE="254"
+PARENT="<project>\component\work\Mario_Libero_MSS\Mario_Libero_MSS.cxf"
+ENDFILE
+VALUE "<project>\component\Actel\SmartFusion2MSS\MSS_DMA\1.0.100\MSS_DMA.cxf,actgen_cxf"
+STATE="utd"
+TIME="1552696368"
+SIZE="253"
+PARENT="<project>\component\work\Mario_Libero_MSS\Mario_Libero_MSS.cxf"
+ENDFILE
+VALUE "<project>\component\Actel\SmartFusion2MSS\MSS_EDAC\1.0.101\MSS_EDAC.cxf,actgen_cxf"
+STATE="utd"
+TIME="1552696368"
+SIZE="254"
+PARENT="<project>\component\work\Mario_Libero_MSS\Mario_Libero_MSS.cxf"
+ENDFILE
+VALUE "<project>\component\Actel\SmartFusion2MSS\MSS_ENVM\1.0.101\MSS_ENVM.cxf,actgen_cxf"
+STATE="utd"
+TIME="1552696368"
+SIZE="254"
+PARENT="<project>\component\work\Mario_Libero_MSS\Mario_Libero_MSS.cxf"
+ENDFILE
+VALUE "<project>\component\Actel\SmartFusion2MSS\MSS_FIC32\1.0.100\MSS_FIC32.cxf,actgen_cxf"
+STATE="utd"
+TIME="1552696368"
+SIZE="255"
+PARENT="<project>\component\work\Mario_Libero_MSS\Mario_Libero_MSS.cxf"
+ENDFILE
+VALUE "<project>\component\Actel\SmartFusion2MSS\MSS_GPIO\1.0.100\MSS_GPIO.cxf,actgen_cxf"
+STATE="utd"
+TIME="1552696368"
+SIZE="254"
+PARENT="<project>\component\work\Mario_Libero_MSS\Mario_Libero_MSS.cxf"
+ENDFILE
+VALUE "<project>\component\Actel\SmartFusion2MSS\MSS_INTR\1.0.100\MSS_INTR.cxf,actgen_cxf"
+STATE="utd"
+TIME="1552696368"
+SIZE="254"
+PARENT="<project>\component\work\Mario_Libero_MSS\Mario_Libero_MSS.cxf"
+ENDFILE
+VALUE "<project>\component\Actel\SmartFusion2MSS\MSS_MMUART\1.0.100\MSS_MMUART.cxf,actgen_cxf"
+STATE="utd"
+TIME="1552696368"
+SIZE="256"
+PARENT="<project>\component\work\Mario_Libero_MSS\Mario_Libero_MSS.cxf"
+ENDFILE
+VALUE "<project>\component\Actel\SmartFusion2MSS\MSS_RESET\1.0.100\MSS_RESET.cxf,actgen_cxf"
+STATE="utd"
+TIME="1552696368"
+SIZE="255"
+PARENT="<project>\component\work\Mario_Libero_MSS\Mario_Libero_MSS.cxf"
+ENDFILE
+VALUE "<project>\component\Actel\SmartFusion2MSS\MSS_SECURITY\1.0.100\MSS_SECURITY.cxf,actgen_cxf"
+STATE="utd"
+TIME="1552696369"
+SIZE="258"
+PARENT="<project>\component\work\Mario_Libero_MSS\Mario_Libero_MSS.cxf"
+ENDFILE
+VALUE "<project>\component\Actel\SmartFusion2MSS\MSS_SPI\1.0.100\MSS_SPI.cxf,actgen_cxf"
+STATE="utd"
+TIME="1552696369"
+SIZE="253"
+PARENT="<project>\component\work\Mario_Libero_MSS\Mario_Libero_MSS.cxf"
+ENDFILE
+VALUE "<project>\component\Actel\SmartFusion2MSS\MSS_SWITCH\1.0.101\MSS_SWITCH.cxf,actgen_cxf"
+STATE="utd"
+TIME="1552696369"
+SIZE="256"
+PARENT="<project>\component\work\Mario_Libero_MSS\Mario_Libero_MSS.cxf"
+ENDFILE
+VALUE "<project>\component\work\ACKFIFO\ACKFIFO.cxf,actgen_cxf"
+STATE="utd"
+TIME="1552696369"
+SIZE="4523"
+ENDFILE
+VALUE "<project>\component\work\ACKFIFO\ACKFIFO.v,hdl"
+STATE="utd"
+TIME="1552696369"
+SIZE="4370"
+PARENT="<project>\component\work\ACKFIFO\ACKFIFO.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\ACKFIFO\ACKFIFO_0\ACKFIFO_ACKFIFO_0_COREFIFO.cxf,actgen_cxf"
+STATE="utd"
+TIME="1552696369"
+SIZE="3885"
+PARENT="<project>\component\work\ACKFIFO\ACKFIFO.cxf"
+ENDFILE
+VALUE "<project>\component\work\ACKFIFO\ACKFIFO_0\coreparameters.v,tb_hdl"
+STATE="utd"
+TIME="1552696369"
+SIZE="980"
+PARENT="<project>\component\work\ACKFIFO\ACKFIFO_0\ACKFIFO_ACKFIFO_0_COREFIFO.cxf"
+IS_READONLY="TRUE"
+IS_INCLUDED="TRUE"
+ENDFILE
+VALUE "<project>\component\work\ACKFIFO\ACKFIFO_0\mti\scripts\runall.do,do"
+STATE="utd"
+TIME="1552696369"
+SIZE="19"
+PARENT="<project>\component\work\ACKFIFO\ACKFIFO_0\ACKFIFO_ACKFIFO_0_COREFIFO.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\ACKFIFO\ACKFIFO_0\rtl\vlog\core\ACKFIFO_ACKFIFO_0_ram_wrapper.v,hdl"
+STATE="utd"
+TIME="1552696369"
+SIZE="2157"
+PARENT="<project>\component\work\ACKFIFO\ACKFIFO_0\ACKFIFO_ACKFIFO_0_COREFIFO.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\ACKFIFO\ACKFIFO_0\rtl\vlog\core\ACKFIFO_ACKFIFO_0_USRAM_top.v,hdl"
+STATE="utd"
+TIME="1552696369"
+SIZE="4819"
+PARENT="<project>\component\work\ACKFIFO\ACKFIFO_0\ACKFIFO_ACKFIFO_0_COREFIFO.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\ACKFIFO\ACKFIFO_0\rtl\vlog\core\COREFIFO.v,hdl"
+STATE="utd"
+TIME="1552696369"
+SIZE="52679"
+PARENT="<project>\component\work\ACKFIFO\ACKFIFO_0\ACKFIFO_ACKFIFO_0_COREFIFO.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\ACKFIFO\ACKFIFO_0\rtl\vlog\core\corefifo_async.v,hdl"
+STATE="utd"
+TIME="1552696369"
+SIZE="46646"
+PARENT="<project>\component\work\ACKFIFO\ACKFIFO_0\ACKFIFO_ACKFIFO_0_COREFIFO.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\ACKFIFO\ACKFIFO_0\rtl\vlog\core\corefifo_doubleSync.v,hdl"
+STATE="utd"
+TIME="1552696369"
+SIZE="3004"
+PARENT="<project>\component\work\ACKFIFO\ACKFIFO_0\ACKFIFO_ACKFIFO_0_COREFIFO.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\ACKFIFO\ACKFIFO_0\rtl\vlog\core\corefifo_fwft.v,hdl"
+STATE="utd"
+TIME="1552696369"
+SIZE="10548"
+PARENT="<project>\component\work\ACKFIFO\ACKFIFO_0\ACKFIFO_ACKFIFO_0_COREFIFO.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\ACKFIFO\ACKFIFO_0\rtl\vlog\core\corefifo_grayToBinConv.v,hdl"
+STATE="utd"
+TIME="1552696369"
+SIZE="2733"
+PARENT="<project>\component\work\ACKFIFO\ACKFIFO_0\ACKFIFO_ACKFIFO_0_COREFIFO.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\ACKFIFO\ACKFIFO_0\rtl\vlog\core\corefifo_sync.v,hdl"
+STATE="utd"
+TIME="1552696369"
+SIZE="29142"
+PARENT="<project>\component\work\ACKFIFO\ACKFIFO_0\ACKFIFO_ACKFIFO_0_COREFIFO.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\ACKFIFO\ACKFIFO_0\rtl\vlog\core\corefifo_sync_scntr.v,hdl"
+STATE="utd"
+TIME="1552696369"
+SIZE="20050"
+PARENT="<project>\component\work\ACKFIFO\ACKFIFO_0\ACKFIFO_ACKFIFO_0_COREFIFO.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\ACKFIFO\ACKFIFO_0\rtl\vlog\test\user\testbench.v,tb_hdl"
+STATE="utd"
+TIME="1552696370"
+SIZE="13515"
+PARENT="<project>\component\work\ACKFIFO\ACKFIFO_0\ACKFIFO_ACKFIFO_0_COREFIFO.cxf"
+MODULE_UNDER_TEST="testbench"
+SIMULATION_TIME="run -all"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\ACKFIFO\ACKFIFO_0\rtl\vlog\test\user\top_define.v,tb_hdl"
+STATE="utd"
+TIME="1552696370"
+SIZE="401"
+PARENT="<project>\component\work\ACKFIFO\ACKFIFO_0\ACKFIFO_ACKFIFO_0_COREFIFO.cxf"
+IS_READONLY="TRUE"
+IS_INCLUDED="TRUE"
+ENDFILE
+VALUE "<project>\component\work\ADCFIFO\ADCFIFO.cxf,actgen_cxf"
+STATE="utd"
+TIME="1552696371"
+SIZE="5047"
+ENDFILE
+VALUE "<project>\component\work\ADCFIFO\ADCFIFO.v,hdl"
+STATE="utd"
+TIME="1552696371"
+SIZE="4923"
+PARENT="<project>\component\work\ADCFIFO\ADCFIFO.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\ADCFIFO\ADCFIFO_0\ADCFIFO_ADCFIFO_0_COREFIFO.cxf,actgen_cxf"
+STATE="utd"
+TIME="1552696371"
+SIZE="3885"
+PARENT="<project>\component\work\ADCFIFO\ADCFIFO.cxf"
+ENDFILE
+VALUE "<project>\component\work\ADCFIFO\ADCFIFO_0\coreparameters.v,tb_hdl"
+STATE="utd"
+TIME="1552696371"
+SIZE="983"
+PARENT="<project>\component\work\ADCFIFO\ADCFIFO_0\ADCFIFO_ADCFIFO_0_COREFIFO.cxf"
+IS_READONLY="TRUE"
+IS_INCLUDED="TRUE"
+ENDFILE
+VALUE "<project>\component\work\ADCFIFO\ADCFIFO_0\mti\scripts\runall.do,do"
+STATE="utd"
+TIME="1552696371"
+SIZE="19"
+PARENT="<project>\component\work\ADCFIFO\ADCFIFO_0\ADCFIFO_ADCFIFO_0_COREFIFO.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\ADCFIFO\ADCFIFO_0\rtl\vlog\core\ADCFIFO_ADCFIFO_0_LSRAM_top.v,hdl"
+STATE="utd"
+TIME="1552696371"
+SIZE="2056"
+PARENT="<project>\component\work\ADCFIFO\ADCFIFO_0\ADCFIFO_ADCFIFO_0_COREFIFO.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\ADCFIFO\ADCFIFO_0\rtl\vlog\core\ADCFIFO_ADCFIFO_0_ram_wrapper.v,hdl"
+STATE="utd"
+TIME="1552696371"
+SIZE="1754"
+PARENT="<project>\component\work\ADCFIFO\ADCFIFO_0\ADCFIFO_ADCFIFO_0_COREFIFO.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\ADCFIFO\ADCFIFO_0\rtl\vlog\core\COREFIFO.v,hdl"
+STATE="utd"
+TIME="1552696371"
+SIZE="52679"
+PARENT="<project>\component\work\ADCFIFO\ADCFIFO_0\ADCFIFO_ADCFIFO_0_COREFIFO.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\ADCFIFO\ADCFIFO_0\rtl\vlog\core\corefifo_async.v,hdl"
+STATE="utd"
+TIME="1552696371"
+SIZE="46646"
+PARENT="<project>\component\work\ADCFIFO\ADCFIFO_0\ADCFIFO_ADCFIFO_0_COREFIFO.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\ADCFIFO\ADCFIFO_0\rtl\vlog\core\corefifo_doubleSync.v,hdl"
+STATE="utd"
+TIME="1552696371"
+SIZE="3004"
+PARENT="<project>\component\work\ADCFIFO\ADCFIFO_0\ADCFIFO_ADCFIFO_0_COREFIFO.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\ADCFIFO\ADCFIFO_0\rtl\vlog\core\corefifo_fwft.v,hdl"
+STATE="utd"
+TIME="1552696371"
+SIZE="10548"
+PARENT="<project>\component\work\ADCFIFO\ADCFIFO_0\ADCFIFO_ADCFIFO_0_COREFIFO.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\ADCFIFO\ADCFIFO_0\rtl\vlog\core\corefifo_grayToBinConv.v,hdl"
+STATE="utd"
+TIME="1552696371"
+SIZE="2733"
+PARENT="<project>\component\work\ADCFIFO\ADCFIFO_0\ADCFIFO_ADCFIFO_0_COREFIFO.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\ADCFIFO\ADCFIFO_0\rtl\vlog\core\corefifo_sync.v,hdl"
+STATE="utd"
+TIME="1552696371"
+SIZE="29142"
+PARENT="<project>\component\work\ADCFIFO\ADCFIFO_0\ADCFIFO_ADCFIFO_0_COREFIFO.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\ADCFIFO\ADCFIFO_0\rtl\vlog\core\corefifo_sync_scntr.v,hdl"
+STATE="utd"
+TIME="1552696371"
+SIZE="20050"
+PARENT="<project>\component\work\ADCFIFO\ADCFIFO_0\ADCFIFO_ADCFIFO_0_COREFIFO.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\ADCFIFO\ADCFIFO_0\rtl\vlog\test\user\testbench.v,tb_hdl"
+STATE="utd"
+TIME="1552696371"
+SIZE="13515"
+PARENT="<project>\component\work\ADCFIFO\ADCFIFO_0\ADCFIFO_ADCFIFO_0_COREFIFO.cxf"
+MODULE_UNDER_TEST="testbench"
+SIMULATION_TIME="run -all"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\ADCFIFO\ADCFIFO_0\rtl\vlog\test\user\top_define.v,tb_hdl"
+STATE="utd"
+TIME="1552696371"
+SIZE="401"
+PARENT="<project>\component\work\ADCFIFO\ADCFIFO_0\ADCFIFO_ADCFIFO_0_COREFIFO.cxf"
+IS_READONLY="TRUE"
+IS_INCLUDED="TRUE"
+ENDFILE
+VALUE "<project>\component\work\adc_datapath\adc_datapath.cxf,actgen_cxf"
+STATE="utd"
+TIME="1552933836"
+SIZE="6651"
+ENDFILE
+VALUE "<project>\component\work\adc_datapath\adc_datapath.v,hdl"
+STATE="utd"
+TIME="1552933835"
+SIZE="9568"
+PARENT="<project>\component\work\adc_datapath\adc_datapath.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\adc_fft_if\adc_fft_if.cxf,actgen_cxf"
+STATE="utd"
+TIME="1552696370"
+SIZE="4230"
+ENDFILE
+VALUE "<project>\component\work\adc_fft_if\adc_fft_if.v,hdl"
+STATE="utd"
+TIME="1552696370"
+SIZE="8157"
+PARENT="<project>\component\work\adc_fft_if\adc_fft_if.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\adc_fft_if\COREFFT_0\adc_fft_if_COREFFT_0_COREFFT.cxf,actgen_cxf"
+STATE="utd"
+TIME="1552696370"
+SIZE="2370"
+PARENT="<project>\component\work\adc_fft_if\adc_fft_if.cxf"
+ENDFILE
+VALUE "<project>\component\work\adc_fft_if\COREFFT_0\rtl\in_place\vlog\core\adc_fft_if_COREFFT_0_uram_smGen.v,hdl"
+STATE="utd"
+TIME="1552696370"
+SIZE="13537"
+LIBRARY="COREFFT_LIB"
+PARENT="<project>\component\work\adc_fft_if\COREFFT_0\adc_fft_if_COREFFT_0_COREFFT.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\adc_fft_if\COREFFT_0\rtl\in_place\vlog\core\COREFFT.v,hdl"
+STATE="utd"
+TIME="1552696370"
+SIZE="10161"
+LIBRARY="COREFFT_LIB"
+PARENT="<project>\component\work\adc_fft_if\COREFFT_0\adc_fft_if_COREFFT_0_COREFFT.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\adc_fft_if\COREFFT_0\rtl\in_place\vlog\core\COREFFT_TOP.v,hdl"
+STATE="utd"
+TIME="1552696370"
+SIZE="4921"
+LIBRARY="COREFFT_LIB"
+PARENT="<project>\component\work\adc_fft_if\COREFFT_0\adc_fft_if_COREFFT_0_COREFFT.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\adc_fft_if\COREFFT_0\rtl\in_place\vlog\core\fftDp.v,hdl"
+STATE="utd"
+TIME="1552696370"
+SIZE="12614"
+LIBRARY="COREFFT_LIB"
+PARENT="<project>\component\work\adc_fft_if\COREFFT_0\adc_fft_if_COREFFT_0_COREFFT.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\adc_fft_if\COREFFT_0\rtl\in_place\vlog\test\user\fft_tb_inc32.v,tb_hdl"
+STATE="utd"
+TIME="1552696370"
+SIZE="162353"
+LIBRARY="COREFFT_LIB"
+PARENT="<project>\component\work\adc_fft_if\COREFFT_0\adc_fft_if_COREFFT_0_COREFFT.cxf"
+IS_READONLY="TRUE"
+IS_INCLUDED="TRUE"
+ENDFILE
+VALUE "<project>\component\work\adc_fft_if\COREFFT_0\rtl\in_place\vlog\test\user\in_place_FFT_tb.v,tb_hdl"
+STATE="utd"
+TIME="1552696370"
+SIZE="7515"
+LIBRARY="COREFFT_LIB"
+PARENT="<project>\component\work\adc_fft_if\COREFFT_0\adc_fft_if_COREFFT_0_COREFFT.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\adc_fft_if\COREFFT_0\twiddle32.v,hdl"
+STATE="utd"
+TIME="1552696370"
+SIZE="19207"
+LIBRARY="COREFFT_LIB"
+PARENT="<project>\component\work\adc_fft_if\COREFFT_0\adc_fft_if_COREFFT_0_COREFFT.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\adc_fft_if\COREFIFO_0\adc_fft_if_COREFIFO_0_COREFIFO.cxf,actgen_cxf"
+STATE="utd"
+TIME="1552696370"
+SIZE="3851"
+PARENT="<project>\component\work\adc_fft_if\adc_fft_if.cxf"
+ENDFILE
+VALUE "<project>\component\work\adc_fft_if\COREFIFO_0\coreparameters.v,tb_hdl"
+STATE="utd"
+TIME="1552696370"
+SIZE="1004"
+PARENT="<project>\component\work\adc_fft_if\COREFIFO_0\adc_fft_if_COREFIFO_0_COREFIFO.cxf"
+IS_READONLY="TRUE"
+IS_INCLUDED="TRUE"
+ENDFILE
+VALUE "<project>\component\work\adc_fft_if\COREFIFO_0\mti\scripts\runall.do,do"
+STATE="utd"
+TIME="1552696370"
+SIZE="23"
+PARENT="<project>\component\work\adc_fft_if\COREFIFO_0\adc_fft_if_COREFIFO_0_COREFIFO.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\adc_fft_if\COREFIFO_0\mti\scripts\wave.do,do"
+STATE="utd"
+TIME="1552696370"
+SIZE="3284"
+PARENT="<project>\component\work\adc_fft_if\COREFIFO_0\adc_fft_if_COREFIFO_0_COREFIFO.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\adc_fft_if\COREFIFO_0\rtl\vlog\core\adc_fft_if_COREFIFO_0_LSRAM_top.v,hdl"
+STATE="utd"
+TIME="1552696370"
+SIZE="2199"
+PARENT="<project>\component\work\adc_fft_if\COREFIFO_0\adc_fft_if_COREFIFO_0_COREFIFO.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\adc_fft_if\COREFIFO_0\rtl\vlog\core\adc_fft_if_COREFIFO_0_ram_wrapper.v,hdl"
+STATE="utd"
+TIME="1552696370"
+SIZE="1986"
+PARENT="<project>\component\work\adc_fft_if\COREFIFO_0\adc_fft_if_COREFIFO_0_COREFIFO.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\adc_fft_if\COREFIFO_0\rtl\vlog\core\COREFIFO.v,hdl"
+STATE="utd"
+TIME="1552696370"
+SIZE="61706"
+PARENT="<project>\component\work\adc_fft_if\COREFIFO_0\adc_fft_if_COREFIFO_0_COREFIFO.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\adc_fft_if\COREFIFO_0\rtl\vlog\core\corefifo_async.v,hdl"
+STATE="utd"
+TIME="1552696370"
+SIZE="51772"
+PARENT="<project>\component\work\adc_fft_if\COREFIFO_0\adc_fft_if_COREFIFO_0_COREFIFO.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\adc_fft_if\COREFIFO_0\rtl\vlog\core\corefifo_doubleSync.v,hdl"
+STATE="utd"
+TIME="1552696370"
+SIZE="3008"
+PARENT="<project>\component\work\adc_fft_if\COREFIFO_0\adc_fft_if_COREFIFO_0_COREFIFO.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\adc_fft_if\COREFIFO_0\rtl\vlog\core\corefifo_fwft.v,hdl"
+STATE="utd"
+TIME="1552696371"
+SIZE="12666"
+PARENT="<project>\component\work\adc_fft_if\COREFIFO_0\adc_fft_if_COREFIFO_0_COREFIFO.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\adc_fft_if\COREFIFO_0\rtl\vlog\core\corefifo_grayToBinConv.v,hdl"
+STATE="utd"
+TIME="1552696371"
+SIZE="2737"
+PARENT="<project>\component\work\adc_fft_if\COREFIFO_0\adc_fft_if_COREFIFO_0_COREFIFO.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\adc_fft_if\COREFIFO_0\rtl\vlog\core\corefifo_sync.v,hdl"
+STATE="utd"
+TIME="1552696371"
+SIZE="31331"
+PARENT="<project>\component\work\adc_fft_if\COREFIFO_0\adc_fft_if_COREFIFO_0_COREFIFO.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\adc_fft_if\COREFIFO_0\rtl\vlog\core\corefifo_sync_scntr.v,hdl"
+STATE="utd"
+TIME="1552696371"
+SIZE="20605"
+PARENT="<project>\component\work\adc_fft_if\COREFIFO_0\adc_fft_if_COREFIFO_0_COREFIFO.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\adc_fft_if\COREFIFO_0\rtl\vlog\test\user\testbench.v,tb_hdl"
+STATE="utd"
+TIME="1552696371"
+SIZE="18863"
+PARENT="<project>\component\work\adc_fft_if\COREFIFO_0\adc_fft_if_COREFIFO_0_COREFIFO.cxf"
+MODULE_UNDER_TEST="testbench"
+SIMULATION_TIME="run -all"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\adc_fft_if\COREFIFO_0\rtl\vlog\test\user\top_define.v,tb_hdl"
+STATE="utd"
+TIME="1552696371"
+SIZE="401"
+PARENT="<project>\component\work\adc_fft_if\COREFIFO_0\adc_fft_if_COREFIFO_0_COREFIFO.cxf"
+IS_READONLY="TRUE"
+IS_INCLUDED="TRUE"
+ENDFILE
+VALUE "<project>\component\work\cm_top\cm_top.cxf,actgen_cxf"
+STATE="utd"
+TIME="1552696371"
+SIZE="5633"
+ENDFILE
+VALUE "<project>\component\work\cm_top\cm_top.v,hdl"
+STATE="utd"
+TIME="1552696371"
+SIZE="8255"
+PARENT="<project>\component\work\cm_top\cm_top.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\debug_bus\debug_bus.cxf,actgen_cxf"
+STATE="utd"
+TIME="1552696371"
+SIZE="1528"
+ENDFILE
+VALUE "<project>\component\work\debug_bus\debug_bus.v,hdl"
+STATE="utd"
+TIME="1552696371"
+SIZE="1160"
+PARENT="<project>\component\work\debug_bus\debug_bus.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\DESIGN_FIRMWARE\DESIGN_FIRMWARE.cxf,actgen_cxf"
+STATE="utd"
+TIME="1552696371"
+SIZE="2461"
+ENDFILE
+VALUE "<project>\component\work\Mario_Libero\CoreGPIO_0\bfmtovec_compile.do,do"
+STATE="utd"
+TIME="1552696372"
+SIZE="1218"
+PARENT="<project>\component\work\Mario_Libero\CoreGPIO_0\Mario_Libero_CoreGPIO_0_CoreGPIO.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\Mario_Libero\CoreGPIO_0\coreparameters.v,tb_hdl"
+STATE="utd"
+TIME="1552696372"
+SIZE="4039"
+PARENT="<project>\component\work\Mario_Libero\CoreGPIO_0\Mario_Libero_CoreGPIO_0_CoreGPIO.cxf"
+IS_READONLY="TRUE"
+IS_INCLUDED="TRUE"
+ENDFILE
+VALUE "<project>\component\work\Mario_Libero\CoreGPIO_0\Mario_Libero_CoreGPIO_0_CoreGPIO.cxf,actgen_cxf"
+STATE="utd"
+TIME="1552696372"
+SIZE="3318"
+PARENT="<project>\component\work\Mario_Libero\Mario_Libero.cxf"
+ENDFILE
+VALUE "<project>\component\work\Mario_Libero\CoreGPIO_0\rtl\vlog\amba_bfm\bfm_ahbl.v,tb_hdl"
+STATE="utd"
+TIME="1552696372"
+SIZE="8106"
+PARENT="<project>\component\work\Mario_Libero\CoreGPIO_0\Mario_Libero_CoreGPIO_0_CoreGPIO.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\Mario_Libero\CoreGPIO_0\rtl\vlog\amba_bfm\bfm_ahblapb.v,tb_hdl"
+STATE="utd"
+TIME="1552696372"
+SIZE="11228"
+PARENT="<project>\component\work\Mario_Libero\CoreGPIO_0\Mario_Libero_CoreGPIO_0_CoreGPIO.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\Mario_Libero\CoreGPIO_0\rtl\vlog\amba_bfm\bfm_ahbslave.v,tb_hdl"
+STATE="utd"
+TIME="1552696372"
+SIZE="2485"
+PARENT="<project>\component\work\Mario_Libero\CoreGPIO_0\Mario_Libero_CoreGPIO_0_CoreGPIO.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\Mario_Libero\CoreGPIO_0\rtl\vlog\amba_bfm\bfm_ahbslaveext.v,tb_hdl"
+STATE="utd"
+TIME="1552696372"
+SIZE="48774"
+PARENT="<project>\component\work\Mario_Libero\CoreGPIO_0\Mario_Libero_CoreGPIO_0_CoreGPIO.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\Mario_Libero\CoreGPIO_0\rtl\vlog\amba_bfm\bfm_ahbtoapb.v,tb_hdl"
+STATE="utd"
+TIME="1552696372"
+SIZE="4659"
+PARENT="<project>\component\work\Mario_Libero\CoreGPIO_0\Mario_Libero_CoreGPIO_0_CoreGPIO.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\Mario_Libero\CoreGPIO_0\rtl\vlog\amba_bfm\bfm_apb.v,tb_hdl"
+STATE="utd"
+TIME="1552696372"
+SIZE="9144"
+PARENT="<project>\component\work\Mario_Libero\CoreGPIO_0\Mario_Libero_CoreGPIO_0_CoreGPIO.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\Mario_Libero\CoreGPIO_0\rtl\vlog\amba_bfm\bfm_apbslave.v,tb_hdl"
+STATE="utd"
+TIME="1552696372"
+SIZE="25151"
+PARENT="<project>\component\work\Mario_Libero\CoreGPIO_0\Mario_Libero_CoreGPIO_0_CoreGPIO.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\Mario_Libero\CoreGPIO_0\rtl\vlog\amba_bfm\bfm_apbslaveext.v,tb_hdl"
+STATE="utd"
+TIME="1552696372"
+SIZE="36297"
+PARENT="<project>\component\work\Mario_Libero\CoreGPIO_0\Mario_Libero_CoreGPIO_0_CoreGPIO.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\Mario_Libero\CoreGPIO_0\rtl\vlog\amba_bfm\bfm_apbtoapb.v,tb_hdl"
+STATE="utd"
+TIME="1552696372"
+SIZE="4722"
+PARENT="<project>\component\work\Mario_Libero\CoreGPIO_0\Mario_Libero_CoreGPIO_0_CoreGPIO.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\Mario_Libero\CoreGPIO_0\rtl\vlog\amba_bfm\bfm_main.v,tb_hdl"
+STATE="utd"
+TIME="1552696372"
+SIZE="122555"
+PARENT="<project>\component\work\Mario_Libero\CoreGPIO_0\Mario_Libero_CoreGPIO_0_CoreGPIO.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\Mario_Libero\CoreGPIO_0\rtl\vlog\core\coregpio.v,hdl"
+STATE="utd"
+TIME="1552696372"
+SIZE="29300"
+PARENT="<project>\component\work\Mario_Libero\CoreGPIO_0\Mario_Libero_CoreGPIO_0_CoreGPIO.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\Mario_Libero\CoreGPIO_0\rtl\vlog\test\user\testbench.v,tb_hdl"
+STATE="utd"
+TIME="1552696372"
+SIZE="13858"
+PARENT="<project>\component\work\Mario_Libero\CoreGPIO_0\Mario_Libero_CoreGPIO_0_CoreGPIO.cxf"
+MODULE_UNDER_TEST="testbench"
+SIMULATION_TIME="-all"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\Mario_Libero\CoreGPIO_0\wave_vlog.do,do"
+STATE="utd"
+TIME="1552696372"
+SIZE="1452"
+PARENT="<project>\component\work\Mario_Libero\CoreGPIO_0\Mario_Libero_CoreGPIO_0_CoreGPIO.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\Mario_Libero\FCCC_0\Mario_Libero_FCCC_0_FCCC.cxf,actgen_cxf"
+STATE="utd"
+TIME="1552696372"
+SIZE="709"
+PARENT="<project>\component\work\Mario_Libero\Mario_Libero.cxf"
+ENDFILE
+VALUE "<project>\component\work\Mario_Libero\FCCC_0\Mario_Libero_FCCC_0_FCCC.v,hdl"
+STATE="utd"
+TIME="1552696372"
+SIZE="1837"
+PARENT="<project>\component\work\Mario_Libero\FCCC_0\Mario_Libero_FCCC_0_FCCC.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\Mario_Libero\Mario_Libero.cxf,actgen_cxf"
+STATE="utd"
+TIME="1553724681"
+SIZE="6247"
+ENDFILE
+VALUE "<project>\component\work\Mario_Libero\Mario_Libero.v,hdl"
+STATE="utd"
+TIME="1552696371"
+SIZE="24858"
+PARENT="<project>\component\work\Mario_Libero\Mario_Libero.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\Mario_Libero\OSC_0\Mario_Libero_OSC_0_OSC.cxf,actgen_cxf"
+STATE="utd"
+TIME="1552696372"
+SIZE="467"
+PARENT="<project>\component\work\Mario_Libero\Mario_Libero.cxf"
+ENDFILE
+VALUE "<project>\component\work\Mario_Libero\OSC_0\Mario_Libero_OSC_0_OSC.v,hdl"
+STATE="utd"
+TIME="1552696372"
+SIZE="539"
+PARENT="<project>\component\work\Mario_Libero\OSC_0\Mario_Libero_OSC_0_OSC.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\Mario_Libero\subsystem.bfm,sim"
+STATE="utd"
+TIME="1552696372"
+SIZE="662"
+ENDFILE
+VALUE "<project>\component\work\Mario_Libero_MSS\CM3_compile_bfm.tcl,sim"
+STATE="utd"
+TIME="1552696372"
+SIZE="500"
+ENDFILE
+VALUE "<project>\component\work\Mario_Libero_MSS\Mario_Libero_MSS.cxf,actgen_cxf"
+STATE="utd"
+TIME="1552696372"
+SIZE="18013"
+ENDFILE
+VALUE "<project>\component\work\Mario_Libero_MSS\Mario_Libero_MSS.v,hdl"
+STATE="utd"
+TIME="1552696372"
+SIZE="52699"
+PARENT="<project>\component\work\Mario_Libero_MSS\Mario_Libero_MSS.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\Mario_Libero_MSS\Mario_Libero_MSS_pre.v,hdl"
+STATE="utd"
+TIME="1552696372"
+SIZE="63978"
+PARENT="<project>\component\work\Mario_Libero_MSS\Mario_Libero_MSS.cxf"
+BEGIN_USE_CONSTRAINT
+TOOL_CONSTRAINT_TYPE="ideSYNTHESIS"
+TOOL_CONSTRAINT_USE="PRECISION_EXT"
+END_USE_CONSTRAINT
+USE_FOR_ANY_TOOL="FALSE"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\Mario_Libero_MSS\Mario_Libero_MSS_syn.v,hdl"
+STATE="utd"
+TIME="1552696372"
+SIZE="56279"
+PARENT="<project>\component\work\Mario_Libero_MSS\Mario_Libero_MSS.cxf"
+BEGIN_USE_CONSTRAINT
+TOOL_CONSTRAINT_TYPE="ideSYNTHESIS"
+TOOL_CONSTRAINT_USE="SYNPLIFY7_EXT"
+END_USE_CONSTRAINT
+USE_FOR_ANY_TOOL="FALSE"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\Mario_Libero_MSS\MDDR_init.bfm,sim"
+STATE="utd"
+TIME="1552696372"
+SIZE="8004"
+ENDFILE
+VALUE "<project>\component\work\Mario_Libero_MSS\test.bfm,sim"
+STATE="utd"
+TIME="1552696373"
+SIZE="734"
+ENDFILE
+VALUE "<project>\component\work\Mario_Libero_MSS\user.bfm,sim"
+STATE="utd"
+TIME="1552696373"
+SIZE="555"
+ENDFILE
+VALUE "<project>\component\work\nm_channel\nm_channel.cxf,actgen_cxf"
+STATE="utd"
+TIME="1552696373"
+SIZE="8548"
+ENDFILE
+VALUE "<project>\component\work\nm_channel\nm_channel.v,hdl"
+STATE="utd"
+TIME="1552696373"
+SIZE="11055"
+PARENT="<project>\component\work\nm_channel\nm_channel.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\nm_if\nm_if.cxf,actgen_cxf"
+STATE="utd"
+TIME="1552696373"
+SIZE="7263"
+ENDFILE
+VALUE "<project>\component\work\nm_if\nm_if.v,hdl"
+STATE="utd"
+TIME="1552696373"
+SIZE="16354"
+PARENT="<project>\component\work\nm_if\nm_if.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\PDMAFIFO\PDMAFIFO.cxf,actgen_cxf"
+STATE="utd"
+TIME="1552696373"
+SIZE="5403"
+ENDFILE
+VALUE "<project>\component\work\PDMAFIFO\PDMAFIFO.v,hdl"
+STATE="utd"
+TIME="1552696373"
+SIZE="5383"
+PARENT="<project>\component\work\PDMAFIFO\PDMAFIFO.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\PDMAFIFO\PDMAFIFO_0\coreparameters.v,tb_hdl"
+STATE="utd"
+TIME="1552696373"
+SIZE="1001"
+PARENT="<project>\component\work\PDMAFIFO\PDMAFIFO_0\PDMAFIFO_PDMAFIFO_0_COREFIFO.cxf"
+IS_READONLY="TRUE"
+IS_INCLUDED="TRUE"
+ENDFILE
+VALUE "<project>\component\work\PDMAFIFO\PDMAFIFO_0\mti\scripts\runall.do,do"
+STATE="utd"
+TIME="1552696373"
+SIZE="19"
+PARENT="<project>\component\work\PDMAFIFO\PDMAFIFO_0\PDMAFIFO_PDMAFIFO_0_COREFIFO.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\PDMAFIFO\PDMAFIFO_0\PDMAFIFO_PDMAFIFO_0_COREFIFO.cxf,actgen_cxf"
+STATE="utd"
+TIME="1552696373"
+SIZE="3891"
+PARENT="<project>\component\work\PDMAFIFO\PDMAFIFO.cxf"
+ENDFILE
+VALUE "<project>\component\work\PDMAFIFO\PDMAFIFO_0\rtl\vlog\core\COREFIFO.v,hdl"
+STATE="utd"
+TIME="1552696373"
+SIZE="61443"
+PARENT="<project>\component\work\PDMAFIFO\PDMAFIFO_0\PDMAFIFO_PDMAFIFO_0_COREFIFO.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\PDMAFIFO\PDMAFIFO_0\rtl\vlog\core\corefifo_async.v,hdl"
+STATE="utd"
+TIME="1552696373"
+SIZE="47786"
+PARENT="<project>\component\work\PDMAFIFO\PDMAFIFO_0\PDMAFIFO_PDMAFIFO_0_COREFIFO.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\PDMAFIFO\PDMAFIFO_0\rtl\vlog\core\corefifo_doubleSync.v,hdl"
+STATE="utd"
+TIME="1552696373"
+SIZE="3006"
+PARENT="<project>\component\work\PDMAFIFO\PDMAFIFO_0\PDMAFIFO_PDMAFIFO_0_COREFIFO.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\PDMAFIFO\PDMAFIFO_0\rtl\vlog\core\corefifo_fwft.v,hdl"
+STATE="utd"
+TIME="1552696373"
+SIZE="10550"
+PARENT="<project>\component\work\PDMAFIFO\PDMAFIFO_0\PDMAFIFO_PDMAFIFO_0_COREFIFO.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\PDMAFIFO\PDMAFIFO_0\rtl\vlog\core\corefifo_grayToBinConv.v,hdl"
+STATE="utd"
+TIME="1552696373"
+SIZE="2735"
+PARENT="<project>\component\work\PDMAFIFO\PDMAFIFO_0\PDMAFIFO_PDMAFIFO_0_COREFIFO.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\PDMAFIFO\PDMAFIFO_0\rtl\vlog\core\corefifo_sync.v,hdl"
+STATE="utd"
+TIME="1552696373"
+SIZE="30743"
+PARENT="<project>\component\work\PDMAFIFO\PDMAFIFO_0\PDMAFIFO_PDMAFIFO_0_COREFIFO.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\PDMAFIFO\PDMAFIFO_0\rtl\vlog\core\corefifo_sync_scntr.v,hdl"
+STATE="utd"
+TIME="1552696373"
+SIZE="20359"
+PARENT="<project>\component\work\PDMAFIFO\PDMAFIFO_0\PDMAFIFO_PDMAFIFO_0_COREFIFO.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\PDMAFIFO\PDMAFIFO_0\rtl\vlog\core\PDMAFIFO_PDMAFIFO_0_ram_wrapper.v,hdl"
+STATE="utd"
+TIME="1552696373"
+SIZE="2385"
+PARENT="<project>\component\work\PDMAFIFO\PDMAFIFO_0\PDMAFIFO_PDMAFIFO_0_COREFIFO.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\PDMAFIFO\PDMAFIFO_0\rtl\vlog\core\PDMAFIFO_PDMAFIFO_0_USRAM_top.v,hdl"
+STATE="utd"
+TIME="1552696373"
+SIZE="4441"
+PARENT="<project>\component\work\PDMAFIFO\PDMAFIFO_0\PDMAFIFO_PDMAFIFO_0_COREFIFO.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\PDMAFIFO\PDMAFIFO_0\rtl\vlog\test\user\testbench.v,tb_hdl"
+STATE="utd"
+TIME="1552696373"
+SIZE="13611"
+PARENT="<project>\component\work\PDMAFIFO\PDMAFIFO_0\PDMAFIFO_PDMAFIFO_0_COREFIFO.cxf"
+MODULE_UNDER_TEST="testbench"
+SIMULATION_TIME="run -all"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\component\work\PDMAFIFO\PDMAFIFO_0\rtl\vlog\test\user\top_define.v,tb_hdl"
+STATE="utd"
+TIME="1552696374"
+SIZE="401"
+PARENT="<project>\component\work\PDMAFIFO\PDMAFIFO_0\PDMAFIFO_PDMAFIFO_0_COREFIFO.cxf"
+IS_READONLY="TRUE"
+IS_INCLUDED="TRUE"
+ENDFILE
+VALUE "<project>\constraint\andy_clock_constraint.sdc,sdc"
+STATE="utd"
+TIME="1552696374"
+SIZE="619"
+ENDFILE
+VALUE "<project>\constraint\fp\Mario_Libero.fp.pdc,fp_pdc"
+STATE="utd"
+TIME="1552696374"
+SIZE="353"
+ENDFILE
+VALUE "<project>\constraint\io\Mario_Libero.io.pdc,io_pdc"
+STATE="utd"
+TIME="1552696374"
+SIZE="4310"
+ENDFILE
+VALUE "<project>\designer\impl1\Mario_Libero.ide_des,ide_des"
+STATE="utd"
+TIME="1552696374"
+SIZE="441"
+ENDFILE
+VALUE "<project>\designer\impl1\Mario_Libero_MSS.ide_des,ide_des"
+STATE="utd"
+TIME="1552696374"
+SIZE="235"
+ENDFILE
+VALUE "<project>\hdl\acc_apb_proc.v,hdl"
+STATE="utd"
+TIME="1552696384"
+SIZE="10039"
+ENDFILE
+VALUE "<project>\hdl\acc_if.v,hdl"
+STATE="utd"
+TIME="1552696384"
+SIZE="6386"
+ENDFILE
+VALUE "<project>\hdl\acc_irq_proc.v,hdl"
+STATE="utd"
+TIME="1552696384"
+SIZE="8797"
+ENDFILE
+VALUE "<project>\hdl\acc_sim.v,hdl"
+STATE="utd"
+TIME="1552696384"
+SIZE="6457"
+ENDFILE
+VALUE "<project>\hdl\ack_datapath.v,hdl"
+STATE="utd"
+TIME="1552696384"
+SIZE="4627"
+ENDFILE
+VALUE "<project>\hdl\ADCMEM_DP.v,hdl"
+STATE="utd"
+TIME="1552696384"
+SIZE="1118"
+ENDFILE
+VALUE "<project>\hdl\ADCMEM_SP.v,hdl"
+STATE="utd"
+TIME="1552696384"
+SIZE="968"
+ENDFILE
+VALUE "<project>\hdl\adc_artifact_cancel.v,hdl"
+STATE="utd"
+TIME="1552696384"
+SIZE="6152"
+ENDFILE
+VALUE "<project>\hdl\adc_fft_cntl.v,hdl"
+STATE="utd"
+TIME="1552696384"
+SIZE="3666"
+ENDFILE
+VALUE "<project>\hdl\adc_frame_buffer.v,hdl"
+STATE="utd"
+TIME="1552696384"
+SIZE="1339"
+ENDFILE
+VALUE "<project>\hdl\adc_vector_compressor.v,hdl"
+STATE="utd"
+TIME="1552696384"
+SIZE="6253"
+ENDFILE
+VALUE "<project>\hdl\associative_memory.v,hdl"
+STATE="utd"
+TIME="1552696384"
+SIZE="7061"
+ENDFILE
+VALUE "<project>\hdl\bundle_counter.v,hdl"
+STATE="utd"
+TIME="1553724671"
+SIZE="1544"
+ENDFILE
+VALUE "<project>\hdl\cellular_automaton.v,hdl"
+STATE="utd"
+TIME="1552696384"
+SIZE="1236"
+ENDFILE
+VALUE "<project>\hdl\cm_if_apb.v,hdl"
+STATE="utd"
+TIME="1552696384"
+SIZE="8866"
+ENDFILE
+VALUE "<project>\hdl\const.vh,hdl"
+STATE="utd"
+TIME="1554497592"
+SIZE="83486"
+ENDFILE
+VALUE "<project>\hdl\debug_mux.v,hdl"
+STATE="utd"
+TIME="1552696384"
+SIZE="3273"
+ENDFILE
+VALUE "<project>\hdl\feature_encoder.v,hdl"
+STATE="utd"
+TIME="1552696384"
+SIZE="6066"
+ENDFILE
+VALUE "<project>\hdl\fifo.v,hdl"
+STATE="utd"
+TIME="1552696384"
+SIZE="2102"
+ENDFILE
+VALUE "<project>\hdl\fifo_error_decoder.v,hdl"
+STATE="utd"
+TIME="1552696384"
+SIZE="4271"
+ENDFILE
+VALUE "<project>\hdl\hdc_top.v,hdl"
+STATE="utd"
+TIME="1554489327"
+SIZE="4503"
+ENDFILE
+VALUE "<project>\hdl\hdc_top_noHD.v,hdl"
+STATE="utd"
+TIME="1552696384"
+SIZE="1193"
+ENDFILE
+VALUE "<project>\hdl\hdc_top_old.v,hdl"
+STATE="utd"
+TIME="1552696384"
+SIZE="3644"
+ENDFILE
+VALUE "<project>\hdl\hypervector_manipulator.v,hdl"
+STATE="utd"
+TIME="1552696384"
+SIZE="80722"
+ENDFILE
+VALUE "<project>\hdl\nmic_rx.v,hdl"
+STATE="utd"
+TIME="1552696384"
+SIZE="6914"
+ENDFILE
+VALUE "<project>\hdl\nmic_tx.v,hdl"
+STATE="utd"
+TIME="1552696384"
+SIZE="6545"
+ENDFILE
+VALUE "<project>\hdl\nm_if_apb.v,hdl"
+STATE="utd"
+TIME="1552696610"
+SIZE="8730"
+ENDFILE
+VALUE "<project>\hdl\nm_sim.v,hdl"
+STATE="utd"
+TIME="1552696384"
+SIZE="2386"
+ENDFILE
+VALUE "<project>\hdl\nm_sim_adc_gen.v,hdl"
+STATE="utd"
+TIME="1552696384"
+SIZE="6635"
+ENDFILE
+VALUE "<project>\hdl\nm_sim_cmd_and_reg.v,hdl"
+STATE="utd"
+TIME="1552696384"
+SIZE="8190"
+ENDFILE
+VALUE "<project>\hdl\pdma_if.v,hdl"
+STATE="utd"
+TIME="1552696384"
+SIZE="6605"
+ENDFILE
+VALUE "<project>\hdl\pdma_sim.v,hdl"
+STATE="utd"
+TIME="1552696384"
+SIZE="1465"
+ENDFILE
+VALUE "<project>\hdl\similarity_bundler.v,hdl"
+STATE="utd"
+TIME="1552696384"
+SIZE="1550"
+ENDFILE
+VALUE "<project>\hdl\spatial_accumulator.v,hdl"
+STATE="utd"
+TIME="1552696384"
+SIZE="1400"
+ENDFILE
+VALUE "<project>\hdl\spatial_encoder.v,hdl"
+STATE="utd"
+TIME="1552696385"
+SIZE="4152"
+ENDFILE
+VALUE "<project>\hdl\spatial_encoder_N_pong.v,hdl"
+STATE="utd"
+TIME="1553377682"
+SIZE="6205"
+ENDFILE
+VALUE "<project>\hdl\spatial_encoder_ping_pong.v,hdl"
+STATE="utd"
+TIME="1552696385"
+SIZE="5375"
+ENDFILE
+VALUE "<project>\hdl\temporal_encoder.v,hdl"
+STATE="utd"
+TIME="1552696385"
+SIZE="6775"
+ENDFILE
+VALUE "<project>\hdl\temporal_encoder_counter.v,hdl"
+STATE="utd"
+TIME="1553377682"
+SIZE="8193"
+ENDFILE
+VALUE "<project>\hdl\twoMHz_strobe.v,hdl"
+STATE="utd"
+TIME="1552696385"
+SIZE="1005"
+ENDFILE
+VALUE "<project>\simulation\bfmtovec_compile.log,log"
+STATE="utd"
+TIME="1552696387"
+SIZE="407"
+ENDFILE
+VALUE "<project>\simulation\bfmtovec_compile.tcl,sim"
+STATE="utd"
+TIME="1552696387"
+SIZE="1229"
+PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
+ENDFILE
+VALUE "<project>\simulation\CM3_compile_bfm.tcl,sim"
+STATE="utd"
+TIME="1552696387"
+SIZE="500"
+PARENT="<project>\component\work\Mario_Libero_MSS\Mario_Libero_MSS.cxf"
+ENDFILE
+VALUE "<project>\simulation\coreapb3_usertb_master.bfm,sim"
+STATE="utd"
+TIME="1552696387"
+SIZE="8016"
+PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
+ENDFILE
+VALUE "<project>\simulation\coregpio_usertb_apb_master.bfm,sim"
+STATE="utd"
+TIME="1552696387"
+SIZE="2823"
+PARENT="<project>\component\work\Mario_Libero\CoreGPIO_0\Mario_Libero_CoreGPIO_0_CoreGPIO.cxf"
+ENDFILE
+VALUE "<project>\simulation\coregpio_usertb_include.bfm,sim"
+STATE="utd"
+TIME="1552696387"
+SIZE="23755"
+PARENT="<project>\component\work\Mario_Libero\CoreGPIO_0\Mario_Libero_CoreGPIO_0_CoreGPIO.cxf"
+ENDFILE
+VALUE "<project>\simulation\MDDR_init.bfm,sim"
+STATE="utd"
+TIME="1552696387"
+SIZE="8004"
+PARENT="<project>\component\work\Mario_Libero_MSS\Mario_Libero_MSS.cxf"
+ENDFILE
+VALUE "<project>\simulation\peripheral_init.bfm,sim"
+STATE="utd"
+TIME="1552696387"
+SIZE="8450"
+PARENT="<project>\component\Actel\SmartFusion2MSS\MSS\1.1.400\MSS.cxf"
+ENDFILE
+VALUE "<project>\simulation\read_adc_fifo.bfm,sim"
+STATE="utd"
+TIME="1552696387"
+SIZE="224"
+ENDFILE
+VALUE "<project>\simulation\run.do,do"
+STATE="utd"
+TIME="1552696387"
+SIZE="7353"
+ENDFILE
+VALUE "<project>\simulation\run_acc.bfm,sim"
+STATE="utd"
+TIME="1552696387"
+SIZE="1353"
+ENDFILE
+VALUE "<project>\simulation\run_nm_command.bfm,sim"
+STATE="utd"
+TIME="1552696387"
+SIZE="215"
+ENDFILE
+VALUE "<project>\simulation\run_nm_register_write.bfm,sim"
+STATE="utd"
+TIME="1552696387"
+SIZE="606"
+ENDFILE
+VALUE "<project>\simulation\run_pdma.bfm,sim"
+STATE="utd"
+TIME="1552696388"
+SIZE="358"
+ENDFILE
+VALUE "<project>\simulation\run_power_cycle.bfm,sim"
+STATE="utd"
+TIME="1552696388"
+SIZE="604"
+ENDFILE
+VALUE "<project>\simulation\run_reset.bfm,sim"
+STATE="utd"
+TIME="1552696388"
+SIZE="433"
+ENDFILE
+VALUE "<project>\simulation\subsystem.bfm,sim"
+STATE="utd"
+TIME="1552696388"
+SIZE="662"
+PARENT="<project>\component\work\Mario_Libero\Mario_Libero.cxf"
+ENDFILE
+VALUE "<project>\simulation\test.bfm,sim"
+STATE="utd"
+TIME="1552696388"
+SIZE="734"
+PARENT="<project>\component\work\Mario_Libero_MSS\Mario_Libero_MSS.cxf"
+ENDFILE
+VALUE "<project>\simulation\user.bfm,sim"
+STATE="utd"
+TIME="1552696388"
+SIZE="3012"
+PARENT="<project>\component\work\Mario_Libero_MSS\Mario_Libero_MSS.cxf"
+ENDFILE
+VALUE "<project>\simulation\wave_adc_cmam_start.do,do"
+STATE="utd"
+TIME="1552696388"
+SIZE="32459"
+ENDFILE
+VALUE "<project>\simulation\wave_adc_toplevel_start.do,do"
+STATE="utd"
+TIME="1552696388"
+SIZE="40370"
+ENDFILE
+VALUE "<project>\stimulus\cm_tb.v,tb_hdl"
+STATE="utd"
+TIME="1552696397"
+SIZE="1604"
+ENDFILE
+VALUE "<project>\stimulus\toplevel_tb.v,tb_hdl"
+STATE="utd"
+TIME="1552696397"
+SIZE="2050"
+ENDFILE
+VALUE "<project>\synthesis\Mario_Libero.edn,syn_edn"
+STATE="utd"
+TIME="1554498023"
+SIZE="70309509"
+ENDFILE
+VALUE "<project>\synthesis\Mario_Libero.so,so"
+STATE="utd"
+TIME="1554498028"
+SIZE="243"
+ENDFILE
+VALUE "<project>\synthesis\Mario_Libero_sdc.sdc,syn_sdc"
+STATE="utd"
+TIME="1554498021"
+SIZE="1228"
+ENDFILE
+VALUE "<project>\synthesis\Mario_Libero_syn.prj,prj"
+STATE="utd"
+TIME="1554498029"
+SIZE="8693"
+ENDFILE
+ENDLIST
+LIST UsedFile
+VALUE "<project>\hdl\hdc_top.v,hdc_top"
+ENDLIST
+LIST NewModulesInfo
+LIST "ACKFIFO_ACKFIFO_0_COREFIFO::work"
+FILE "<project>\component\work\ACKFIFO\ACKFIFO_0\rtl\vlog\core\COREFIFO.v,hdl"
+LIST Other_Association
+VALUE "<project>\component\work\ACKFIFO\ACKFIFO_0\coreparameters.v,tb_hdl"
+VALUE "<project>\component\work\ACKFIFO\ACKFIFO_0\rtl\vlog\test\user\top_define.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.4.100\rtl\vlog\test\user\clock_driver.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.4.100\rtl\vlog\test\user\fifo_driver.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.4.100\rtl\vlog\test\user\fifo_monitor.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.4.100\rtl\vlog\test\user\g4_dp_ext_mem.v,tb_hdl"
+VALUE "<project>\component\work\ACKFIFO\ACKFIFO_0\rtl\vlog\test\user\testbench.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.4.100\rtl\vlog\test\user\MEM_WeqR.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.4.100\rtl\vlog\test\user\MEM_WgtR.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.4.100\rtl\vlog\test\user\MEM_WltR.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.4.100\rtl\vlog\test\user\wave.do,do"
+VALUE "<project>\component\work\ACKFIFO\ACKFIFO_0\mti\scripts\runall.do,do"
+ENDLIST
+LIST AssociatedStimulus
+VALUE "<project>\component\work\ACKFIFO\ACKFIFO_0\coreparameters.v,tb_hdl"
+VALUE "<project>\component\work\ACKFIFO\ACKFIFO_0\rtl\vlog\test\user\top_define.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.4.100\rtl\vlog\test\user\clock_driver.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.4.100\rtl\vlog\test\user\fifo_driver.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.4.100\rtl\vlog\test\user\fifo_monitor.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.4.100\rtl\vlog\test\user\g4_dp_ext_mem.v,tb_hdl"
+VALUE "<project>\component\work\ACKFIFO\ACKFIFO_0\rtl\vlog\test\user\testbench.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.4.100\rtl\vlog\test\user\MEM_WeqR.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.4.100\rtl\vlog\test\user\MEM_WgtR.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.4.100\rtl\vlog\test\user\MEM_WltR.v,tb_hdl"
+ENDLIST
+LIST ProjectState5.1
+LIST Impl1
+ideSTIMULUS=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+UseFhbAutoInst=FALSE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
+ENDLIST
+LIST "adc_fft_if_COREFIFO_0_COREFIFO::work"
+FILE "<project>\component\work\adc_fft_if\COREFIFO_0\rtl\vlog\core\COREFIFO.v,hdl"
+LIST Other_Association
+VALUE "<project>\component\work\adc_fft_if\COREFIFO_0\coreparameters.v,tb_hdl"
+VALUE "<project>\component\work\adc_fft_if\COREFIFO_0\rtl\vlog\test\user\top_define.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.6.108\rtl\vlog\test\user\clock_driver.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.6.108\rtl\vlog\test\user\fifo_driver.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.6.108\rtl\vlog\test\user\fifo_monitor.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.6.108\rtl\vlog\test\user\g4_dp_ext_mem.v,tb_hdl"
+VALUE "<project>\component\work\adc_fft_if\COREFIFO_0\rtl\vlog\test\user\testbench.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.6.108\rtl\vlog\test\user\MEM_WeqR.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.6.108\rtl\vlog\test\user\MEM_WgtR.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.6.108\rtl\vlog\test\user\MEM_WltR.v,tb_hdl"
+VALUE "<project>\component\work\adc_fft_if\COREFIFO_0\mti\scripts\wave.do,do"
+VALUE "<project>\component\work\adc_fft_if\COREFIFO_0\mti\scripts\runall.do,do"
+ENDLIST
+LIST AssociatedStimulus
+VALUE "<project>\component\work\adc_fft_if\COREFIFO_0\coreparameters.v,tb_hdl"
+VALUE "<project>\component\work\adc_fft_if\COREFIFO_0\rtl\vlog\test\user\top_define.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.6.108\rtl\vlog\test\user\clock_driver.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.6.108\rtl\vlog\test\user\fifo_driver.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.6.108\rtl\vlog\test\user\fifo_monitor.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.6.108\rtl\vlog\test\user\g4_dp_ext_mem.v,tb_hdl"
+VALUE "<project>\component\work\adc_fft_if\COREFIFO_0\rtl\vlog\test\user\testbench.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.6.108\rtl\vlog\test\user\MEM_WeqR.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.6.108\rtl\vlog\test\user\MEM_WgtR.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.6.108\rtl\vlog\test\user\MEM_WltR.v,tb_hdl"
+ENDLIST
+LIST ProjectState5.1
+LIST Impl1
+ideSTIMULUS=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+UseFhbAutoInst=FALSE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
+ENDLIST
+LIST "ADCFIFO_ADCFIFO_0_COREFIFO::work"
+FILE "<project>\component\work\ADCFIFO\ADCFIFO_0\rtl\vlog\core\COREFIFO.v,hdl"
+LIST Other_Association
+VALUE "<project>\component\work\ADCFIFO\ADCFIFO_0\coreparameters.v,tb_hdl"
+VALUE "<project>\component\work\ADCFIFO\ADCFIFO_0\rtl\vlog\test\user\top_define.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.4.100\rtl\vlog\test\user\clock_driver.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.4.100\rtl\vlog\test\user\fifo_driver.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.4.100\rtl\vlog\test\user\fifo_monitor.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.4.100\rtl\vlog\test\user\g4_dp_ext_mem.v,tb_hdl"
+VALUE "<project>\component\work\ADCFIFO\ADCFIFO_0\rtl\vlog\test\user\testbench.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.4.100\rtl\vlog\test\user\MEM_WeqR.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.4.100\rtl\vlog\test\user\MEM_WgtR.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.4.100\rtl\vlog\test\user\MEM_WltR.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.4.100\rtl\vlog\test\user\wave.do,do"
+VALUE "<project>\component\work\ADCFIFO\ADCFIFO_0\mti\scripts\runall.do,do"
+ENDLIST
+LIST AssociatedStimulus
+VALUE "<project>\component\work\ADCFIFO\ADCFIFO_0\coreparameters.v,tb_hdl"
+VALUE "<project>\component\work\ADCFIFO\ADCFIFO_0\rtl\vlog\test\user\top_define.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.4.100\rtl\vlog\test\user\clock_driver.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.4.100\rtl\vlog\test\user\fifo_driver.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.4.100\rtl\vlog\test\user\fifo_monitor.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.4.100\rtl\vlog\test\user\g4_dp_ext_mem.v,tb_hdl"
+VALUE "<project>\component\work\ADCFIFO\ADCFIFO_0\rtl\vlog\test\user\testbench.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.4.100\rtl\vlog\test\user\MEM_WeqR.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.4.100\rtl\vlog\test\user\MEM_WgtR.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.4.100\rtl\vlog\test\user\MEM_WltR.v,tb_hdl"
+ENDLIST
+LIST ProjectState5.1
+LIST Impl1
+ideSTIMULUS=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+UseFhbAutoInst=FALSE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
+ENDLIST
+LIST "Mario_Libero::work"
+FILE "<project>\component\work\Mario_Libero\Mario_Libero.v,hdl"
+LIST Other_Association
+VALUE "<project>\simulation\subsystem.bfm,sim"
+ENDLIST
+LIST UserCustomizedFileList
+LIST "ideSIMULATION"
+USE_LIST=TRUE
+FILELIST
+VALUE "<project>\component\work\Mario_Libero\FCCC_0\Mario_Libero_FCCC_0_FCCC.v,hdl"
+VALUE "<project>\component\work\Mario_Libero_MSS\Mario_Libero_MSS.v,hdl"
+VALUE "<project>\component\work\Mario_Libero\OSC_0\Mario_Libero_OSC_0_OSC.v,hdl"
+VALUE "<project>\hdl\acc_sim.v,hdl"
+VALUE "<project>\hdl\debug_mux.v,hdl"
+VALUE "<project>\hdl\nm_sim_adc_gen.v,hdl"
+VALUE "<project>\hdl\nm_sim_cmd_and_reg.v,hdl"
+VALUE "<project>\hdl\nm_sim.v,hdl"
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3_muxptob3.v,hdl"
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3_iaddr_reg.v,hdl"
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v,hdl"
+VALUE "<project>\component\Actel\DirectCore\CORESPI\5.1.104\rtl\vlog\core\spi_clockmux.v,hdl"
+VALUE "<project>\component\Actel\DirectCore\CORESPI\5.1.104\rtl\vlog\core\spi_chanctrl.v,hdl"
+VALUE "<project>\component\Actel\DirectCore\CORESPI\5.1.104\rtl\vlog\core\spi_control.v,hdl"
+VALUE "<project>\component\Actel\DirectCore\CORESPI\5.1.104\rtl\vlog\core\spi_fifo.v,hdl"
+VALUE "<project>\component\Actel\DirectCore\CORESPI\5.1.104\rtl\vlog\core\spi_rf.v,hdl"
+VALUE "<project>\component\Actel\DirectCore\CORESPI\5.1.104\rtl\vlog\core\spi.v,hdl"
+VALUE "<project>\component\Actel\DirectCore\CORESPI\5.1.104\rtl\vlog\core\corespi.v,hdl"
+VALUE "<project>\hdl\acc_apb_proc.v,hdl"
+VALUE "<project>\hdl\acc_irq_proc.v,hdl"
+VALUE "<project>\hdl\acc_if.v,hdl"
+VALUE "<project>\hdl\cm_demux.v,hdl"
+VALUE "<project>\component\work\ACKFIFO\ACKFIFO_0\rtl\vlog\core\corefifo_doubleSync.v,hdl"
+VALUE "<project>\component\work\ACKFIFO\ACKFIFO_0\rtl\vlog\core\corefifo_grayToBinConv.v,hdl"
+VALUE "<project>\component\work\ACKFIFO\ACKFIFO_0\rtl\vlog\core\corefifo_async.v,hdl"
+VALUE "<project>\component\work\ACKFIFO\ACKFIFO_0\rtl\vlog\core\corefifo_fwft.v,hdl"
+VALUE "<project>\component\work\ACKFIFO\ACKFIFO_0\rtl\vlog\core\corefifo_sync.v,hdl"
+VALUE "<project>\component\work\ACKFIFO\ACKFIFO_0\rtl\vlog\core\corefifo_sync_scntr.v,hdl"
+VALUE "<project>\component\work\ACKFIFO\ACKFIFO_0\rtl\vlog\core\ACKFIFO_ACKFIFO_0_USRAM_top.v,hdl"
+VALUE "<project>\component\work\ACKFIFO\ACKFIFO_0\rtl\vlog\core\ACKFIFO_ACKFIFO_0_ram_wrapper.v,hdl"
+VALUE "<project>\component\work\ACKFIFO\ACKFIFO_0\rtl\vlog\core\COREFIFO.v,hdl"
+VALUE "<project>\component\work\ACKFIFO\ACKFIFO.v,hdl"
+VALUE "<project>\hdl\ack_deserializer.v,hdl"
+VALUE "<project>\hdl\ack_datapath.v,hdl"
+VALUE "<project>\hdl\nmic_rx.v,hdl"
+VALUE "<project>\hdl\nmic_tx.v,hdl"
+VALUE "<project>\component\work\ADCFIFO\ADCFIFO_0\rtl\vlog\core\corefifo_doubleSync.v,hdl"
+VALUE "<project>\component\work\ADCFIFO\ADCFIFO_0\rtl\vlog\core\corefifo_grayToBinConv.v,hdl"
+VALUE "<project>\component\work\ADCFIFO\ADCFIFO_0\rtl\vlog\core\corefifo_async.v,hdl"
+VALUE "<project>\component\work\ADCFIFO\ADCFIFO_0\rtl\vlog\core\corefifo_fwft.v,hdl"
+VALUE "<project>\component\work\ADCFIFO\ADCFIFO_0\rtl\vlog\core\corefifo_sync.v,hdl"
+VALUE "<project>\component\work\ADCFIFO\ADCFIFO_0\rtl\vlog\core\corefifo_sync_scntr.v,hdl"
+VALUE "<project>\component\work\ADCFIFO\ADCFIFO_0\rtl\vlog\core\ADCFIFO_ADCFIFO_0_LSRAM_top.v,hdl"
+VALUE "<project>\component\work\ADCFIFO\ADCFIFO_0\rtl\vlog\core\ADCFIFO_ADCFIFO_0_ram_wrapper.v,hdl"
+VALUE "<project>\component\work\ADCFIFO\ADCFIFO_0\rtl\vlog\core\COREFIFO.v,hdl"
+VALUE "<project>\component\work\ADCFIFO\ADCFIFO.v,hdl"
+VALUE "<project>\hdl\adc_vector_compressor.v,hdl"
+VALUE "<project>\hdl\adc_artifact_cancel.v,hdl"
+VALUE "<project>\component\work\PDMAFIFO\PDMAFIFO_0\rtl\vlog\core\corefifo_doubleSync.v,hdl"
+VALUE "<project>\component\work\PDMAFIFO\PDMAFIFO_0\rtl\vlog\core\corefifo_grayToBinConv.v,hdl"
+VALUE "<project>\component\work\PDMAFIFO\PDMAFIFO_0\rtl\vlog\core\corefifo_async.v,hdl"
+VALUE "<project>\component\work\PDMAFIFO\PDMAFIFO_0\rtl\vlog\core\corefifo_fwft.v,hdl"
+VALUE "<project>\component\work\PDMAFIFO\PDMAFIFO_0\rtl\vlog\core\corefifo_sync.v,hdl"
+VALUE "<project>\component\work\PDMAFIFO\PDMAFIFO_0\rtl\vlog\core\corefifo_sync_scntr.v,hdl"
+VALUE "<project>\component\work\PDMAFIFO\PDMAFIFO_0\rtl\vlog\core\PDMAFIFO_PDMAFIFO_0_USRAM_top.v,hdl"
+VALUE "<project>\component\work\PDMAFIFO\PDMAFIFO_0\rtl\vlog\core\PDMAFIFO_PDMAFIFO_0_ram_wrapper.v,hdl"
+VALUE "<project>\component\work\PDMAFIFO\PDMAFIFO_0\rtl\vlog\core\COREFIFO.v,hdl"
+VALUE "<project>\component\work\PDMAFIFO\PDMAFIFO.v,hdl"
+VALUE "<project>\hdl\pdma_if.v,hdl"
+VALUE "<project>\component\work\Mario_Libero\Mario_Libero.v,hdl"
+VALUE "<project>\component\Actel\SgCore\OSC\2.0.101\osc_comps.v,hdl"
+VALUE "<project>\component\Actel\SgCore\OSC\2.0.101\osc_comps_pre.v,hdl"
+VALUE "<project>\component\work\Mario_Libero_MSS\Mario_Libero_MSS_pre.v,hdl"
+VALUE "<project>\component\work\Mario_Libero_MSS\Mario_Libero_MSS_syn.v,hdl"
+VALUE "<project>\hdl\pdma_sim.v,hdl"
+VALUE "<project>\component\Actel\DirectCore\COREFFT\7.0.104\rtl\in_place\vlog\core\cmplx.v,hdl"
+VALUE "<project>\component\Actel\DirectCore\COREFFT\7.0.104\rtl\in_place\vlog\core\fftSm.v,hdl"
+VALUE "<project>\component\Actel\DirectCore\COREFFT\7.0.104\rtl\in_place\vlog\core\kit.v,hdl"
+VALUE "<project>\component\Actel\DirectCore\COREFFT\7.0.104\rtl\in_place\vlog\core\mac_lib.v,hdl"
+VALUE "<project>\component\work\adc_fft_if\COREFFT_0\rtl\in_place\vlog\core\COREFFT.v,hdl"
+VALUE "<project>\component\work\adc_fft_if\COREFFT_0\rtl\in_place\vlog\core\COREFFT_TOP.v,hdl"
+VALUE "<project>\component\work\adc_fft_if\COREFFT_0\rtl\in_place\vlog\core\adc_fft_if_COREFFT_0_ram_smGen.v,hdl"
+VALUE "<project>\component\work\adc_fft_if\COREFFT_0\rtl\in_place\vlog\core\fftDp.v,hdl"
+VALUE "<project>\component\work\adc_fft_if\COREFFT_0\twiddle32.v,hdl"
+VALUE "<project>\component\work\adc_fft_if\adc_fft_if.v,hdl"
+VALUE "<project>\component\work\debug_bus\debug_bus.v,hdl"
+VALUE "<project>\hdl\adc_debug.v,hdl"
+VALUE "<project>\hdl\adc_fft_cntl.v,hdl"
+VALUE "<project>\hdl\adc_frame_buffer.v,hdl"
+VALUE "<project>\hdl\am_if.v,hdl"
+VALUE "<project>\hdl\cm_if_apb.v,hdl"
+VALUE "<project>\hdl\cmam_if_apb.v,hdl"
+VALUE "<project>\hdl\ADCMEM_SP.v,hdl"
+ENDFILELIST
+ENDLIST
+ENDLIST 
+LIST AssociatedStimulus
+VALUE "<project>\stimulus\toplevel_tb.v,tb_hdl"
+ENDLIST
+LIST SynthesisConstraints
+VALUE "<project>\constraint\andy_clock_constraint.sdc,sdc"
+ENDLIST
+LIST ProjectState5.1
+LIST Impl1
+LiberoState=Post_Synthesis
+ideSTIMULUS=StateSuccess
+ideSYNTHESIS(<project>\synthesis\Mario_Libero.edn,syn_edn)=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+UseFhbAutoInst=FALSE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
+LIST PinReports
+VALUE "<project>\designer\Mario_Libero\Mario_Libero_pinrpt_name.rpt,log"
+VALUE "<project>\designer\Mario_Libero\Mario_Libero_pinrpt_number.rpt,log"
+VALUE "<project>\designer\Mario_Libero\Mario_Libero_bankrpt.rpt,log"
+VALUE "<project>\designer\Mario_Libero\Mario_Libero_ioff.xml,log"
+ENDLIST
+ENDLIST
+LIST "Mario_Libero_CoreGPIO_0_CoreGPIO::work"
+FILE "<project>\component\work\Mario_Libero\CoreGPIO_0\rtl\vlog\core\coregpio.v,hdl"
+LIST Other_Association
+VALUE "<project>\simulation\coregpio_usertb_apb_master.bfm,sim"
+VALUE "<project>\simulation\coregpio_usertb_include.bfm,sim"
+VALUE "<project>\component\work\Mario_Libero\CoreGPIO_0\rtl\vlog\amba_bfm\bfm_ahbl.v,tb_hdl"
+VALUE "<project>\component\work\Mario_Libero\CoreGPIO_0\rtl\vlog\amba_bfm\bfm_ahblapb.v,tb_hdl"
+VALUE "<project>\component\work\Mario_Libero\CoreGPIO_0\rtl\vlog\amba_bfm\bfm_ahbslave.v,tb_hdl"
+VALUE "<project>\component\work\Mario_Libero\CoreGPIO_0\rtl\vlog\amba_bfm\bfm_ahbslaveext.v,tb_hdl"
+VALUE "<project>\component\work\Mario_Libero\CoreGPIO_0\rtl\vlog\amba_bfm\bfm_ahbtoapb.v,tb_hdl"
+VALUE "<project>\component\work\Mario_Libero\CoreGPIO_0\rtl\vlog\amba_bfm\bfm_apb.v,tb_hdl"
+VALUE "<project>\component\work\Mario_Libero\CoreGPIO_0\rtl\vlog\amba_bfm\bfm_apbslave.v,tb_hdl"
+VALUE "<project>\component\work\Mario_Libero\CoreGPIO_0\rtl\vlog\amba_bfm\bfm_apbslaveext.v,tb_hdl"
+VALUE "<project>\component\work\Mario_Libero\CoreGPIO_0\rtl\vlog\amba_bfm\bfm_apbtoapb.v,tb_hdl"
+VALUE "<project>\component\work\Mario_Libero\CoreGPIO_0\rtl\vlog\amba_bfm\bfm_main.v,tb_hdl"
+VALUE "<project>\component\work\Mario_Libero\CoreGPIO_0\coreparameters.v,tb_hdl"
+VALUE "<project>\component\work\Mario_Libero\CoreGPIO_0\rtl\vlog\test\user\testbench.v,tb_hdl"
+VALUE "<project>\component\work\Mario_Libero\CoreGPIO_0\bfmtovec_compile.do,do"
+VALUE "<project>\component\work\Mario_Libero\CoreGPIO_0\wave_vlog.do,do"
+ENDLIST
+LIST AssociatedStimulus
+VALUE "<project>\component\work\Mario_Libero\CoreGPIO_0\rtl\vlog\amba_bfm\bfm_ahbl.v,tb_hdl"
+VALUE "<project>\component\work\Mario_Libero\CoreGPIO_0\rtl\vlog\amba_bfm\bfm_ahblapb.v,tb_hdl"
+VALUE "<project>\component\work\Mario_Libero\CoreGPIO_0\rtl\vlog\amba_bfm\bfm_ahbslave.v,tb_hdl"
+VALUE "<project>\component\work\Mario_Libero\CoreGPIO_0\rtl\vlog\amba_bfm\bfm_ahbslaveext.v,tb_hdl"
+VALUE "<project>\component\work\Mario_Libero\CoreGPIO_0\rtl\vlog\amba_bfm\bfm_ahbtoapb.v,tb_hdl"
+VALUE "<project>\component\work\Mario_Libero\CoreGPIO_0\rtl\vlog\amba_bfm\bfm_apb.v,tb_hdl"
+VALUE "<project>\component\work\Mario_Libero\CoreGPIO_0\rtl\vlog\amba_bfm\bfm_apbslave.v,tb_hdl"
+VALUE "<project>\component\work\Mario_Libero\CoreGPIO_0\rtl\vlog\amba_bfm\bfm_apbslaveext.v,tb_hdl"
+VALUE "<project>\component\work\Mario_Libero\CoreGPIO_0\rtl\vlog\amba_bfm\bfm_apbtoapb.v,tb_hdl"
+VALUE "<project>\component\work\Mario_Libero\CoreGPIO_0\rtl\vlog\amba_bfm\bfm_main.v,tb_hdl"
+VALUE "<project>\component\work\Mario_Libero\CoreGPIO_0\coreparameters.v,tb_hdl"
+VALUE "<project>\component\work\Mario_Libero\CoreGPIO_0\rtl\vlog\test\user\testbench.v,tb_hdl"
+ENDLIST
+LIST ProjectState5.1
+LIST Impl1
+ideSTIMULUS=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+UseFhbAutoInst=FALSE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
+ENDLIST
+LIST "Mario_Libero_MSS::work"
+FILE "<project>\component\work\Mario_Libero_MSS\Mario_Libero_MSS.v,hdl"
+LIST Other_Association
+VALUE "<project>\simulation\CM3_compile_bfm.tcl,sim"
+VALUE "<project>\simulation\user.bfm,sim"
+VALUE "<project>\simulation\test.bfm,sim"
+VALUE "<project>\simulation\MDDR_init.bfm,sim"
+VALUE "<project>\simulation\peripheral_init.bfm,sim"
+ENDLIST
+ENDLIST
+LIST "PDMAFIFO_PDMAFIFO_0_COREFIFO::work"
+FILE "<project>\component\work\PDMAFIFO\PDMAFIFO_0\rtl\vlog\core\COREFIFO.v,hdl"
+LIST Other_Association
+VALUE "<project>\component\work\PDMAFIFO\PDMAFIFO_0\coreparameters.v,tb_hdl"
+VALUE "<project>\component\work\PDMAFIFO\PDMAFIFO_0\rtl\vlog\test\user\top_define.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.5.106\rtl\vlog\test\user\clock_driver.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.5.106\rtl\vlog\test\user\fifo_driver.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.5.106\rtl\vlog\test\user\fifo_monitor.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.5.106\rtl\vlog\test\user\g4_dp_ext_mem.v,tb_hdl"
+VALUE "<project>\component\work\PDMAFIFO\PDMAFIFO_0\rtl\vlog\test\user\testbench.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.5.106\rtl\vlog\test\user\MEM_WeqR.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.5.106\rtl\vlog\test\user\MEM_WgtR.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.5.106\rtl\vlog\test\user\MEM_WltR.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.5.106\rtl\vlog\test\user\wave.do,do"
+VALUE "<project>\component\work\PDMAFIFO\PDMAFIFO_0\mti\scripts\runall.do,do"
+ENDLIST
+LIST AssociatedStimulus
+VALUE "<project>\component\work\PDMAFIFO\PDMAFIFO_0\coreparameters.v,tb_hdl"
+VALUE "<project>\component\work\PDMAFIFO\PDMAFIFO_0\rtl\vlog\test\user\top_define.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.5.106\rtl\vlog\test\user\clock_driver.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.5.106\rtl\vlog\test\user\fifo_driver.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.5.106\rtl\vlog\test\user\fifo_monitor.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.5.106\rtl\vlog\test\user\g4_dp_ext_mem.v,tb_hdl"
+VALUE "<project>\component\work\PDMAFIFO\PDMAFIFO_0\rtl\vlog\test\user\testbench.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.5.106\rtl\vlog\test\user\MEM_WeqR.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.5.106\rtl\vlog\test\user\MEM_WgtR.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.5.106\rtl\vlog\test\user\MEM_WltR.v,tb_hdl"
+ENDLIST
+LIST ProjectState5.1
+LIST Impl1
+ideSTIMULUS=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+UseFhbAutoInst=FALSE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
+ENDLIST
+LIST "CoreAPB3::COREAPB3_LIB"
+FILE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v,hdl"
+LIST Other_Association
+VALUE "<project>\simulation\bfmtovec_compile.tcl,sim"
+VALUE "<project>\simulation\coreapb3_usertb_master.bfm,sim"
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\coreparameters.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_main.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_ahbtoapb.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_apb.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_apbslaveext.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_apbslave.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\test\user\testbench.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\mti\scripts\wave_user.do,do"
+ENDLIST
+LIST AssociatedStimulus
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\coreparameters.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_main.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_ahbtoapb.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_apb.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_apbslaveext.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_apbslave.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\test\user\testbench.v,tb_hdl"
+ENDLIST
+LIST ProjectState5.1
+LIST Impl1
+ideSTIMULUS=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+UseFhbAutoInst=FALSE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
+ENDLIST
+LIST "adc_fft_if_COREFFT_0_COREFFT::COREFFT_LIB"
+FILE "<project>\component\work\adc_fft_if\COREFFT_0\rtl\in_place\vlog\core\COREFFT_TOP.v,hdl"
+LIST Other_Association
+VALUE "<project>\component\work\adc_fft_if\COREFFT_0\rtl\in_place\vlog\test\user\fft_tb_inc32.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREFFT\7.0.104\rtl\in_place\vlog\test\user\bhvKit.v,tb_hdl"
+VALUE "<project>\component\work\adc_fft_if\COREFFT_0\rtl\in_place\vlog\test\user\in_place_FFT_tb.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREFFT\7.0.104\coreparameters.v,tb_hdl"
+ENDLIST
+LIST AssociatedStimulus
+VALUE "<project>\component\work\adc_fft_if\COREFFT_0\rtl\in_place\vlog\test\user\fft_tb_inc32.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREFFT\7.0.104\rtl\in_place\vlog\test\user\bhvKit.v,tb_hdl"
+VALUE "<project>\component\work\adc_fft_if\COREFFT_0\rtl\in_place\vlog\test\user\in_place_FFT_tb.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREFFT\7.0.104\coreparameters.v,tb_hdl"
+ENDLIST
+LIST ProjectState5.1
+LIST Impl1
+ideSTIMULUS=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+UseFhbAutoInst=FALSE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
+ENDLIST
+ENDLIST
+LIST AssociatedStimulus
+LIST Mario_Libero
+VALUE "<project>\stimulus\toplevel_tb.v,tb_hdl"
+ENDLIST
+LIST Mario_Libero_CoreGPIO_0_CoreGPIO
+VALUE "<project>\component\work\Mario_Libero\CoreGPIO_0\rtl\vlog\amba_bfm\bfm_ahbl.v,tb_hdl"
+VALUE "<project>\component\work\Mario_Libero\CoreGPIO_0\rtl\vlog\amba_bfm\bfm_ahblapb.v,tb_hdl"
+VALUE "<project>\component\work\Mario_Libero\CoreGPIO_0\rtl\vlog\amba_bfm\bfm_ahbslave.v,tb_hdl"
+VALUE "<project>\component\work\Mario_Libero\CoreGPIO_0\rtl\vlog\amba_bfm\bfm_ahbslaveext.v,tb_hdl"
+VALUE "<project>\component\work\Mario_Libero\CoreGPIO_0\rtl\vlog\amba_bfm\bfm_ahbtoapb.v,tb_hdl"
+VALUE "<project>\component\work\Mario_Libero\CoreGPIO_0\rtl\vlog\amba_bfm\bfm_apb.v,tb_hdl"
+VALUE "<project>\component\work\Mario_Libero\CoreGPIO_0\rtl\vlog\amba_bfm\bfm_apbslave.v,tb_hdl"
+VALUE "<project>\component\work\Mario_Libero\CoreGPIO_0\rtl\vlog\amba_bfm\bfm_apbslaveext.v,tb_hdl"
+VALUE "<project>\component\work\Mario_Libero\CoreGPIO_0\rtl\vlog\amba_bfm\bfm_apbtoapb.v,tb_hdl"
+VALUE "<project>\component\work\Mario_Libero\CoreGPIO_0\rtl\vlog\amba_bfm\bfm_main.v,tb_hdl"
+VALUE "<project>\component\work\Mario_Libero\CoreGPIO_0\coreparameters.v,tb_hdl"
+VALUE "<project>\component\work\Mario_Libero\CoreGPIO_0\rtl\vlog\test\user\testbench.v,tb_hdl"
+ENDLIST
+LIST ADCFIFO_ADCFIFO_0_COREFIFO
+VALUE "<project>\component\work\ADCFIFO\ADCFIFO_0\coreparameters.v,tb_hdl"
+VALUE "<project>\component\work\ADCFIFO\ADCFIFO_0\rtl\vlog\test\user\top_define.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.4.100\rtl\vlog\test\user\clock_driver.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.4.100\rtl\vlog\test\user\fifo_driver.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.4.100\rtl\vlog\test\user\fifo_monitor.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.4.100\rtl\vlog\test\user\g4_dp_ext_mem.v,tb_hdl"
+VALUE "<project>\component\work\ADCFIFO\ADCFIFO_0\rtl\vlog\test\user\testbench.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.4.100\rtl\vlog\test\user\MEM_WeqR.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.4.100\rtl\vlog\test\user\MEM_WgtR.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.4.100\rtl\vlog\test\user\MEM_WltR.v,tb_hdl"
+ENDLIST
+LIST PDMAFIFO_PDMAFIFO_0_COREFIFO
+VALUE "<project>\component\work\PDMAFIFO\PDMAFIFO_0\coreparameters.v,tb_hdl"
+VALUE "<project>\component\work\PDMAFIFO\PDMAFIFO_0\rtl\vlog\test\user\top_define.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.5.106\rtl\vlog\test\user\clock_driver.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.5.106\rtl\vlog\test\user\fifo_driver.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.5.106\rtl\vlog\test\user\fifo_monitor.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.5.106\rtl\vlog\test\user\g4_dp_ext_mem.v,tb_hdl"
+VALUE "<project>\component\work\PDMAFIFO\PDMAFIFO_0\rtl\vlog\test\user\testbench.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.5.106\rtl\vlog\test\user\MEM_WeqR.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.5.106\rtl\vlog\test\user\MEM_WgtR.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.5.106\rtl\vlog\test\user\MEM_WltR.v,tb_hdl"
+ENDLIST
+LIST CoreAPB3
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\coreparameters.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_main.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_ahbtoapb.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_apb.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_apbslaveext.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_apbslave.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\test\user\testbench.v,tb_hdl"
+ENDLIST
+LIST adc_fft_if_COREFIFO_0_COREFIFO
+VALUE "<project>\component\work\adc_fft_if\COREFIFO_0\coreparameters.v,tb_hdl"
+VALUE "<project>\component\work\adc_fft_if\COREFIFO_0\rtl\vlog\test\user\top_define.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.6.108\rtl\vlog\test\user\clock_driver.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.6.108\rtl\vlog\test\user\fifo_driver.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.6.108\rtl\vlog\test\user\fifo_monitor.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.6.108\rtl\vlog\test\user\g4_dp_ext_mem.v,tb_hdl"
+VALUE "<project>\component\work\adc_fft_if\COREFIFO_0\rtl\vlog\test\user\testbench.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.6.108\rtl\vlog\test\user\MEM_WeqR.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.6.108\rtl\vlog\test\user\MEM_WgtR.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.6.108\rtl\vlog\test\user\MEM_WltR.v,tb_hdl"
+ENDLIST
+LIST adc_fft_if_COREFFT_0_COREFFT
+VALUE "<project>\component\work\adc_fft_if\COREFFT_0\rtl\in_place\vlog\test\user\fft_tb_inc32.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREFFT\7.0.104\rtl\in_place\vlog\test\user\bhvKit.v,tb_hdl"
+VALUE "<project>\component\work\adc_fft_if\COREFFT_0\rtl\in_place\vlog\test\user\in_place_FFT_tb.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREFFT\7.0.104\coreparameters.v,tb_hdl"
+ENDLIST
+LIST ACKFIFO_ACKFIFO_0_COREFIFO
+VALUE "<project>\component\work\ACKFIFO\ACKFIFO_0\coreparameters.v,tb_hdl"
+VALUE "<project>\component\work\ACKFIFO\ACKFIFO_0\rtl\vlog\test\user\top_define.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.4.100\rtl\vlog\test\user\clock_driver.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.4.100\rtl\vlog\test\user\fifo_driver.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.4.100\rtl\vlog\test\user\fifo_monitor.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.4.100\rtl\vlog\test\user\g4_dp_ext_mem.v,tb_hdl"
+VALUE "<project>\component\work\ACKFIFO\ACKFIFO_0\rtl\vlog\test\user\testbench.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.4.100\rtl\vlog\test\user\MEM_WeqR.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.4.100\rtl\vlog\test\user\MEM_WgtR.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.4.100\rtl\vlog\test\user\MEM_WltR.v,tb_hdl"
+ENDLIST
+ENDLIST
+LIST Other_Association
+LIST Mario_Libero
+VALUE "<project>\simulation\subsystem.bfm,sim"
+ENDLIST
+LIST Mario_Libero_CoreGPIO_0_CoreGPIO
+VALUE "<project>\simulation\coregpio_usertb_apb_master.bfm,sim"
+VALUE "<project>\simulation\coregpio_usertb_include.bfm,sim"
+VALUE "<project>\component\work\Mario_Libero\CoreGPIO_0\rtl\vlog\amba_bfm\bfm_ahbl.v,tb_hdl"
+VALUE "<project>\component\work\Mario_Libero\CoreGPIO_0\rtl\vlog\amba_bfm\bfm_ahblapb.v,tb_hdl"
+VALUE "<project>\component\work\Mario_Libero\CoreGPIO_0\rtl\vlog\amba_bfm\bfm_ahbslave.v,tb_hdl"
+VALUE "<project>\component\work\Mario_Libero\CoreGPIO_0\rtl\vlog\amba_bfm\bfm_ahbslaveext.v,tb_hdl"
+VALUE "<project>\component\work\Mario_Libero\CoreGPIO_0\rtl\vlog\amba_bfm\bfm_ahbtoapb.v,tb_hdl"
+VALUE "<project>\component\work\Mario_Libero\CoreGPIO_0\rtl\vlog\amba_bfm\bfm_apb.v,tb_hdl"
+VALUE "<project>\component\work\Mario_Libero\CoreGPIO_0\rtl\vlog\amba_bfm\bfm_apbslave.v,tb_hdl"
+VALUE "<project>\component\work\Mario_Libero\CoreGPIO_0\rtl\vlog\amba_bfm\bfm_apbslaveext.v,tb_hdl"
+VALUE "<project>\component\work\Mario_Libero\CoreGPIO_0\rtl\vlog\amba_bfm\bfm_apbtoapb.v,tb_hdl"
+VALUE "<project>\component\work\Mario_Libero\CoreGPIO_0\rtl\vlog\amba_bfm\bfm_main.v,tb_hdl"
+VALUE "<project>\component\work\Mario_Libero\CoreGPIO_0\coreparameters.v,tb_hdl"
+VALUE "<project>\component\work\Mario_Libero\CoreGPIO_0\rtl\vlog\test\user\testbench.v,tb_hdl"
+VALUE "<project>\component\work\Mario_Libero\CoreGPIO_0\bfmtovec_compile.do,do"
+VALUE "<project>\component\work\Mario_Libero\CoreGPIO_0\wave_vlog.do,do"
+ENDLIST
+LIST Mario_Libero_MSS
+VALUE "<project>\simulation\CM3_compile_bfm.tcl,sim"
+VALUE "<project>\simulation\user.bfm,sim"
+VALUE "<project>\simulation\test.bfm,sim"
+VALUE "<project>\simulation\MDDR_init.bfm,sim"
+VALUE "<project>\simulation\peripheral_init.bfm,sim"
+ENDLIST
+LIST ADCFIFO_ADCFIFO_0_COREFIFO
+VALUE "<project>\component\work\ADCFIFO\ADCFIFO_0\coreparameters.v,tb_hdl"
+VALUE "<project>\component\work\ADCFIFO\ADCFIFO_0\rtl\vlog\test\user\top_define.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.4.100\rtl\vlog\test\user\clock_driver.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.4.100\rtl\vlog\test\user\fifo_driver.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.4.100\rtl\vlog\test\user\fifo_monitor.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.4.100\rtl\vlog\test\user\g4_dp_ext_mem.v,tb_hdl"
+VALUE "<project>\component\work\ADCFIFO\ADCFIFO_0\rtl\vlog\test\user\testbench.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.4.100\rtl\vlog\test\user\MEM_WeqR.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.4.100\rtl\vlog\test\user\MEM_WgtR.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.4.100\rtl\vlog\test\user\MEM_WltR.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.4.100\rtl\vlog\test\user\wave.do,do"
+VALUE "<project>\component\work\ADCFIFO\ADCFIFO_0\mti\scripts\runall.do,do"
+ENDLIST
+LIST PDMAFIFO_PDMAFIFO_0_COREFIFO
+VALUE "<project>\component\work\PDMAFIFO\PDMAFIFO_0\coreparameters.v,tb_hdl"
+VALUE "<project>\component\work\PDMAFIFO\PDMAFIFO_0\rtl\vlog\test\user\top_define.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.5.106\rtl\vlog\test\user\clock_driver.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.5.106\rtl\vlog\test\user\fifo_driver.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.5.106\rtl\vlog\test\user\fifo_monitor.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.5.106\rtl\vlog\test\user\g4_dp_ext_mem.v,tb_hdl"
+VALUE "<project>\component\work\PDMAFIFO\PDMAFIFO_0\rtl\vlog\test\user\testbench.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.5.106\rtl\vlog\test\user\MEM_WeqR.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.5.106\rtl\vlog\test\user\MEM_WgtR.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.5.106\rtl\vlog\test\user\MEM_WltR.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.5.106\rtl\vlog\test\user\wave.do,do"
+VALUE "<project>\component\work\PDMAFIFO\PDMAFIFO_0\mti\scripts\runall.do,do"
+ENDLIST
+LIST CoreAPB3
+VALUE "<project>\simulation\bfmtovec_compile.tcl,sim"
+VALUE "<project>\simulation\coreapb3_usertb_master.bfm,sim"
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\coreparameters.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_main.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_ahbtoapb.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_apb.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_apbslaveext.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_apbslave.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\test\user\testbench.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\mti\scripts\wave_user.do,do"
+ENDLIST
+LIST adc_fft_if_COREFIFO_0_COREFIFO
+VALUE "<project>\component\work\adc_fft_if\COREFIFO_0\coreparameters.v,tb_hdl"
+VALUE "<project>\component\work\adc_fft_if\COREFIFO_0\rtl\vlog\test\user\top_define.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.6.108\rtl\vlog\test\user\clock_driver.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.6.108\rtl\vlog\test\user\fifo_driver.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.6.108\rtl\vlog\test\user\fifo_monitor.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.6.108\rtl\vlog\test\user\g4_dp_ext_mem.v,tb_hdl"
+VALUE "<project>\component\work\adc_fft_if\COREFIFO_0\rtl\vlog\test\user\testbench.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.6.108\rtl\vlog\test\user\MEM_WeqR.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.6.108\rtl\vlog\test\user\MEM_WgtR.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.6.108\rtl\vlog\test\user\MEM_WltR.v,tb_hdl"
+VALUE "<project>\component\work\adc_fft_if\COREFIFO_0\mti\scripts\wave.do,do"
+VALUE "<project>\component\work\adc_fft_if\COREFIFO_0\mti\scripts\runall.do,do"
+ENDLIST
+LIST adc_fft_if_COREFFT_0_COREFFT
+VALUE "<project>\component\work\adc_fft_if\COREFFT_0\rtl\in_place\vlog\test\user\fft_tb_inc32.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREFFT\7.0.104\rtl\in_place\vlog\test\user\bhvKit.v,tb_hdl"
+VALUE "<project>\component\work\adc_fft_if\COREFFT_0\rtl\in_place\vlog\test\user\in_place_FFT_tb.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREFFT\7.0.104\coreparameters.v,tb_hdl"
+ENDLIST
+LIST ACKFIFO_ACKFIFO_0_COREFIFO
+VALUE "<project>\component\work\ACKFIFO\ACKFIFO_0\coreparameters.v,tb_hdl"
+VALUE "<project>\component\work\ACKFIFO\ACKFIFO_0\rtl\vlog\test\user\top_define.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.4.100\rtl\vlog\test\user\clock_driver.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.4.100\rtl\vlog\test\user\fifo_driver.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.4.100\rtl\vlog\test\user\fifo_monitor.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.4.100\rtl\vlog\test\user\g4_dp_ext_mem.v,tb_hdl"
+VALUE "<project>\component\work\ACKFIFO\ACKFIFO_0\rtl\vlog\test\user\testbench.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.4.100\rtl\vlog\test\user\MEM_WeqR.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.4.100\rtl\vlog\test\user\MEM_WgtR.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.4.100\rtl\vlog\test\user\MEM_WltR.v,tb_hdl"
+VALUE "<project>\component\Actel\DirectCore\COREFIFO\2.4.100\rtl\vlog\test\user\wave.do,do"
+VALUE "<project>\component\work\ACKFIFO\ACKFIFO_0\mti\scripts\runall.do,do"
+ENDLIST
+ENDLIST
+LIST SimulationOptions
+UseAutomaticDoFile=false
+IncludeWaveDo=false
+Type=max
+RunTime=1000ns
+Resolution=1fs
+VsimOpt=
+EntityName=toplevel_tb
+TopInstanceName=<top>_0
+DoFileName=C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2_devbrd/mysim_toplevel/init.do
+DoFileName2=wave.do
+DoFileParams=
+DisplayDUTWave=false
+LogAllSignals=false
+DisablePulseFiltering=false
+DumpVCD=false
+VCDFileName=power.vcd
+VHDL2008=false
+Verilog2001=false
+SystemVerilog=false
+TimeUnit=1
+TimeUnitBase=ns
+Precision=100
+PrecisionBase=ps
+ENDLIST
+LIST ModelSimLibPath
+UseCustomPath=FALSE
+LibraryPath=
+ENDLIST
+LIST GlobalFlowOptions
+GenerateHDLAfterSynthesis=FALSE
+GenerateHDLAfterPhySynthesis=FALSE
+RunDRCAfterSynthesis=FALSE
+AutoCheckConstraints=TRUE
+UpdateModelSimIni=TRUE
+NoIOMode=FALSE
+PeriInitStandalone=FALSE
+EnableViewDraw=FALSE
+UpdateViewDrawIni=TRUE
+GenerateHDLFromSchematic=TRUE
+VmNetlistFlowOn=FALSE
+EnableDesignSeparationOn=FALSE
+EnableSETMitigationOn=FALSE
+DisplayFanoutLimit=10
+AbortFlowOnPDCErrorsOn=TRUE
+AbortFlowOnSDCErrorsOn=TRUE
+InstantiateInSmartDesign=TRUE
+FlashProInputFile=pdb
+SmartGenCompileReport=T
+ENDLIST
+LIST PhySynthesisOptions
+ENDLIST
+LIST Profiles
+NAME="SoftConsole"
+FUNCTION="SoftwareIDE"
+TOOL="SoftConsole"
+LOCATION="eclipse.exe"
+PARAM=""
+BATCH=0
+LICENSE=""
+IS32BIT="1"
+EndProfile
+NAME="Synplify Pro ME"
+FUNCTION="Synthesis"
+TOOL="Synplify Pro ME"
+LOCATION="C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\bin\synplify_pro.exe"
+PARAM=""
+BATCH=0
+LICENSE=""
+IS32BIT="1"
+EndProfile
+NAME="ModelSim ME"
+FUNCTION="Simulation"
+TOOL="ModelSim"
+LOCATION="C:\Microsemi\Libero_SoC_v11.8\Modelsim\win32acoem\modelsim.exe"
+PARAM=""
+BATCH=0
+LICENSE=""
+IS32BIT="1"
+EndProfile
+NAME="FPExpress"
+FUNCTION="Program"
+TOOL="FlashPro"
+LOCATION="C:\Microsemi\Libero_SoC_v11.8\Designer\bin\FPExpress.exe"
+PARAM=""
+BATCH=0
+LICENSE=""
+IS32BIT="1"
+EndProfile
+NAME="Identify Debugger"
+FUNCTION="IdentifyDebugger"
+TOOL="Identify Debugger"
+LOCATION="C:\Microsemi\Libero_SoC_v11.8\Identify\bin\identify_debugger.exe"
+PARAM=""
+BATCH=0
+LICENSE=""
+IS32BIT="1"
+EndProfile
+ENDLIST
+LIST ProjectState5.1
+LIST "ACKFIFO_ACKFIFO_0_COREFIFO::work"
+LIST Impl1
+ideSTIMULUS=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+UseFhbAutoInst=FALSE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
+LIST "adc_fft_if_COREFIFO_0_COREFIFO::work"
+LIST Impl1
+ideSTIMULUS=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+UseFhbAutoInst=FALSE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
+LIST "ADCFIFO_ADCFIFO_0_COREFIFO::work"
+LIST Impl1
+ideSTIMULUS=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+UseFhbAutoInst=FALSE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
+LIST "Mario_Libero::work"
+LIST Impl1
+LiberoState=Post_Synthesis
+ideSTIMULUS=StateSuccess
+ideSYNTHESIS(<project>\synthesis\Mario_Libero.edn,syn_edn)=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+UseFhbAutoInst=FALSE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
+LIST "Mario_Libero_CoreGPIO_0_CoreGPIO::work"
+LIST Impl1
+ideSTIMULUS=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+UseFhbAutoInst=FALSE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
+LIST "PDMAFIFO_PDMAFIFO_0_COREFIFO::work"
+LIST Impl1
+ideSTIMULUS=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+UseFhbAutoInst=FALSE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
+LIST "CoreAPB3::COREAPB3_LIB"
+LIST Impl1
+ideSTIMULUS=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+UseFhbAutoInst=FALSE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
+LIST "adc_fft_if_COREFFT_0_COREFFT::COREFFT_LIB"
+LIST Impl1
+ideSTIMULUS=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+UseFhbAutoInst=FALSE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
+ENDLIST
+LIST ExcludePackageForSimulation
+ENDLIST
+LIST ExcludePackageForSynthesis
+ENDLIST
+LIST IncludeModuleForSimulation
+ENDLIST
+LIST CDBOrder
+ENDLIST
+LIST UserCustomizedFileList
+LIST "Mario_Libero"
+LIST "ideSIMULATION"
+USE_LIST=TRUE
+FILELIST
+VALUE "<project>\component\work\Mario_Libero\FCCC_0\Mario_Libero_FCCC_0_FCCC.v,hdl"
+VALUE "<project>\component\work\Mario_Libero_MSS\Mario_Libero_MSS.v,hdl"
+VALUE "<project>\component\work\Mario_Libero\OSC_0\Mario_Libero_OSC_0_OSC.v,hdl"
+VALUE "<project>\hdl\acc_sim.v,hdl"
+VALUE "<project>\hdl\debug_mux.v,hdl"
+VALUE "<project>\hdl\nm_sim_adc_gen.v,hdl"
+VALUE "<project>\hdl\nm_sim_cmd_and_reg.v,hdl"
+VALUE "<project>\hdl\nm_sim.v,hdl"
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3_muxptob3.v,hdl"
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3_iaddr_reg.v,hdl"
+VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v,hdl"
+VALUE "<project>\component\Actel\DirectCore\CORESPI\5.1.104\rtl\vlog\core\spi_clockmux.v,hdl"
+VALUE "<project>\component\Actel\DirectCore\CORESPI\5.1.104\rtl\vlog\core\spi_chanctrl.v,hdl"
+VALUE "<project>\component\Actel\DirectCore\CORESPI\5.1.104\rtl\vlog\core\spi_control.v,hdl"
+VALUE "<project>\component\Actel\DirectCore\CORESPI\5.1.104\rtl\vlog\core\spi_fifo.v,hdl"
+VALUE "<project>\component\Actel\DirectCore\CORESPI\5.1.104\rtl\vlog\core\spi_rf.v,hdl"
+VALUE "<project>\component\Actel\DirectCore\CORESPI\5.1.104\rtl\vlog\core\spi.v,hdl"
+VALUE "<project>\component\Actel\DirectCore\CORESPI\5.1.104\rtl\vlog\core\corespi.v,hdl"
+VALUE "<project>\hdl\acc_apb_proc.v,hdl"
+VALUE "<project>\hdl\acc_irq_proc.v,hdl"
+VALUE "<project>\hdl\acc_if.v,hdl"
+VALUE "<project>\hdl\cm_demux.v,hdl"
+VALUE "<project>\component\work\ACKFIFO\ACKFIFO_0\rtl\vlog\core\corefifo_doubleSync.v,hdl"
+VALUE "<project>\component\work\ACKFIFO\ACKFIFO_0\rtl\vlog\core\corefifo_grayToBinConv.v,hdl"
+VALUE "<project>\component\work\ACKFIFO\ACKFIFO_0\rtl\vlog\core\corefifo_async.v,hdl"
+VALUE "<project>\component\work\ACKFIFO\ACKFIFO_0\rtl\vlog\core\corefifo_fwft.v,hdl"
+VALUE "<project>\component\work\ACKFIFO\ACKFIFO_0\rtl\vlog\core\corefifo_sync.v,hdl"
+VALUE "<project>\component\work\ACKFIFO\ACKFIFO_0\rtl\vlog\core\corefifo_sync_scntr.v,hdl"
+VALUE "<project>\component\work\ACKFIFO\ACKFIFO_0\rtl\vlog\core\ACKFIFO_ACKFIFO_0_USRAM_top.v,hdl"
+VALUE "<project>\component\work\ACKFIFO\ACKFIFO_0\rtl\vlog\core\ACKFIFO_ACKFIFO_0_ram_wrapper.v,hdl"
+VALUE "<project>\component\work\ACKFIFO\ACKFIFO_0\rtl\vlog\core\COREFIFO.v,hdl"
+VALUE "<project>\component\work\ACKFIFO\ACKFIFO.v,hdl"
+VALUE "<project>\hdl\ack_deserializer.v,hdl"
+VALUE "<project>\hdl\ack_datapath.v,hdl"
+VALUE "<project>\hdl\nmic_rx.v,hdl"
+VALUE "<project>\hdl\nmic_tx.v,hdl"
+VALUE "<project>\component\work\ADCFIFO\ADCFIFO_0\rtl\vlog\core\corefifo_doubleSync.v,hdl"
+VALUE "<project>\component\work\ADCFIFO\ADCFIFO_0\rtl\vlog\core\corefifo_grayToBinConv.v,hdl"
+VALUE "<project>\component\work\ADCFIFO\ADCFIFO_0\rtl\vlog\core\corefifo_async.v,hdl"
+VALUE "<project>\component\work\ADCFIFO\ADCFIFO_0\rtl\vlog\core\corefifo_fwft.v,hdl"
+VALUE "<project>\component\work\ADCFIFO\ADCFIFO_0\rtl\vlog\core\corefifo_sync.v,hdl"
+VALUE "<project>\component\work\ADCFIFO\ADCFIFO_0\rtl\vlog\core\corefifo_sync_scntr.v,hdl"
+VALUE "<project>\component\work\ADCFIFO\ADCFIFO_0\rtl\vlog\core\ADCFIFO_ADCFIFO_0_LSRAM_top.v,hdl"
+VALUE "<project>\component\work\ADCFIFO\ADCFIFO_0\rtl\vlog\core\ADCFIFO_ADCFIFO_0_ram_wrapper.v,hdl"
+VALUE "<project>\component\work\ADCFIFO\ADCFIFO_0\rtl\vlog\core\COREFIFO.v,hdl"
+VALUE "<project>\component\work\ADCFIFO\ADCFIFO.v,hdl"
+VALUE "<project>\hdl\adc_vector_compressor.v,hdl"
+VALUE "<project>\hdl\adc_artifact_cancel.v,hdl"
+VALUE "<project>\component\work\PDMAFIFO\PDMAFIFO_0\rtl\vlog\core\corefifo_doubleSync.v,hdl"
+VALUE "<project>\component\work\PDMAFIFO\PDMAFIFO_0\rtl\vlog\core\corefifo_grayToBinConv.v,hdl"
+VALUE "<project>\component\work\PDMAFIFO\PDMAFIFO_0\rtl\vlog\core\corefifo_async.v,hdl"
+VALUE "<project>\component\work\PDMAFIFO\PDMAFIFO_0\rtl\vlog\core\corefifo_fwft.v,hdl"
+VALUE "<project>\component\work\PDMAFIFO\PDMAFIFO_0\rtl\vlog\core\corefifo_sync.v,hdl"
+VALUE "<project>\component\work\PDMAFIFO\PDMAFIFO_0\rtl\vlog\core\corefifo_sync_scntr.v,hdl"
+VALUE "<project>\component\work\PDMAFIFO\PDMAFIFO_0\rtl\vlog\core\PDMAFIFO_PDMAFIFO_0_USRAM_top.v,hdl"
+VALUE "<project>\component\work\PDMAFIFO\PDMAFIFO_0\rtl\vlog\core\PDMAFIFO_PDMAFIFO_0_ram_wrapper.v,hdl"
+VALUE "<project>\component\work\PDMAFIFO\PDMAFIFO_0\rtl\vlog\core\COREFIFO.v,hdl"
+VALUE "<project>\component\work\PDMAFIFO\PDMAFIFO.v,hdl"
+VALUE "<project>\hdl\pdma_if.v,hdl"
+VALUE "<project>\component\work\Mario_Libero\Mario_Libero.v,hdl"
+VALUE "<project>\component\Actel\SgCore\OSC\2.0.101\osc_comps.v,hdl"
+VALUE "<project>\component\Actel\SgCore\OSC\2.0.101\osc_comps_pre.v,hdl"
+VALUE "<project>\component\work\Mario_Libero_MSS\Mario_Libero_MSS_pre.v,hdl"
+VALUE "<project>\component\work\Mario_Libero_MSS\Mario_Libero_MSS_syn.v,hdl"
+VALUE "<project>\hdl\pdma_sim.v,hdl"
+VALUE "<project>\component\Actel\DirectCore\COREFFT\7.0.104\rtl\in_place\vlog\core\cmplx.v,hdl"
+VALUE "<project>\component\Actel\DirectCore\COREFFT\7.0.104\rtl\in_place\vlog\core\fftSm.v,hdl"
+VALUE "<project>\component\Actel\DirectCore\COREFFT\7.0.104\rtl\in_place\vlog\core\kit.v,hdl"
+VALUE "<project>\component\Actel\DirectCore\COREFFT\7.0.104\rtl\in_place\vlog\core\mac_lib.v,hdl"
+VALUE "<project>\component\work\adc_fft_if\COREFFT_0\rtl\in_place\vlog\core\COREFFT.v,hdl"
+VALUE "<project>\component\work\adc_fft_if\COREFFT_0\rtl\in_place\vlog\core\COREFFT_TOP.v,hdl"
+VALUE "<project>\component\work\adc_fft_if\COREFFT_0\rtl\in_place\vlog\core\adc_fft_if_COREFFT_0_ram_smGen.v,hdl"
+VALUE "<project>\component\work\adc_fft_if\COREFFT_0\rtl\in_place\vlog\core\fftDp.v,hdl"
+VALUE "<project>\component\work\adc_fft_if\COREFFT_0\twiddle32.v,hdl"
+VALUE "<project>\component\work\adc_fft_if\adc_fft_if.v,hdl"
+VALUE "<project>\component\work\debug_bus\debug_bus.v,hdl"
+VALUE "<project>\hdl\adc_debug.v,hdl"
+VALUE "<project>\hdl\adc_fft_cntl.v,hdl"
+VALUE "<project>\hdl\adc_frame_buffer.v,hdl"
+VALUE "<project>\hdl\am_if.v,hdl"
+VALUE "<project>\hdl\cm_if_apb.v,hdl"
+VALUE "<project>\hdl\cmam_if_apb.v,hdl"
+VALUE "<project>\hdl\ADCMEM_SP.v,hdl"
+ENDFILELIST
+ENDLIST
+ENDLIST
+ENDLIST
+LIST OpenedFileList
+ORIENTATION;HORIZONTAL
+Reports;Reports;0
+ReportsCurrentItem;Project Summary:Mario_Libero.log
+StartPage;StartPage;0
+SmartDesign;Mario_Libero_MSS;0
+SmartDesign;Mario_Libero;0
+HDL;constraint\io\Mario_Libero.io.pdc;0
+ACTIVEVIEW;Mario_Libero
+ENDLIST
+LIST ModuleSubBlockList
+LIST "acc_apb_proc::work","hdl\acc_apb_proc.v","FALSE","FALSE"
+ENDLIST
+LIST "acc_if::work","hdl\acc_if.v","FALSE","FALSE"
+SUBBLOCK "acc_apb_proc::work","hdl\acc_apb_proc.v","FALSE","FALSE"
+SUBBLOCK "acc_irq_proc::work","hdl\acc_irq_proc.v","FALSE","FALSE"
+ENDLIST
+LIST "acc_irq_proc::work","hdl\acc_irq_proc.v","FALSE","FALSE"
+ENDLIST
+LIST "acc_sim::work","hdl\acc_sim.v","FALSE","FALSE"
+ENDLIST
+LIST "ack_datapath::work","hdl\ack_datapath.v","FALSE","FALSE"
+ENDLIST
+LIST "ACKFIFO::work","component\work\ACKFIFO\ACKFIFO.v","TRUE","FALSE"
+SUBBLOCK "ACKFIFO_ACKFIFO_0_COREFIFO::work","component\work\ACKFIFO\ACKFIFO_0\rtl\vlog\core\COREFIFO.v","FALSE","FALSE"
+ENDLIST
+LIST "ACKFIFO_ACKFIFO_0_COREFIFO::work","component\work\ACKFIFO\ACKFIFO_0\rtl\vlog\core\COREFIFO.v","FALSE","FALSE"
+SUBBLOCK "ACKFIFO_ACKFIFO_0_corefifo_async::work","component\work\ACKFIFO\ACKFIFO_0\rtl\vlog\core\corefifo_async.v","FALSE","FALSE"
+SUBBLOCK "ACKFIFO_ACKFIFO_0_corefifo_fwft::work","component\work\ACKFIFO\ACKFIFO_0\rtl\vlog\core\corefifo_fwft.v","FALSE","FALSE"
+SUBBLOCK "ACKFIFO_ACKFIFO_0_corefifo_sync::work","component\work\ACKFIFO\ACKFIFO_0\rtl\vlog\core\corefifo_sync.v","FALSE","FALSE"
+SUBBLOCK "ACKFIFO_ACKFIFO_0_corefifo_sync_scntr::work","component\work\ACKFIFO\ACKFIFO_0\rtl\vlog\core\corefifo_sync_scntr.v","FALSE","FALSE"
+SUBBLOCK "ACKFIFO_ACKFIFO_0_ram_wrapper::work","component\work\ACKFIFO\ACKFIFO_0\rtl\vlog\core\ACKFIFO_ACKFIFO_0_ram_wrapper.v","FALSE","FALSE"
+ENDLIST
+LIST "ACKFIFO_ACKFIFO_0_corefifo_async::work","component\work\ACKFIFO\ACKFIFO_0\rtl\vlog\core\corefifo_async.v","FALSE","FALSE"
+SUBBLOCK "ACKFIFO_ACKFIFO_0_corefifo_doubleSync::work","component\work\ACKFIFO\ACKFIFO_0\rtl\vlog\core\corefifo_doubleSync.v","FALSE","FALSE"
+SUBBLOCK "ACKFIFO_ACKFIFO_0_corefifo_grayToBinConv::work","component\work\ACKFIFO\ACKFIFO_0\rtl\vlog\core\corefifo_grayToBinConv.v","FALSE","FALSE"
+ENDLIST
+LIST "ACKFIFO_ACKFIFO_0_corefifo_doubleSync::work","component\work\ACKFIFO\ACKFIFO_0\rtl\vlog\core\corefifo_doubleSync.v","FALSE","FALSE"
+ENDLIST
+LIST "ACKFIFO_ACKFIFO_0_corefifo_fwft::work","component\work\ACKFIFO\ACKFIFO_0\rtl\vlog\core\corefifo_fwft.v","FALSE","FALSE"
+ENDLIST
+LIST "ACKFIFO_ACKFIFO_0_corefifo_grayToBinConv::work","component\work\ACKFIFO\ACKFIFO_0\rtl\vlog\core\corefifo_grayToBinConv.v","FALSE","FALSE"
+ENDLIST
+LIST "ACKFIFO_ACKFIFO_0_corefifo_sync::work","component\work\ACKFIFO\ACKFIFO_0\rtl\vlog\core\corefifo_sync.v","FALSE","FALSE"
+ENDLIST
+LIST "ACKFIFO_ACKFIFO_0_corefifo_sync_scntr::work","component\work\ACKFIFO\ACKFIFO_0\rtl\vlog\core\corefifo_sync_scntr.v","FALSE","FALSE"
+ENDLIST
+LIST "ACKFIFO_ACKFIFO_0_ram_wrapper::work","component\work\ACKFIFO\ACKFIFO_0\rtl\vlog\core\ACKFIFO_ACKFIFO_0_ram_wrapper.v","FALSE","FALSE"
+SUBBLOCK "ACKFIFO_ACKFIFO_0_USRAM_top::work","component\work\ACKFIFO\ACKFIFO_0\rtl\vlog\core\ACKFIFO_ACKFIFO_0_USRAM_top.v","FALSE","FALSE"
+ENDLIST
+LIST "ACKFIFO_ACKFIFO_0_USRAM_top::work","component\work\ACKFIFO\ACKFIFO_0\rtl\vlog\core\ACKFIFO_ACKFIFO_0_USRAM_top.v","FALSE","FALSE"
+ENDLIST
+LIST "adc_artifact_cancel::work","hdl\adc_artifact_cancel.v","FALSE","FALSE"
+ENDLIST
+LIST "adc_datapath::work","component\work\adc_datapath\adc_datapath.v","TRUE","FALSE"
+SUBBLOCK "ADCFIFO::work","component\work\ADCFIFO\ADCFIFO.v","TRUE","FALSE"
+SUBBLOCK "ADCMEM_DP::work","hdl\ADCMEM_DP.v","FALSE","FALSE"
+SUBBLOCK "adc_frame_buffer::work","hdl\adc_frame_buffer.v","FALSE","FALSE"
+SUBBLOCK "adc_vector_compressor::work","hdl\adc_vector_compressor.v","FALSE","FALSE"
+SUBBLOCK "hdc_top::work","hdl\hdc_top.v","FALSE","FALSE"
+ENDLIST
+LIST "adc_fft_cntl::work","hdl\adc_fft_cntl.v","FALSE","FALSE"
+ENDLIST
+LIST "adc_fft_if::work","component\work\adc_fft_if\adc_fft_if.v","TRUE","FALSE"
+SUBBLOCK "adc_fft_cntl::work","hdl\adc_fft_cntl.v","FALSE","FALSE"
+SUBBLOCK "adc_fft_if_COREFIFO_0_COREFIFO::work","component\work\adc_fft_if\COREFIFO_0\rtl\vlog\core\COREFIFO.v","FALSE","FALSE"
+SUBBLOCK "adc_fft_if_COREFFT_0_COREFFT::COREFFT_LIB","component\work\adc_fft_if\COREFFT_0\rtl\in_place\vlog\core\COREFFT_TOP.v","FALSE","FALSE"
+ENDLIST
+LIST "adc_fft_if_COREFIFO_0_COREFIFO::work","component\work\adc_fft_if\COREFIFO_0\rtl\vlog\core\COREFIFO.v","FALSE","FALSE"
+SUBBLOCK "adc_fft_if_COREFIFO_0_corefifo_async::work","component\work\adc_fft_if\COREFIFO_0\rtl\vlog\core\corefifo_async.v","FALSE","FALSE"
+SUBBLOCK "adc_fft_if_COREFIFO_0_corefifo_fwft::work","component\work\adc_fft_if\COREFIFO_0\rtl\vlog\core\corefifo_fwft.v","FALSE","FALSE"
+SUBBLOCK "adc_fft_if_COREFIFO_0_corefifo_sync::work","component\work\adc_fft_if\COREFIFO_0\rtl\vlog\core\corefifo_sync.v","FALSE","FALSE"
+SUBBLOCK "adc_fft_if_COREFIFO_0_corefifo_sync_scntr::work","component\work\adc_fft_if\COREFIFO_0\rtl\vlog\core\corefifo_sync_scntr.v","FALSE","FALSE"
+SUBBLOCK "adc_fft_if_COREFIFO_0_ram_wrapper::work","component\work\adc_fft_if\COREFIFO_0\rtl\vlog\core\adc_fft_if_COREFIFO_0_ram_wrapper.v","FALSE","FALSE"
+ENDLIST
+LIST "adc_fft_if_COREFIFO_0_corefifo_async::work","component\work\adc_fft_if\COREFIFO_0\rtl\vlog\core\corefifo_async.v","FALSE","FALSE"
+SUBBLOCK "adc_fft_if_COREFIFO_0_corefifo_doubleSync::work","component\work\adc_fft_if\COREFIFO_0\rtl\vlog\core\corefifo_doubleSync.v","FALSE","FALSE"
+SUBBLOCK "adc_fft_if_COREFIFO_0_corefifo_grayToBinConv::work","component\work\adc_fft_if\COREFIFO_0\rtl\vlog\core\corefifo_grayToBinConv.v","FALSE","FALSE"
+ENDLIST
+LIST "adc_fft_if_COREFIFO_0_corefifo_doubleSync::work","component\work\adc_fft_if\COREFIFO_0\rtl\vlog\core\corefifo_doubleSync.v","FALSE","FALSE"
+ENDLIST
+LIST "adc_fft_if_COREFIFO_0_corefifo_fwft::work","component\work\adc_fft_if\COREFIFO_0\rtl\vlog\core\corefifo_fwft.v","FALSE","FALSE"
+ENDLIST
+LIST "adc_fft_if_COREFIFO_0_corefifo_grayToBinConv::work","component\work\adc_fft_if\COREFIFO_0\rtl\vlog\core\corefifo_grayToBinConv.v","FALSE","FALSE"
+ENDLIST
+LIST "adc_fft_if_COREFIFO_0_corefifo_sync::work","component\work\adc_fft_if\COREFIFO_0\rtl\vlog\core\corefifo_sync.v","FALSE","FALSE"
+ENDLIST
+LIST "adc_fft_if_COREFIFO_0_corefifo_sync_scntr::work","component\work\adc_fft_if\COREFIFO_0\rtl\vlog\core\corefifo_sync_scntr.v","FALSE","FALSE"
+ENDLIST
+LIST "adc_fft_if_COREFIFO_0_LSRAM_top::work","component\work\adc_fft_if\COREFIFO_0\rtl\vlog\core\adc_fft_if_COREFIFO_0_LSRAM_top.v","FALSE","FALSE"
+ENDLIST
+LIST "adc_fft_if_COREFIFO_0_ram_wrapper::work","component\work\adc_fft_if\COREFIFO_0\rtl\vlog\core\adc_fft_if_COREFIFO_0_ram_wrapper.v","FALSE","FALSE"
+SUBBLOCK "adc_fft_if_COREFIFO_0_LSRAM_top::work","component\work\adc_fft_if\COREFIFO_0\rtl\vlog\core\adc_fft_if_COREFIFO_0_LSRAM_top.v","FALSE","FALSE"
+ENDLIST
+LIST "adc_frame_buffer::work","hdl\adc_frame_buffer.v","FALSE","FALSE"
+ENDLIST
+LIST "adc_vector_compressor::work","hdl\adc_vector_compressor.v","FALSE","FALSE"
+ENDLIST
+LIST "ADCFIFO::work","component\work\ADCFIFO\ADCFIFO.v","TRUE","FALSE"
+SUBBLOCK "ADCFIFO_ADCFIFO_0_COREFIFO::work","component\work\ADCFIFO\ADCFIFO_0\rtl\vlog\core\COREFIFO.v","FALSE","FALSE"
+ENDLIST
+LIST "ADCFIFO_ADCFIFO_0_COREFIFO::work","component\work\ADCFIFO\ADCFIFO_0\rtl\vlog\core\COREFIFO.v","FALSE","FALSE"
+SUBBLOCK "ADCFIFO_ADCFIFO_0_corefifo_async::work","component\work\ADCFIFO\ADCFIFO_0\rtl\vlog\core\corefifo_async.v","FALSE","FALSE"
+SUBBLOCK "ADCFIFO_ADCFIFO_0_corefifo_fwft::work","component\work\ADCFIFO\ADCFIFO_0\rtl\vlog\core\corefifo_fwft.v","FALSE","FALSE"
+SUBBLOCK "ADCFIFO_ADCFIFO_0_corefifo_sync::work","component\work\ADCFIFO\ADCFIFO_0\rtl\vlog\core\corefifo_sync.v","FALSE","FALSE"
+SUBBLOCK "ADCFIFO_ADCFIFO_0_corefifo_sync_scntr::work","component\work\ADCFIFO\ADCFIFO_0\rtl\vlog\core\corefifo_sync_scntr.v","FALSE","FALSE"
+SUBBLOCK "ADCFIFO_ADCFIFO_0_ram_wrapper::work","component\work\ADCFIFO\ADCFIFO_0\rtl\vlog\core\ADCFIFO_ADCFIFO_0_ram_wrapper.v","FALSE","FALSE"
+ENDLIST
+LIST "ADCFIFO_ADCFIFO_0_corefifo_async::work","component\work\ADCFIFO\ADCFIFO_0\rtl\vlog\core\corefifo_async.v","FALSE","FALSE"
+SUBBLOCK "ADCFIFO_ADCFIFO_0_corefifo_doubleSync::work","component\work\ADCFIFO\ADCFIFO_0\rtl\vlog\core\corefifo_doubleSync.v","FALSE","FALSE"
+SUBBLOCK "ADCFIFO_ADCFIFO_0_corefifo_grayToBinConv::work","component\work\ADCFIFO\ADCFIFO_0\rtl\vlog\core\corefifo_grayToBinConv.v","FALSE","FALSE"
+ENDLIST
+LIST "ADCFIFO_ADCFIFO_0_corefifo_doubleSync::work","component\work\ADCFIFO\ADCFIFO_0\rtl\vlog\core\corefifo_doubleSync.v","FALSE","FALSE"
+ENDLIST
+LIST "ADCFIFO_ADCFIFO_0_corefifo_fwft::work","component\work\ADCFIFO\ADCFIFO_0\rtl\vlog\core\corefifo_fwft.v","FALSE","FALSE"
+ENDLIST
+LIST "ADCFIFO_ADCFIFO_0_corefifo_grayToBinConv::work","component\work\ADCFIFO\ADCFIFO_0\rtl\vlog\core\corefifo_grayToBinConv.v","FALSE","FALSE"
+ENDLIST
+LIST "ADCFIFO_ADCFIFO_0_corefifo_sync::work","component\work\ADCFIFO\ADCFIFO_0\rtl\vlog\core\corefifo_sync.v","FALSE","FALSE"
+ENDLIST
+LIST "ADCFIFO_ADCFIFO_0_corefifo_sync_scntr::work","component\work\ADCFIFO\ADCFIFO_0\rtl\vlog\core\corefifo_sync_scntr.v","FALSE","FALSE"
+ENDLIST
+LIST "ADCFIFO_ADCFIFO_0_LSRAM_top::work","component\work\ADCFIFO\ADCFIFO_0\rtl\vlog\core\ADCFIFO_ADCFIFO_0_LSRAM_top.v","FALSE","FALSE"
+ENDLIST
+LIST "ADCFIFO_ADCFIFO_0_ram_wrapper::work","component\work\ADCFIFO\ADCFIFO_0\rtl\vlog\core\ADCFIFO_ADCFIFO_0_ram_wrapper.v","FALSE","FALSE"
+SUBBLOCK "ADCFIFO_ADCFIFO_0_LSRAM_top::work","component\work\ADCFIFO\ADCFIFO_0\rtl\vlog\core\ADCFIFO_ADCFIFO_0_LSRAM_top.v","FALSE","FALSE"
+ENDLIST
+LIST "ADCMEM_DP::work","hdl\ADCMEM_DP.v","FALSE","FALSE"
+ENDLIST
+LIST "ADCMEM_SP::work","hdl\ADCMEM_SP.v","FALSE","FALSE"
+ENDLIST
+LIST "associative_memory::work","hdl\associative_memory.v","FALSE","FALSE"
+ENDLIST
+LIST "bundle_counter::work","hdl\bundle_counter.v","FALSE","FALSE"
+ENDLIST
+LIST "cellular_automaton::work","hdl\cellular_automaton.v","FALSE","FALSE"
+ENDLIST
+LIST "cm_if_apb::work","hdl\cm_if_apb.v","FALSE","FALSE"
+ENDLIST
+LIST "cm_top::work","component\work\cm_top\cm_top.v","TRUE","FALSE"
+SUBBLOCK "cm_if_apb::work","hdl\cm_if_apb.v","FALSE","FALSE"
+SUBBLOCK "nm_if::work","component\work\nm_if\nm_if.v","TRUE","FALSE"
+ENDLIST
+LIST "CoreGPIO_Driver::work","","FALSE","FALSE"
+ENDLIST
+LIST "debug_bus::work","component\work\debug_bus\debug_bus.v","TRUE","FALSE"
+ENDLIST
+LIST "debug_mux::work","hdl\debug_mux.v","FALSE","FALSE"
+ENDLIST
+LIST "DESIGN_FIRMWARE::work","component\work\DESIGN_FIRMWARE\DESIGN_FIRMWARE.cxf","TRUE","FALSE"
+SUBBLOCK "CoreGPIO_Driver::work","","FALSE","FALSE"
+SUBBLOCK "SmartFusion2_CMSIS::work","","FALSE","FALSE"
+SUBBLOCK "SmartFusion2_MSS_GPIO_Driver::work","","FALSE","FALSE"
+SUBBLOCK "SmartFusion2_MSS_HPDMA_Driver::work","","FALSE","FALSE"
+SUBBLOCK "SmartFusion2_MSS_MMUART_Driver::work","","FALSE","FALSE"
+SUBBLOCK "SmartFusion2_MSS_NVM_Driver::work","","FALSE","FALSE"
+SUBBLOCK "SmartFusion2_MSS_PDMA_Driver::work","","FALSE","FALSE"
+SUBBLOCK "SmartFusion2_MSS_SPI_Driver::work","","FALSE","FALSE"
+SUBBLOCK "SmartFusion2_MSS_System_Services_Driver::work","","FALSE","FALSE"
+SUBBLOCK "SmartFusion2_MSS_Timer_Driver::work","","FALSE","FALSE"
+ENDLIST
+LIST "feature_encoder::work","hdl\feature_encoder.v","FALSE","FALSE"
+SUBBLOCK "fifo::work","hdl\fifo.v","FALSE","FALSE"
+ENDLIST
+LIST "fifo::work","hdl\fifo.v","FALSE","FALSE"
+ENDLIST
+LIST "fifo_error_decoder::work","hdl\fifo_error_decoder.v","FALSE","FALSE"
+ENDLIST
+LIST "hdc_top::work","hdl\hdc_top.v","FALSE","FALSE"
+SUBBLOCK "associative_memory::work","hdl\associative_memory.v","FALSE","FALSE"
+SUBBLOCK "feature_encoder::work","hdl\feature_encoder.v","FALSE","FALSE"
+SUBBLOCK "spatial_encoder_N_pong::work","hdl\spatial_encoder_N_pong.v","FALSE","FALSE"
+SUBBLOCK "temporal_encoder_counter::work","hdl\temporal_encoder_counter.v","FALSE","FALSE"
+ENDLIST
+LIST "hypervector_manipulator::work","hdl\hypervector_manipulator.v","FALSE","FALSE"
+ENDLIST
+LIST "Mario_Libero::work","component\work\Mario_Libero\Mario_Libero.v","TRUE","FALSE"
+SUBBLOCK "Mario_Libero_CoreGPIO_0_CoreGPIO::work","component\work\Mario_Libero\CoreGPIO_0\rtl\vlog\core\coregpio.v","FALSE","FALSE"
+SUBBLOCK "Mario_Libero_FCCC_0_FCCC::work","component\work\Mario_Libero\FCCC_0\Mario_Libero_FCCC_0_FCCC.v","FALSE","FALSE"
+SUBBLOCK "Mario_Libero_MSS::work","component\work\Mario_Libero_MSS\Mario_Libero_MSS.v","TRUE","FALSE"
+SUBBLOCK "Mario_Libero_OSC_0_OSC::work","component\work\Mario_Libero\OSC_0\Mario_Libero_OSC_0_OSC.v","FALSE","FALSE"
+SUBBLOCK "cm_top::work","component\work\cm_top\cm_top.v","TRUE","FALSE"
+SUBBLOCK "CoreAPB3::COREAPB3_LIB","component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v","FALSE","FALSE"
+ENDLIST
+LIST "Mario_Libero_CoreGPIO_0_CoreGPIO::work","component\work\Mario_Libero\CoreGPIO_0\rtl\vlog\core\coregpio.v","FALSE","FALSE"
+ENDLIST
+LIST "Mario_Libero_FCCC_0_FCCC::work","component\work\Mario_Libero\FCCC_0\Mario_Libero_FCCC_0_FCCC.v","FALSE","FALSE"
+ENDLIST
+LIST "Mario_Libero_MSS::work","component\work\Mario_Libero_MSS\Mario_Libero_MSS.v","TRUE","FALSE"
+SUBBLOCK "MSS_060::work","component\work\Mario_Libero_MSS\Mario_Libero_MSS_syn.v","FALSE","FALSE"
+ENDLIST
+LIST "Mario_Libero_OSC_0_OSC::work","component\work\Mario_Libero\OSC_0\Mario_Libero_OSC_0_OSC.v","FALSE","FALSE"
+SUBBLOCK "XTLOSC::work","component\Actel\SgCore\OSC\2.0.101\osc_comps.v","FALSE","FALSE"
+ENDLIST
+LIST "MSS_060::work","component\work\Mario_Libero_MSS\Mario_Libero_MSS_syn.v","FALSE","FALSE"
+ENDLIST
+LIST "nm_channel::work","component\work\nm_channel\nm_channel.v","TRUE","FALSE"
+SUBBLOCK "ack_datapath::work","hdl\ack_datapath.v","FALSE","FALSE"
+SUBBLOCK "adc_datapath::work","component\work\adc_datapath\adc_datapath.v","TRUE","FALSE"
+SUBBLOCK "nmic_rx::work","hdl\nmic_rx.v","FALSE","FALSE"
+SUBBLOCK "nmic_tx::work","hdl\nmic_tx.v","FALSE","FALSE"
+SUBBLOCK "twoMHz_strobe::work","hdl\twoMHz_strobe.v","FALSE","FALSE"
+ENDLIST
+LIST "nm_if::work","component\work\nm_if\nm_if.v","TRUE","FALSE"
+SUBBLOCK "fifo_error_decoder::work","hdl\fifo_error_decoder.v","FALSE","FALSE"
+SUBBLOCK "nm_channel::work","component\work\nm_channel\nm_channel.v","TRUE","FALSE"
+SUBBLOCK "nm_if_apb::work","hdl\nm_if_apb.v","FALSE","FALSE"
+SUBBLOCK "pdma_if::work","hdl\pdma_if.v","FALSE","FALSE"
+ENDLIST
+LIST "nm_if_apb::work","hdl\nm_if_apb.v","FALSE","FALSE"
+ENDLIST
+LIST "nm_sim::work","hdl\nm_sim.v","FALSE","FALSE"
+SUBBLOCK "nm_sim_adc_gen::work","hdl\nm_sim_adc_gen.v","FALSE","FALSE"
+SUBBLOCK "nm_sim_cmd_and_reg::work","hdl\nm_sim_cmd_and_reg.v","FALSE","FALSE"
+ENDLIST
+LIST "nm_sim_adc_gen::work","hdl\nm_sim_adc_gen.v","FALSE","FALSE"
+ENDLIST
+LIST "nm_sim_cmd_and_reg::work","hdl\nm_sim_cmd_and_reg.v","FALSE","FALSE"
+ENDLIST
+LIST "nmic_rx::work","hdl\nmic_rx.v","FALSE","FALSE"
+ENDLIST
+LIST "nmic_tx::work","hdl\nmic_tx.v","FALSE","FALSE"
+ENDLIST
+LIST "pdma_if::work","hdl\pdma_if.v","FALSE","FALSE"
+SUBBLOCK "PDMAFIFO::work","component\work\PDMAFIFO\PDMAFIFO.v","TRUE","FALSE"
+ENDLIST
+LIST "pdma_sim::work","hdl\pdma_sim.v","FALSE","FALSE"
+ENDLIST
+LIST "PDMAFIFO::work","component\work\PDMAFIFO\PDMAFIFO.v","TRUE","FALSE"
+SUBBLOCK "PDMAFIFO_PDMAFIFO_0_COREFIFO::work","component\work\PDMAFIFO\PDMAFIFO_0\rtl\vlog\core\COREFIFO.v","FALSE","FALSE"
+ENDLIST
+LIST "PDMAFIFO_PDMAFIFO_0_COREFIFO::work","component\work\PDMAFIFO\PDMAFIFO_0\rtl\vlog\core\COREFIFO.v","FALSE","FALSE"
+SUBBLOCK "PDMAFIFO_PDMAFIFO_0_corefifo_async::work","component\work\PDMAFIFO\PDMAFIFO_0\rtl\vlog\core\corefifo_async.v","FALSE","FALSE"
+SUBBLOCK "PDMAFIFO_PDMAFIFO_0_corefifo_fwft::work","component\work\PDMAFIFO\PDMAFIFO_0\rtl\vlog\core\corefifo_fwft.v","FALSE","FALSE"
+SUBBLOCK "PDMAFIFO_PDMAFIFO_0_corefifo_sync::work","component\work\PDMAFIFO\PDMAFIFO_0\rtl\vlog\core\corefifo_sync.v","FALSE","FALSE"
+SUBBLOCK "PDMAFIFO_PDMAFIFO_0_corefifo_sync_scntr::work","component\work\PDMAFIFO\PDMAFIFO_0\rtl\vlog\core\corefifo_sync_scntr.v","FALSE","FALSE"
+SUBBLOCK "PDMAFIFO_PDMAFIFO_0_ram_wrapper::work","component\work\PDMAFIFO\PDMAFIFO_0\rtl\vlog\core\PDMAFIFO_PDMAFIFO_0_ram_wrapper.v","FALSE","FALSE"
+ENDLIST
+LIST "PDMAFIFO_PDMAFIFO_0_corefifo_async::work","component\work\PDMAFIFO\PDMAFIFO_0\rtl\vlog\core\corefifo_async.v","FALSE","FALSE"
+SUBBLOCK "PDMAFIFO_PDMAFIFO_0_corefifo_doubleSync::work","component\work\PDMAFIFO\PDMAFIFO_0\rtl\vlog\core\corefifo_doubleSync.v","FALSE","FALSE"
+SUBBLOCK "PDMAFIFO_PDMAFIFO_0_corefifo_grayToBinConv::work","component\work\PDMAFIFO\PDMAFIFO_0\rtl\vlog\core\corefifo_grayToBinConv.v","FALSE","FALSE"
+ENDLIST
+LIST "PDMAFIFO_PDMAFIFO_0_corefifo_doubleSync::work","component\work\PDMAFIFO\PDMAFIFO_0\rtl\vlog\core\corefifo_doubleSync.v","FALSE","FALSE"
+ENDLIST
+LIST "PDMAFIFO_PDMAFIFO_0_corefifo_fwft::work","component\work\PDMAFIFO\PDMAFIFO_0\rtl\vlog\core\corefifo_fwft.v","FALSE","FALSE"
+ENDLIST
+LIST "PDMAFIFO_PDMAFIFO_0_corefifo_grayToBinConv::work","component\work\PDMAFIFO\PDMAFIFO_0\rtl\vlog\core\corefifo_grayToBinConv.v","FALSE","FALSE"
+ENDLIST
+LIST "PDMAFIFO_PDMAFIFO_0_corefifo_sync::work","component\work\PDMAFIFO\PDMAFIFO_0\rtl\vlog\core\corefifo_sync.v","FALSE","FALSE"
+ENDLIST
+LIST "PDMAFIFO_PDMAFIFO_0_corefifo_sync_scntr::work","component\work\PDMAFIFO\PDMAFIFO_0\rtl\vlog\core\corefifo_sync_scntr.v","FALSE","FALSE"
+ENDLIST
+LIST "PDMAFIFO_PDMAFIFO_0_ram_wrapper::work","component\work\PDMAFIFO\PDMAFIFO_0\rtl\vlog\core\PDMAFIFO_PDMAFIFO_0_ram_wrapper.v","FALSE","FALSE"
+SUBBLOCK "PDMAFIFO_PDMAFIFO_0_USRAM_top::work","component\work\PDMAFIFO\PDMAFIFO_0\rtl\vlog\core\PDMAFIFO_PDMAFIFO_0_USRAM_top.v","FALSE","FALSE"
+ENDLIST
+LIST "PDMAFIFO_PDMAFIFO_0_USRAM_top::work","component\work\PDMAFIFO\PDMAFIFO_0\rtl\vlog\core\PDMAFIFO_PDMAFIFO_0_USRAM_top.v","FALSE","FALSE"
+ENDLIST
+LIST "RCOSC_1MHZ::work","component\Actel\SgCore\OSC\2.0.101\osc_comps.v","FALSE","FALSE"
+ENDLIST
+LIST "RCOSC_1MHZ_FAB::work","component\Actel\SgCore\OSC\2.0.101\osc_comps.v","FALSE","FALSE"
+ENDLIST
+LIST "RCOSC_25_50MHZ::work","component\Actel\SgCore\OSC\2.0.101\osc_comps.v","FALSE","FALSE"
+ENDLIST
+LIST "RCOSC_25_50MHZ_FAB::work","component\Actel\SgCore\OSC\2.0.101\osc_comps.v","FALSE","FALSE"
+ENDLIST
+LIST "similarity_bundler::work","hdl\similarity_bundler.v","FALSE","FALSE"
+SUBBLOCK "hypervector_manipulator::work","hdl\hypervector_manipulator.v","FALSE","FALSE"
+ENDLIST
+LIST "SmartFusion2_CMSIS::work","","FALSE","FALSE"
+ENDLIST
+LIST "SmartFusion2_MSS_GPIO_Driver::work","","FALSE","FALSE"
+ENDLIST
+LIST "SmartFusion2_MSS_HPDMA_Driver::work","","FALSE","FALSE"
+ENDLIST
+LIST "SmartFusion2_MSS_MMUART_Driver::work","","FALSE","FALSE"
+ENDLIST
+LIST "SmartFusion2_MSS_NVM_Driver::work","","FALSE","FALSE"
+ENDLIST
+LIST "SmartFusion2_MSS_PDMA_Driver::work","","FALSE","FALSE"
+ENDLIST
+LIST "SmartFusion2_MSS_SPI_Driver::work","","FALSE","FALSE"
+ENDLIST
+LIST "SmartFusion2_MSS_System_Services_Driver::work","","FALSE","FALSE"
+ENDLIST
+LIST "SmartFusion2_MSS_Timer_Driver::work","","FALSE","FALSE"
+ENDLIST
+LIST "spatial_accumulator::work","hdl\spatial_accumulator.v","FALSE","FALSE"
+ENDLIST
+LIST "spatial_encoder::work","hdl\spatial_encoder.v","FALSE","FALSE"
+SUBBLOCK "cellular_automaton::work","hdl\cellular_automaton.v","FALSE","FALSE"
+SUBBLOCK "spatial_accumulator::work","hdl\spatial_accumulator.v","FALSE","FALSE"
+ENDLIST
+LIST "spatial_encoder_N_pong::work","hdl\spatial_encoder_N_pong.v","FALSE","FALSE"
+SUBBLOCK "cellular_automaton::work","hdl\cellular_automaton.v","FALSE","FALSE"
+SUBBLOCK "spatial_accumulator::work","hdl\spatial_accumulator.v","FALSE","FALSE"
+ENDLIST
+LIST "spatial_encoder_ping_pong::work","hdl\spatial_encoder_ping_pong.v","FALSE","FALSE"
+SUBBLOCK "cellular_automaton::work","hdl\cellular_automaton.v","FALSE","FALSE"
+SUBBLOCK "spatial_accumulator::work","hdl\spatial_accumulator.v","FALSE","FALSE"
+ENDLIST
+LIST "temporal_encoder::work","hdl\temporal_encoder.v","FALSE","FALSE"
+SUBBLOCK "similarity_bundler::work","hdl\similarity_bundler.v","FALSE","FALSE"
+ENDLIST
+LIST "temporal_encoder_counter::work","hdl\temporal_encoder_counter.v","FALSE","FALSE"
+SUBBLOCK "bundle_counter::work","hdl\bundle_counter.v","FALSE","FALSE"
+ENDLIST
+LIST "twoMHz_strobe::work","hdl\twoMHz_strobe.v","FALSE","FALSE"
+ENDLIST
+LIST "XTLOSC::work","component\Actel\SgCore\OSC\2.0.101\osc_comps.v","FALSE","FALSE"
+ENDLIST
+LIST "XTLOSC_FAB::work","component\Actel\SgCore\OSC\2.0.101\osc_comps.v","FALSE","FALSE"
+ENDLIST
+LIST "BFM_AHBSLAVEEXT::work","","FALSE","FALSE"
+ENDLIST
+LIST "BFM_APBSLAVEEXT::work","","FALSE","FALSE"
+ENDLIST
+LIST "BFMA1l1OII::work","","FALSE","FALSE"
+ENDLIST
+LIST "clock_driver::work","component\Actel\DirectCore\COREFIFO\2.4.100\rtl\vlog\test\user\clock_driver.v","FALSE","TRUE"
+ENDLIST
+LIST "clock_driver::work","component\Actel\DirectCore\COREFIFO\2.5.106\rtl\vlog\test\user\clock_driver.v","FALSE","TRUE"
+ENDLIST
+LIST "clock_driver::work","component\Actel\DirectCore\COREFIFO\2.6.108\rtl\vlog\test\user\clock_driver.v","FALSE","TRUE"
+ENDLIST
+LIST "cm_tb::work","stimulus\cm_tb.v","FALSE","TRUE"
+SUBBLOCK "cm_top::work","component\work\cm_top\cm_top.v","TRUE","FALSE"
+ENDLIST
+LIST "fifo_driver::work","component\Actel\DirectCore\COREFIFO\2.4.100\rtl\vlog\test\user\fifo_driver.v","FALSE","TRUE"
+ENDLIST
+LIST "fifo_driver::work","component\Actel\DirectCore\COREFIFO\2.5.106\rtl\vlog\test\user\fifo_driver.v","FALSE","TRUE"
+ENDLIST
+LIST "fifo_driver::work","component\Actel\DirectCore\COREFIFO\2.6.108\rtl\vlog\test\user\fifo_driver.v","FALSE","TRUE"
+ENDLIST
+LIST "fifo_monitor::work","component\Actel\DirectCore\COREFIFO\2.4.100\rtl\vlog\test\user\fifo_monitor.v","FALSE","TRUE"
+ENDLIST
+LIST "fifo_monitor::work","component\Actel\DirectCore\COREFIFO\2.5.106\rtl\vlog\test\user\fifo_monitor.v","FALSE","TRUE"
+ENDLIST
+LIST "fifo_monitor::work","component\Actel\DirectCore\COREFIFO\2.6.108\rtl\vlog\test\user\fifo_monitor.v","FALSE","TRUE"
+ENDLIST
+LIST "g4_dp_ext_mem::work","component\Actel\DirectCore\COREFIFO\2.4.100\rtl\vlog\test\user\g4_dp_ext_mem.v","FALSE","TRUE"
+SUBBLOCK "MEM_WeqR::work","component\Actel\DirectCore\COREFIFO\2.4.100\rtl\vlog\test\user\MEM_WeqR.v","FALSE","TRUE"
+SUBBLOCK "MEM_WgtR::work","component\Actel\DirectCore\COREFIFO\2.4.100\rtl\vlog\test\user\MEM_WgtR.v","FALSE","TRUE"
+SUBBLOCK "MEM_WltR::work","component\Actel\DirectCore\COREFIFO\2.4.100\rtl\vlog\test\user\MEM_WltR.v","FALSE","TRUE"
+ENDLIST
+LIST "g4_dp_ext_mem::work","component\Actel\DirectCore\COREFIFO\2.5.106\rtl\vlog\test\user\g4_dp_ext_mem.v","FALSE","TRUE"
+SUBBLOCK "MEM_WeqR::work","component\Actel\DirectCore\COREFIFO\2.4.100\rtl\vlog\test\user\MEM_WeqR.v","FALSE","TRUE"
+SUBBLOCK "MEM_WgtR::work","component\Actel\DirectCore\COREFIFO\2.4.100\rtl\vlog\test\user\MEM_WgtR.v","FALSE","TRUE"
+SUBBLOCK "MEM_WltR::work","component\Actel\DirectCore\COREFIFO\2.4.100\rtl\vlog\test\user\MEM_WltR.v","FALSE","TRUE"
+ENDLIST
+LIST "g4_dp_ext_mem::work","component\Actel\DirectCore\COREFIFO\2.6.108\rtl\vlog\test\user\g4_dp_ext_mem.v","FALSE","TRUE"
+SUBBLOCK "MEM_WeqR::work","component\Actel\DirectCore\COREFIFO\2.4.100\rtl\vlog\test\user\MEM_WeqR.v","FALSE","TRUE"
+SUBBLOCK "MEM_WgtR::work","component\Actel\DirectCore\COREFIFO\2.4.100\rtl\vlog\test\user\MEM_WgtR.v","FALSE","TRUE"
+SUBBLOCK "MEM_WltR::work","component\Actel\DirectCore\COREFIFO\2.4.100\rtl\vlog\test\user\MEM_WltR.v","FALSE","TRUE"
+ENDLIST
+LIST "Mario_Libero_CoreGPIO_0_BFM_AHBL::work","component\work\Mario_Libero\CoreGPIO_0\rtl\vlog\amba_bfm\bfm_ahbl.v","FALSE","TRUE"
+SUBBLOCK "Mario_Libero_CoreGPIO_0_BFM_MAIN::work","component\work\Mario_Libero\CoreGPIO_0\rtl\vlog\amba_bfm\bfm_main.v","FALSE","TRUE"
+ENDLIST
+LIST "Mario_Libero_CoreGPIO_0_BFM_AHBLAPB::work","component\work\Mario_Libero\CoreGPIO_0\rtl\vlog\amba_bfm\bfm_ahblapb.v","FALSE","TRUE"
+SUBBLOCK "BFMA1l1OII::work","","FALSE","FALSE"
+SUBBLOCK "Mario_Libero_CoreGPIO_0_BFM_MAIN::work","component\work\Mario_Libero\CoreGPIO_0\rtl\vlog\amba_bfm\bfm_main.v","FALSE","TRUE"
+ENDLIST
+LIST "Mario_Libero_CoreGPIO_0_BFM_AHBSLAVE::work","component\work\Mario_Libero\CoreGPIO_0\rtl\vlog\amba_bfm\bfm_ahbslave.v","FALSE","TRUE"
+SUBBLOCK "BFM_AHBSLAVEEXT::work","","FALSE","FALSE"
+ENDLIST
+LIST "Mario_Libero_CoreGPIO_0_BFM_AHBSLAVEEXT::work","component\work\Mario_Libero\CoreGPIO_0\rtl\vlog\amba_bfm\bfm_ahbslaveext.v","FALSE","TRUE"
+ENDLIST
+LIST "Mario_Libero_CoreGPIO_0_BFM_APB::work","component\work\Mario_Libero\CoreGPIO_0\rtl\vlog\amba_bfm\bfm_apb.v","FALSE","TRUE"
+SUBBLOCK "Mario_Libero_CoreGPIO_0_BFMA1l1OII::work","component\work\Mario_Libero\CoreGPIO_0\rtl\vlog\amba_bfm\bfm_ahbtoapb.v","FALSE","TRUE"
+SUBBLOCK "Mario_Libero_CoreGPIO_0_BFM_MAIN::work","component\work\Mario_Libero\CoreGPIO_0\rtl\vlog\amba_bfm\bfm_main.v","FALSE","TRUE"
+ENDLIST
+LIST "Mario_Libero_CoreGPIO_0_BFM_APB2APB::work","component\work\Mario_Libero\CoreGPIO_0\rtl\vlog\amba_bfm\bfm_apbtoapb.v","FALSE","TRUE"
+ENDLIST
+LIST "Mario_Libero_CoreGPIO_0_BFM_APBSLAVE::work","component\work\Mario_Libero\CoreGPIO_0\rtl\vlog\amba_bfm\bfm_apbslave.v","FALSE","TRUE"
+SUBBLOCK "BFM_APBSLAVEEXT::work","","FALSE","FALSE"
+ENDLIST
+LIST "Mario_Libero_CoreGPIO_0_BFM_APBSLAVEEXT::work","component\work\Mario_Libero\CoreGPIO_0\rtl\vlog\amba_bfm\bfm_apbslaveext.v","FALSE","TRUE"
+ENDLIST
+LIST "Mario_Libero_CoreGPIO_0_BFM_MAIN::work","component\work\Mario_Libero\CoreGPIO_0\rtl\vlog\amba_bfm\bfm_main.v","FALSE","TRUE"
+ENDLIST
+LIST "Mario_Libero_CoreGPIO_0_BFMA1l1OII::work","component\work\Mario_Libero\CoreGPIO_0\rtl\vlog\amba_bfm\bfm_ahbtoapb.v","FALSE","TRUE"
+ENDLIST
+LIST "MEM_WeqR::work","component\Actel\DirectCore\COREFIFO\2.4.100\rtl\vlog\test\user\MEM_WeqR.v","FALSE","TRUE"
+ENDLIST
+LIST "MEM_WeqR::work","component\Actel\DirectCore\COREFIFO\2.5.106\rtl\vlog\test\user\MEM_WeqR.v","FALSE","TRUE"
+ENDLIST
+LIST "MEM_WeqR::work","component\Actel\DirectCore\COREFIFO\2.6.108\rtl\vlog\test\user\MEM_WeqR.v","FALSE","TRUE"
+ENDLIST
+LIST "MEM_WgtR::work","component\Actel\DirectCore\COREFIFO\2.4.100\rtl\vlog\test\user\MEM_WgtR.v","FALSE","TRUE"
+ENDLIST
+LIST "MEM_WgtR::work","component\Actel\DirectCore\COREFIFO\2.5.106\rtl\vlog\test\user\MEM_WgtR.v","FALSE","TRUE"
+ENDLIST
+LIST "MEM_WgtR::work","component\Actel\DirectCore\COREFIFO\2.6.108\rtl\vlog\test\user\MEM_WgtR.v","FALSE","TRUE"
+ENDLIST
+LIST "MEM_WltR::work","component\Actel\DirectCore\COREFIFO\2.4.100\rtl\vlog\test\user\MEM_WltR.v","FALSE","TRUE"
+ENDLIST
+LIST "MEM_WltR::work","component\Actel\DirectCore\COREFIFO\2.5.106\rtl\vlog\test\user\MEM_WltR.v","FALSE","TRUE"
+ENDLIST
+LIST "MEM_WltR::work","component\Actel\DirectCore\COREFIFO\2.6.108\rtl\vlog\test\user\MEM_WltR.v","FALSE","TRUE"
+ENDLIST
+LIST "testbench::work","component\work\ACKFIFO\ACKFIFO_0\rtl\vlog\test\user\testbench.v","FALSE","TRUE"
+SUBBLOCK "ACKFIFO_ACKFIFO_0_COREFIFO::work","component\work\ACKFIFO\ACKFIFO_0\rtl\vlog\core\COREFIFO.v","FALSE","FALSE"
+SUBBLOCK "clock_driver::work","component\Actel\DirectCore\COREFIFO\2.4.100\rtl\vlog\test\user\clock_driver.v","FALSE","TRUE"
+SUBBLOCK "fifo_driver::work","component\Actel\DirectCore\COREFIFO\2.4.100\rtl\vlog\test\user\fifo_driver.v","FALSE","TRUE"
+SUBBLOCK "fifo_monitor::work","component\Actel\DirectCore\COREFIFO\2.4.100\rtl\vlog\test\user\fifo_monitor.v","FALSE","TRUE"
+SUBBLOCK "g4_dp_ext_mem::work","component\Actel\DirectCore\COREFIFO\2.4.100\rtl\vlog\test\user\g4_dp_ext_mem.v","FALSE","TRUE"
+ENDLIST
+LIST "testbench::work","component\work\ADCFIFO\ADCFIFO_0\rtl\vlog\test\user\testbench.v","FALSE","TRUE"
+SUBBLOCK "ADCFIFO_ADCFIFO_0_COREFIFO::work","component\work\ADCFIFO\ADCFIFO_0\rtl\vlog\core\COREFIFO.v","FALSE","FALSE"
+SUBBLOCK "clock_driver::work","component\Actel\DirectCore\COREFIFO\2.4.100\rtl\vlog\test\user\clock_driver.v","FALSE","TRUE"
+SUBBLOCK "fifo_driver::work","component\Actel\DirectCore\COREFIFO\2.4.100\rtl\vlog\test\user\fifo_driver.v","FALSE","TRUE"
+SUBBLOCK "fifo_monitor::work","component\Actel\DirectCore\COREFIFO\2.4.100\rtl\vlog\test\user\fifo_monitor.v","FALSE","TRUE"
+SUBBLOCK "g4_dp_ext_mem::work","component\Actel\DirectCore\COREFIFO\2.4.100\rtl\vlog\test\user\g4_dp_ext_mem.v","FALSE","TRUE"
+ENDLIST
+LIST "testbench::work","component\work\Mario_Libero\CoreGPIO_0\rtl\vlog\test\user\testbench.v","FALSE","TRUE"
+SUBBLOCK "Mario_Libero_CoreGPIO_0_BFM_APB::work","component\work\Mario_Libero\CoreGPIO_0\rtl\vlog\amba_bfm\bfm_apb.v","FALSE","TRUE"
+SUBBLOCK "Mario_Libero_CoreGPIO_0_CoreGPIO::work","component\work\Mario_Libero\CoreGPIO_0\rtl\vlog\core\coregpio.v","FALSE","FALSE"
+ENDLIST
+LIST "testbench::work","component\work\PDMAFIFO\PDMAFIFO_0\rtl\vlog\test\user\testbench.v","FALSE","TRUE"
+SUBBLOCK "PDMAFIFO_PDMAFIFO_0_COREFIFO::work","component\work\PDMAFIFO\PDMAFIFO_0\rtl\vlog\core\COREFIFO.v","FALSE","FALSE"
+SUBBLOCK "clock_driver::work","component\Actel\DirectCore\COREFIFO\2.4.100\rtl\vlog\test\user\clock_driver.v","FALSE","TRUE"
+SUBBLOCK "fifo_driver::work","component\Actel\DirectCore\COREFIFO\2.4.100\rtl\vlog\test\user\fifo_driver.v","FALSE","TRUE"
+SUBBLOCK "fifo_monitor::work","component\Actel\DirectCore\COREFIFO\2.4.100\rtl\vlog\test\user\fifo_monitor.v","FALSE","TRUE"
+SUBBLOCK "g4_dp_ext_mem::work","component\Actel\DirectCore\COREFIFO\2.4.100\rtl\vlog\test\user\g4_dp_ext_mem.v","FALSE","TRUE"
+ENDLIST
+LIST "testbench::work","component\work\adc_fft_if\COREFIFO_0\rtl\vlog\test\user\testbench.v","FALSE","TRUE"
+SUBBLOCK "adc_fft_if_COREFIFO_0_COREFIFO::work","component\work\adc_fft_if\COREFIFO_0\rtl\vlog\core\COREFIFO.v","FALSE","FALSE"
+SUBBLOCK "clock_driver::work","component\Actel\DirectCore\COREFIFO\2.4.100\rtl\vlog\test\user\clock_driver.v","FALSE","TRUE"
+SUBBLOCK "fifo_driver::work","component\Actel\DirectCore\COREFIFO\2.4.100\rtl\vlog\test\user\fifo_driver.v","FALSE","TRUE"
+SUBBLOCK "fifo_monitor::work","component\Actel\DirectCore\COREFIFO\2.4.100\rtl\vlog\test\user\fifo_monitor.v","FALSE","TRUE"
+SUBBLOCK "g4_dp_ext_mem::work","component\Actel\DirectCore\COREFIFO\2.4.100\rtl\vlog\test\user\g4_dp_ext_mem.v","FALSE","TRUE"
+ENDLIST
+LIST "toplevel_tb::work","stimulus\toplevel_tb.v","FALSE","TRUE"
+SUBBLOCK "Mario_Libero::work","component\work\Mario_Libero\Mario_Libero.v","TRUE","FALSE"
+ENDLIST
+LIST "CAPB3II::COREAPB3_LIB","component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3_muxptob3.v","FALSE","FALSE"
+ENDLIST
+LIST "CAPB3O::COREAPB3_LIB","component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3_iaddr_reg.v","FALSE","FALSE"
+ENDLIST
+LIST "CoreAPB3::COREAPB3_LIB","component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v","FALSE","FALSE"
+SUBBLOCK "CAPB3II::COREAPB3_LIB","component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3_muxptob3.v","FALSE","FALSE"
+SUBBLOCK "CAPB3O::COREAPB3_LIB","component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3_iaddr_reg.v","FALSE","FALSE"
+ENDLIST
+LIST "BFM_APB::COREAPB3_LIB","component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_apb.v","FALSE","TRUE"
+SUBBLOCK "BFMA1l1OII::COREAPB3_LIB","component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_ahbtoapb.v","FALSE","TRUE"
+SUBBLOCK "BFM_MAIN::COREAPB3_LIB","component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_main.v","FALSE","TRUE"
+ENDLIST
+LIST "BFM_APBSLAVE::COREAPB3_LIB","component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_apbslave.v","FALSE","TRUE"
+SUBBLOCK "BFM_APBSLAVEEXT::COREAPB3_LIB","component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_apbslaveext.v","FALSE","TRUE"
+ENDLIST
+LIST "BFM_APBSLAVEEXT::COREAPB3_LIB","component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_apbslaveext.v","FALSE","TRUE"
+ENDLIST
+LIST "BFM_MAIN::COREAPB3_LIB","component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_main.v","FALSE","TRUE"
+ENDLIST
+LIST "BFMA1l1OII::COREAPB3_LIB","component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_ahbtoapb.v","FALSE","TRUE"
+ENDLIST
+LIST "testbench::COREAPB3_LIB","component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\test\user\testbench.v","FALSE","TRUE"
+SUBBLOCK "BFM_APB::COREAPB3_LIB","component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_apb.v","FALSE","TRUE"
+SUBBLOCK "BFM_APBSLAVE::COREAPB3_LIB","component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_apbslave.v","FALSE","TRUE"
+SUBBLOCK "CoreAPB3::COREAPB3_LIB","component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v","FALSE","FALSE"
+ENDLIST
+LIST "adc_fft_if_COREFFT_0_COREFFT::COREFFT_LIB","component\work\adc_fft_if\COREFFT_0\rtl\in_place\vlog\core\COREFFT_TOP.v","FALSE","FALSE"
+SUBBLOCK "adc_fft_if_COREFFT_0_COREFFT_INPLC::COREFFT_LIB","component\work\adc_fft_if\COREFFT_0\rtl\in_place\vlog\core\COREFFT.v","FALSE","FALSE"
+SUBBLOCK "adc_fft_if_COREFFT_0_COREFFT_STRM::COREFFT_LIB","","FALSE","FALSE"
+ENDLIST
+LIST "adc_fft_if_COREFFT_0_COREFFT_INPLC::COREFFT_LIB","component\work\adc_fft_if\COREFFT_0\rtl\in_place\vlog\core\COREFFT.v","FALSE","FALSE"
+SUBBLOCK "adc_fft_if_COREFFT_0_inPlace::COREFFT_LIB","component\work\adc_fft_if\COREFFT_0\rtl\in_place\vlog\core\fftDp.v","FALSE","FALSE"
+SUBBLOCK "adc_fft_if_COREFFT_0_outBuff::COREFFT_LIB","component\work\adc_fft_if\COREFFT_0\rtl\in_place\vlog\core\fftDp.v","FALSE","FALSE"
+SUBBLOCK "adc_fft_if_COREFFT_0_twidLUT::COREFFT_LIB","component\work\adc_fft_if\COREFFT_0\rtl\in_place\vlog\core\fftDp.v","FALSE","FALSE"
+SUBBLOCK "adc_fft_if_COREFFT_0_twiddle::COREFFT_LIB","component\work\adc_fft_if\COREFFT_0\twiddle32.v","FALSE","FALSE"
+SUBBLOCK "fft_inpl_autoScale::COREFFT_LIB","component\Actel\DirectCore\COREFFT\7.0.104\rtl\in_place\vlog\core\kit.v","FALSE","FALSE"
+SUBBLOCK "fft_inpl_bfly2::COREFFT_LIB","component\Actel\DirectCore\COREFFT\7.0.104\rtl\in_place\vlog\core\kit.v","FALSE","FALSE"
+SUBBLOCK "fft_inpl_kitDelay_bit_reg::COREFFT_LIB","component\Actel\DirectCore\COREFFT\7.0.104\rtl\in_place\vlog\core\kit.v","FALSE","FALSE"
+SUBBLOCK "fft_inpl_kitDelay_reg::COREFFT_LIB","component\Actel\DirectCore\COREFFT\7.0.104\rtl\in_place\vlog\core\kit.v","FALSE","FALSE"
+SUBBLOCK "fft_inpl_slowClock::COREFFT_LIB","component\Actel\DirectCore\COREFFT\7.0.104\rtl\in_place\vlog\core\kit.v","FALSE","FALSE"
+SUBBLOCK "fft_inpl_sm_top::COREFFT_LIB","component\Actel\DirectCore\COREFFT\7.0.104\rtl\in_place\vlog\core\fftSm.v","FALSE","FALSE"
+SUBBLOCK "fft_inpl_switch::COREFFT_LIB","component\Actel\DirectCore\COREFFT\7.0.104\rtl\in_place\vlog\core\kit.v","FALSE","FALSE"
+ENDLIST
+LIST "adc_fft_if_COREFFT_0_COREFFT_STRM::COREFFT_LIB","","FALSE","FALSE"
+ENDLIST
+LIST "adc_fft_if_COREFFT_0_inBuffer::COREFFT_LIB","component\work\adc_fft_if\COREFFT_0\rtl\in_place\vlog\core\fftDp.v","FALSE","FALSE"
+SUBBLOCK "adc_fft_if_COREFFT_0_wrapRam::COREFFT_LIB","component\work\adc_fft_if\COREFFT_0\rtl\in_place\vlog\core\fftDp.v","FALSE","FALSE"
+ENDLIST
+LIST "adc_fft_if_COREFFT_0_inPlace::COREFFT_LIB","component\work\adc_fft_if\COREFFT_0\rtl\in_place\vlog\core\fftDp.v","FALSE","FALSE"
+SUBBLOCK "adc_fft_if_COREFFT_0_inBuffer::COREFFT_LIB","component\work\adc_fft_if\COREFFT_0\rtl\in_place\vlog\core\fftDp.v","FALSE","FALSE"
+ENDLIST
+LIST "adc_fft_if_COREFFT_0_lsram_g5::COREFFT_LIB","","FALSE","FALSE"
+ENDLIST
+LIST "adc_fft_if_COREFFT_0_outBuff::COREFFT_LIB","component\work\adc_fft_if\COREFFT_0\rtl\in_place\vlog\core\fftDp.v","FALSE","FALSE"
+SUBBLOCK "adc_fft_if_COREFFT_0_wrapRam::COREFFT_LIB","component\work\adc_fft_if\COREFFT_0\rtl\in_place\vlog\core\fftDp.v","FALSE","FALSE"
+ENDLIST
+LIST "adc_fft_if_COREFFT_0_ram_smGen::COREFFT_LIB","","FALSE","FALSE"
+ENDLIST
+LIST "adc_fft_if_COREFFT_0_twiddle::COREFFT_LIB","component\work\adc_fft_if\COREFFT_0\twiddle32.v","FALSE","FALSE"
+ENDLIST
+LIST "adc_fft_if_COREFFT_0_twidLUT::COREFFT_LIB","component\work\adc_fft_if\COREFFT_0\rtl\in_place\vlog\core\fftDp.v","FALSE","FALSE"
+SUBBLOCK "adc_fft_if_COREFFT_0_wrapRam::COREFFT_LIB","component\work\adc_fft_if\COREFFT_0\rtl\in_place\vlog\core\fftDp.v","FALSE","FALSE"
+ENDLIST
+LIST "adc_fft_if_COREFFT_0_uram_g5::COREFFT_LIB","","FALSE","FALSE"
+ENDLIST
+LIST "adc_fft_if_COREFFT_0_uram_smGen::COREFFT_LIB","component\work\adc_fft_if\COREFFT_0\rtl\in_place\vlog\core\adc_fft_if_COREFFT_0_uram_smGen.v","FALSE","FALSE"
+ENDLIST
+LIST "adc_fft_if_COREFFT_0_wrapRam::COREFFT_LIB","component\work\adc_fft_if\COREFFT_0\rtl\in_place\vlog\core\fftDp.v","FALSE","FALSE"
+SUBBLOCK "adc_fft_if_COREFFT_0_lsram_g5::COREFFT_LIB","","FALSE","FALSE"
+SUBBLOCK "adc_fft_if_COREFFT_0_ram_smGen::COREFFT_LIB","","FALSE","FALSE"
+SUBBLOCK "adc_fft_if_COREFFT_0_uram_g5::COREFFT_LIB","","FALSE","FALSE"
+SUBBLOCK "adc_fft_if_COREFFT_0_uram_smGen::COREFFT_LIB","component\work\adc_fft_if\COREFFT_0\rtl\in_place\vlog\core\adc_fft_if_COREFFT_0_uram_smGen.v","FALSE","FALSE"
+SUBBLOCK "fft_inpl_RAM_two_port::COREFFT_LIB","component\Actel\DirectCore\COREFFT\7.0.104\rtl\in_place\vlog\core\kit.v","FALSE","FALSE"
+ENDLIST
+LIST "fft_inpl_autoScale::COREFFT_LIB","component\Actel\DirectCore\COREFFT\7.0.104\rtl\in_place\vlog\core\kit.v","FALSE","FALSE"
+SUBBLOCK "fft_inpl_kitEdge::COREFFT_LIB","component\Actel\DirectCore\COREFFT\7.0.104\rtl\in_place\vlog\core\kit.v","FALSE","FALSE"
+ENDLIST
+LIST "fft_inpl_bcounter::COREFFT_LIB","component\Actel\DirectCore\COREFFT\7.0.104\rtl\in_place\vlog\core\kit.v","FALSE","FALSE"
+ENDLIST
+LIST "fft_inpl_bfly2::COREFFT_LIB","component\Actel\DirectCore\COREFFT\7.0.104\rtl\in_place\vlog\core\kit.v","FALSE","FALSE"
+SUBBLOCK "fft_inpl_cmplx_rnd::COREFFT_LIB","component\Actel\DirectCore\COREFFT\7.0.104\rtl\in_place\vlog\core\cmplx.v","FALSE","FALSE"
+SUBBLOCK "fft_inpl_kitDelay_reg::COREFFT_LIB","component\Actel\DirectCore\COREFFT\7.0.104\rtl\in_place\vlog\core\kit.v","FALSE","FALSE"
+ENDLIST
+LIST "fft_inpl_cmplx_18::COREFFT_LIB","component\Actel\DirectCore\COREFFT\7.0.104\rtl\in_place\vlog\core\cmplx.v","FALSE","FALSE"
+SUBBLOCK "fft_inpl_half_cmplx_18::COREFFT_LIB","component\Actel\DirectCore\COREFFT\7.0.104\rtl\in_place\vlog\core\cmplx.v","FALSE","FALSE"
+ENDLIST
+LIST "fft_inpl_cmplx_35::COREFFT_LIB","component\Actel\DirectCore\COREFFT\7.0.104\rtl\in_place\vlog\core\cmplx.v","FALSE","FALSE"
+SUBBLOCK "fft_inpl_half_cmplx_35::COREFFT_LIB","component\Actel\DirectCore\COREFFT\7.0.104\rtl\in_place\vlog\core\cmplx.v","FALSE","FALSE"
+SUBBLOCK "fft_inpl_kitDelay_reg::COREFFT_LIB","component\Actel\DirectCore\COREFFT\7.0.104\rtl\in_place\vlog\core\kit.v","FALSE","FALSE"
+ENDLIST
+LIST "fft_inpl_cmplx_rnd::COREFFT_LIB","component\Actel\DirectCore\COREFFT\7.0.104\rtl\in_place\vlog\core\cmplx.v","FALSE","FALSE"
+SUBBLOCK "fft_inpl_cmplx_18::COREFFT_LIB","component\Actel\DirectCore\COREFFT\7.0.104\rtl\in_place\vlog\core\cmplx.v","FALSE","FALSE"
+SUBBLOCK "fft_inpl_cmplx_35::COREFFT_LIB","component\Actel\DirectCore\COREFFT\7.0.104\rtl\in_place\vlog\core\cmplx.v","FALSE","FALSE"
+SUBBLOCK "fft_inpl_kitRndUp::COREFFT_LIB","component\Actel\DirectCore\COREFFT\7.0.104\rtl\in_place\vlog\core\kit.v","FALSE","FALSE"
+ENDLIST
+LIST "fft_inpl_counter::COREFFT_LIB","component\Actel\DirectCore\COREFFT\7.0.104\rtl\in_place\vlog\core\kit.v","FALSE","FALSE"
+ENDLIST
+LIST "fft_inpl_counter_w::COREFFT_LIB","component\Actel\DirectCore\COREFFT\7.0.104\rtl\in_place\vlog\core\kit.v","FALSE","FALSE"
+ENDLIST
+LIST "fft_inpl_half_cmplx_18::COREFFT_LIB","component\Actel\DirectCore\COREFFT\7.0.104\rtl\in_place\vlog\core\cmplx.v","FALSE","FALSE"
+SUBBLOCK "fft_inpl_kitDelay_reg::COREFFT_LIB","component\Actel\DirectCore\COREFFT\7.0.104\rtl\in_place\vlog\core\kit.v","FALSE","FALSE"
+SUBBLOCK "fft_inpl_mac18x18mx::COREFFT_LIB","component\Actel\DirectCore\COREFFT\7.0.104\rtl\in_place\vlog\core\mac_lib.v","FALSE","FALSE"
+SUBBLOCK "fft_inpl_signExt::COREFFT_LIB","component\Actel\DirectCore\COREFFT\7.0.104\rtl\in_place\vlog\core\kit.v","FALSE","FALSE"
+ENDLIST
+LIST "fft_inpl_half_cmplx_35::COREFFT_LIB","component\Actel\DirectCore\COREFFT\7.0.104\rtl\in_place\vlog\core\cmplx.v","FALSE","FALSE"
+SUBBLOCK "fft_inpl_kitDelay_reg::COREFFT_LIB","component\Actel\DirectCore\COREFFT\7.0.104\rtl\in_place\vlog\core\kit.v","FALSE","FALSE"
+SUBBLOCK "fft_inpl_mac18x18mx::COREFFT_LIB","component\Actel\DirectCore\COREFFT\7.0.104\rtl\in_place\vlog\core\mac_lib.v","FALSE","FALSE"
+SUBBLOCK "fft_inpl_signExt::COREFFT_LIB","component\Actel\DirectCore\COREFFT\7.0.104\rtl\in_place\vlog\core\kit.v","FALSE","FALSE"
+ENDLIST
+LIST "fft_inpl_inBuf_fftA_pipe::COREFFT_LIB","component\Actel\DirectCore\COREFFT\7.0.104\rtl\in_place\vlog\core\fftSm.v","FALSE","FALSE"
+ENDLIST
+LIST "fft_inpl_inBuf_ldA::COREFFT_LIB","component\Actel\DirectCore\COREFFT\7.0.104\rtl\in_place\vlog\core\fftSm.v","FALSE","FALSE"
+SUBBLOCK "fft_inpl_counter::COREFFT_LIB","component\Actel\DirectCore\COREFFT\7.0.104\rtl\in_place\vlog\core\kit.v","FALSE","FALSE"
+ENDLIST
+LIST "fft_inpl_kitCountS::COREFFT_LIB","component\Actel\DirectCore\COREFFT\7.0.104\rtl\in_place\vlog\core\kit.v","FALSE","FALSE"
+ENDLIST
+LIST "fft_inpl_kitDelay_bit_reg::COREFFT_LIB","component\Actel\DirectCore\COREFFT\7.0.104\rtl\in_place\vlog\core\kit.v","FALSE","FALSE"
+ENDLIST
+LIST "fft_inpl_kitDelay_reg::COREFFT_LIB","component\Actel\DirectCore\COREFFT\7.0.104\rtl\in_place\vlog\core\kit.v","FALSE","FALSE"
+ENDLIST
+LIST "fft_inpl_kitEdge::COREFFT_LIB","component\Actel\DirectCore\COREFFT\7.0.104\rtl\in_place\vlog\core\kit.v","FALSE","FALSE"
+ENDLIST
+LIST "fft_inpl_kitRndUp::COREFFT_LIB","component\Actel\DirectCore\COREFFT\7.0.104\rtl\in_place\vlog\core\kit.v","FALSE","FALSE"
+ENDLIST
+LIST "fft_inpl_kitSync_ngrst::COREFFT_LIB","component\Actel\DirectCore\COREFFT\7.0.104\rtl\in_place\vlog\core\kit.v","FALSE","FALSE"
+SUBBLOCK "fft_inpl_kitDelay_bit_reg::COREFFT_LIB","component\Actel\DirectCore\COREFFT\7.0.104\rtl\in_place\vlog\core\kit.v","FALSE","FALSE"
+ENDLIST
+LIST "fft_inpl_mac18x18mx::COREFFT_LIB","component\Actel\DirectCore\COREFFT\7.0.104\rtl\in_place\vlog\core\mac_lib.v","FALSE","FALSE"
+SUBBLOCK "MACC_PA::COREFFT_LIB","","FALSE","FALSE"
+SUBBLOCK "MATH18X18::COREFFT_LIB","","FALSE","FALSE"
+SUBBLOCK "fft_inpl_signExt::COREFFT_LIB","component\Actel\DirectCore\COREFFT\7.0.104\rtl\in_place\vlog\core\kit.v","FALSE","FALSE"
+ENDLIST
+LIST "fft_inpl_outBufA::COREFFT_LIB","component\Actel\DirectCore\COREFFT\7.0.104\rtl\in_place\vlog\core\fftSm.v","FALSE","FALSE"
+SUBBLOCK "fft_inpl_counter::COREFFT_LIB","component\Actel\DirectCore\COREFFT\7.0.104\rtl\in_place\vlog\core\kit.v","FALSE","FALSE"
+SUBBLOCK "fft_inpl_kitDelay_bit_reg::COREFFT_LIB","component\Actel\DirectCore\COREFFT\7.0.104\rtl\in_place\vlog\core\kit.v","FALSE","FALSE"
+ENDLIST
+LIST "fft_inpl_RAM_two_port::COREFFT_LIB","component\Actel\DirectCore\COREFFT\7.0.104\rtl\in_place\vlog\core\kit.v","FALSE","FALSE"
+ENDLIST
+LIST "fft_inpl_rdFFTtimer::COREFFT_LIB","component\Actel\DirectCore\COREFFT\7.0.104\rtl\in_place\vlog\core\fftSm.v","FALSE","FALSE"
+SUBBLOCK "fft_inpl_counter::COREFFT_LIB","component\Actel\DirectCore\COREFFT\7.0.104\rtl\in_place\vlog\core\kit.v","FALSE","FALSE"
+SUBBLOCK "fft_inpl_counter_w::COREFFT_LIB","component\Actel\DirectCore\COREFFT\7.0.104\rtl\in_place\vlog\core\kit.v","FALSE","FALSE"
+SUBBLOCK "fft_inpl_kitDelay_bit_reg::COREFFT_LIB","component\Actel\DirectCore\COREFFT\7.0.104\rtl\in_place\vlog\core\kit.v","FALSE","FALSE"
+ENDLIST
+LIST "fft_inpl_signExt::COREFFT_LIB","component\Actel\DirectCore\COREFFT\7.0.104\rtl\in_place\vlog\core\kit.v","FALSE","FALSE"
+ENDLIST
+LIST "fft_inpl_slowClock::COREFFT_LIB","component\Actel\DirectCore\COREFFT\7.0.104\rtl\in_place\vlog\core\kit.v","FALSE","FALSE"
+ENDLIST
+LIST "fft_inpl_sm_top::COREFFT_LIB","component\Actel\DirectCore\COREFFT\7.0.104\rtl\in_place\vlog\core\fftSm.v","FALSE","FALSE"
+SUBBLOCK "fft_inpl_inBuf_fftA_pipe::COREFFT_LIB","component\Actel\DirectCore\COREFFT\7.0.104\rtl\in_place\vlog\core\fftSm.v","FALSE","FALSE"
+SUBBLOCK "fft_inpl_inBuf_ldA::COREFFT_LIB","component\Actel\DirectCore\COREFFT\7.0.104\rtl\in_place\vlog\core\fftSm.v","FALSE","FALSE"
+SUBBLOCK "fft_inpl_kitCountS::COREFFT_LIB","component\Actel\DirectCore\COREFFT\7.0.104\rtl\in_place\vlog\core\kit.v","FALSE","FALSE"
+SUBBLOCK "fft_inpl_kitDelay_bit_reg::COREFFT_LIB","component\Actel\DirectCore\COREFFT\7.0.104\rtl\in_place\vlog\core\kit.v","FALSE","FALSE"
+SUBBLOCK "fft_inpl_kitDelay_reg::COREFFT_LIB","component\Actel\DirectCore\COREFFT\7.0.104\rtl\in_place\vlog\core\kit.v","FALSE","FALSE"
+SUBBLOCK "fft_inpl_kitEdge::COREFFT_LIB","component\Actel\DirectCore\COREFFT\7.0.104\rtl\in_place\vlog\core\kit.v","FALSE","FALSE"
+SUBBLOCK "fft_inpl_outBufA::COREFFT_LIB","component\Actel\DirectCore\COREFFT\7.0.104\rtl\in_place\vlog\core\fftSm.v","FALSE","FALSE"
+SUBBLOCK "fft_inpl_rdFFTtimer::COREFFT_LIB","component\Actel\DirectCore\COREFFT\7.0.104\rtl\in_place\vlog\core\fftSm.v","FALSE","FALSE"
+SUBBLOCK "fft_inpl_twid_rA::COREFFT_LIB","component\Actel\DirectCore\COREFFT\7.0.104\rtl\in_place\vlog\core\fftSm.v","FALSE","FALSE"
+SUBBLOCK "fft_inpl_twid_wA_gen::COREFFT_LIB","component\Actel\DirectCore\COREFFT\7.0.104\rtl\in_place\vlog\core\fftSm.v","FALSE","FALSE"
+ENDLIST
+LIST "fft_inpl_switch::COREFFT_LIB","component\Actel\DirectCore\COREFFT\7.0.104\rtl\in_place\vlog\core\kit.v","FALSE","FALSE"
+ENDLIST
+LIST "fft_inpl_twid_rA::COREFFT_LIB","component\Actel\DirectCore\COREFFT\7.0.104\rtl\in_place\vlog\core\fftSm.v","FALSE","FALSE"
+ENDLIST
+LIST "fft_inpl_twid_wA_gen::COREFFT_LIB","component\Actel\DirectCore\COREFFT\7.0.104\rtl\in_place\vlog\core\fftSm.v","FALSE","FALSE"
+SUBBLOCK "fft_inpl_bcounter::COREFFT_LIB","component\Actel\DirectCore\COREFFT\7.0.104\rtl\in_place\vlog\core\kit.v","FALSE","FALSE"
+SUBBLOCK "fft_inpl_kitSync_ngrst::COREFFT_LIB","component\Actel\DirectCore\COREFFT\7.0.104\rtl\in_place\vlog\core\kit.v","FALSE","FALSE"
+ENDLIST
+LIST "MACC_PA::COREFFT_LIB","","FALSE","FALSE"
+ENDLIST
+LIST "MATH18X18::COREFFT_LIB","","FALSE","FALSE"
+ENDLIST
+LIST "bhv_dirac::COREFFT_LIB","component\Actel\DirectCore\COREFFT\7.0.104\rtl\in_place\vlog\test\user\bhvKit.v","FALSE","TRUE"
+ENDLIST
+LIST "bhv_fEdge_ce::COREFFT_LIB","component\Actel\DirectCore\COREFFT\7.0.104\rtl\in_place\vlog\test\user\bhvKit.v","FALSE","TRUE"
+ENDLIST
+LIST "bhv_gen::COREFFT_LIB","component\Actel\DirectCore\COREFFT\7.0.104\rtl\in_place\vlog\test\user\bhvKit.v","FALSE","TRUE"
+SUBBLOCK "bhvEdge::COREFFT_LIB","component\Actel\DirectCore\COREFFT\7.0.104\rtl\in_place\vlog\test\user\bhvKit.v","FALSE","TRUE"
+SUBBLOCK "bhv_dirac::COREFFT_LIB","component\Actel\DirectCore\COREFFT\7.0.104\rtl\in_place\vlog\test\user\bhvKit.v","FALSE","TRUE"
+SUBBLOCK "bhv_fEdge_ce::COREFFT_LIB","component\Actel\DirectCore\COREFFT\7.0.104\rtl\in_place\vlog\test\user\bhvKit.v","FALSE","TRUE"
+SUBBLOCK "bhv_lfsr::COREFFT_LIB","component\Actel\DirectCore\COREFFT\7.0.104\rtl\in_place\vlog\test\user\bhvKit.v","FALSE","TRUE"
+SUBBLOCK "bhv_step::COREFFT_LIB","component\Actel\DirectCore\COREFFT\7.0.104\rtl\in_place\vlog\test\user\bhvKit.v","FALSE","TRUE"
+ENDLIST
+LIST "bhv_lfsr::COREFFT_LIB","component\Actel\DirectCore\COREFFT\7.0.104\rtl\in_place\vlog\test\user\bhvKit.v","FALSE","TRUE"
+ENDLIST
+LIST "bhv_step::COREFFT_LIB","component\Actel\DirectCore\COREFFT\7.0.104\rtl\in_place\vlog\test\user\bhvKit.v","FALSE","TRUE"
+ENDLIST
+LIST "bhvClockGen::COREFFT_LIB","component\Actel\DirectCore\COREFFT\7.0.104\rtl\in_place\vlog\test\user\bhvKit.v","FALSE","TRUE"
+ENDLIST
+LIST "bhvDelay::COREFFT_LIB","component\Actel\DirectCore\COREFFT\7.0.104\rtl\in_place\vlog\test\user\bhvKit.v","FALSE","TRUE"
+ENDLIST
+LIST "bhvEdge::COREFFT_LIB","component\Actel\DirectCore\COREFFT\7.0.104\rtl\in_place\vlog\test\user\bhvKit.v","FALSE","TRUE"
+ENDLIST
+LIST "testbench::COREFFT_LIB","component\work\adc_fft_if\COREFFT_0\rtl\in_place\vlog\test\user\in_place_FFT_tb.v","FALSE","TRUE"
+SUBBLOCK "adc_fft_if_COREFFT_0_COREFFT::COREFFT_LIB","component\work\adc_fft_if\COREFFT_0\rtl\in_place\vlog\core\COREFFT_TOP.v","FALSE","FALSE"
+SUBBLOCK "bhvClockGen::COREFFT_LIB","component\Actel\DirectCore\COREFFT\7.0.104\rtl\in_place\vlog\test\user\bhvKit.v","FALSE","TRUE"
+SUBBLOCK "bhvEdge::COREFFT_LIB","component\Actel\DirectCore\COREFFT\7.0.104\rtl\in_place\vlog\test\user\bhvKit.v","FALSE","TRUE"
+ENDLIST
+ENDLIST
+LIST ActiveTestBenchList
+ENDLIST
+LIST IOTabList
+VALUE "constraint\io\Mario_Libero.io.pdc"
+VALUE "constraint\io\acc_sim.pdc"
+VALUE "constraint\io\adc_datapath.pdc"
+ENDLIST
+LIST FPTabList
+VALUE "constraint\fp\Mario_Libero.fp.pdc"
+ENDLIST
+LIST TimingTabList
+VALUE "constraint\andy_clock_constraint.sdc"
+ENDLIST
+LIST FDCTabList
+ENDLIST

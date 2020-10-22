@@ -1,0 +1,116 @@
+#===========================================================
+# Enter your BFM commands in this file. 
+#
+# Syntax: 
+# ------- 
+#
+# memmap    resource_name cmam_if_0_address;
+#
+# write     width resource_name byte_offset data;
+# read      width resource_name byte_offset;
+# readcheck width resource_name byte_offset data;
+#
+#===========================================================
+
+include "subsystem.bfm"
+
+procedure user_main;
+
+int i
+
+# perform subsystem initialization routine
+  call subsystem_init; 
+
+# add your BFM commands below:
+
+# TxRx
+memmap rst      	0x0004; // Rx is readback
+memmap mode     	0x000c;
+memmap n0d1     	0x0010;	// NM0 operation (Rx is readback)
+memmap n0d2     	0x0014;	// NM0 register data and address or command (Rx is readback)
+memmap n1d1     	0x0020; // NM1 operation (Rx is readback)
+memmap n1d2     	0x0024; // NM1 register data and address or command (Rx is readback)
+memmap acc      	0x1000;	// Base address
+
+# Tx
+memmap command  	0x0000;
+memmap dbg      	0x0008;
+memmap n0vechi  	0x0018;
+memmap n0veclo  	0x001c;
+memmap n1vechi  	0x0028;
+memmap n1veclo  	0x002c;
+memmap nm0_stim_cnt 0x0100;	// NM0 stim injection (debug only)
+memmap nm1_stim_cnt 0x0110;	// NM1 stim injection (debug only)
+
+# Rx
+memmap status   	0x0000;
+memmap pdma     	0x0008; // PDMA block output. Disabled if pdma_en bit is set in mode register.
+memmap n0ack    	0x0018; // N0 ACK data
+memmap n0adc    	0x001c; // N0 ADC data. Disabled if pdma_en bit is set in mode register.
+memmap n1ack    	0x0028; // N1 ACK data
+memmap n1adc    	0x002c; // N1 ADC data. Disabled if pdma_en bit is set in mode register.
+
+##
+## INITIALIZATION
+##
+
+# Set debug channel
+write w cmam_if_0 dbg 4
+
+## Write values to HDL registers
+
+# Init NM0 Tx MS 2 bit
+write w cmam_if_0 n0d1 0
+# Init NM0 Tx LS 32 bits
+write w cmam_if_0 n0d2 0
+# Init NM1 Tx MS 2 bit
+write w cmam_if_0 n1d1 0
+# Init NM1 Tx LS 32 bits
+write w cmam_if_0 n1d2 0
+
+# Set ADC vector high 16 bits for NM 0
+write w cmam_if_0 n0vechi 0xcd000000
+# Set ADC vector low 16 bits for NM 0
+write w cmam_if_0 n0veclo 0x00000000
+# Set ADC vector high 16 bits for NM 1
+write w cmam_if_0 n1vechi 0x00000000
+# Set ADC vector low 16 bits for NM 1
+write w cmam_if_0 n1veclo 0x00000000
+
+# Enable/disable emulation, PDMA or accelerometer IRQ
+# bit 0 - PDMA enable
+# bit 1 - accelerometer IRQ enable
+# bit 2 - artifact cancellation enable
+# bit 3 - accelerometer emulation
+# bit 4 - NM0 emulation
+# bit 5 - NM1 emulation
+# bit 6 - PDMA emulation
+
+write w cmam_if_0 mode 0x7f
+
+include run_reset.bfm
+include run_power_cycle.bfm
+include run_nm_command.bfm
+include run_nm_register_write.bfm
+
+# Do the accelerometer sim here to get "real" data for pdma sim
+include run_acc.bfm
+
+# run 8ms
+set i 0
+loop i 0 1600 1
+    waitns 5000
+endloop
+
+write w cmam_if_0 nm0_stim_cnt 0x00000003
+
+# run 6ms
+set i 0
+loop i 0 1200 1
+    waitns 5000
+endloop
+
+read w cmam_if_0 status
+
+return
+

@@ -1,0 +1,543 @@
+
+
+@S |##### START OF TIMING REPORT #####[
+# Timing Report written on Wed Feb 14 12:12:57 2018
+#
+
+
+Top view:               Mario_Libero
+Requested Frequency:    100.0 MHz
+Wire load mode:         top
+Paths requested:        5
+Constraint File(s):    
+@N: MT320 |Timing report estimates place and route data. Please look at the place and route timing report for final timing.
+
+@N: MT322 |Clock constraints cover only FF-to-FF paths associated with the clock.
+
+
+
+Performance Summary 
+*******************
+
+
+Worst slack in design: -0.182
+
+                                                    Requested     Estimated     Requested     Estimated                 Clock        Clock              
+Starting Clock                                      Frequency     Frequency     Period        Period        Slack       Type         Group              
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Mario_Libero_FCCC_0_FCCC|GL0_net_inferred_clock     100.0 MHz     14.9 MHz      10.000        67.193        -57.193     inferred     Inferred_clkgroup_0
+Mario_Libero_FCCC_0_FCCC|GL1_net_inferred_clock     100.0 MHz     152.3 MHz     10.000        6.567         3.433       inferred     Inferred_clkgroup_3
+fft_inpl_slowClock_0|divider_inferred_clock[2]      100.0 MHz     247.4 MHz     10.000        4.043         5.957       inferred     Inferred_clkgroup_2
+fft_inpl_slowClock_1|divider_inferred_clock[2]      100.0 MHz     287.1 MHz     10.000        3.483         6.517       inferred     Inferred_clkgroup_1
+System                                              100.0 MHz     895.2 MHz     10.000        1.117         8.883       system       system_clkgroup    
+========================================================================================================================================================
+
+
+
+Clock Relationships
+*******************
+
+Clocks                                                                                            |    rise  to  rise    |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Starting                                         Ending                                           |  constraint  slack   |  constraint  slack  |  constraint  slack  |  constraint  slack
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+System                                           System                                           |  0.000       0.782   |  No paths    -      |  No paths    -      |  No paths    -    
+System                                           Mario_Libero_FCCC_0_FCCC|GL0_net_inferred_clock  |  0.000       0.603   |  No paths    -      |  No paths    -      |  No paths    -    
+Mario_Libero_FCCC_0_FCCC|GL0_net_inferred_clock  System                                           |  0.000       0.856   |  No paths    -      |  No paths    -      |  No paths    -    
+Mario_Libero_FCCC_0_FCCC|GL0_net_inferred_clock  Mario_Libero_FCCC_0_FCCC|GL0_net_inferred_clock  |  0.000       -0.182  |  No paths    -      |  No paths    -      |  No paths    -    
+Mario_Libero_FCCC_0_FCCC|GL0_net_inferred_clock  Mario_Libero_FCCC_0_FCCC|GL1_net_inferred_clock  |  Diff grp    -       |  No paths    -      |  No paths    -      |  No paths    -    
+fft_inpl_slowClock_1|divider_inferred_clock[2]   System                                           |  No paths    -       |  No paths    -      |  No paths    -      |  0.000       0.928
+fft_inpl_slowClock_1|divider_inferred_clock[2]   Mario_Libero_FCCC_0_FCCC|GL0_net_inferred_clock  |  No paths    -       |  No paths    -      |  No paths    -      |  Diff grp    -    
+fft_inpl_slowClock_1|divider_inferred_clock[2]   fft_inpl_slowClock_1|divider_inferred_clock[2]   |  No paths    -       |  0.000       0.362  |  No paths    -      |  No paths    -    
+fft_inpl_slowClock_0|divider_inferred_clock[2]   System                                           |  No paths    -       |  No paths    -      |  No paths    -      |  0.000       0.928
+fft_inpl_slowClock_0|divider_inferred_clock[2]   Mario_Libero_FCCC_0_FCCC|GL0_net_inferred_clock  |  No paths    -       |  No paths    -      |  No paths    -      |  Diff grp    -    
+fft_inpl_slowClock_0|divider_inferred_clock[2]   fft_inpl_slowClock_0|divider_inferred_clock[2]   |  No paths    -       |  0.000       0.362  |  No paths    -      |  No paths    -    
+Mario_Libero_FCCC_0_FCCC|GL1_net_inferred_clock  Mario_Libero_FCCC_0_FCCC|GL0_net_inferred_clock  |  Diff grp    -       |  No paths    -      |  No paths    -      |  No paths    -    
+Mario_Libero_FCCC_0_FCCC|GL1_net_inferred_clock  Mario_Libero_FCCC_0_FCCC|GL1_net_inferred_clock  |  0.000       0.362   |  No paths    -      |  No paths    -      |  No paths    -    
+=========================================================================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+
+====================================
+Detailed Report for Clock: Mario_Libero_FCCC_0_FCCC|GL0_net_inferred_clock
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                                                                                                                                           Starting                                                                              Arrival           
+Instance                                                                                                                                                   Reference                                           Type     Pin          Net         Time        Slack 
+                                                                                                                                                           Clock                                                                                                   
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+cm_top_0.nm_if_0.nm_channel_0.adc_datapath_0.adc_fft_if_0.COREFFT_0.genblk1\.DUT_INPLACE.bfly_0.cmplx_0.genblk1\.cmplx18_0.half_0.mx_0.g4_macc\.macc_0     Mario_Libero_FCCC_0_FCCC|GL0_net_inferred_clock     MACC     CDOUT[0]     cd_w[0]     0.206       -0.182
+cm_top_0.nm_if_0.nm_channel_1.adc_datapath_0.adc_fft_if_0.COREFFT_0.genblk1\.DUT_INPLACE.bfly_0.cmplx_0.genblk1\.cmplx18_0.half_0.mx_0.g4_macc\.macc_0     Mario_Libero_FCCC_0_FCCC|GL0_net_inferred_clock     MACC     CDOUT[0]     cd_w[0]     0.206       -0.182
+cm_top_0.nm_if_0.nm_channel_0.adc_datapath_0.adc_fft_if_0.COREFFT_0.genblk1\.DUT_INPLACE.bfly_0.cmplx_0.genblk1\.cmplx18_0.half_1.mx_0.g4_macc\.macc_0     Mario_Libero_FCCC_0_FCCC|GL0_net_inferred_clock     MACC     CDOUT[0]     cd_w[0]     0.206       -0.182
+cm_top_0.nm_if_0.nm_channel_1.adc_datapath_0.adc_fft_if_0.COREFFT_0.genblk1\.DUT_INPLACE.bfly_0.cmplx_0.genblk1\.cmplx18_0.half_1.mx_0.g4_macc\.macc_0     Mario_Libero_FCCC_0_FCCC|GL0_net_inferred_clock     MACC     CDOUT[0]     cd_w[0]     0.206       -0.182
+cm_top_0.nm_if_0.nm_channel_0.adc_datapath_0.adc_fft_if_0.COREFFT_0.genblk1\.DUT_INPLACE.bfly_0.cmplx_0.genblk1\.cmplx18_0.half_0.mx_0.g4_macc\.macc_0     Mario_Libero_FCCC_0_FCCC|GL0_net_inferred_clock     MACC     CDOUT[1]     cd_w[1]     0.206       -0.182
+cm_top_0.nm_if_0.nm_channel_0.adc_datapath_0.adc_fft_if_0.COREFFT_0.genblk1\.DUT_INPLACE.bfly_0.cmplx_0.genblk1\.cmplx18_0.half_1.mx_0.g4_macc\.macc_0     Mario_Libero_FCCC_0_FCCC|GL0_net_inferred_clock     MACC     CDOUT[1]     cd_w[1]     0.206       -0.182
+cm_top_0.nm_if_0.nm_channel_1.adc_datapath_0.adc_fft_if_0.COREFFT_0.genblk1\.DUT_INPLACE.bfly_0.cmplx_0.genblk1\.cmplx18_0.half_0.mx_0.g4_macc\.macc_0     Mario_Libero_FCCC_0_FCCC|GL0_net_inferred_clock     MACC     CDOUT[1]     cd_w[1]     0.206       -0.182
+cm_top_0.nm_if_0.nm_channel_1.adc_datapath_0.adc_fft_if_0.COREFFT_0.genblk1\.DUT_INPLACE.bfly_0.cmplx_0.genblk1\.cmplx18_0.half_1.mx_0.g4_macc\.macc_0     Mario_Libero_FCCC_0_FCCC|GL0_net_inferred_clock     MACC     CDOUT[1]     cd_w[1]     0.206       -0.182
+cm_top_0.nm_if_0.nm_channel_0.adc_datapath_0.adc_fft_if_0.COREFFT_0.genblk1\.DUT_INPLACE.bfly_0.cmplx_0.genblk1\.cmplx18_0.half_1.mx_0.g4_macc\.macc_0     Mario_Libero_FCCC_0_FCCC|GL0_net_inferred_clock     MACC     CDOUT[2]     cd_w[2]     0.206       -0.182
+cm_top_0.nm_if_0.nm_channel_0.adc_datapath_0.adc_fft_if_0.COREFFT_0.genblk1\.DUT_INPLACE.bfly_0.cmplx_0.genblk1\.cmplx18_0.half_0.mx_0.g4_macc\.macc_0     Mario_Libero_FCCC_0_FCCC|GL0_net_inferred_clock     MACC     CDOUT[2]     cd_w[2]     0.206       -0.182
+===================================================================================================================================================================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                                                                                                                                           Starting                                                                             Required           
+Instance                                                                                                                                                   Reference                                           Type     Pin         Net         Time         Slack 
+                                                                                                                                                           Clock                                                                                                   
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+cm_top_0.nm_if_0.nm_channel_0.adc_datapath_0.adc_fft_if_0.COREFFT_0.genblk1\.DUT_INPLACE.bfly_0.cmplx_0.genblk1\.cmplx18_0.half_1.mx_1.g4_macc\.macc_0     Mario_Libero_FCCC_0_FCCC|GL0_net_inferred_clock     MACC     CDIN[0]     cd_w[0]     1.170        -0.182
+cm_top_0.nm_if_0.nm_channel_1.adc_datapath_0.adc_fft_if_0.COREFFT_0.genblk1\.DUT_INPLACE.bfly_0.cmplx_0.genblk1\.cmplx18_0.half_1.mx_1.g4_macc\.macc_0     Mario_Libero_FCCC_0_FCCC|GL0_net_inferred_clock     MACC     CDIN[0]     cd_w[0]     1.170        -0.182
+cm_top_0.nm_if_0.nm_channel_1.adc_datapath_0.adc_fft_if_0.COREFFT_0.genblk1\.DUT_INPLACE.bfly_0.cmplx_0.genblk1\.cmplx18_0.half_0.mx_1.g4_macc\.macc_0     Mario_Libero_FCCC_0_FCCC|GL0_net_inferred_clock     MACC     CDIN[0]     cd_w[0]     1.170        -0.182
+cm_top_0.nm_if_0.nm_channel_0.adc_datapath_0.adc_fft_if_0.COREFFT_0.genblk1\.DUT_INPLACE.bfly_0.cmplx_0.genblk1\.cmplx18_0.half_0.mx_1.g4_macc\.macc_0     Mario_Libero_FCCC_0_FCCC|GL0_net_inferred_clock     MACC     CDIN[0]     cd_w[0]     1.170        -0.182
+cm_top_0.nm_if_0.nm_channel_0.adc_datapath_0.adc_fft_if_0.COREFFT_0.genblk1\.DUT_INPLACE.bfly_0.cmplx_0.genblk1\.cmplx18_0.half_1.mx_1.g4_macc\.macc_0     Mario_Libero_FCCC_0_FCCC|GL0_net_inferred_clock     MACC     CDIN[1]     cd_w[1]     1.170        -0.182
+cm_top_0.nm_if_0.nm_channel_0.adc_datapath_0.adc_fft_if_0.COREFFT_0.genblk1\.DUT_INPLACE.bfly_0.cmplx_0.genblk1\.cmplx18_0.half_0.mx_1.g4_macc\.macc_0     Mario_Libero_FCCC_0_FCCC|GL0_net_inferred_clock     MACC     CDIN[1]     cd_w[1]     1.170        -0.182
+cm_top_0.nm_if_0.nm_channel_1.adc_datapath_0.adc_fft_if_0.COREFFT_0.genblk1\.DUT_INPLACE.bfly_0.cmplx_0.genblk1\.cmplx18_0.half_0.mx_1.g4_macc\.macc_0     Mario_Libero_FCCC_0_FCCC|GL0_net_inferred_clock     MACC     CDIN[1]     cd_w[1]     1.170        -0.182
+cm_top_0.nm_if_0.nm_channel_1.adc_datapath_0.adc_fft_if_0.COREFFT_0.genblk1\.DUT_INPLACE.bfly_0.cmplx_0.genblk1\.cmplx18_0.half_1.mx_1.g4_macc\.macc_0     Mario_Libero_FCCC_0_FCCC|GL0_net_inferred_clock     MACC     CDIN[1]     cd_w[1]     1.170        -0.182
+cm_top_0.nm_if_0.nm_channel_0.adc_datapath_0.adc_fft_if_0.COREFFT_0.genblk1\.DUT_INPLACE.bfly_0.cmplx_0.genblk1\.cmplx18_0.half_1.mx_1.g4_macc\.macc_0     Mario_Libero_FCCC_0_FCCC|GL0_net_inferred_clock     MACC     CDIN[2]     cd_w[2]     1.170        -0.182
+cm_top_0.nm_if_0.nm_channel_1.adc_datapath_0.adc_fft_if_0.COREFFT_0.genblk1\.DUT_INPLACE.bfly_0.cmplx_0.genblk1\.cmplx18_0.half_1.mx_1.g4_macc\.macc_0     Mario_Libero_FCCC_0_FCCC|GL0_net_inferred_clock     MACC     CDIN[2]     cd_w[2]     1.170        -0.182
+===================================================================================================================================================================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+    Propagation time:                        0.988
+    + Clock delay at starting point:         0.000 (ideal)
+    - Requested Period:                      0.000
+    - Hold time:                             1.170
+    - Clock delay at ending point:           0.000 (ideal)
+    = Slack (critical) :                     -0.182
+
+    Number of logic level(s):                0
+    Starting point:                          cm_top_0.nm_if_0.nm_channel_0.adc_datapath_0.adc_fft_if_0.COREFFT_0.genblk1\.DUT_INPLACE.bfly_0.cmplx_0.genblk1\.cmplx18_0.half_0.mx_0.g4_macc\.macc_0 / CDOUT[0]
+    Ending point:                            cm_top_0.nm_if_0.nm_channel_0.adc_datapath_0.adc_fft_if_0.COREFFT_0.genblk1\.DUT_INPLACE.bfly_0.cmplx_0.genblk1\.cmplx18_0.half_0.mx_1.g4_macc\.macc_0 / CDIN[0]
+    The start point is clocked by            Mario_Libero_FCCC_0_FCCC|GL0_net_inferred_clock [rising] on pin CLK[0]
+    The end   point is clocked by            Mario_Libero_FCCC_0_FCCC|GL0_net_inferred_clock [rising] on pin CLK[0]
+
+Instance / Net                                                                                                                                                      Pin          Pin               Arrival     No. of    
+Name                                                                                                                                                       Type     Name         Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+cm_top_0.nm_if_0.nm_channel_0.adc_datapath_0.adc_fft_if_0.COREFFT_0.genblk1\.DUT_INPLACE.bfly_0.cmplx_0.genblk1\.cmplx18_0.half_0.mx_0.g4_macc\.macc_0     MACC     CDOUT[0]     Out     0.206     0.206       -         
+cd_w[0]                                                                                                                                                    Net      -            -       0.782     -           1         
+cm_top_0.nm_if_0.nm_channel_0.adc_datapath_0.adc_fft_if_0.COREFFT_0.genblk1\.DUT_INPLACE.bfly_0.cmplx_0.genblk1\.cmplx18_0.half_0.mx_1.g4_macc\.macc_0     MACC     CDIN[0]      In      -         0.988       -         
+=========================================================================================================================================================================================================================
+
+
+Path information for path number 2: 
+    Propagation time:                        0.988
+    + Clock delay at starting point:         0.000 (ideal)
+    - Requested Period:                      0.000
+    - Hold time:                             1.170
+    - Clock delay at ending point:           0.000 (ideal)
+    = Slack (critical) :                     -0.182
+
+    Number of logic level(s):                0
+    Starting point:                          cm_top_0.nm_if_0.nm_channel_1.adc_datapath_0.adc_fft_if_0.COREFFT_0.genblk1\.DUT_INPLACE.bfly_0.cmplx_0.genblk1\.cmplx18_0.half_0.mx_0.g4_macc\.macc_0 / CDOUT[0]
+    Ending point:                            cm_top_0.nm_if_0.nm_channel_1.adc_datapath_0.adc_fft_if_0.COREFFT_0.genblk1\.DUT_INPLACE.bfly_0.cmplx_0.genblk1\.cmplx18_0.half_0.mx_1.g4_macc\.macc_0 / CDIN[0]
+    The start point is clocked by            Mario_Libero_FCCC_0_FCCC|GL0_net_inferred_clock [rising] on pin CLK[0]
+    The end   point is clocked by            Mario_Libero_FCCC_0_FCCC|GL0_net_inferred_clock [rising] on pin CLK[0]
+
+Instance / Net                                                                                                                                                      Pin          Pin               Arrival     No. of    
+Name                                                                                                                                                       Type     Name         Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+cm_top_0.nm_if_0.nm_channel_1.adc_datapath_0.adc_fft_if_0.COREFFT_0.genblk1\.DUT_INPLACE.bfly_0.cmplx_0.genblk1\.cmplx18_0.half_0.mx_0.g4_macc\.macc_0     MACC     CDOUT[0]     Out     0.206     0.206       -         
+cd_w[0]                                                                                                                                                    Net      -            -       0.782     -           1         
+cm_top_0.nm_if_0.nm_channel_1.adc_datapath_0.adc_fft_if_0.COREFFT_0.genblk1\.DUT_INPLACE.bfly_0.cmplx_0.genblk1\.cmplx18_0.half_0.mx_1.g4_macc\.macc_0     MACC     CDIN[0]      In      -         0.988       -         
+=========================================================================================================================================================================================================================
+
+
+Path information for path number 3: 
+    Propagation time:                        0.988
+    + Clock delay at starting point:         0.000 (ideal)
+    - Requested Period:                      0.000
+    - Hold time:                             1.170
+    - Clock delay at ending point:           0.000 (ideal)
+    = Slack (critical) :                     -0.182
+
+    Number of logic level(s):                0
+    Starting point:                          cm_top_0.nm_if_0.nm_channel_0.adc_datapath_0.adc_fft_if_0.COREFFT_0.genblk1\.DUT_INPLACE.bfly_0.cmplx_0.genblk1\.cmplx18_0.half_1.mx_0.g4_macc\.macc_0 / CDOUT[0]
+    Ending point:                            cm_top_0.nm_if_0.nm_channel_0.adc_datapath_0.adc_fft_if_0.COREFFT_0.genblk1\.DUT_INPLACE.bfly_0.cmplx_0.genblk1\.cmplx18_0.half_1.mx_1.g4_macc\.macc_0 / CDIN[0]
+    The start point is clocked by            Mario_Libero_FCCC_0_FCCC|GL0_net_inferred_clock [rising] on pin CLK[0]
+    The end   point is clocked by            Mario_Libero_FCCC_0_FCCC|GL0_net_inferred_clock [rising] on pin CLK[0]
+
+Instance / Net                                                                                                                                                      Pin          Pin               Arrival     No. of    
+Name                                                                                                                                                       Type     Name         Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+cm_top_0.nm_if_0.nm_channel_0.adc_datapath_0.adc_fft_if_0.COREFFT_0.genblk1\.DUT_INPLACE.bfly_0.cmplx_0.genblk1\.cmplx18_0.half_1.mx_0.g4_macc\.macc_0     MACC     CDOUT[0]     Out     0.206     0.206       -         
+cd_w[0]                                                                                                                                                    Net      -            -       0.782     -           1         
+cm_top_0.nm_if_0.nm_channel_0.adc_datapath_0.adc_fft_if_0.COREFFT_0.genblk1\.DUT_INPLACE.bfly_0.cmplx_0.genblk1\.cmplx18_0.half_1.mx_1.g4_macc\.macc_0     MACC     CDIN[0]      In      -         0.988       -         
+=========================================================================================================================================================================================================================
+
+
+Path information for path number 4: 
+    Propagation time:                        0.988
+    + Clock delay at starting point:         0.000 (ideal)
+    - Requested Period:                      0.000
+    - Hold time:                             1.170
+    - Clock delay at ending point:           0.000 (ideal)
+    = Slack (critical) :                     -0.182
+
+    Number of logic level(s):                0
+    Starting point:                          cm_top_0.nm_if_0.nm_channel_1.adc_datapath_0.adc_fft_if_0.COREFFT_0.genblk1\.DUT_INPLACE.bfly_0.cmplx_0.genblk1\.cmplx18_0.half_1.mx_0.g4_macc\.macc_0 / CDOUT[0]
+    Ending point:                            cm_top_0.nm_if_0.nm_channel_1.adc_datapath_0.adc_fft_if_0.COREFFT_0.genblk1\.DUT_INPLACE.bfly_0.cmplx_0.genblk1\.cmplx18_0.half_1.mx_1.g4_macc\.macc_0 / CDIN[0]
+    The start point is clocked by            Mario_Libero_FCCC_0_FCCC|GL0_net_inferred_clock [rising] on pin CLK[0]
+    The end   point is clocked by            Mario_Libero_FCCC_0_FCCC|GL0_net_inferred_clock [rising] on pin CLK[0]
+
+Instance / Net                                                                                                                                                      Pin          Pin               Arrival     No. of    
+Name                                                                                                                                                       Type     Name         Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+cm_top_0.nm_if_0.nm_channel_1.adc_datapath_0.adc_fft_if_0.COREFFT_0.genblk1\.DUT_INPLACE.bfly_0.cmplx_0.genblk1\.cmplx18_0.half_1.mx_0.g4_macc\.macc_0     MACC     CDOUT[0]     Out     0.206     0.206       -         
+cd_w[0]                                                                                                                                                    Net      -            -       0.782     -           1         
+cm_top_0.nm_if_0.nm_channel_1.adc_datapath_0.adc_fft_if_0.COREFFT_0.genblk1\.DUT_INPLACE.bfly_0.cmplx_0.genblk1\.cmplx18_0.half_1.mx_1.g4_macc\.macc_0     MACC     CDIN[0]      In      -         0.988       -         
+=========================================================================================================================================================================================================================
+
+
+Path information for path number 5: 
+    Propagation time:                        0.988
+    + Clock delay at starting point:         0.000 (ideal)
+    - Requested Period:                      0.000
+    - Hold time:                             1.170
+    - Clock delay at ending point:           0.000 (ideal)
+    = Slack (critical) :                     -0.182
+
+    Number of logic level(s):                0
+    Starting point:                          cm_top_0.nm_if_0.nm_channel_0.adc_datapath_0.adc_fft_if_0.COREFFT_0.genblk1\.DUT_INPLACE.bfly_0.cmplx_0.genblk1\.cmplx18_0.half_0.mx_0.g4_macc\.macc_0 / CDOUT[1]
+    Ending point:                            cm_top_0.nm_if_0.nm_channel_0.adc_datapath_0.adc_fft_if_0.COREFFT_0.genblk1\.DUT_INPLACE.bfly_0.cmplx_0.genblk1\.cmplx18_0.half_0.mx_1.g4_macc\.macc_0 / CDIN[1]
+    The start point is clocked by            Mario_Libero_FCCC_0_FCCC|GL0_net_inferred_clock [rising] on pin CLK[0]
+    The end   point is clocked by            Mario_Libero_FCCC_0_FCCC|GL0_net_inferred_clock [rising] on pin CLK[0]
+
+Instance / Net                                                                                                                                                      Pin          Pin               Arrival     No. of    
+Name                                                                                                                                                       Type     Name         Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+cm_top_0.nm_if_0.nm_channel_0.adc_datapath_0.adc_fft_if_0.COREFFT_0.genblk1\.DUT_INPLACE.bfly_0.cmplx_0.genblk1\.cmplx18_0.half_0.mx_0.g4_macc\.macc_0     MACC     CDOUT[1]     Out     0.206     0.206       -         
+cd_w[1]                                                                                                                                                    Net      -            -       0.782     -           1         
+cm_top_0.nm_if_0.nm_channel_0.adc_datapath_0.adc_fft_if_0.COREFFT_0.genblk1\.DUT_INPLACE.bfly_0.cmplx_0.genblk1\.cmplx18_0.half_0.mx_1.g4_macc\.macc_0     MACC     CDIN[1]      In      -         0.988       -         
+=========================================================================================================================================================================================================================
+
+
+
+
+====================================
+Detailed Report for Clock: Mario_Libero_FCCC_0_FCCC|GL1_net_inferred_clock
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                                 Starting                                                                                  Arrival          
+Instance                                         Reference                                           Type     Pin     Net                  Time        Slack
+                                                 Clock                                                                                                      
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+cm_top_0.acc_if_0.acc_apb_p.current_state[4]     Mario_Libero_FCCC_0_FCCC|GL1_net_inferred_clock     SLE      Q       current_state[4]     0.061       0.362
+cm_top_0.acc_if_0.acc_irq_p.sda_i_reg[0]         Mario_Libero_FCCC_0_FCCC|GL1_net_inferred_clock     SLE      Q       sda_i_reg[0]         0.061       0.362
+cm_top_0.acc_if_0.acc_irq_p.sda_i_reg[1]         Mario_Libero_FCCC_0_FCCC|GL1_net_inferred_clock     SLE      Q       sda_i_reg[1]         0.061       0.362
+cm_top_0.acc_if_0.acc_irq_p.sda_i_reg[2]         Mario_Libero_FCCC_0_FCCC|GL1_net_inferred_clock     SLE      Q       sda_i_reg[2]         0.061       0.362
+cm_top_0.acc_if_0.acc_irq_p.sda_i_reg[3]         Mario_Libero_FCCC_0_FCCC|GL1_net_inferred_clock     SLE      Q       sda_i_reg[3]         0.061       0.362
+cm_top_0.acc_if_0.acc_irq_p.sda_i_reg[4]         Mario_Libero_FCCC_0_FCCC|GL1_net_inferred_clock     SLE      Q       sda_i_reg[4]         0.061       0.362
+cm_top_0.acc_if_0.acc_irq_p.sda_i_reg[5]         Mario_Libero_FCCC_0_FCCC|GL1_net_inferred_clock     SLE      Q       sda_i_reg[5]         0.061       0.362
+cm_top_0.acc_if_0.acc_irq_p.sda_i_reg[6]         Mario_Libero_FCCC_0_FCCC|GL1_net_inferred_clock     SLE      Q       sda_i_reg[6]         0.061       0.362
+cm_top_0.acc_if_0.acc_irq_p.sda_i_reg[7]         Mario_Libero_FCCC_0_FCCC|GL1_net_inferred_clock     SLE      Q       sda_i_reg[7]         0.061       0.362
+cm_top_0.acc_if_0.acc_irq_p.sda_i_reg[8]         Mario_Libero_FCCC_0_FCCC|GL1_net_inferred_clock     SLE      Q       sda_i_reg[8]         0.061       0.362
+============================================================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                                 Starting                                                                                  Required          
+Instance                                         Reference                                           Type     Pin     Net                  Time         Slack
+                                                 Clock                                                                                                       
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+cm_top_0.acc_if_0.acc_apb_p.ack_reg[2]           Mario_Libero_FCCC_0_FCCC|GL1_net_inferred_clock     SLE      D       sda_i_reg[122]       0.179        0.362
+cm_top_0.acc_if_0.acc_irq_p.ack_reg[5]           Mario_Libero_FCCC_0_FCCC|GL1_net_inferred_clock     SLE      D       sda_i_reg[462]       0.179        0.362
+cm_top_0.acc_if_0.acc_apb_p.current_state[3]     Mario_Libero_FCCC_0_FCCC|GL1_net_inferred_clock     SLE      D       current_state[4]     0.179        0.362
+cm_top_0.acc_if_0.acc_irq_p.sda_i_reg[1]         Mario_Libero_FCCC_0_FCCC|GL1_net_inferred_clock     SLE      D       sda_i_reg[0]         0.179        0.362
+cm_top_0.acc_if_0.acc_irq_p.sda_i_reg[2]         Mario_Libero_FCCC_0_FCCC|GL1_net_inferred_clock     SLE      D       sda_i_reg[1]         0.179        0.362
+cm_top_0.acc_if_0.acc_irq_p.sda_i_reg[3]         Mario_Libero_FCCC_0_FCCC|GL1_net_inferred_clock     SLE      D       sda_i_reg[2]         0.179        0.362
+cm_top_0.acc_if_0.acc_irq_p.sda_i_reg[4]         Mario_Libero_FCCC_0_FCCC|GL1_net_inferred_clock     SLE      D       sda_i_reg[3]         0.179        0.362
+cm_top_0.acc_if_0.acc_irq_p.sda_i_reg[5]         Mario_Libero_FCCC_0_FCCC|GL1_net_inferred_clock     SLE      D       sda_i_reg[4]         0.179        0.362
+cm_top_0.acc_if_0.acc_irq_p.sda_i_reg[6]         Mario_Libero_FCCC_0_FCCC|GL1_net_inferred_clock     SLE      D       sda_i_reg[5]         0.179        0.362
+cm_top_0.acc_if_0.acc_irq_p.sda_i_reg[7]         Mario_Libero_FCCC_0_FCCC|GL1_net_inferred_clock     SLE      D       sda_i_reg[6]         0.179        0.362
+=============================================================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+    Propagation time:                        0.541
+    + Clock delay at starting point:         0.000 (ideal)
+    - Requested Period:                      0.000
+    - Hold time:                             0.179
+    - Clock delay at ending point:           0.000 (ideal)
+    = Slack (non-critical) :                 0.362
+
+    Number of logic level(s):                0
+    Starting point:                          cm_top_0.acc_if_0.acc_apb_p.current_state[4] / Q
+    Ending point:                            cm_top_0.acc_if_0.acc_apb_p.current_state[3] / D
+    The start point is clocked by            Mario_Libero_FCCC_0_FCCC|GL1_net_inferred_clock [rising] on pin CLK
+    The end   point is clocked by            Mario_Libero_FCCC_0_FCCC|GL1_net_inferred_clock [rising] on pin CLK
+
+Instance / Net                                            Pin      Pin               Arrival     No. of    
+Name                                             Type     Name     Dir     Delay     Time        Fan Out(s)
+-----------------------------------------------------------------------------------------------------------
+cm_top_0.acc_if_0.acc_apb_p.current_state[4]     SLE      Q        Out     0.061     0.061       -         
+current_state[4]                                 Net      -        -       0.480     -           1         
+cm_top_0.acc_if_0.acc_apb_p.current_state[3]     SLE      D        In      -         0.541       -         
+===========================================================================================================
+
+
+
+
+====================================
+Detailed Report for Clock: fft_inpl_slowClock_0|divider_inferred_clock[2]
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                                                                                                                                           Starting                                                                                Arrival          
+Instance                                                                                                                                                   Reference                                          Type     Pin     Net                 Time        Slack
+                                                                                                                                                           Clock                                                                                                    
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+cm_top_0.nm_if_0.nm_channel_0.adc_datapath_0.adc_fft_if_0.COREFFT_0.genblk1\.DUT_INPLACE.sm_0.twid_wA_0.ngrst2rst_0.sync_ngrst_0.genblk1\.delayLine_0_     fft_inpl_slowClock_0|divider_inferred_clock[2]     SLE      Q       delayLine_0_        0.061       0.362
+cm_top_0.nm_if_0.nm_channel_0.adc_datapath_0.adc_fft_if_0.COREFFT_0.genblk1\.DUT_INPLACE.sm_0.twid_wA_0.ngrst2rst_0.sync_ngrst_0.genblk1\.delayLine_1_     fft_inpl_slowClock_0|divider_inferred_clock[2]     SLE      Q       delayLine_1_        0.061       0.362
+cm_top_0.nm_if_0.nm_channel_0.adc_datapath_0.adc_fft_if_0.COREFFT_0.genblk1\.DUT_INPLACE.sm_0.twid_wA_0.ngrst2rst_0.sync_ngrst_0.genblk1\.delayLine_2_     fft_inpl_slowClock_0|divider_inferred_clock[2]     SLE      Q       delayLine_2_        0.061       0.362
+cm_top_0.nm_if_0.nm_channel_0.adc_datapath_0.adc_fft_if_0.COREFFT_0.genblk1\.DUT_INPLACE.sm_0.twid_wA_0.ngrst2rst_0.sync_ngrst_0.genblk1\.delayLine_3_     fft_inpl_slowClock_0|divider_inferred_clock[2]     SLE      Q       synced_ngrst        0.061       0.435
+cm_top_0.nm_if_0.nm_channel_0.adc_datapath_0.adc_fft_if_0.COREFFT_0.genblk1\.DUT_INPLACE.sm_0.twid_wA_0.preRstAfterInit                                    fft_inpl_slowClock_0|divider_inferred_clock[2]     SLE      Q       preRstAfterInit     0.061       0.518
+cm_top_0.nm_if_0.nm_channel_0.adc_datapath_0.adc_fft_if_0.COREFFT_0.genblk1\.DUT_INPLACE.sm_0.twid_wA_0.ngrst2rst_0.tick1                                  fft_inpl_slowClock_0|divider_inferred_clock[2]     SLE      Q       tick1               0.076       0.522
+cm_top_0.nm_if_0.nm_channel_0.adc_datapath_0.adc_fft_if_0.COREFFT_0.genblk1\.DUT_INPLACE.sm_0.twid_wA_0.ngrst2rst_0.pulse                                  fft_inpl_slowClock_0|divider_inferred_clock[2]     SLE      Q       pulse_rst           0.061       0.856
+cm_top_0.nm_if_0.nm_channel_0.adc_datapath_0.adc_fft_if_0.COREFFT_0.genblk1\.DUT_INPLACE.sm_0.twid_wA_0.twid_wEn                                           fft_inpl_slowClock_0|divider_inferred_clock[2]     SLE      Q       twid_wEn_w          0.076       0.864
+cm_top_0.nm_if_0.nm_channel_0.adc_datapath_0.adc_fft_if_0.COREFFT_0.genblk1\.DUT_INPLACE.sm_0.twid_wA_0.slowTimer.Q[7]                                     fft_inpl_slowClock_0|divider_inferred_clock[2]     SLE      Q       twid_wA_w[7]        0.061       0.928
+cm_top_0.nm_if_0.nm_channel_0.adc_datapath_0.adc_fft_if_0.COREFFT_0.genblk1\.DUT_INPLACE.sm_0.twid_wA_0.slowTimer.Q[6]                                     fft_inpl_slowClock_0|divider_inferred_clock[2]     SLE      Q       twid_wA_w[6]        0.061       0.981
+====================================================================================================================================================================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                                                                                                                                           Starting                                                                               Required          
+Instance                                                                                                                                                   Reference                                          Type     Pin     Net                Time         Slack
+                                                                                                                                                           Clock                                                                                                    
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+cm_top_0.nm_if_0.nm_channel_0.adc_datapath_0.adc_fft_if_0.COREFFT_0.genblk1\.DUT_INPLACE.sm_0.twid_wA_0.ngrst2rst_0.sync_ngrst_0.genblk1\.delayLine_1_     fft_inpl_slowClock_0|divider_inferred_clock[2]     SLE      D       delayLine_0_       0.179        0.362
+cm_top_0.nm_if_0.nm_channel_0.adc_datapath_0.adc_fft_if_0.COREFFT_0.genblk1\.DUT_INPLACE.sm_0.twid_wA_0.ngrst2rst_0.sync_ngrst_0.genblk1\.delayLine_2_     fft_inpl_slowClock_0|divider_inferred_clock[2]     SLE      D       delayLine_1_       0.179        0.362
+cm_top_0.nm_if_0.nm_channel_0.adc_datapath_0.adc_fft_if_0.COREFFT_0.genblk1\.DUT_INPLACE.sm_0.twid_wA_0.ngrst2rst_0.sync_ngrst_0.genblk1\.delayLine_3_     fft_inpl_slowClock_0|divider_inferred_clock[2]     SLE      D       delayLine_2_       0.179        0.362
+cm_top_0.nm_if_0.nm_channel_0.adc_datapath_0.adc_fft_if_0.COREFFT_0.genblk1\.DUT_INPLACE.sm_0.twid_wA_0.ngrst2rst_0.tick1                                  fft_inpl_slowClock_0|divider_inferred_clock[2]     SLE      D       synced_ngrst       0.179        0.435
+cm_top_0.nm_if_0.nm_channel_0.adc_datapath_0.adc_fft_if_0.COREFFT_0.genblk1\.DUT_INPLACE.sm_0.twid_wA_0.rstAfterInit                                       fft_inpl_slowClock_0|divider_inferred_clock[2]     SLE      D       rstAfterInit_3     0.179        0.518
+cm_top_0.nm_if_0.nm_channel_0.adc_datapath_0.adc_fft_if_0.COREFFT_0.genblk1\.DUT_INPLACE.sm_0.twid_wA_0.ngrst2rst_0.pulse                                  fft_inpl_slowClock_0|divider_inferred_clock[2]     SLE      D       pulse              0.179        0.522
+cm_top_0.nm_if_0.nm_channel_0.adc_datapath_0.adc_fft_if_0.COREFFT_0.genblk1\.DUT_INPLACE.sm_0.twid_wA_0.twid_wEn                                           fft_inpl_slowClock_0|divider_inferred_clock[2]     SLE      D       pulse_rst          0.179        0.856
+cm_top_0.nm_if_0.nm_channel_0.adc_datapath_0.adc_fft_if_0.COREFFT_0.genblk1\.DUT_INPLACE.sm_0.twid_wA_0.slowTimer.Q[0]                                     fft_inpl_slowClock_0|divider_inferred_clock[2]     SLE      EN      twid_wEn_w         0.236        0.864
+cm_top_0.nm_if_0.nm_channel_0.adc_datapath_0.adc_fft_if_0.COREFFT_0.genblk1\.DUT_INPLACE.sm_0.twid_wA_0.slowTimer.Q[1]                                     fft_inpl_slowClock_0|divider_inferred_clock[2]     SLE      EN      twid_wEn_w         0.236        0.864
+cm_top_0.nm_if_0.nm_channel_0.adc_datapath_0.adc_fft_if_0.COREFFT_0.genblk1\.DUT_INPLACE.sm_0.twid_wA_0.slowTimer.Q[2]                                     fft_inpl_slowClock_0|divider_inferred_clock[2]     SLE      EN      twid_wEn_w         0.236        0.864
+====================================================================================================================================================================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+    Propagation time:                        0.541
+    + Clock delay at starting point:         0.000 (ideal)
+    - Requested Period:                      0.000
+    - Hold time:                             0.179
+    - Clock delay at ending point:           0.000 (ideal)
+    = Slack (non-critical) :                 0.362
+
+    Number of logic level(s):                0
+    Starting point:                          cm_top_0.nm_if_0.nm_channel_0.adc_datapath_0.adc_fft_if_0.COREFFT_0.genblk1\.DUT_INPLACE.sm_0.twid_wA_0.ngrst2rst_0.sync_ngrst_0.genblk1\.delayLine_0_ / Q
+    Ending point:                            cm_top_0.nm_if_0.nm_channel_0.adc_datapath_0.adc_fft_if_0.COREFFT_0.genblk1\.DUT_INPLACE.sm_0.twid_wA_0.ngrst2rst_0.sync_ngrst_0.genblk1\.delayLine_1_ / D
+    The start point is clocked by            fft_inpl_slowClock_0|divider_inferred_clock[2] [falling] on pin CLK
+    The end   point is clocked by            fft_inpl_slowClock_0|divider_inferred_clock[2] [falling] on pin CLK
+
+Instance / Net                                                                                                                                                      Pin      Pin               Arrival     No. of    
+Name                                                                                                                                                       Type     Name     Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+cm_top_0.nm_if_0.nm_channel_0.adc_datapath_0.adc_fft_if_0.COREFFT_0.genblk1\.DUT_INPLACE.sm_0.twid_wA_0.ngrst2rst_0.sync_ngrst_0.genblk1\.delayLine_0_     SLE      Q        Out     0.061     0.061       -         
+delayLine_0_                                                                                                                                               Net      -        -       0.480     -           1         
+cm_top_0.nm_if_0.nm_channel_0.adc_datapath_0.adc_fft_if_0.COREFFT_0.genblk1\.DUT_INPLACE.sm_0.twid_wA_0.ngrst2rst_0.sync_ngrst_0.genblk1\.delayLine_1_     SLE      D        In      -         0.541       -         
+=====================================================================================================================================================================================================================
+
+
+
+
+====================================
+Detailed Report for Clock: fft_inpl_slowClock_1|divider_inferred_clock[2]
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                                                                                                                                           Starting                                                                                Arrival          
+Instance                                                                                                                                                   Reference                                          Type     Pin     Net                 Time        Slack
+                                                                                                                                                           Clock                                                                                                    
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+cm_top_0.nm_if_0.nm_channel_1.adc_datapath_0.adc_fft_if_0.COREFFT_0.genblk1\.DUT_INPLACE.sm_0.twid_wA_0.ngrst2rst_0.sync_ngrst_0.genblk1\.delayLine_0_     fft_inpl_slowClock_1|divider_inferred_clock[2]     SLE      Q       delayLine_0_        0.061       0.362
+cm_top_0.nm_if_0.nm_channel_1.adc_datapath_0.adc_fft_if_0.COREFFT_0.genblk1\.DUT_INPLACE.sm_0.twid_wA_0.ngrst2rst_0.sync_ngrst_0.genblk1\.delayLine_1_     fft_inpl_slowClock_1|divider_inferred_clock[2]     SLE      Q       delayLine_1_        0.061       0.362
+cm_top_0.nm_if_0.nm_channel_1.adc_datapath_0.adc_fft_if_0.COREFFT_0.genblk1\.DUT_INPLACE.sm_0.twid_wA_0.ngrst2rst_0.sync_ngrst_0.genblk1\.delayLine_2_     fft_inpl_slowClock_1|divider_inferred_clock[2]     SLE      Q       delayLine_2_        0.061       0.362
+cm_top_0.nm_if_0.nm_channel_1.adc_datapath_0.adc_fft_if_0.COREFFT_0.genblk1\.DUT_INPLACE.sm_0.twid_wA_0.ngrst2rst_0.sync_ngrst_0.genblk1\.delayLine_3_     fft_inpl_slowClock_1|divider_inferred_clock[2]     SLE      Q       synced_ngrst        0.061       0.435
+cm_top_0.nm_if_0.nm_channel_1.adc_datapath_0.adc_fft_if_0.COREFFT_0.genblk1\.DUT_INPLACE.sm_0.twid_wA_0.preRstAfterInit                                    fft_inpl_slowClock_1|divider_inferred_clock[2]     SLE      Q       preRstAfterInit     0.061       0.518
+cm_top_0.nm_if_0.nm_channel_1.adc_datapath_0.adc_fft_if_0.COREFFT_0.genblk1\.DUT_INPLACE.sm_0.twid_wA_0.ngrst2rst_0.tick1                                  fft_inpl_slowClock_1|divider_inferred_clock[2]     SLE      Q       tick1               0.076       0.522
+cm_top_0.nm_if_0.nm_channel_1.adc_datapath_0.adc_fft_if_0.COREFFT_0.genblk1\.DUT_INPLACE.sm_0.twid_wA_0.ngrst2rst_0.pulse                                  fft_inpl_slowClock_1|divider_inferred_clock[2]     SLE      Q       pulse_rst           0.061       0.856
+cm_top_0.nm_if_0.nm_channel_1.adc_datapath_0.adc_fft_if_0.COREFFT_0.genblk1\.DUT_INPLACE.sm_0.twid_wA_0.twid_wEn                                           fft_inpl_slowClock_1|divider_inferred_clock[2]     SLE      Q       twid_wEn_w          0.076       0.864
+cm_top_0.nm_if_0.nm_channel_1.adc_datapath_0.adc_fft_if_0.COREFFT_0.genblk1\.DUT_INPLACE.sm_0.twid_wA_0.slowTimer.Q[7]                                     fft_inpl_slowClock_1|divider_inferred_clock[2]     SLE      Q       twid_wA_w[7]        0.061       0.928
+cm_top_0.nm_if_0.nm_channel_1.adc_datapath_0.adc_fft_if_0.COREFFT_0.genblk1\.DUT_INPLACE.sm_0.twid_wA_0.slowTimer.Q[6]                                     fft_inpl_slowClock_1|divider_inferred_clock[2]     SLE      Q       twid_wA_w[6]        0.061       0.977
+====================================================================================================================================================================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                                                                                                                                           Starting                                                                               Required          
+Instance                                                                                                                                                   Reference                                          Type     Pin     Net                Time         Slack
+                                                                                                                                                           Clock                                                                                                    
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+cm_top_0.nm_if_0.nm_channel_1.adc_datapath_0.adc_fft_if_0.COREFFT_0.genblk1\.DUT_INPLACE.sm_0.twid_wA_0.ngrst2rst_0.sync_ngrst_0.genblk1\.delayLine_1_     fft_inpl_slowClock_1|divider_inferred_clock[2]     SLE      D       delayLine_0_       0.179        0.362
+cm_top_0.nm_if_0.nm_channel_1.adc_datapath_0.adc_fft_if_0.COREFFT_0.genblk1\.DUT_INPLACE.sm_0.twid_wA_0.ngrst2rst_0.sync_ngrst_0.genblk1\.delayLine_2_     fft_inpl_slowClock_1|divider_inferred_clock[2]     SLE      D       delayLine_1_       0.179        0.362
+cm_top_0.nm_if_0.nm_channel_1.adc_datapath_0.adc_fft_if_0.COREFFT_0.genblk1\.DUT_INPLACE.sm_0.twid_wA_0.ngrst2rst_0.sync_ngrst_0.genblk1\.delayLine_3_     fft_inpl_slowClock_1|divider_inferred_clock[2]     SLE      D       delayLine_2_       0.179        0.362
+cm_top_0.nm_if_0.nm_channel_1.adc_datapath_0.adc_fft_if_0.COREFFT_0.genblk1\.DUT_INPLACE.sm_0.twid_wA_0.ngrst2rst_0.tick1                                  fft_inpl_slowClock_1|divider_inferred_clock[2]     SLE      D       synced_ngrst       0.179        0.435
+cm_top_0.nm_if_0.nm_channel_1.adc_datapath_0.adc_fft_if_0.COREFFT_0.genblk1\.DUT_INPLACE.sm_0.twid_wA_0.rstAfterInit                                       fft_inpl_slowClock_1|divider_inferred_clock[2]     SLE      D       rstAfterInit_3     0.179        0.518
+cm_top_0.nm_if_0.nm_channel_1.adc_datapath_0.adc_fft_if_0.COREFFT_0.genblk1\.DUT_INPLACE.sm_0.twid_wA_0.ngrst2rst_0.pulse                                  fft_inpl_slowClock_1|divider_inferred_clock[2]     SLE      D       pulse              0.179        0.522
+cm_top_0.nm_if_0.nm_channel_1.adc_datapath_0.adc_fft_if_0.COREFFT_0.genblk1\.DUT_INPLACE.sm_0.twid_wA_0.twid_wEn                                           fft_inpl_slowClock_1|divider_inferred_clock[2]     SLE      D       pulse_rst          0.179        0.856
+cm_top_0.nm_if_0.nm_channel_1.adc_datapath_0.adc_fft_if_0.COREFFT_0.genblk1\.DUT_INPLACE.sm_0.twid_wA_0.slowTimer.Q[0]                                     fft_inpl_slowClock_1|divider_inferred_clock[2]     SLE      EN      twid_wEn_w         0.236        0.864
+cm_top_0.nm_if_0.nm_channel_1.adc_datapath_0.adc_fft_if_0.COREFFT_0.genblk1\.DUT_INPLACE.sm_0.twid_wA_0.slowTimer.Q[1]                                     fft_inpl_slowClock_1|divider_inferred_clock[2]     SLE      EN      twid_wEn_w         0.236        0.864
+cm_top_0.nm_if_0.nm_channel_1.adc_datapath_0.adc_fft_if_0.COREFFT_0.genblk1\.DUT_INPLACE.sm_0.twid_wA_0.slowTimer.Q[2]                                     fft_inpl_slowClock_1|divider_inferred_clock[2]     SLE      EN      twid_wEn_w         0.236        0.864
+====================================================================================================================================================================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+    Propagation time:                        0.541
+    + Clock delay at starting point:         0.000 (ideal)
+    - Requested Period:                      0.000
+    - Hold time:                             0.179
+    - Clock delay at ending point:           0.000 (ideal)
+    = Slack (non-critical) :                 0.362
+
+    Number of logic level(s):                0
+    Starting point:                          cm_top_0.nm_if_0.nm_channel_1.adc_datapath_0.adc_fft_if_0.COREFFT_0.genblk1\.DUT_INPLACE.sm_0.twid_wA_0.ngrst2rst_0.sync_ngrst_0.genblk1\.delayLine_0_ / Q
+    Ending point:                            cm_top_0.nm_if_0.nm_channel_1.adc_datapath_0.adc_fft_if_0.COREFFT_0.genblk1\.DUT_INPLACE.sm_0.twid_wA_0.ngrst2rst_0.sync_ngrst_0.genblk1\.delayLine_1_ / D
+    The start point is clocked by            fft_inpl_slowClock_1|divider_inferred_clock[2] [falling] on pin CLK
+    The end   point is clocked by            fft_inpl_slowClock_1|divider_inferred_clock[2] [falling] on pin CLK
+
+Instance / Net                                                                                                                                                      Pin      Pin               Arrival     No. of    
+Name                                                                                                                                                       Type     Name     Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+cm_top_0.nm_if_0.nm_channel_1.adc_datapath_0.adc_fft_if_0.COREFFT_0.genblk1\.DUT_INPLACE.sm_0.twid_wA_0.ngrst2rst_0.sync_ngrst_0.genblk1\.delayLine_0_     SLE      Q        Out     0.061     0.061       -         
+delayLine_0_                                                                                                                                               Net      -        -       0.480     -           1         
+cm_top_0.nm_if_0.nm_channel_1.adc_datapath_0.adc_fft_if_0.COREFFT_0.genblk1\.DUT_INPLACE.sm_0.twid_wA_0.ngrst2rst_0.sync_ngrst_0.genblk1\.delayLine_1_     SLE      D        In      -         0.541       -         
+=====================================================================================================================================================================================================================
+
+
+
+
+====================================
+Detailed Report for Clock: System
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                                                                                                                                                              Starting                                             Arrival          
+Instance                                                                                                                                                                      Reference     Type         Pin           Net         Time        Slack
+                                                                                                                                                                              Clock                                                                 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+cm_top_0.nm_if_0.nm_channel_0.adc_datapath_0.adc_fft_if_0.COREFFT_0.genblk1\.DUT_INPLACE.twidLUT_1.twidLUT_0.SmFu4_uram\.smGen_RAM_0.adc_fft_if_COREFFT_0_uram_smGen_R0C4     System        RAM64x18     A_DOUT[0]     T_w[16]     0.000       0.603
+cm_top_0.nm_if_0.nm_channel_1.adc_datapath_0.adc_fft_if_0.COREFFT_0.genblk1\.DUT_INPLACE.twidLUT_1.twidLUT_0.SmFu4_uram\.smGen_RAM_0.adc_fft_if_COREFFT_0_uram_smGen_R0C4     System        RAM64x18     A_DOUT[0]     T_w[16]     0.000       0.603
+cm_top_0.nm_if_0.nm_channel_1.adc_datapath_0.adc_fft_if_0.COREFFT_0.genblk1\.DUT_INPLACE.twidLUT_1.twidLUT_0.SmFu4_uram\.smGen_RAM_0.adc_fft_if_COREFFT_0_uram_smGen_R0C4     System        RAM64x18     A_DOUT[0]     T_w[16]     0.000       0.603
+cm_top_0.nm_if_0.nm_channel_0.adc_datapath_0.adc_fft_if_0.COREFFT_0.genblk1\.DUT_INPLACE.twidLUT_1.twidLUT_0.SmFu4_uram\.smGen_RAM_0.adc_fft_if_COREFFT_0_uram_smGen_R0C4     System        RAM64x18     A_DOUT[0]     T_w[16]     0.000       0.603
+cm_top_0.nm_if_0.nm_channel_1.adc_datapath_0.adc_fft_if_0.COREFFT_0.genblk1\.DUT_INPLACE.twidLUT_1.twidLUT_0.SmFu4_uram\.smGen_RAM_0.adc_fft_if_COREFFT_0_uram_smGen_R0C4     System        RAM64x18     A_DOUT[1]     T_w[17]     0.000       0.603
+cm_top_0.nm_if_0.nm_channel_0.adc_datapath_0.adc_fft_if_0.COREFFT_0.genblk1\.DUT_INPLACE.twidLUT_1.twidLUT_0.SmFu4_uram\.smGen_RAM_0.adc_fft_if_COREFFT_0_uram_smGen_R0C4     System        RAM64x18     A_DOUT[1]     T_w[17]     0.000       0.603
+cm_top_0.nm_if_0.nm_channel_0.adc_datapath_0.adc_fft_if_0.COREFFT_0.genblk1\.DUT_INPLACE.twidLUT_1.twidLUT_0.SmFu4_uram\.smGen_RAM_0.adc_fft_if_COREFFT_0_uram_smGen_R0C4     System        RAM64x18     A_DOUT[1]     T_w[17]     0.000       0.603
+cm_top_0.nm_if_0.nm_channel_1.adc_datapath_0.adc_fft_if_0.COREFFT_0.genblk1\.DUT_INPLACE.twidLUT_1.twidLUT_0.SmFu4_uram\.smGen_RAM_0.adc_fft_if_COREFFT_0_uram_smGen_R0C4     System        RAM64x18     A_DOUT[1]     T_w[17]     0.000       0.603
+cm_top_0.nm_if_0.nm_channel_1.adc_datapath_0.adc_fft_if_0.COREFFT_0.genblk1\.DUT_INPLACE.twidLUT_1.twidLUT_0.SmFu4_uram\.smGen_RAM_0.adc_fft_if_COREFFT_0_uram_smGen_R0C4     System        RAM64x18     A_DOUT[2]     T_w[18]     0.000       0.603
+cm_top_0.nm_if_0.nm_channel_0.adc_datapath_0.adc_fft_if_0.COREFFT_0.genblk1\.DUT_INPLACE.twidLUT_1.twidLUT_0.SmFu4_uram\.smGen_RAM_0.adc_fft_if_COREFFT_0_uram_smGen_R0C4     System        RAM64x18     A_DOUT[2]     T_w[18]     0.000       0.603
+====================================================================================================================================================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                                                                                                                                                              Starting                                   Required          
+Instance                                                                                                                                                                      Reference     Type     Pin     Net         Time         Slack
+                                                                                                                                                                              Clock                                                        
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+cm_top_0.nm_if_0.nm_channel_0.adc_datapath_0.adc_fft_if_0.COREFFT_0.genblk1\.DUT_INPLACE.bfly_0.cmplx_0.genblk1\.cmplx18_0.half_0.genblk1\.dly_d.genblk1\.delayLine_0_[0]     System        SLE      D       T_w[16]     0.179        0.603
+cm_top_0.nm_if_0.nm_channel_1.adc_datapath_0.adc_fft_if_0.COREFFT_0.genblk1\.DUT_INPLACE.bfly_0.cmplx_0.genblk1\.cmplx18_0.half_0.genblk1\.dly_d.genblk1\.delayLine_0_[0]     System        SLE      D       T_w[16]     0.179        0.603
+cm_top_0.nm_if_0.nm_channel_0.adc_datapath_0.adc_fft_if_0.COREFFT_0.genblk1\.DUT_INPLACE.bfly_0.cmplx_0.genblk1\.cmplx18_0.half_0.genblk1\.dly_d.genblk1\.delayLine_0_[1]     System        SLE      D       T_w[17]     0.179        0.603
+cm_top_0.nm_if_0.nm_channel_1.adc_datapath_0.adc_fft_if_0.COREFFT_0.genblk1\.DUT_INPLACE.bfly_0.cmplx_0.genblk1\.cmplx18_0.half_0.genblk1\.dly_d.genblk1\.delayLine_0_[1]     System        SLE      D       T_w[17]     0.179        0.603
+cm_top_0.nm_if_0.nm_channel_0.adc_datapath_0.adc_fft_if_0.COREFFT_0.genblk1\.DUT_INPLACE.bfly_0.cmplx_0.genblk1\.cmplx18_0.half_0.genblk1\.dly_d.genblk1\.delayLine_0_[2]     System        SLE      D       T_w[18]     0.179        0.603
+cm_top_0.nm_if_0.nm_channel_1.adc_datapath_0.adc_fft_if_0.COREFFT_0.genblk1\.DUT_INPLACE.bfly_0.cmplx_0.genblk1\.cmplx18_0.half_0.genblk1\.dly_d.genblk1\.delayLine_0_[2]     System        SLE      D       T_w[18]     0.179        0.603
+cm_top_0.nm_if_0.nm_channel_1.adc_datapath_0.adc_fft_if_0.COREFFT_0.genblk1\.DUT_INPLACE.bfly_0.cmplx_0.genblk1\.cmplx18_0.half_0.genblk1\.dly_d.genblk1\.delayLine_0_[3]     System        SLE      D       T_w[19]     0.179        0.603
+cm_top_0.nm_if_0.nm_channel_0.adc_datapath_0.adc_fft_if_0.COREFFT_0.genblk1\.DUT_INPLACE.bfly_0.cmplx_0.genblk1\.cmplx18_0.half_0.genblk1\.dly_d.genblk1\.delayLine_0_[3]     System        SLE      D       T_w[19]     0.179        0.603
+cm_top_0.nm_if_0.nm_channel_0.adc_datapath_0.adc_fft_if_0.COREFFT_0.genblk1\.DUT_INPLACE.bfly_0.cmplx_0.genblk1\.cmplx18_0.half_0.genblk1\.dly_d.genblk1\.delayLine_0_[4]     System        SLE      D       T_w[20]     0.179        0.603
+cm_top_0.nm_if_0.nm_channel_1.adc_datapath_0.adc_fft_if_0.COREFFT_0.genblk1\.DUT_INPLACE.bfly_0.cmplx_0.genblk1\.cmplx18_0.half_0.genblk1\.dly_d.genblk1\.delayLine_0_[4]     System        SLE      D       T_w[20]     0.179        0.603
+===========================================================================================================================================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+    Propagation time:                        0.782
+    + Clock delay at starting point:         0.000 (ideal)
+-0.000
+    - Requested Period:                      0.000
+    - Hold time:                             0.179
+    - Clock delay at ending point:           0.000 (ideal)
+    = Slack (non-critical) :                 0.603
+
+    Number of logic level(s):                0
+    Starting point:                          cm_top_0.nm_if_0.nm_channel_0.adc_datapath_0.adc_fft_if_0.COREFFT_0.genblk1\.DUT_INPLACE.twidLUT_1.twidLUT_0.SmFu4_uram\.smGen_RAM_0.adc_fft_if_COREFFT_0_uram_smGen_R0C4 / A_DOUT[0]
+    Ending point:                            cm_top_0.nm_if_0.nm_channel_0.adc_datapath_0.adc_fft_if_0.COREFFT_0.genblk1\.DUT_INPLACE.bfly_0.cmplx_0.genblk1\.cmplx18_0.half_0.genblk1\.dly_d.genblk1\.delayLine_0_[0] / D
+    The start point is clocked by            System [rising]
+    The end   point is clocked by            Mario_Libero_FCCC_0_FCCC|GL0_net_inferred_clock [rising] on pin CLK
+
+Instance / Net                                                                                                                                                                             Pin           Pin               Arrival     No. of    
+Name                                                                                                                                                                          Type         Name          Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+cm_top_0.nm_if_0.nm_channel_0.adc_datapath_0.adc_fft_if_0.COREFFT_0.genblk1\.DUT_INPLACE.twidLUT_1.twidLUT_0.SmFu4_uram\.smGen_RAM_0.adc_fft_if_COREFFT_0_uram_smGen_R0C4     RAM64x18     A_DOUT[0]     Out     0.000     0.000       -         
+T_w[16]                                                                                                                                                                       Net          -             -       0.782     -           1         
+cm_top_0.nm_if_0.nm_channel_0.adc_datapath_0.adc_fft_if_0.COREFFT_0.genblk1\.DUT_INPLACE.bfly_0.cmplx_0.genblk1\.cmplx18_0.half_0.genblk1\.dly_d.genblk1\.delayLine_0_[0]     SLE          D             In      -         0.782       -         
+=================================================================================================================================================================================================================================================
+
+
+
+##### END OF TIMING REPORT #####]
+

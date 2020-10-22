@@ -1,0 +1,28 @@
+@P:  Worst Slack : 27.355
+@P:  clk_20_48 - Estimated Frequency : 69.6 MHz
+@P:  clk_20_48 - Requested Frequency : 20.5 MHz
+@P:  clk_20_48 - Estimated Period : 14.362
+@P:  clk_20_48 - Requested Period : 48.828
+@P:  clk_20_48 - Slack : 34.466
+@P:  clk_20_48_hdc - Estimated Frequency : 46.6 MHz
+@P:  clk_20_48_hdc - Requested Frequency : 20.5 MHz
+@P:  clk_20_48_hdc - Estimated Period : 21.474
+@P:  clk_20_48_hdc - Requested Period : 48.828
+@P:  clk_20_48_hdc - Slack : 27.355
+@P:  xtal_20MHz - Estimated Frequency : NA
+@P:  xtal_20MHz - Requested Frequency : 20.0 MHz
+@P:  xtal_20MHz - Estimated Period : NA
+@P:  xtal_20MHz - Requested Period : 50.000
+@P:  xtal_20MHz - Slack : NA
+@P:  System - Estimated Frequency : NA
+@P:  System - Requested Frequency : 100.0 MHz
+@P:  System - Estimated Period : NA
+@P:  System - Requested Period : 10.000
+@P:  System - Slack : NA
+@P: Mario_Libero Part : m2s060tfcsbga325std
+@P: Mario_Libero Register bits  : 46974 
+@P: Mario_Libero DSP Blocks  : 0
+@P: Mario_Libero I/O primitives : 15
+@P: Mario_Libero RAM1K18 :  28
+@P: Mario_Libero RAM64x18 :  10
+@P:  CPU Time : 0h:06m:01s

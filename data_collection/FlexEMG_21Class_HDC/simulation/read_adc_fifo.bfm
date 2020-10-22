@@ -1,0 +1,12 @@
+##
+## Read NM0 ADC FIFO
+##
+read w cmam_if_0 n0adc
+read w cmam_if_0 n0adc
+read w cmam_if_0 n0adc
+read w cmam_if_0 n0adc
+read w cmam_if_0 n0adc
+read w cmam_if_0 n0adc
+read w cmam_if_0 n0adc
+read w cmam_if_0 n0adc
+

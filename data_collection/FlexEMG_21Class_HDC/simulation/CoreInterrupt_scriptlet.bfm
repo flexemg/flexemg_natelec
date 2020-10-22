@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# Resource: CoreInterrupt
+# Instance: VAR_resource
+#-----------------------------------------------------------
+# Write 0xab to FIQSoftInt register
+write   b   VAR_resource    0x00 0xab;
+
+# Write 0xff to FIQSoftIntClear register
+write   b   VAR_resource    0x04 0xff;
+
+# Write 0x87654321 to IRQSoftInt register
+write   w   VAR_resource    0x18 0x87654321;
+
+# Write 0xffffffff to IRQSoftIntClear register
+write   w   VAR_resource    0x1c 0xffffffff;
+
+# Read back registers - should read as zero
+readcheck b VAR_resource    0x00 0x00;
+readcheck b VAR_resource    0x04 0x00;
+readcheck w VAR_resource    0x18 0x00000000;
+readcheck w VAR_resource    0x1c 0x00000000;

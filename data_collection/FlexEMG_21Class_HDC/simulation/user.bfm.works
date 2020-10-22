@@ -1,0 +1,180 @@
+#===========================================================
+# Enter your BFM commands in this file. 
+#
+# Syntax: 
+# ------- 
+#
+# memmap    resource_name base_address;
+#
+# write     width resource_name byte_offset data;
+# read      width resource_name byte_offset;
+# readcheck width resource_name byte_offset data;
+#
+#===========================================================
+
+include "subsystem.bfm"
+
+procedure user_main;
+
+int i
+
+# perform subsystem initialization routine
+  call subsystem_init; 
+
+# add your BFM commands below:
+
+# TxRx
+memmap status   cmam_if_wrap_0;
+memmap rst      0x30000004; // Rx is readback
+memmap dbg      0x30000008;
+memmap n0d1     0x30000010;	// NM0 operation (Rx is readback)
+memmap n0d2     0x30000014;	// NM0 register data and address or command (Rx is readback)
+memmap n1d1     0x30000020; // NM1 operation (Rx is readback)
+memmap n1d2     0x30000024; // NM1 register data and address or command (Rx is readback)
+
+# Tx
+memmap pdmaen   0x3000000c;
+memmap n0vechi  0x30000018;
+memmap n0veclo  0x3000001c;
+memmap n1vechi  0x30000028;
+memmap n1veclo  0x3000002c;
+memmap accen    0x30000100;
+
+# Rx
+memmap n0ack    0x30000018; // N0 ACK data
+memmap n0adc    0x3000001c; // N0 ADC data
+memmap n1ack    0x30000028; // N1 ACK data
+memmap n1adc    0x3000002c; // N1 ADC data
+
+# Disable PDMA block
+write w pdmaen 0 0
+
+# Set up NM0 Tx MS 2 bit
+write w n0d1 0 0
+# Set up NM0 Tx LS 32 bits
+write w n0d2 0 0
+# Set up NM1 Tx MS 2 bit
+write w n1d1 0 0
+# Set up NM1 Tx LS 32 bits
+write w n1d2 0 0
+
+# Set ADC vector high 16 bits for NM 0
+write w n0vechi 0 0xaa000000
+# Set ADC vector low 16 bits for NM 0
+write w n0veclo 0 0x00000000
+# Set ADC vector high 16 bits for NM 1
+write w n1vechi 0 0x00000000
+# Set ADC vector low 16 bits for NM 1
+write w n1veclo 0 0x00000000
+
+##
+## RESET
+##
+
+##
+## Reset AM
+##
+
+# Set link reset type to AM (3) and assert start
+write w status 0 0x000000103
+
+# wait 410us for training sequence to end
+set i 0
+loop i 0 82 1
+    waitns 5000
+endloop
+
+##
+## Reset NM0 (NM1 is identical)
+##
+
+# Enable reset for NM0
+write w rst 0 0x00000100
+# Set link reset type to NM (2) and assert start
+write w status 0 0x00000102
+
+waitns 2000
+
+##
+## Power cycle NM0 (NM1 is identical)
+## Power control not implemented in Mario-CM V0
+##
+
+# Set power on for NM0
+write w rst 0 0x00000101
+# Set link reset type to NM power (0) and assert start
+write w status 0 0x00000100
+
+waitns 2000
+
+# Set power off for NM0
+write w rst 0 0x000000100
+# Set link reset type to NM power (0) and assert start
+write w status 0 0x00000100
+
+waitns 2000
+
+# Set power on for NM0
+write w rst 0 0x00000101
+# Set link reset type to NM power (0) and assert start
+write w status 0 0x00000100
+
+waitns 2000
+
+##
+## NM command (NM1 is identical)
+##
+
+# Set up command data
+write w n0d2 0 0x00000489
+# Send command to NM0
+write w status 0 0x00001010
+
+waitns 5000
+waitns 5000
+waitns 5000
+waitns 5000
+waitns 5000
+
+##
+## NM register write (NM1 is identical)
+##
+
+# Set up data
+write w n0d1 0 0x00000001
+write w n0d2 0 0x01234567
+# Send register write to NM0
+write w status 0 0x00001000
+
+# Make sure to wait long enough here for the NM to respond.
+# If he NM is sending data the ACK will wait until the ADC channel is clear.
+# 120us should be long enough
+set i 0
+loop i 0 24 1
+    waitns 5000
+endloop
+
+# Read register address from ACK FIFO
+read w n0ack 0
+# Read register data from ACK FIFO
+read w n0ack 0
+
+# run 1ms
+set i 0
+loop i 0 200 1
+    waitns 5000
+endloop
+
+##
+## Read NM0 ADC FIFO
+##
+read w n0adc 0
+read w n0adc 0
+read w n0adc 0
+read w n0adc 0
+read w n0adc 0
+read w n0adc 0
+read w n0adc 0
+read w n0adc 0
+
+return

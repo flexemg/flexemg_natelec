@@ -1,0 +1,9 @@
+@N: CD630 :".\gentmp1860a04968":4:7:4:9|Synthesizing work.top.gen 
+@N: CD630 :"syng0a04968":275:7:275:9|Synthesizing work.div.cell_level 
+@W: CD326 :"syng0a04968":318:2:318:6|Port divide_by_0 of entity work.dw_div is unconnected
+@N: CD630 :"syng0a04968":26:7:26:12|Synthesizing work.dw_div.rtl 
+@W: CD434 :"syng0a04968":223:10:223:10|Signal a in the sensitivity list is not used in the process
+@W: CD434 :"syng0a04968":223:17:223:20|Signal temp in the sensitivity list is not used in the process
+Post processing for work.dw_div.rtl
+Post processing for work.div.cell_level
+Post processing for work.top.gen

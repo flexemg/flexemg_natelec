@@ -1,0 +1,11 @@
+<!-- File generated from P:\Libero\Mario-CM_Flex-EMG_newarch\Mario-CM_Flex-EMG_noam\SoftConsole\Mario_Libero_MSS_CM3\Mario_Libero_MSS_CM3_hw_platform\CMSIS\startup_gcc\debug-in-microsemi-smartfusion2-esram.ld -->
+<board>
+ <properties>
+  <property name="system-v6-m"/>
+ </properties>
+ <memory-map>
+    <memory-device address="0x20000000" size="64k" type="ram">
+      <description>SRAM</description>
+    </memory-device>
+  </memory-map>
+</board>

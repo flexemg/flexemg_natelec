@@ -1,0 +1,93 @@
+
+****************
+Macro Parameters
+****************
+
+Name                            : adc_fft_if_COREFFT_0_uram_smGen
+Family                          : SmartFusion2
+Output Format                   : VERILOG
+Type                            : URAM
+A_BLK                           : Active High
+B_BLK                           : Active High
+C_BLK                           : Active High
+Reset Polarity                  : None
+A Clock                         : Rising
+AddrA Clock                     : Rising
+DoutA Clock                     : Rising
+AddrA SReset                    : None
+DoutA SReset                    : None
+AddrA AReset                    : None
+DoutA AReset                    : None
+AddrA Enable                    : None
+DoutA Enable                    : None
+B Clock                         : Rising
+AddrB Clock                     : Rising
+DoutB Clock                     : Rising
+AddrB SReset                    : Active Low
+DoutB SReset                    : Active Low
+AddrB AReset                    : Active Low
+DoutB AReset                    : Active Low
+AddrB Enable                    : Active High
+DoutB Enable                    : Active High
+Write Clock                     : Rising
+Write Enable                    : Active High
+Write Depth                     : 256
+Write Width                     : 32
+Read Depth A                    : 256
+Read Width A                    : 32
+Read Depth B                    : 256
+Read Width B                    : 32
+A_ADDR_LAT                      : Register
+A_DOUT_LAT                      : Register
+B_ADDR_LAT                      : Latch
+B_DOUT_LAT                      : Latch
+Portname A_DOUT                 : rD
+Portname B_DOUT                 : B_DOUT
+Portname A_CLK                  : A_CLK
+Portname A_ADDR_CLK             : rAddr_clk
+Portname A_DOUT_CLK             : rD_clk
+Portname A_ADDR_SRST            : A_ADDR_SRST
+Portname A_DOUT_SRST            : A_DOUT_SRST
+Portname A_ADDR_ARST            : A_ADDR_ARST
+Portname A_DOUT_ARST            : A_DOUT_ARST
+Portname A_ADDR_EN              : A_ADDR_EN
+Portname A_DOUT_EN              : A_DOUT_EN
+Portname A_BLK                  : rBlk
+Portname A_ADDR                 : rAddr
+Portname B_CLK                  : 
+Portname B_ADDR_CLK             : B_ADDR_CLK
+Portname B_DOUT_CLK             : B_DOUT_CLK
+Portname B_ADDR_SRST_N          : B_ADDR_SRST
+Portname B_DOUT_SRST_N          : B_DOUT_SRST
+Portname B_ADDR_ARST_N          : B_ADDR_ARST
+Portname B_DOUT_ARST_N          : B_DOUT_ARST
+Portname B_ADDR_EN              : B_ADDR_EN
+Portname B_DOUT_EN              : B_DOUT_EN
+Portname B_BLK                  : B_BLK
+Portname B_ADDR                 : B_ADDR
+Portname Write Clock            : wClk
+Portname Write Address          : wAddr
+Portname Write Data             : wD
+Portname Write Enable           : wEn
+Portname Write BLK              : wBlk
+Portname Clock                  : CLK
+Portname Reset                  : RESET
+LPM_HINT                        : 
+Device                          : 15000
+RAM Type                        : Three Port
+Optimized for                   : Speed
+Clocks                          : One Clock per port
+Initialize RAM                  : False
+ECC Type                        : Disabled
+SET Mitigation                  : Off
+SII Lock                        : Off
+Busy Flag                       : Disabled
+
+Cascade Configuration: 
+     Port A configuration       : 256x4
+     Port B configuration       : 256x4
+     Port C configuration       : 256x4
+     Number of blocks depth wise: 1
+     Number of blocks width wise: 8
+
+Wrote Verilog netlist to C:/Users/flb.EECS/Desktop/mario_laptop_sf2_newarch/Mario_SF2/component/work/adc_fft_if/COREFFT_0/rtl\in_place\vlog\core\adc_fft_if_COREFFT_0_uram_smGen.v.

@@ -1,0 +1,43 @@
+Microsemi Corporation - Microsemi Libero Software Release v11.8 SP3 (Version 11.8.3.6)
+
+Date      :  Thu Feb 21 19:54:14 2019
+Project   :  C:\Users\bwrc\Desktop\HyperFlexEG
+Component :  Mario_Libero
+Family    :  SmartFusion2
+
+
+HDL source files for all Synthesis and Simulation tools:
+    C:/Users/bwrc/Desktop/HyperFlexEG/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vlog/core_obfuscated/coreapb3.v
+    C:/Users/bwrc/Desktop/HyperFlexEG/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vlog/core_obfuscated/coreapb3_iaddr_reg.v
+    C:/Users/bwrc/Desktop/HyperFlexEG/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vlog/core_obfuscated/coreapb3_muxptob3.v
+    C:/Users/bwrc/Desktop/HyperFlexEG/component/work/Mario_Libero/CoreGPIO_0/rtl/vlog/core/coregpio.v
+    C:/Users/bwrc/Desktop/HyperFlexEG/component/work/Mario_Libero/FCCC_0/Mario_Libero_FCCC_0_FCCC.v
+    C:/Users/bwrc/Desktop/HyperFlexEG/component/work/Mario_Libero/Mario_Libero.v
+    C:/Users/bwrc/Desktop/HyperFlexEG/component/work/Mario_Libero/OSC_0/Mario_Libero_OSC_0_OSC.v
+
+HDL source files for Synopsys SynplifyPro Synthesis tool:
+    C:/Users/bwrc/Desktop/HyperFlexEG/component/Actel/SgCore/OSC/2.0.101/osc_comps.v
+
+HDL source files for Mentor Precision Synthesis tool:
+    C:/Users/bwrc/Desktop/HyperFlexEG/component/Actel/SgCore/OSC/2.0.101/osc_comps_pre.v
+
+Stimulus files for all Simulation tools:
+    C:/Users/bwrc/Desktop/HyperFlexEG/component/work/Mario_Libero/CoreGPIO_0/bfmtovec_compile.do
+    C:/Users/bwrc/Desktop/HyperFlexEG/component/work/Mario_Libero/CoreGPIO_0/coregpio_usertb_apb_master.bfm
+    C:/Users/bwrc/Desktop/HyperFlexEG/component/work/Mario_Libero/CoreGPIO_0/coregpio_usertb_include.bfm
+    C:/Users/bwrc/Desktop/HyperFlexEG/component/work/Mario_Libero/CoreGPIO_0/wave_vlog.do
+    C:/Users/bwrc/Desktop/HyperFlexEG/component/work/Mario_Libero/subsystem.bfm
+
+    C:/Users/bwrc/Desktop/HyperFlexEG/component/work/Mario_Libero/CoreGPIO_0/coreparameters.v
+    C:/Users/bwrc/Desktop/HyperFlexEG/component/work/Mario_Libero/CoreGPIO_0/rtl/vlog/amba_bfm/bfm_ahbl.v
+    C:/Users/bwrc/Desktop/HyperFlexEG/component/work/Mario_Libero/CoreGPIO_0/rtl/vlog/amba_bfm/bfm_ahblapb.v
+    C:/Users/bwrc/Desktop/HyperFlexEG/component/work/Mario_Libero/CoreGPIO_0/rtl/vlog/amba_bfm/bfm_ahbslave.v
+    C:/Users/bwrc/Desktop/HyperFlexEG/component/work/Mario_Libero/CoreGPIO_0/rtl/vlog/amba_bfm/bfm_ahbslaveext.v
+    C:/Users/bwrc/Desktop/HyperFlexEG/component/work/Mario_Libero/CoreGPIO_0/rtl/vlog/amba_bfm/bfm_ahbtoapb.v
+    C:/Users/bwrc/Desktop/HyperFlexEG/component/work/Mario_Libero/CoreGPIO_0/rtl/vlog/amba_bfm/bfm_apb.v
+    C:/Users/bwrc/Desktop/HyperFlexEG/component/work/Mario_Libero/CoreGPIO_0/rtl/vlog/amba_bfm/bfm_apbslave.v
+    C:/Users/bwrc/Desktop/HyperFlexEG/component/work/Mario_Libero/CoreGPIO_0/rtl/vlog/amba_bfm/bfm_apbslaveext.v
+    C:/Users/bwrc/Desktop/HyperFlexEG/component/work/Mario_Libero/CoreGPIO_0/rtl/vlog/amba_bfm/bfm_apbtoapb.v
+    C:/Users/bwrc/Desktop/HyperFlexEG/component/work/Mario_Libero/CoreGPIO_0/rtl/vlog/amba_bfm/bfm_main.v
+    C:/Users/bwrc/Desktop/HyperFlexEG/component/work/Mario_Libero/CoreGPIO_0/rtl/vlog/test/user/testbench.v
+

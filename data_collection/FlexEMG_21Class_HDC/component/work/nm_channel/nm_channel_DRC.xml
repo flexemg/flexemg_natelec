@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<?xml-stylesheet type="text/xsl" href="drcss.xsl"?>
+<drcreport>
+  <header>nm_channel</header>
+  <drc>
+    <status>C:\Microsemi\Libero_SoC_v11.7\Designer/data/drcreport\error.png</status>
+    <StatusMessage>Error</StatusMessage>
+    <message>Unused Instance</message>
+    <detail>COREFIFO_0 output pins are not being used.  Connect or mark them unused</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/nm_channel/instances/COREFIFO_0</crossprobe>
+  </drc>
+  <drc>
+    <status>C:\Microsemi\Libero_SoC_v11.7\Designer/data/drcreport\error.png</status>
+    <StatusMessage>Error</StatusMessage>
+    <message>Undriven Pin</message>
+    <detail>Unconnected input pin COREFIFO_0:CLK</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/nm_channel/pins/COREFIFO_0:CLK</crossprobe>
+  </drc>
+  <drc>
+    <status>C:\Microsemi\Libero_SoC_v11.7\Designer/data/drcreport\error.png</status>
+    <StatusMessage>Error</StatusMessage>
+    <message>Undriven Pin</message>
+    <detail>Unconnected input pin COREFIFO_0:RESET</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/nm_channel/pins/COREFIFO_0:RESET</crossprobe>
+  </drc>
+  <drc>
+    <status>C:\Microsemi\Libero_SoC_v11.7\Designer/data/drcreport\error.png</status>
+    <StatusMessage>Error</StatusMessage>
+    <message>Undriven Pin</message>
+    <detail>Unconnected input pin COREFIFO_0:DATA[31:0]</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/nm_channel/pins/COREFIFO_0:DATA</crossprobe>
+  </drc>
+  <drc>
+    <status>C:\Microsemi\Libero_SoC_v11.7\Designer/data/drcreport\error.png</status>
+    <StatusMessage>Error</StatusMessage>
+    <message>Undriven Pin</message>
+    <detail>Unconnected input pin COREFIFO_0:WE</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/nm_channel/pins/COREFIFO_0:WE</crossprobe>
+  </drc>
+  <drc>
+    <status>C:\Microsemi\Libero_SoC_v11.7\Designer/data/drcreport\error.png</status>
+    <StatusMessage>Error</StatusMessage>
+    <message>Undriven Pin</message>
+    <detail>Unconnected input pin COREFIFO_0:RE</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/nm_channel/pins/COREFIFO_0:RE</crossprobe>
+  </drc>
+  <drc>
+    <status>C:\Microsemi\Libero_SoC_v11.7\Designer/data/drcreport\warn.png</status>
+    <StatusMessage>Warning</StatusMessage>
+    <message>Floating Driver</message>
+    <detail>Floating output bus pin COREFIFO_0:Q[31:0]</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/nm_channel/pins/COREFIFO_0:Q</crossprobe>
+  </drc>
+  <drc>
+    <status>C:\Microsemi\Libero_SoC_v11.7\Designer/data/drcreport\warn.png</status>
+    <StatusMessage>Warning</StatusMessage>
+    <message>Floating Driver</message>
+    <detail>Floating output pin COREFIFO_0:FULL</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/nm_channel/pins/COREFIFO_0:FULL</crossprobe>
+  </drc>
+  <drc>
+    <status>C:\Microsemi\Libero_SoC_v11.7\Designer/data/drcreport\warn.png</status>
+    <StatusMessage>Warning</StatusMessage>
+    <message>Floating Driver</message>
+    <detail>Floating output pin COREFIFO_0:EMPTY</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/nm_channel/pins/COREFIFO_0:EMPTY</crossprobe>
+  </drc>
+  <drc>
+    <status>C:\Microsemi\Libero_SoC_v11.7\Designer/data/drcreport\warn.png</status>
+    <StatusMessage>Warning</StatusMessage>
+    <message>Floating Driver</message>
+    <detail>Floating output pin COREFIFO_0:OVERFLOW</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/nm_channel/pins/COREFIFO_0:OVERFLOW</crossprobe>
+  </drc>
+  <drc>
+    <status>C:\Microsemi\Libero_SoC_v11.7\Designer/data/drcreport\warn.png</status>
+    <StatusMessage>Warning</StatusMessage>
+    <message>Floating Driver</message>
+    <detail>Floating output pin COREFIFO_0:DVLD</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/nm_channel/pins/COREFIFO_0:DVLD</crossprobe>
+  </drc>
+</drcreport>

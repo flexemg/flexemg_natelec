@@ -1,0 +1,48 @@
+Resource Usage Report for Mario_Libero 
+
+Mapping to part: m2s060tfcsbga325std
+Cell usage:
+CCC             1 use
+CLKINT          6 uses
+GCLKINT         1 use
+INV             1 use
+MSS_060         1 use
+MX2             4 uses
+XTLOSC          1 use
+CFG1           13 uses
+CFG2           4315 uses
+CFG3           6471 uses
+CFG4           14855 uses
+
+Carry cells:
+ARI1            17556 uses - used for arithmetic functions
+ARI1            1657 uses - used for Wide-Mux implementation
+Total ARI1      19213 uses
+
+
+Sequential Cells: 
+SLE            46974 uses
+
+DSP Blocks:    0 of 72 (0%)
+
+I/O ports: 16
+I/O primitives: 15
+INBUF          3 uses
+OUTBUF         11 uses
+TRIBUFF        1 use
+
+
+Global Clock Buffers: 7 of 8 (87%)
+
+
+Total LUTs:    44867
+
+Extra resources required for RAM and MACC interface logic during P&R:
+
+RAM64x18 Interface Logic : SLEs = 360; LUTs = 360;
+RAM1K18  Interface Logic : SLEs = 1008; LUTs = 1008;
+MACC     Interface Logic : SLEs = 0; LUTs = 0;
+
+Total number of SLEs after P&R:  46974 + 360 + 1008 + 0 = 48342;
+Total number of LUTs after P&R:  44867 + 360 + 1008 + 0 = 46235;
+

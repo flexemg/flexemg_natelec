@@ -1,0 +1,16 @@
+Project Name: Mario_Libero
+Location: P:\fred\OMNI\Libero\mario_laptop_sf2_newarch\Mario_SF2_noam
+Description: 
+Preferred HDL Type: Verilog
+
+#-----------------------------------------------------
+                  Device Details
+#-----------------------------------------------------
+
+Part Number    : M2S060T-FCS325
+Family         : SmartFusion2
+Die            : M2S060T
+Package        : 325 FCSBGA
+Speed          : STD
+Core Voltage   : 1.2
+Range          : COM
